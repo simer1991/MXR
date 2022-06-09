@@ -4,7 +4,7 @@ import { Container, Nav, Navbar, NavDropdown, Row } from 'react-bootstrap-v5';
 import {FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn} from 'react-icons/fa';
 import Logo from '../../assets/images/mxr_logo.png';
 import { NavLink } from 'react-router-dom';
-
+import { menuItems } from "../menuItems";
 
 const Header = () => {
   return (
@@ -38,6 +38,9 @@ const Header = () => {
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
+                        {menuItems.map((menu, index) => {
+                            return <NavLink className="nav-link" to="/">{menu}</NavLink>;
+                            })}
                             <NavLink className="nav-link" to="/">Home</NavLink>
                             <NavLink className="nav-link" to="/about">About</NavLink>
                             <NavDropdown title="Services" id="basic-nav-dropdown">
