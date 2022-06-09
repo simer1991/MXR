@@ -1,16 +1,16 @@
 import React from 'react';
 import './header.css';
-import { Container, Nav, Navbar, NavDropdown, Row } from 'react-bootstrap-v5';
+import { Container, Nav, Navbar, Row } from 'react-bootstrap-v5';
 import {FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn} from 'react-icons/fa';
 import Logo from '../../assets/images/mxr_logo.png';
-import { NavLink } from 'react-router-dom';
-import { menuItems } from "../menuItems";
+import { menuItems } from "../../menuItems"; 
+import MenuItems from "./MenuItems";
 
 const Header = () => {
   return (
       <>
       <div id="wrapper" className="page-wrapper">
-        <div class="mxr__header">
+        <div className="mxr__header">
             <div className='mxr__header-top'>
                 <Container>           
                 <Row>
@@ -39,17 +39,9 @@ const Header = () => {
                         <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
                         {menuItems.map((menu, index) => {
-                            return <NavLink className="nav-link" to="/">{menu}</NavLink>;
+                            const depthLevel = 0;
+                                return <MenuItems items={menu} key={index} depthLevel={depthLevel} />; 
                             })}
-                            <NavLink className="nav-link" to="/">Home</NavLink>
-                            <NavLink className="nav-link" to="/about">About</NavLink>
-                            <NavDropdown title="Services" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                            </NavDropdown>
                         </Nav>
                         </Navbar.Collapse>
                     </Container>

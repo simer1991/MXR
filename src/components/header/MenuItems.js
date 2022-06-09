@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-
+import { NavLink } from 'react-router-dom';
 import Dropdown from "./Dropdown";
 
 const MenuItems = ({ items, depthLevel }) => {
@@ -39,7 +39,7 @@ const MenuItems = ({ items, depthLevel }) => {
     >
       {items.submenu ? (
         <>
-          <button
+          <div
             type="button"
             aria-haspopup="menu"
             aria-expanded={dropdown ? "true" : "false"}
@@ -47,7 +47,7 @@ const MenuItems = ({ items, depthLevel }) => {
           >
             {items.title}{" "}
             {depthLevel > 0 ? <span>&raquo;</span> : <span className="arrow" />}
-          </button>
+          </div>
           <Dropdown
             depthLevel={depthLevel}
             submenus={items.submenu}
@@ -55,7 +55,7 @@ const MenuItems = ({ items, depthLevel }) => {
           />
         </>
       ) : (
-        <a href="/#">{items.title}</a>
+        <NavLink className="nav-link" to={items.link}>{items.title}</NavLink>
       )}
     </li>
   );
