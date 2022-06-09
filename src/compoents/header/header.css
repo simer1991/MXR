@@ -1,0 +1,24 @@
+.mxr__header{
+    background-color:var(--color-primary-bg);
+}
+.mxr__header-top {
+    border-bottom: 1px solid rgba(247,247,247,0.21);
+    color: #fff;
+}
+.mxr__header-align-left{
+    line-height: 44px;
+}
+.mxr__header-separator {
+    display: inline-block;
+    padding: 0 6px;
+}
+.mxr__header-align-right{
+    text-align: right;
+    padding:8px;
+}
+.mxr__header .mxr__header-navbar .navbar-nav a{
+    color: #fff;
+}
+.mxr__header .mxr__header-navbar .navbar-nav a.active{
+    border-bottom: 3px solid #fff;
+}
