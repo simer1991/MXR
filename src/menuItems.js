@@ -11,51 +11,45 @@ export const menuItems = [
     title: "Services",
     submenu: [
       {
-        title: "web design",
-        link: "/about"
+        title: "VR 360",
+        link: "/"
       },
       {
-        title: "web development",
-        link: "/about",
-        submenu: [
-          {
-            title: "Frontend",
-            link: "/about"
-          },
-          {
-            title: "Backend",
-            link: "/about",
-            submenu: [
-              {
-                title: "NodeJS",
-                link: "/about"
-              },
-              {
-                title: "PHP",
-                link: "/about"
-              },
-            ],
-          },
-        ],
+        title: "Augmented Reality",
+        link: "/",
+     },
+      {
+        title: "Virtual Reality",
+        link: "/"
       },
       {
-        title: "SEO",
-        link: "/seo"
+        title: "Mixed Reality",
+        link: "/"
       },
-    ],
+      {
+        title: "Moblie  App Development",
+        link: "/"
+      },
+      {
+        title: "Web Design and Development",
+        link: "/"
+      },
+      {
+        title: "Research and Innovation",
+        link: "/"
+      },
+     ],
   },
   {
-    title: "About",
-    link: "/about",
-    submenu: [
-      {
-        title: "Who we are",
-        link: "/about"
-      },
-      {
-        title: "Our values",
-        link: "/about"
-      },
-    ],
+    title: "Project",
+    link: "/"
+  },
+  {
+    title: "Blog",
+    link: "/"
+  },
+  {
+    title: "Contact",
+    link: "/"
   },
 ];

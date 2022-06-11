@@ -4,7 +4,7 @@ export { default as Clients} from './clients/Clients';
 export { default as CTA } from './cta/CTA';
 export { default as Features} from './features/Features';
 export { default as Industries} from './industries/Industries';
-export { default as Navbar} from './navbar/Navbar';
+export { default as Cta2} from './cta2/Cta2';
 export { default as Process} from './process/Process';
 
 export { default as Research} from './research/Research';
