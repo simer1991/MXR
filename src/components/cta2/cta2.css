@@ -1,0 +1,19 @@
+.mxr__cta2{
+    background-image: url('../../assets/images/cta2-bg.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mxr__cta2 .mxr__section-title{
+    color:#fff;
+    text-align: left;
+}
+
+.mxr__cta2 p{
+    color:#fff;
+}
+
+.mxr__cta2-content {
+    padding: 20px 40px;
+}

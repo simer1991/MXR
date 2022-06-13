@@ -7,14 +7,16 @@ function Cta2() {
     <div className='mxr__cta2'>
       <Container>
         <Row>
-          <Col>
-          <h3 className='mxr__section-title'>LET YOUR CREATIVE JUICE FLOW WITH META EXTENDED REALITY (MXR)</h3>
-          <p>LET YOUR CREATIVE JUICE FLOW WITH META EXTENDED REALITY (MXR)</p>
-          <button>Contact Us</button>
-        </Col>
-        <Col>
-        <img src={cta2} alt="cta2"/>
-        </Col>
+          <Col lg={6}>
+            <div className='mxr__cta2-content'>
+              <h3 className='mxr__section-title'>LET YOUR CREATIVE JUICE FLOW WITH META EXTENDED REALITY (MXR)</h3>
+              <p>We specialize in cutting edge software solutions, using top modern technologies, such as augmented, virtual and mixed reality, blockchain, IoT, state of the art web and mobile technologies, and many more.</p>
+              <button className='mxr__section-btn'>Contact Us</button>
+          </div>
+           </Col>
+          <Col lg={6}>
+            <img className="w-100" src={cta2} alt="MXR"/>
+         </Col>
         </Row>
       </Container>
     </div>

@@ -28,77 +28,77 @@ import nodejs from '../../assets/icons/stacks/nodejs.png'
 
 const Stacks = () => {
   return (
+    <div className='mxr__stack mxr__section'>
     <div className='mxr__stack'>
     <Container>
     <h3 className='mxr__section-title'>TECHNOLOGY STACK</h3>
     <Tabs
     defaultActiveKey="mobile"
-    transition={false}
-    id="noanim-tab-example"
-    className="mb-3"
+    id="tech-stack"
+    className="mb-3 mxr__tabs"
   >
     <Tab eventKey="mobile" title="Mobile">
-      <ul>
+      <ul className='mxr__stack-list'>
         <li>
-        <img src={react} alt="react"/>
-        <label>React Native</label>
+          <div><img src={react} alt="react"/></div>
+          <label>React Native</label>
         </li>
         <li>
-        <img src={ionic} alt="ionic"/>
+        <div><img src={ionic} alt="ionic"/></div>
         <label>Ionic</label>
         </li>
       </ul>
-      <ul>
+      <ul className='mxr__stack-list'>
         <li>
-        <img src={swift} alt="swift"/>
+        <div><img src={swift} alt="swift"/></div>
         <label>Swift</label>
         </li>
         <li>
-          <img src={titanium} alt="titanium"/>
+        <div><img src={titanium} alt="titanium"/></div>
           <label>Titanium</label>
         </li>
         <li>
-          <img src={xamarin} alt="xamarin"/>
+          <div><img src={xamarin} alt="xamarin"/></div>
           <label>Xamarin</label>
         </li>
       </ul>
     </Tab>
     <Tab eventKey="frontend" title="Frontend">
-      <ul>
+      <ul className='mxr__stack-list'>
         <li>
-          <img src={angular} alt="angular"/>
+        <div><img src={angular} alt="angular"/></div>
           <label>Angular.JS</label>
         </li>
         <li>
-          <img src={reactjs} alt="reactjs"/>
+        <div><img src={reactjs} alt="reactjs"/></div>
           <label>React Js</label>
         </li>
         <li>
-          <img src={vue} alt="vue"/>
+        <div><img src={vue} alt="vue"/></div>
           <label>Vue</label>
         </li>
       </ul>
     </Tab>
     <Tab eventKey="backend" title="Backend">
-      <ul>
+      <ul className='mxr__stack-list'>
       <li>
-          <img src={nodejs} alt="nodejs"/>
+      <div><img src={nodejs} alt="nodejs"/></div>
           <label>Node.JS</label>
         </li>
         <li>
-          <img src={java} alt="java"/>
+        <div><img src={java} alt="java"/></div>
           <label>Java</label>
         </li>
         <li>
-           <img src={php} alt="php"/>
+        <div><img src={php} alt="php"/></div>
            <label>Php</label>
         </li>
       </ul>
     </Tab>
     <Tab eventKey="database" title="Database">
-      <ul>
+      <ul className='mxr__stack-list'>
         <li>
-          <img src={mongodb} alt="mongodb"/>
+          <div><img src={mongodb} alt="mongodb"/></div>
           <label>Mongo DB</label>
         </li>
         <li>
@@ -132,7 +132,7 @@ const Stacks = () => {
       </ul>
     </Tab>
     <Tab eventKey="cms" title="CMS">
-      <ul>
+      <ul className='mxr__stack-list'>
         <li>
           <img src={drupal} alt="drupal"/>
           <label>Drupal</label>
@@ -157,6 +157,7 @@ const Stacks = () => {
     </Tab>
   </Tabs>
   </Container>
+  </div>
   </div>
   )
 }
