@@ -1,10 +1,14 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { Container,Row,Col,Card,ListGroup,Form } from 'react-bootstrap-v5'
-import {FaMapMarkerAlt,FaPhoneAlt,FaEnvelope} from 'react-icons/fa';
+import {FaMapMarkerAlt,FaPhoneAlt,FaEnvelope,FaComment} from 'react-icons/fa';
 import ReCAPTCHA from 'react-google-recaptcha';
  
-function Contact() {
-    
+const Contact =() => {
+  const [varified,setVarified]=useState(false)
+  function onChange(value) {
+    console.log("Captcha value:", value);
+    setVarified(true);
+  }
   return (
   <Container>
       <h2>CONTACT MXR TODAY</h2>
@@ -71,14 +75,19 @@ function Contact() {
                    </Form.Group>
                 </Col>
                 </Row>
-                Message
-                <textarea></textarea>
+                
+                  <label>Message</label>
+                  <textarea col={4}></textarea>
+                  <ReCAPTCHA
+                   sitekey="6LczRmYgAAAAAFc5pZRi9-opvqmOw9H1BEjp7nM6"
+                   onChange={onChange}
+                  />
+                  <button disabled={!varified}><FaComment/>Submit</button>
             </Row>
         </Form>
         </Col>
       </Row>
-    
-   </Container>
+    </Container>
   )
 }
 
