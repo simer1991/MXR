@@ -9,11 +9,12 @@ import digital from '../../assets/icons/solutions/digital.png'
 import immersive from '../../assets/icons/solutions/immersive.png'
 const Solution = () => {
   return (
+    <div className='mxr__solution'>
    <Container>
-   <h3>VR SOLUTIONS WE PROVIDE</h3>
+   <h3 className='mxr__section-title'>VR SOLUTIONS WE PROVIDE</h3>
      <CardGroup>
   <Card>
-    <Card.Img variant="top" src={store} />
+    <img variant="top" src={store} alt="store"/>
     <Card.Body>
       <Card.Title>IN STORE ENGAGEMENT</Card.Title>
       <Card.Text>
@@ -22,7 +23,7 @@ const Solution = () => {
     </Card.Body>
 </Card>
   <Card>
-    <Card.Img variant="top" src={remote} />
+    <img variant="top" src={remote} alt="remote"/>
     <Card.Body>
       <Card.Title>REMOTE ASSISTANCE</Card.Title>
       <Card.Text>
@@ -31,7 +32,7 @@ const Solution = () => {
     </Card.Body>
   </Card>
   <Card>
-    <Card.Img variant="top" src={employee} />
+    <img variant="top" src={employee} alt="employee"/>
     <Card.Body>
       <Card.Title>EMPLOYEE TRAINING</Card.Title>
       <Card.Text>
@@ -42,7 +43,7 @@ const Solution = () => {
   </CardGroup>
   <CardGroup>
   <Card>
-    <Card.Img variant='top' src={virtual2} />
+    <img variant='top' src={virtual2} alt="virtual"/>
     <Card.Body>
       <Card.Title>VIRTUAL TOUR</Card.Title>
       <Card.Text>
@@ -51,7 +52,7 @@ const Solution = () => {
     </Card.Body>
   </Card>
   <Card>
-    <Card.Img variant="top" src={digital} />
+    <img variant="top" src={digital} alt="digital"/>
     <Card.Body>
       <Card.Title>DIGITAL HEALTH</Card.Title>
       <Card.Text>
@@ -60,7 +61,7 @@ const Solution = () => {
     </Card.Body>
 </Card>
 <Card>
-    <Card.Img variant="top" src={immersive} />
+    <img variant="top" src={immersive} alt="immersive"/>
     <Card.Body>
       <Card.Title>IMMERSIVE ENTERTAINMENT</Card.Title>
       <Card.Text>
@@ -70,6 +71,7 @@ const Solution = () => {
 </Card>
 </CardGroup>
 </Container>
+</div>
   )
 }
 

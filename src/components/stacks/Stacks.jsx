@@ -28,52 +28,53 @@ import nodejs from '../../assets/icons/stacks/nodejs.png'
 
 const Stacks = () => {
   return (
+    <div className='mxr__stack'>
     <Container>
-    <h3>TECHNOLOGY STACK</h3>
+    <h3 className='mxr__section-title'>TECHNOLOGY STACK</h3>
     <Tabs
-    defaultActiveKey="home"
+    defaultActiveKey="mobile"
     transition={false}
     id="noanim-tab-example"
     className="mb-3"
   >
-    <Tab eventKey="home" title="Mobile">
+    <Tab eventKey="mobile" title="Mobile">
       <ul>
         <li>
-        <img src={react}/>
+        <img src={react} alt="react"/>
         <label>React Native</label>
         </li>
         <li>
-        <img src={ionic}/>
+        <img src={ionic} alt="ionic"/>
         <label>Ionic</label>
         </li>
       </ul>
       <ul>
         <li>
-        <img src={swift}/>
+        <img src={swift} alt="swift"/>
         <label>Swift</label>
         </li>
         <li>
-          <img src={titanium}/>
+          <img src={titanium} alt="titanium"/>
           <label>Titanium</label>
         </li>
         <li>
-          <img src={xamarin}/>
+          <img src={xamarin} alt="xamarin"/>
           <label>Xamarin</label>
         </li>
       </ul>
     </Tab>
-    <Tab eventKey="profile" title="Frontend">
+    <Tab eventKey="frontend" title="Frontend">
       <ul>
         <li>
-          <img src={angular}/>
+          <img src={angular} alt="angular"/>
           <label>Angular.JS</label>
         </li>
         <li>
-          <img src={reactjs}/>
+          <img src={reactjs} alt="reactjs"/>
           <label>React Js</label>
         </li>
         <li>
-          <img src={vue}/>
+          <img src={vue} alt="vue"/>
           <label>Vue</label>
         </li>
       </ul>
@@ -81,15 +82,15 @@ const Stacks = () => {
     <Tab eventKey="backend" title="Backend">
       <ul>
       <li>
-          <img src={nodejs}/>
+          <img src={nodejs} alt="nodejs"/>
           <label>Node.JS</label>
         </li>
         <li>
-          <img src={java}/>
+          <img src={java} alt="java"/>
           <label>Java</label>
         </li>
         <li>
-           <img src={php} />
+           <img src={php} alt="php"/>
            <label>Php</label>
         </li>
       </ul>
@@ -97,35 +98,35 @@ const Stacks = () => {
     <Tab eventKey="database" title="Database">
       <ul>
         <li>
-          <img src={mongodb}/>
+          <img src={mongodb} alt="mongodb"/>
           <label>Mongo DB</label>
         </li>
         <li>
-          <img src={mysql}/>
+          <img src={mysql} alt="mysql"/>
           <label>MySQL</label>
         </li>
         <li>
-          <img src={mssql}/>
+          <img src={mssql} alt="mssql"/>
           <label>MsSQL</label>
         </li>
         <li>
-          <img src={realm}/>
+          <img src={realm} alt="realm"/>
           <label>Realm</label>
         </li>
         <li>
-          <img src={dynmo}/>
+          <img src={dynmo} alt="dynmo"/>
           <label>DynamoDB</label>
         </li>
         <li>
-          <img src={oracle}/>
+          <img src={oracle} alt="oracle"/>
           <label>Oracle</label>
         </li>
         <li>
-          <img src={postgre}/>
+          <img src={postgre} alt="postgre"/>
           <label>PostgreSQL</label>
         </li>
         <li>
-          <img src={redis}/>
+          <img src={redis} alt="redis"/>
           <label>Redis</label>
         </li>
       </ul>
@@ -133,29 +134,30 @@ const Stacks = () => {
     <Tab eventKey="cms" title="CMS">
       <ul>
         <li>
-          <img src={drupal}/>
+          <img src={drupal} alt="drupal"/>
           <label>Drupal</label>
         </li>
         <li>
-          <img src={joomla}/>
+          <img src={joomla} alt="joomla"/>
           <label>Joomla</label>
         </li>
         <li>
-          <img src={wordpress}/>
+          <img src={wordpress} alt="wordpress"/>
           <label>WordPress</label>
         </li>
         <li>
-          <img src={magento}/>
+          <img src={magento} alt="magento"/>
           <label>Magento</label>
         </li>
         <li>
-          <img src={shopify}/>
+          <img src={shopify} alt="shopify"/>
           <label>Shopify</label>
         </li>
       </ul>
     </Tab>
   </Tabs>
   </Container>
+  </div>
   )
 }
 

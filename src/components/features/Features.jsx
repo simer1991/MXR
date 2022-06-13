@@ -9,8 +9,9 @@ import virtual from '../../assets/icons/features/virtual.png'
 import mixed from '../../assets/icons/features/mixed.png'
 const Features = () => {
   return (
+    <div className='mxr__features'>
     <Container>
-      <h3>WHAT WE CAN HELP YOU WITH</h3>
+      <h3 className='mxr__section-title'>WHAT WE CAN HELP YOU WITH</h3>
     <CardGroup>
   <Card>
   <Card.Title>WEB DESIGN AND DEVELOPMENT</Card.Title>
@@ -74,6 +75,7 @@ const Features = () => {
   </Card>
 </CardGroup>
 </Container>
+</div>
   )
 }
 

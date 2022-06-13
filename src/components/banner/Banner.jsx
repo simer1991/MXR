@@ -7,8 +7,8 @@ import video from '../../assets/icons/banner/video.mov'
 function Banner() {
   return (
     <div>
-<Carousel>
-  <Carousel.Item>
+    <Carousel>
+    <Carousel.Item>
     <img
       className="d-block w-100"
       src={img1}

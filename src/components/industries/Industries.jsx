@@ -13,51 +13,53 @@ import lifestyle from '../../assets/icons/industries/lifestyle.png'
 import {Row,Col,Container} from 'react-bootstrap-v5';
 const Industries = () => {
   return (
+    <div className='mxr__industries'>
   <Container>
-    <h3>INDUSTRIES</h3>
+    <h3 className='mxr__section-title'>INDUSTRIES</h3>
   <Row>
     <Col lg={2}>
-    <img src={technology}/>
+    <img src={technology} alt="technology"/>
     <h4>Technology</h4>
     </Col>
     <Col >
-    <img src={telecommutions}/>
+    <img src={telecommutions} alt="telecommunication"/>
     <h4>Telecommunication</h4>
     </Col>
     <Col>
-    <img src={oil}/>
+    <img src={oil} alt="oil&gas"/>
     <h4>Oil & Gas</h4>
     </Col>
     <Col>
-    <img src={travel}/>
+    <img src={travel} alt="travel"/>
     <h4>Travel & Tourism</h4>
     </Col>
     <Col>
-    <img src={digital}/>
+    <img src={digital} alt="digital marketing"/>
     <h4>Digital Marketing</h4></Col>
   </Row>
   <Row>
   <Col lg={2}>
-    <img src={nonprofit}/>
+    <img src={nonprofit} alt="nonprofit"/>
     <h4>Non-Profits</h4>
     </Col>
     <Col >
-    <img src={elearning}/>
+    <img src={elearning} alt="elearning"/>
     <h4>E-Learning</h4>
     </Col>
     <Col>
-    <img src={marketing}/>
+    <img src={marketing} alt="marketing"/>
     <h4>Marketing</h4>
     </Col>
     <Col>
-    <img src={ecommerce}/>
+    <img src={ecommerce} alt="ecommerce"/>
     <h4>E-Commerce</h4>
     </Col>
     <Col>
-    <img src={lifestyle}/>
+    <img src={lifestyle} alt="lifestyle"/>
     <h4>Lifestyle</h4></Col>
   </Row>
 </Container>
+</div>
   )
 }
 

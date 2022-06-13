@@ -1,8 +1,12 @@
 import './App.css';
-import {Header,Features, Solution, Process, Industries, Banner, Stacks,Cta2} from './components';
+import {Header,Features, Solution, Process, Industries, Banner, Stacks,Cta2, Clients} from './components';
 import {Home , About} from './Pages';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Promise from './components/promise/Promise';
+import Footer from './components/footer/Footer';
+import Innerbanner from './components/innerbanner/Innerbanner';
+import Readytotalk from './components/readytotalk/Readytotalk';
+import Contact from './Pages/Contact';
 
 function App() {
   return (
@@ -22,7 +26,12 @@ function App() {
     <Stacks />
     <Promise />
     <Cta2 />
-    </>
+    <Clients />
+    <Footer />
+    <Innerbanner />
+    <Readytotalk />
+    <Contact />
+   </>
   );
 }
 
