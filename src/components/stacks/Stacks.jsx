@@ -29,6 +29,7 @@ import nodejs from '../../assets/icons/stacks/nodejs.png'
 const Stacks = () => {
   return (
     <div className='mxr__stack mxr__section'>
+    <div className='mxr__stack'>
     <Container>
     <h3 className='mxr__section-title'>TECHNOLOGY STACK</h3>
     <Tabs
@@ -156,6 +157,7 @@ const Stacks = () => {
     </Tab>
   </Tabs>
   </Container>
+  </div>
   </div>
   )
 }
