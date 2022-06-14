@@ -13,51 +13,58 @@ import lifestyle from '../../assets/icons/industries/lifestyle.png'
 import {Row,Col,Container} from 'react-bootstrap-v5';
 const Industries = () => {
   return (
-  <Container>
-    <h3>INDUSTRIES</h3>
-  <Row>
-    <Col lg={2}>
-    <img src={technology}/>
-    <h4>Technology</h4>
-    </Col>
-    <Col >
-    <img src={telecommutions}/>
-    <h4>Telecommunication</h4>
-    </Col>
-    <Col>
-    <img src={oil}/>
-    <h4>Oil & Gas</h4>
-    </Col>
-    <Col>
-    <img src={travel}/>
-    <h4>Travel & Tourism</h4>
-    </Col>
-    <Col>
-    <img src={digital}/>
-    <h4>Digital Marketing</h4></Col>
-  </Row>
-  <Row>
-  <Col lg={2}>
-    <img src={nonprofit}/>
-    <h4>Non-Profits</h4>
-    </Col>
-    <Col >
-    <img src={elearning}/>
-    <h4>E-Learning</h4>
-    </Col>
-    <Col>
-    <img src={marketing}/>
-    <h4>Marketing</h4>
-    </Col>
-    <Col>
-    <img src={ecommerce}/>
-    <h4>E-Commerce</h4>
-    </Col>
-    <Col>
-    <img src={lifestyle}/>
-    <h4>Lifestyle</h4></Col>
-  </Row>
-</Container>
+        <div className='mxr__industries mxr__section'>
+          <Container>
+            <Row>
+            <Col>
+            <h3 className='mxr__section-title'>INDUSTRIES</h3>
+          <ul className='mxr__industries-icons'>
+            <li className='mxr__industries-icon_box'>
+            <img src={technology} alt="technology"/>
+            <h4>Technology</h4>
+            </li>
+            <li className='mxr__industries-icon_box'>
+            <img src={telecommutions} alt="telecommunication"/>
+            <h4>Telecommunication</h4>
+            </li>
+            <li className='mxr__industries-icon_box'>
+            <img src={oil} alt="oil&gas"/>
+            <h4>Oil & Gas</h4>
+            </li>
+            <li className='mxr__industries-icon_box'>
+            <img src={travel} alt="travel"/>
+            <h4>Travel & Tourism</h4>
+            </li>
+            <li className='mxr__industries-icon_box'>
+            <img src={digital} alt="digital marketing"/>
+            <h4>Digital Marketing</h4>
+            </li>
+          </ul>
+          <ul className='mxr__industries-icons'>
+          <li className='mxr__industries-icon_box'>
+            <img src={nonprofit} alt="nonprofit"/>
+            <h4>Non-Profits</h4>
+            </li>
+            <li className='mxr__industries-icon_box'>
+            <img src={elearning} alt="elearning"/>
+            <h4>E-Learning</h4>
+            </li>
+            <li className='mxr__industries-icon_box'>
+            <img src={marketing} alt="marketing"/>
+            <h4>Marketing</h4>
+            </li>
+            <li className='mxr__industries-icon_box'>
+            <img src={ecommerce} alt="ecommerce"/>
+            <h4>E-Commerce</h4>
+            </li>
+            <li className='mxr__industries-icon_box'>
+            <img src={lifestyle} alt="lifestyle"/>
+            <h4>Lifestyle</h4></li>
+          </ul>
+          </Col>
+          </Row>
+        </Container>
+    </div>
   )
 }
 

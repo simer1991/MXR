@@ -1,0 +1,21 @@
+.mxr__industries-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    list-style: none;
+}
+.mxr__industries-icon_box {
+    width: 20%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.mxr__industries-icon_box img{
+    max-width: 70px;
+    margin: 16px 0 20px 0;
+}
+.mxr__industries-icon_box h4{
+    color: var(--color-text);
+    font-size: 16px;
+    font-weight: 400;
+}

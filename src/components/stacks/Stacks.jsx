@@ -28,134 +28,135 @@ import nodejs from '../../assets/icons/stacks/nodejs.png'
 
 const Stacks = () => {
   return (
+    <div className='mxr__stack mxr__section'>
     <Container>
-    <h3>TECHNOLOGY STACK</h3>
+    <h3 className='mxr__section-title'>TECHNOLOGY STACK</h3>
     <Tabs
-    defaultActiveKey="home"
-    transition={false}
-    id="noanim-tab-example"
-    className="mb-3"
+    defaultActiveKey="mobile"
+    id="tech-stack"
+    className="mb-3 mxr__tabs"
   >
-    <Tab eventKey="home" title="Mobile">
-      <ul>
+    <Tab eventKey="mobile" title="Mobile">
+      <ul className='mxr__stack-list'>
         <li>
-        <img src={react}/>
-        <label>React Native</label>
+          <div><img src={react} alt="react"/></div>
+          <label>React Native</label>
         </li>
         <li>
-        <img src={ionic}/>
+        <div><img src={ionic} alt="ionic"/></div>
         <label>Ionic</label>
         </li>
       </ul>
-      <ul>
+      <ul className='mxr__stack-list'>
         <li>
-        <img src={swift}/>
+        <div><img src={swift} alt="swift"/></div>
         <label>Swift</label>
         </li>
         <li>
-          <img src={titanium}/>
+        <div><img src={titanium} alt="titanium"/></div>
           <label>Titanium</label>
         </li>
         <li>
-          <img src={xamarin}/>
+          <div><img src={xamarin} alt="xamarin"/></div>
           <label>Xamarin</label>
         </li>
       </ul>
     </Tab>
-    <Tab eventKey="profile" title="Frontend">
-      <ul>
+    <Tab eventKey="frontend" title="Frontend">
+      <ul className='mxr__stack-list'>
         <li>
-          <img src={angular}/>
+        <div><img src={angular} alt="angular"/></div>
           <label>Angular.JS</label>
         </li>
         <li>
-          <img src={reactjs}/>
+        <div><img src={reactjs} alt="reactjs"/></div>
           <label>React Js</label>
         </li>
         <li>
-          <img src={vue}/>
+        <div><img src={vue} alt="vue"/></div>
           <label>Vue</label>
         </li>
       </ul>
     </Tab>
     <Tab eventKey="backend" title="Backend">
-      <ul>
+      <ul className='mxr__stack-list'>
       <li>
-          <img src={nodejs}/>
+      <div><img src={nodejs} alt="nodejs"/></div>
           <label>Node.JS</label>
         </li>
         <li>
-          <img src={java}/>
+        <div><img src={java} alt="java"/></div>
           <label>Java</label>
         </li>
         <li>
-           <img src={php} />
+        <div><img src={php} alt="php"/></div>
            <label>Php</label>
         </li>
       </ul>
     </Tab>
     <Tab eventKey="database" title="Database">
-      <ul>
+      <ul className='mxr__stack-list'>
         <li>
-          <img src={mongodb}/>
+          <div><img src={mongodb} alt="mongodb"/></div>
           <label>Mongo DB</label>
         </li>
         <li>
-          <img src={mysql}/>
+          <img src={mysql} alt="mysql"/>
           <label>MySQL</label>
         </li>
         <li>
-          <img src={mssql}/>
+          <img src={mssql} alt="mssql"/>
           <label>MsSQL</label>
         </li>
         <li>
-          <img src={realm}/>
+          <img src={realm} alt="realm"/>
           <label>Realm</label>
         </li>
         <li>
-          <img src={dynmo}/>
+          <img src={dynmo} alt="dynmo"/>
           <label>DynamoDB</label>
         </li>
         <li>
-          <img src={oracle}/>
+          <img src={oracle} alt="oracle"/>
           <label>Oracle</label>
         </li>
         <li>
-          <img src={postgre}/>
+          <img src={postgre} alt="postgre"/>
           <label>PostgreSQL</label>
         </li>
         <li>
-          <img src={redis}/>
+          <img src={redis} alt="redis"/>
           <label>Redis</label>
         </li>
       </ul>
     </Tab>
     <Tab eventKey="cms" title="CMS">
-      <ul>
+      <ul className='mxr__stack-list'>
         <li>
-          <img src={drupal}/>
+          <img src={drupal} alt="drupal"/>
           <label>Drupal</label>
         </li>
         <li>
-          <img src={joomla}/>
+          <img src={joomla} alt="joomla"/>
           <label>Joomla</label>
         </li>
         <li>
-          <img src={wordpress}/>
+          <img src={wordpress} alt="wordpress"/>
           <label>WordPress</label>
         </li>
         <li>
-          <img src={magento}/>
+          <img src={magento} alt="magento"/>
           <label>Magento</label>
         </li>
         <li>
-          <img src={shopify}/>
+          <img src={shopify} alt="shopify"/>
           <label>Shopify</label>
         </li>
       </ul>
     </Tab>
   </Tabs>
   </Container>
+  </div>
   )
 }
 
