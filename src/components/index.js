@@ -11,6 +11,7 @@ export { default as Footer} from './footer/Footer';
 export { default as Research} from './research/Research';
 export { default as Solution} from './solutions/Solution';
 export { default as Stacks} from './stacks/Stacks';
+export { default as Stats} from './stats/Stats';
 export { default as Innerbanner} from './innerbanner/Innerbanner';
 export { default as Readytotalk} from './readytotalk/Readytotalk';
 

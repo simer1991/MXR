@@ -1,5 +1,5 @@
 import './App.css';
-import {Header} from './components';
+import {Header, Footer} from './components';
 import {Home , About} from './Pages';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -14,7 +14,9 @@ function App() {
             <Route path="/about" element={<About />} />
           </Routes>
       </Router>
+      <Footer />
     </>
+    
   );
 }
 

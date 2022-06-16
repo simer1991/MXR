@@ -1,5 +1,5 @@
 import React from 'react'
-import {Features, Solution, Process, Promise, Industries, Banner, Stacks,Cta2 , Research} from '../../components';
+import {Features, Solution, Process, Promise, Industries, Banner, Stacks,Cta2 , Research, Clients, Stats} from '../../components';
 const Home = () => {
   return (
     <>
@@ -13,6 +13,8 @@ const Home = () => {
       <Solution />
       <Cta2 />
       <Industries />
+      <Stats />
+      <Clients />
     </>
   )
 }

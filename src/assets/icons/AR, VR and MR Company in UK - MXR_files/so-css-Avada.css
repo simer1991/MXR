@@ -1,0 +1,73 @@
+.exc_features .fusion-text {
+    padding: 5px;
+    line-height: 25px;
+    min-height: 150px;
+}
+span.fusion-contact-info-phone-number {
+    color: white;
+}
+span.fusion-contact-info-email-address a {
+    color: white;
+}
+.fusion-footer-widget-area .fusion-vertical-menu-widget ul.menu li a:hover {
+    color: #fff !important;
+}
+.imge_set {
+    height: 218px;
+}
+.Analytics {
+    padding-top: 55px;  
+}
+#wrapper .fusion-tabs.vertical_tabs_sec .nav .nav-tabs li.active .tab-link h4.fusion-tab-heading {
+    color: #fff !important;
+}
+.BTN_CALL span.fusion-button-text {
+    COLOR: #FFF;
+}
+a.fusion-button.button-flat.button-large.button-default.button-1.fusion-button-span-no.fusion-button-default-type.cta-btn.BTN_CALL {
+    BACKGROUND: #2b7975;
+    COLOR: #FFFF !IMPORTANT;
+}
+.fusion-tabs.vertical_tabs_sec .nav .nav-tabs li .tab-link h4.fusion-tab-heading {
+    color: #fff !important;
+    font-weight: bold !important;
+}
+.\33 box_line p {
+    color: #5c5c5c;
+    padding: 0px 38px;
+}
+.\33 box_line h2.content-box-heading.fusion-responsive-typography-calculated {
+    COLOR: #2b7975;
+}
+.\33 box_line .fusion-column-wrapper.fusion-flex-justify-content-flex-start.fusion-content-layout-column {
+    background: white;
+    box-shadow: unset;
+}
+.mmmega li {
+    display: block;
+    padding-bottom: 10px;
+}
+a.fusion-button.button-flat.button-large.button-default.button-2.fusion-button-span-no.fusion-button-default-type.cta-btn.BTN_CALL {
+    background: #2b7975;
+}
+.e-learing a.flex-prev {
+    font-size: 37px !important;
+    padding: 4px;
+    height: 41px !important;
+    background: #ffc800;
+}
+.e-learing a.flex-next {
+    font-size: 37px !important;
+    padding: 4px;
+    height: 41px !important;
+    background: #ffc800 !important;
+}
+.heading.web li {
+    color: #777;
+}
+#VR360_tabs .tab_txt p {
+    padding-top: 0px !important;
+}
+#VR360_tabs .tab_txt {
+    padding-top: 0px !important;
+}
