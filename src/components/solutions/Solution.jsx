@@ -9,7 +9,7 @@ import digital from '../../assets/icons/solutions/digital.png'
 import immersive from '../../assets/icons/solutions/immersive.png'
 const Solution = () => {
   return (
-    <div className='mxr__solution'>
+    <div className='mxr__solution mxr__section'>
         <Container>
         <h3 className='mxr__section-title'>VR SOLUTIONS WE PROVIDE</h3>
         <Row>

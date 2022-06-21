@@ -5,25 +5,33 @@
     padding: 20px;
     border-radius: 0.8rem;
 }
-.mxr__features .card img{
+
+.mxr__features .card img {
     width: fit-content;
     margin: 20px 0;
 }
-.mxr__features .card .card-title{
+
+.mxr__features .card .card-title {
     color: #383838;
     font-size: 18px;
     font-weight: 800;
 }
-.mxr__features .card .card-text{
+
+.mxr__features .card .card-text {
     color: #777;
     margin-bottom: 20px;
     font-weight: 300;
 }
-.mxr__features .card .card-body{
+
+.mxr__features .card .card-body {
     padding: 0;
-    height: 110px;
 }
-.mxr__features .card .card-link{
+
+.mxr__features .card-body p.card-text {
+    height: 110PX;
+}
+
+.mxr__features .card .card-link {
     color: var(--color-white-bg-link);
-    font-weight:700;
+    font-weight: 700;
 }

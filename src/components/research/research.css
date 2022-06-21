@@ -1,0 +1,61 @@
+.mxr__research {
+    background-image: url('../../assets/images/research-bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mxr-reseach-secright {
+    color: #fff;
+    padding-top: 50px;
+}
+
+.mxr-reseach-secright p {
+    color: #fff;
+}
+
+.mxr__research-border1 {
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+.mxr__research-border2 {
+    border-bottom: 1px solid #fff;
+}
+
+.mxr__research-border3 {
+    border-right: 1px solid #fff;
+}
+
+.mxr__research-border1,
+.mxr__research-border2,
+.mxr__research-border3,
+.mxr__research-border4 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.mxr__research-borders-sec h6 {
+    font-weight: 600;
+    margin-top: 20px
+}
+
+.mxr__research-borders-sec .mxr__research-icon {
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+.mxr__research-borders-sec .mxr__research-heading h4 {
+    font-size: 18px;
+    line-height: 1.28;
+    font-weight: 800;
+    text-align: center;
+}
+
+.mxr__research-border1,
+.mxr__research-border2,
+.mxr__research-border3,
+.mxr__research-border4 {
+    padding-bottom: 24px;
+    padding-top: 20px;
+}

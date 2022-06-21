@@ -6,8 +6,9 @@ import {FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn} from 'react-icons/fa'
 function Footer() {
   return (
     <div className='mxr__footer'>
-       <Container>
+       
             <div className='mxr__footer-top'>
+            <Container>
         <Row>
             <Col lg={3} xs={12}>
               <img src={logo} alt="logo"/>
@@ -15,37 +16,47 @@ function Footer() {
             </Col>
             <Col lg={3} xs={12}>
               <h6>IMPORTANT LINKS</h6>
-              <NavLink>Mixed Reality</NavLink>
-              <NavLink>Virtual Reality</NavLink>
-              <NavLink>Augmented Reality</NavLink>
-              <NavLink>Mobile Development</NavLink>
-              <NavLink>Web Design and Development</NavLink>
-              <NavLink>Research and Innovation</NavLink>
+              <ul className='mxr__footer-links'>
+                <li><NavLink>Mixed Reality</NavLink></li>
+                <li><NavLink>Virtual Reality</NavLink></li>
+                <li><NavLink>Augmented Reality</NavLink></li>
+                <li><NavLink>Mobile Development</NavLink></li>
+                <li><NavLink>Web Design and Development</NavLink></li>
+                <li><NavLink>Research and Innovation</NavLink></li>
+              </ul>
             </Col>
             <Col lg={3} xs={12}>
               <h6>CONTACT US</h6>
-              <FaFacebookF size={18}/>
-              <FaTwitter size={18}/>    
-              <FaInstagram size={18}/>    
-              <FaLinkedinIn size={18}/>  
-              <div className='col-6 mxr__header-align-left'>
-              <span class="mxr__header-phone">Phone: (+44) 20 7193 5407</span>
-              <span class="mxr__header-email">team@mxr.ai</span>
+              <div class="mxr_footer-social-icons d-flex">
+                <span><FaFacebookF size={17}/></span>
+                <span><FaTwitter size={17}/></span>
+                <span><FaInstagram size={17}/></span>
+                <span><FaLinkedinIn size={17}/></span>
+              </div> 
+              <div className='mxr__footer-contact'>
+                <p class="mxr__header-phone">Phone: (+44) 20 7193 5407</p>
+                <p class="mxr__header-email">Email: team@mxr.ai</p>
               </div>
             </Col>
             <Col lg={3} xs={12}>
               <h6>SUBSCRIBE TO OUR NEWSLETTER</h6>
-              <input type="email"  placeholder="Email Address*"/>
-              <button>SUBSCRIBE</button>
+              <div className='mxr__footer-subscribe'>
+                <input type="email"  className="form-control" placeholder="Email Address*"/>
+                <button className='mxr__section-btn'>SUBSCRIBE</button>
+              </div>
             </Col>
         </Row>
+        </Container>
        </div>
        <div className='mxr__footer-copyright'>
+       <Container>
         <Row>
-            <Col>Copyright 2022 MXR | All Rights Reserved | Privacy Policy | Terms and Conditions</Col>
-        </Row>
+            <Col>
+              <p>Copyright {new Date().getFullYear()} MXR | All Rights Reserved | Privacy Policy | Terms and Conditions</p></Col>
+        </Row> 
+        </Container>
        </div>
-      </Container>
+     
     </div>
   )
 }
