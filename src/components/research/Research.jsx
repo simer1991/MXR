@@ -21,13 +21,13 @@ const Research = () => {
               <h2>R&D AND INNOVATION</h2>
               <p>Any new and innovative ideas are welcomed in our organization and we will provide you the right kind of R&D service which will act as a fuel to kick start your new business objective. MXR is an organization which not only creates technological solutions but also helps & guides people who want to develop something of their own. We support and guide you throughout your innovative journey by providing tech support, R&D engineers and a team of experienced people.</p>
 
-              <div className='row mxr__research-borders-sec'>
+              <div className='row mxr__research-borders-sec text-center'>
                   <div className='col-lg-6 mxr__research-border1'>
                       <div className="mxr__research-icon">
                           <img src={img1} alt="TECHNOLOGY RESEARCH" />
                       </div>
                       <div className='mxr__research-heading'>
-                        <h4>TECHNOLOGY RESEARCH</h4>
+                        <h6>TECHNOLOGY RESEARCH</h6>
                       </div>
                   </div>
                   <div className='col-lg-6 mxr__research-border2'>
@@ -35,7 +35,7 @@ const Research = () => {
                       <img src={img2} alt="TECHNOLOGY RESEARCH" />
                       </div>
                       <div className='mxr__research-heading'>
-                        <h4>POC AND PROTOTYPING</h4>
+                        <h6>POC AND PROTOTYPING</h6>
                       </div>
                   </div>
                   <div className='col-lg-6 mxr__research-border3'>
@@ -43,7 +43,7 @@ const Research = () => {
                       <img src={img3} alt="TECHNOLOGY RESEARCH" />
                       </div>
                       <div className='mxr__research-heading'>
-                        <h4>FULL CYCLE R&D</h4>
+                        <h6>FULL CYCLE R&D</h6>
                       </div>
 
                   </div>
@@ -52,7 +52,7 @@ const Research = () => {
                       <img src={img4} alt="TECHNOLOGY RESEARCH" />
                       </div>
                       <div className='mxr__research-heading'>
-                        <h4>MVP DEVELOPMENT</h4>
+                        <h6>MVP DEVELOPMENT</h6>
                       </div>
                   </div>
               </div>
