@@ -1,14 +1,27 @@
-import React,{useState} from 'react'
+import React,{useState,useRef} from 'react'
 import { Container,Row,Col,Card,ListGroup,Form } from 'react-bootstrap-v5'
 import {FaMapMarkerAlt,FaPhoneAlt,FaEnvelope,FaComment} from 'react-icons/fa';
 import ReCAPTCHA from 'react-google-recaptcha';
- 
+import emailjs from '@emailjs/browser' 
+
 const Contact =() => {
   const [varified,setVarified]=useState(false)
   function onChange(value) {
     console.log("Captcha value:", value);
     setVarified(true);
   }
+  function sendEmail(e){
+    e.preventDefault();
+    emailjs.send('service_gn1atii','template_cae5z8b',sendEmail,'oamdoX8gpeRyb1_R6')
+   .then(res=>{
+        console.log(res);
+    }).catch(err=>console.log(err));
+    emailjs.send('service_gn1atii','template_g8n3ovx',sendEmail,'oamdoX8gpeRyb1_R6')
+   .then(res=>{
+        console.log(res);
+    }).catch(err=>console.log(err));
+}
+  
   return (
   <Container>
       <h2>CONTACT MXR TODAY</h2>
@@ -47,42 +60,42 @@ const Contact =() => {
         </Card> 
         </Col>
         <Col>
-        <Form>
+        <Form onSubmit={sendEmail}>
            <Row>
                 <Col>
                    <Form.Group as={Col} controlId="formGridEmail">
                    <Form.Label>Your Name *</Form.Label>
-                   <Form.Control type="text"  />
+                   <input type="text" name="name" />
                    </Form.Group>
                    </Col>
                    <Col>
                    <Form.Group as={Col} controlId="formGridEmail">
                    <Form.Label>Your Email *</Form.Label>
-                   <Form.Control type="email"  />
+                   <input type="email" name="email" />
                    </Form.Group>
                 </Col>
                 <Row>
                 <Col>
                    <Form.Group as={Col} controlId="formGridEmail">
                    <Form.Label>Phone number *</Form.Label>
-                   <Form.Control type="number"  />
+                   <input type="number" name="number" />
                    </Form.Group>
                    </Col>
                    <Col>
                    <Form.Group as={Col} controlId="formGridEmail">
                    <Form.Label>Your Address *</Form.Label>
-                   <Form.Control type="text"  />
+                   <input type="text"  name="address"/>
                    </Form.Group>
                 </Col>
                 </Row>
                 
                   <label>Message</label>
-                  <textarea col={4}></textarea>
+                  <textarea col={4} name="message"></textarea>
                   <ReCAPTCHA
                    sitekey="6LczRmYgAAAAAFc5pZRi9-opvqmOw9H1BEjp7nM6"
                    onChange={onChange}
                   />
-                  <button disabled={!varified}><FaComment/>Submit</button>
+                  <button disabled={!varified} ><FaComment/>Submit</button>
             </Row>
         </Form>
         </Col>
