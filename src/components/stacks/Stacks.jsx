@@ -25,6 +25,15 @@ import wordpress from '../../assets/icons/stacks/wordpress.webp'
 import magento from '../../assets/icons/stacks/magento.webp'
 import shopify from '../../assets/icons/stacks/shopify.webp'
 import nodejs from '../../assets/icons/stacks/nodejs.png'
+import firebase from '../../assets/icons/stacks/firebase.png'
+import python from '../../assets/icons/stacks/python.png'
+import typescript from '../../assets/icons/stacks/typescript.png'
+import html5 from '../../assets/icons/stacks/HTML.png'
+import android from '../../assets/icons/stacks/android.png'
+import flutter from '../../assets/icons/stacks/flutter.png'
+import kotlin from '../../assets/icons/stacks/kotlin.png'
+import objective from '../../assets/icons/stacks/objective.png'
+
 
 const Stacks = () => {
   return (
@@ -39,9 +48,21 @@ const Stacks = () => {
   >
     <Tab eventKey="mobile" title="Mobile">
       <ul className='mxr__stack-list'>
+      <li>
+          <div><img src={android} alt="android"/></div>
+          <label>Android</label>
+        </li>
         <li>
           <div><img src={react} alt="react"/></div>
           <label>React Native</label>
+        </li>
+        <li>
+          <div><img src={flutter} alt="flutter"/></div>
+          <label>Flutter</label>
+        </li>
+        <li>
+          <div><img src={kotlin} alt="kotlin"/></div>
+          <label>Kotlin</label>
         </li>
         <li>
         <div><img src={ionic} alt="ionic"/></div>
@@ -52,6 +73,10 @@ const Stacks = () => {
         <li>
         <div><img src={swift} alt="swift"/></div>
         <label>Swift</label>
+        </li>
+        <li>
+        <div><img src={objective} alt="objective"/></div>
+        <label>ObjectiveC</label>
         </li>
         <li>
         <div><img src={titanium} alt="titanium"/></div>
@@ -74,8 +99,16 @@ const Stacks = () => {
           <label>React Js</label>
         </li>
         <li>
+        <div><img src={typescript} alt="typescript"/></div>
+          <label>TypeScript</label>
+        </li>
+        <li>
         <div><img src={vue} alt="vue"/></div>
           <label>Vue</label>
+        </li>
+        <li>
+        <div><img src={html5} alt="html5"/></div>
+          <label>HTML5</label>
         </li>
       </ul>
     </Tab>
@@ -93,6 +126,10 @@ const Stacks = () => {
         <div><img src={php} alt="php"/></div>
            <label>Php</label>
         </li>
+        <li>
+        <div><img src={python} alt="python"/></div>
+           <label>Python</label>
+        </li>
       </ul>
     </Tab>
     <Tab eventKey="database" title="Database">
@@ -102,31 +139,37 @@ const Stacks = () => {
           <label>Mongo DB</label>
         </li>
         <li>
-          <img src={mysql} alt="mysql"/>
+          <div><img src={mysql} alt="mysql"/></div>
           <label>MySQL</label>
         </li>
         <li>
-          <img src={mssql} alt="mssql"/>
+          <div><img src={mssql} alt="mssql"/></div>
           <label>MsSQL</label>
         </li>
         <li>
-          <img src={realm} alt="realm"/>
-          <label>Realm</label>
+          <div><img src={firebase} alt="firebase"/></div>
+          <label>Firebase</label>
         </li>
         <li>
-          <img src={dynmo} alt="dynmo"/>
+          <div><img src={realm} alt="realm"/></div>
+          <label>Realm</label>
+        </li>
+        </ul>
+        <ul className='mxr__stack-list'>
+        <li>
+          <div><img src={dynmo} alt="dynmo"/></div>
           <label>DynamoDB</label>
         </li>
         <li>
-          <img src={oracle} alt="oracle"/>
+          <div><img src={oracle} alt="oracle"/></div>
           <label>Oracle</label>
         </li>
         <li>
-          <img src={postgre} alt="postgre"/>
+          <div><img src={postgre} alt="postgre"/></div>
           <label>PostgreSQL</label>
         </li>
         <li>
-          <img src={redis} alt="redis"/>
+          <div><img src={redis} alt="redis"/></div>
           <label>Redis</label>
         </li>
       </ul>
@@ -134,23 +177,23 @@ const Stacks = () => {
     <Tab eventKey="cms" title="CMS">
       <ul className='mxr__stack-list'>
         <li>
-          <img src={drupal} alt="drupal"/>
+          <div><img src={drupal} alt="drupal"/></div>
           <label>Drupal</label>
         </li>
         <li>
-          <img src={joomla} alt="joomla"/>
+          <div><img src={joomla} alt="joomla"/></div>
           <label>Joomla</label>
         </li>
         <li>
-          <img src={wordpress} alt="wordpress"/>
+          <div><img src={wordpress} alt="wordpress"/></div>
           <label>WordPress</label>
         </li>
         <li>
-          <img src={magento} alt="magento"/>
+          <div><img src={magento} alt="magento"/></div>
           <label>Magento</label>
         </li>
         <li>
-          <img src={shopify} alt="shopify"/>
+          <div><img src={shopify} alt="shopify"/></div>
           <label>Shopify</label>
         </li>
       </ul>

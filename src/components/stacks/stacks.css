@@ -1,7 +1,16 @@
 .mxr__stack-list img {
     -webkit-filter: saturate(2) brightness(2.5) hue-rotate(330deg);
+    filter: saturate(2) brightness(2.5) hue-rotate(330deg);
 }
 
+.mxr__stack .tab-content {
+    display: inline-block;
+    width: 100% !important;
+}
+.mxr__stack-list img {
+    -webkit-filter: saturate(2) brightness(2.5) hue-rotate( 330deg);
+    filter: saturate(2) brightness(2.5) hue-rotate( 330deg);
+}
 .mxr__stack .tab-content {
     display: inline-block;
     width: 100% !important;
