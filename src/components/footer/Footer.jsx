@@ -17,8 +17,8 @@ function Footer() {
             <Col lg={3} xs={12}>
               <h6>IMPORTANT LINKS</h6>
               <ul className='mxr__footer-links'>
-                <li><NavLink>Mixed Reality</NavLink></li>
-                <li><NavLink>Virtual Reality</NavLink></li>
+                <li><NavLink to="/mr">Mixed Reality</NavLink></li>
+                <li><NavLink to='/vr'>Virtual Reality</NavLink></li>
                 <li><NavLink>Augmented Reality</NavLink></li>
                 <li><NavLink>Mobile Development</NavLink></li>
                 <li><NavLink>Web Design and Development</NavLink></li>
@@ -52,7 +52,7 @@ function Footer() {
        <Container>
         <Row>
             <Col>
-              <p>Copyright {new Date().getFullYear()} MXR | All Rights Reserved | Privacy Policy | Terms and Conditions</p></Col>
+              <p>Copyright {new Date().getFullYear()} MXR | All Rights Reserved |<NavLink>Privacy Policy</NavLink>  | <NavLink>Terms and Conditions</NavLink></p></Col>
         </Row> 
         </Container>
        </div>

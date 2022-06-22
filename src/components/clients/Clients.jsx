@@ -26,11 +26,11 @@ const Clients = () => {
           </Col>
         </Row>
         <Row>
-        <Col>
-           <img src={good} alt="clutch"/>
+        <Col sm={12} lg={6} md={6}>
+           <img src={good} alt="good"/>
           </Col>
-          <Col>
-          <img src={top} alt="google"/>
+          <Col sm={12} lg={6} md={6}>
+          <img src={top} alt="top"/>
           </Col>
         </Row>
         </div>
@@ -38,8 +38,8 @@ const Clients = () => {
         <img src={reviewpphn} alt="review"/>
         </div>
         </Col>
-        <Col>
-  <Carousel>
+        <Col sm={12} lg={6} md={6}>
+  <Carousel variant='dark'>
   <Carousel.Item>
     <img
       className="d-block "
@@ -71,12 +71,12 @@ const Clients = () => {
     />
 
     <Carousel.Caption>
-      <h3>Third slide label</h3>
+      <h3>hello slide label</h3>
       <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
     </Carousel.Caption>
   </Carousel.Item>
-</Carousel>
-        </Col>
+   </Carousel>
+   </Col>
      </Row>
      </Container>
     </div>

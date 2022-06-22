@@ -95,7 +95,7 @@ const Contact =() => {
                    sitekey="6LczRmYgAAAAAFc5pZRi9-opvqmOw9H1BEjp7nM6"
                    onChange={onChange}
                   />
-                  <button disabled={!varified} ><FaComment/>Submit</button>
+                  <button  ><FaComment/>Submit</button>
             </Row>
         </Form>
         </Col>

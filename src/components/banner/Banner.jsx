@@ -7,18 +7,15 @@ import video from '../../assets/icons/banner/video.mov'
 function Banner() {
   return (
     <div>
-      <Carousel>
-        <Carousel.Item>
-       
+      <Carousel fade>
+        <Carousel.Item interval={100}>
         <video src={video} autoPlay muted loop />
-         
-
           <Carousel.Caption>
             <h3>Third slide label</h3>
             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item interval={100}>
           <img
             className="d-block w-100"
             src={img1}
@@ -28,8 +25,8 @@ function Banner() {
             <h3>First slide label</h3>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
+        </Carousel.Item >
+        <Carousel.Item interval={100}>
           <img
             className="d-block w-100"
             src={img2}
