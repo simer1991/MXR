@@ -4,3 +4,6 @@
 .mxr__clients h3.mxr__section-title {
     text-align: left;
 }
+.mxr__clients {
+    padding: 50px 0;
+}

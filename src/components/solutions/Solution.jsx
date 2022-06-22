@@ -13,7 +13,7 @@ const Solution = () => {
         <Container>
         <h3 className='mxr__section-title'>VR SOLUTIONS WE PROVIDE</h3>
         <Row>
-          <Col>
+          <Col sm={4} md={4} lg={4}>
             <Card>
             <img variant="top" src={store} alt="store"/>
             <Card.Body>
@@ -24,7 +24,7 @@ const Solution = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col>
+          <Col sm={4} md={4} lg={4}>
             <Card>
               <img variant="top" src={remote} alt="remote"/>
               <Card.Body>
@@ -35,7 +35,7 @@ const Solution = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col>
+          <Col sm={4} md={4} lg={4}>
             <Card>
               <img variant="top" src={employee} alt="employee"/>
               <Card.Body>
@@ -48,7 +48,7 @@ const Solution = () => {
           </Col>
         </Row>
         <Row>
-          <Col>
+          <Col sm={4} md={4} lg={4}>
             <Card>
               <img variant='top' src={virtual2} alt="virtual"/>
               <Card.Body>
@@ -59,7 +59,7 @@ const Solution = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col>
+          <Col sm={4} md={4} lg={4}>
             <Card>
               <img variant="top" src={digital} alt="digital"/>
               <Card.Body>
@@ -70,7 +70,7 @@ const Solution = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col>
+          <Col sm={4} md={4} lg={4}>
           <Card>
               <img variant="top" src={immersive} alt="immersive"/>
               <Card.Body>

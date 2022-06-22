@@ -8,19 +8,20 @@ import top from '../../assets/icons/clients/top.jpg';
 import george from '../../assets/icons/clients/george.png';
 import elijah from '../../assets/icons/clients/elijah.png';
 import elmer from '../../assets/icons/clients/elmer.png';
-import { testmonials } from '../../testmonials';
+import reviewpphn from '../../assets/icons/clients/review-pphn.jpg';
 const Clients = () => {
   return (
      <div className='mxr__clients'>
      <Container>
       <Row>
-        <Col>
+        <Col sm={12} lg={6} md={6}>
         <h3 className='mxr__section-title'>OVER 900+ SATISFIED CLIENTS</h3>
-        <Row>
-          <Col>
+      <div className='mxr__clients-desktop d-none d-sm-block w-100'>
+      <Row>
+          <Col sm={12} lg={6} md={6}>
            <img src={clutch} alt="clutch"/>
           </Col>
-          <Col>
+          <Col sm={12} lg={6} md={6}>
           <img src={google} alt="google"/>
           </Col>
         </Row>
@@ -32,12 +33,16 @@ const Clients = () => {
           <img src={top} alt="google"/>
           </Col>
         </Row>
+        </div>
+        <div className='mxr__clients-mobile d-block d-sm-none w-100'>
+        <img src={reviewpphn} alt="review"/>
+        </div>
         </Col>
         <Col>
-        <Carousel>
+  <Carousel>
   <Carousel.Item>
     <img
-      className="d-block w-100"
+      className="d-block "
       src={george}
       alt="clutch"
     />
@@ -48,7 +53,7 @@ const Clients = () => {
   </Carousel.Item>
   <Carousel.Item>
     <img
-      className="d-block w-100"
+      className="d-block"
       src={elijah}
       alt="elijah"
     />
@@ -60,7 +65,7 @@ const Clients = () => {
   </Carousel.Item>
   <Carousel.Item>
     <img
-      className="d-block w-100"
+      className="d-block"
       src={elmer}
       alt="Third slide"
     />

@@ -9,7 +9,9 @@ function Banner() {
     <div>
       <Carousel>
         <Carousel.Item>
-          <video src={video} controls />
+       
+        <video src={video} autoPlay muted loop />
+         
 
           <Carousel.Caption>
             <h3>Third slide label</h3>

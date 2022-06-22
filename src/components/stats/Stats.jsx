@@ -1,7 +1,10 @@
 import React from 'react';
 import './stats.css'
 import videoBg from "../../assets/videos/stats-sec.m4v"
-import {FaThumbsUp} from 'react-icons/fa';
+import increse from '../../assets/icons/stats/incrrease-2.png'
+import thumb from '../../assets/icons/stats/thmbs-2.png'
+import star from '../../assets/icons/stats/star-2.png'
+import hands from '../../assets/icons/stats/hands-3.png'
 const Stats = () => {
   return (
     <div className='mxr__stats'>
@@ -11,10 +14,10 @@ const Stats = () => {
       <div className='mxr__stats-numbers'>
         <div className='container'>
           <div className='row'>
-              <div className='col-md-3 mxr__stats-number-sec'>
+              <div className='col-md-3 col-sm-3 col-lg-3 mxr__stats-number-sec'>
                   <div className='d-flex'>
                     <div  className="mxr__stats-number-icon">
-                      <FaThumbsUp size={70} />
+                      <img src={increse} alt="increase"/>
                     </div>
                     <div  className="mxr__stats-number-txt">
                       <h3 className='fw-bold'>10+</h3>
@@ -22,27 +25,27 @@ const Stats = () => {
                     </div>
                   </div>
               </div>
-              <div className='col-md-3 mxr__stats-number-sec'>
+              <div className='col-md-3 col-sm-3 col-lg-3 mxr__stats-number-sec'>
               <div className='d-flex'>
-                    <div className="mxr__stats-number-icon"><FaThumbsUp  size={70} /></div>
+                    <div className="mxr__stats-number-icon"><img src={thumb} alt="thumb"/></div>
                     <div className="mxr__stats-number-txt">
                       <h3 className='fw-bold'>10+</h3>
                       <h4>YEARS IN BUSINESS</h4>
                     </div>
                   </div>
               </div>
-              <div className='col-md-3 mxr__stats-number-sec'>
+              <div className='col-md-3 col-sm-3 col-lg-3 mxr__stats-number-sec'>
                 <div className='d-flex'>
-                    <div className="mxr__stats-number-icon"><FaThumbsUp size={70}/></div>
+                    <div className="mxr__stats-number-icon"><img src={star} alt="star"/></div>
                     <div  className="mxr__stats-number-txt">
                       <h3  className='fw-bold'>10+</h3>
                       <h4>YEARS IN BUSINESS</h4>
                     </div>
                   </div>
               </div>
-              <div className='col-md-3 mxr__stats-number-sec'>
+              <div className='col-md-3 col-sm-3 col-lg-3 mxr__stats-number-sec'>
               <div className='d-flex'>
-                    <div className="mxr__stats-number-icon"><FaThumbsUp size={70}/></div>
+                    <div className="mxr__stats-number-icon"><img src={hands} alt="hands"/></div>
                     <div  className="mxr__stats-number-txt">
                       <h3 className='fw-bold'>10+</h3>
                       <h4>YEARS IN BUSINESS</h4>

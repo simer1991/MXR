@@ -18,7 +18,7 @@ function Values() {
     <div>
       <Container>
         <h3 className='mxr__section-title'>VALUES</h3>
-        <Tabs>
+        <Tabs className='mb-3 mxr__tabs'>
           <Tab eventKey="buisness" title="Business Ethics">
             <ul>
               <li>

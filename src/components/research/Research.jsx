@@ -2,10 +2,10 @@ import React from 'react'
 import './research.css';
 import { Container, Row } from 'react-bootstrap-v5';
 import ReasearchImg from "../../assets/images/reasearch-innovation.png";
-import img1 from "../../assets/icons/reasearch/growth.png";
-import img2 from "../../assets/icons/reasearch/growth.png";
+import img1 from "../../assets/icons/reasearch/TECHNOLOGY-RESEARCH.png";
+import img2 from "../../assets/icons/reasearch/setting.png";
 import img3 from "../../assets/icons/reasearch/growth.png";
-import img4 from "../../assets/icons/reasearch/growth.png";
+import img4 from "../../assets/icons/reasearch/setttings.png";
 
 
 const Research = () => {

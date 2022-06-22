@@ -1,6 +1,6 @@
 import React from 'react';
 import './promise.css';
-import promiseimg from '../../assets/icons/promise/promise.png';
+import promise from '../../assets/icons/promise/promise.png';
 import { Row,Col, Container } from 'react-bootstrap-v5';
 
 function Promise() {
@@ -17,7 +17,7 @@ function Promise() {
           </div>
           </Col>
           <Col>
-          <img src={promiseimg} alt="promise" className='w-100'/>
+          <img src={promise} alt="promise" className='w-100'/>
           </Col>
           </Row>
       </Container>

@@ -12,41 +12,41 @@ export const menuItems = [
     submenu: [
       {
         title: "VR 360",
-        link: "/"
+        link: "/vr"
       },
       {
         title: "Augmented Reality",
-        link: "/",
+        link: "/AR",
      },
       {
         title: "Virtual Reality",
-        link: "/"
+        link: "/VRL"
       },
       {
         title: "Mixed Reality",
-        link: "/"
+        link: "/mr"
       },
       {
         title: "Moblie  App Development",
-        link: "/"
+        link: "/mad"
       },
       {
         title: "Web Design and Development",
-        link: "/"
+        link: "/wdd"
       },
       {
         title: "Research and Innovation",
-        link: "/"
+        link: "/ri"
       },
      ],
   },
   {
     title: "Project",
-    link: "/"
+    link: "/project"
   },
   {
     title: "Blog",
-    link: "/"
+    link: "/blog"
   },
   {
     title: "Contact",
