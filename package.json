@@ -2,7 +2,7 @@
   "name": "mxr",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://mxr.ai/v2",
+  "homepage": "https://mxr.ai/v2",
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
     "@testing-library/jest-dom": "^5.16.4",
