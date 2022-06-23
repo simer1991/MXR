@@ -11,8 +11,8 @@ function Banner() {
         <Carousel.Item interval={100}>
         <video src={video} autoPlay muted loop />
           <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <h3>LET US HELP YOU TO DEVELOPE THE NEXT GENERATION TRAINING EXPERIENCES (MXR)</h3>
+            <button>CONTACT US</button>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item interval={100}>
@@ -22,8 +22,8 @@ function Banner() {
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3>EMPLOY THE SHEER POWER OF MIXED REALITY WITH MXR</h3>
+            <button>CONTACT US</button>
           </Carousel.Caption>
         </Carousel.Item >
         <Carousel.Item interval={100}>
@@ -32,14 +32,12 @@ function Banner() {
             src={img2}
             alt="Second slide"
           />
-
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+         <Carousel.Caption>
+            <h3>SCALE YOUR DEVELOPMENT WITH META EXTANDERED REALITY (MXR)</h3>
+            <button>CONTACT US</button>
           </Carousel.Caption>
         </Carousel.Item>
-
-      </Carousel>
+       </Carousel>
     </div>
   )
 }
