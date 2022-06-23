@@ -41,3 +41,40 @@
     color: #fff;
     border-right: 1px solid #fff;
 }
+@media screen and (max-width: 767px){
+
+    .mxr__stats {
+        background: #2b7975 !important;
+    }
+    .mxr__stats video, .mxr__stats-video {
+        min-height: 100%;
+        min-width: 100%;
+        position: absolute;
+        z-index: 1;
+        display: none;
+    }
+    .mxr__stats-numbers {
+        position: relative;
+        z-index: 10;
+        PADDING: 0PX 30PX;
+    }
+    .mxr__stats-number-sec {
+        background: #ffffff38;
+        border-right: UNSET;
+        color: #fff;
+        height: auto;
+        overflow: visible;
+        padding: 30px;
+        MARGIN-BOTTOM: 8PX;
+    }
+    .mxr__stats-number-sec {
+        background: #ffffff38;
+        border-right: unset;
+        color: #fff;
+        height: auto;
+        overflow: visible;
+        padding: 30px;
+    }
+    }
+    
+    

@@ -7,9 +7,6 @@
     right: 15%;
     text-align: center;
 }
-.carousel img.d-block.w-100 {
-    width: auto !important;
-}
 
 .carousel-item-next, .carousel-item-prev, .carousel-item.active {
     display: block;
