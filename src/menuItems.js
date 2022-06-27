@@ -17,7 +17,7 @@ export const menuItems = [
       {
         title: "Augmented Reality",
         link: "/AR",
-     },
+      },
       {
         title: "Virtual Reality",
         link: "/VRL"
@@ -38,7 +38,79 @@ export const menuItems = [
         title: "Research and Innovation",
         link: "/ri"
       },
-     ],
+    ],
+  },
+  {
+    title: "Technologies",
+    megamenu: "yes",
+    menusections: [
+      {
+        sectiontitle: "section 1",
+        submenu: [
+          {
+            title: "VR 360",
+            link: "/vr"
+          },
+          {
+            title: "Augmented Reality",
+            link: "/AR",
+          },
+          {
+            title: "Virtual Reality",
+            link: "/VRL"
+          },
+          {
+            title: "Mixed Reality",
+            link: "/mr"
+          },
+          {
+            title: "Moblie  App Development",
+            link: "/mad"
+          },
+          {
+            title: "Web Design and Development",
+            link: "/wdd"
+          },
+          {
+            title: "Research and Innovation",
+            link: "/ri"
+          },
+        ],
+      },
+      {
+        sectiontitle: "section 2",
+        submenu: [
+          {
+            title: "VR 360",
+            link: "/vr"
+          },
+          {
+            title: "Augmented Reality",
+            link: "/AR",
+          },
+          {
+            title: "Virtual Reality",
+            link: "/VRL"
+          },
+          {
+            title: "Mixed Reality",
+            link: "/mr"
+          },
+          {
+            title: "Moblie  App Development",
+            link: "/mad"
+          },
+          {
+            title: "Web Design and Development",
+            link: "/wdd"
+          },
+          {
+            title: "Research and Innovation",
+            link: "/ri"
+          },
+        ],
+      }
+    ],
   },
   {
     title: "Project",
