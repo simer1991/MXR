@@ -14,18 +14,25 @@ const bannerdata = {
   title: "hii",
   text: "Custom MXR experiences to empower your business with a new dimension of virtual reality, effectively used in multiple industries"
 }
+
+const readytotalk = {
+  img: 'about-banner.jpg',
+  title: "READY TO TALK",
+  text: "We would love to hear about your idea and make it happen. You come to us with your idea, and we do all of the planning and costing for you.",
+  button:"LETS DO IT",
+}
 const About = () => {
   return (
     <div>
       <Innerbanner banner={bannerdata} />
-      <Readytotalk />
-      <Values />
       <WhoWeAre />
-      <SecretSauce />
       <Vision />
-      <HireUs />
-      <Process title="WE SIMPLIFY SOFTWARE DEVELOPMENT PROCESS" />
+      <SecretSauce />
       <TimeLine />
+      <HireUs />
+      <Values />
+      <Process title="WE SIMPLIFY SOFTWARE DEVELOPMENT PROCESS" />
+      <Readytotalk discuss={readytotalk}/> 
     </div>
   )
 }
