@@ -12,7 +12,23 @@ import zenfone from '../../assets/icons/technology/zenfone.png';
 import  magic from '../../assets/icons/technology/magic.png';
 import  glass from '../../assets/icons/technology/glass.png';
 import kiosks from '../../assets/icons/technology/kiosks.png';
-
+import maya from '../../assets/icons/technology/maya.webp';
+import photoshop from '../../assets/icons/technology/photoshop.webp';
+import substance from '../../assets/icons/technology/substance.webp';
+import opencv from '../../assets/icons/technology/opencv.webp';
+import tensor from '../../assets/icons/technology/tensor.webp';
+import keras from '../../assets/icons/technology/keras.webp';
+import mahout from '../../assets/icons/technology/mahout.webp';
+import caffe from '../../assets/icons/technology/caffe.webp';
+import torch from '../../assets/icons/technology/torch.webp';
+import google from '../../assets/icons/technology/google.png';
+import bot from '../../assets/icons/technology/bot.png';
+import azure from '../../assets/icons/technology/azure.webp';
+import azurecongnitive from '../../assets/icons/technology/azurecongnitive.png';
+import amazones from '../../assets/icons/technology/amazone.webp';
+import amazonepoly from '../../assets/icons/technology/amazonepoly.webp';
+import amazonelex from '../../assets/icons/technology/amazonelex.webp';
+import amazonetranscribe from '../../assets/icons/technology/amazonetranscribe.webp';
 
 const Technology = () => {
   return (
@@ -78,7 +94,88 @@ const Technology = () => {
               </li>
             </ul>
         </Tab>
-        <Tab></Tab>
+        <Tab eventKey="3D Modeling" title="3D Modeling">
+            <ul>
+              <li>
+                <div><img src={maya} alt="maya"/></div>
+                <label>Maya</label>
+              </li>
+              <li>
+                <div><img src={photoshop} alt="photoshop"/></div>
+                <label>Photoshop</label>
+              </li>
+              <li>
+                <div><img src={substance} alt="substance"/></div>
+                <label>Substance Painter</label>
+              </li>
+            </ul>
+        </Tab>
+        <Tab eventKey='Analysis' title="Analysis">
+            <ul>
+              <li>
+                <div><img src={opencv} alt="opencv"/></div>
+                <label>OpenCV</label>
+              </li>
+              <li>
+                <div><img src={tensor} alt="tensor"/></div>
+                <label>TensorFlow</label>
+              </li>
+              <li>
+                <div><img src={keras} alt="keras"/></div>
+                <label>Keras</label>
+              </li>
+              <li>
+                <div><img src={mahout} alt="mahout"/></div>
+                <label>Mahout</label>
+              </li>
+              <li>
+                <div><img src={caffe} alt="caffe"/></div>
+                <label>Caffe</label>
+              </li>
+              <li>
+                <div><img src={torch} alt="torch"/></div>
+                <label>Caffe</label>
+              </li>
+            </ul>
+        </Tab>
+        <Tab eventKey='Learning Platforms' title="Learning Platforms">
+          <ul>
+            <li>
+              <div><img src={google} alt="google"/></div>
+              <label>Google CloudAI Platform</label>
+            </li>
+            <li>
+              <div><img src={bot} alt="bot"/></div>
+              <label>Bot Framework</label>
+            </li>
+            <li>
+              <div><img src={azure} alt="azure"/></div>
+              <label>Azure Machine Learning</label>
+            </li>
+            <li>
+              <div><img src={azurecongnitive} alt="azurecongnitive"/></div>
+              <label>Azure Cognitive Services</label>
+            </li>
+            <li>
+              <div><img src={amazones} alt="amazones"/></div>
+              <label>Amazon SageMaker</label>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <div><img src= {amazonepoly} alt="amazonepoly"/></div>
+              <label>Amazon Polly</label>
+            </li>
+            <li>
+              <div><img src={amazonelex} alt="amazonelex"/></div>
+              <label>Amazon Lex</label>
+            </li>
+            <li>
+              <div><img src={amazonetranscribe} alt="amazonetranscribe" /></div>
+              <label>Amazon Transcribe</label>
+            </li>
+          </ul>
+        </Tab>
          </Tabs>
         </Container>
     </div>

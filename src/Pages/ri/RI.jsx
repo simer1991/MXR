@@ -1,9 +1,10 @@
 import React from 'react'
+import Landscape from './Landscape'
 
 const RI = () => {
   return (
     <div>
-      Research and innovation
+      <Landscape />
     </div>
   )
 }
