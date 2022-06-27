@@ -9,7 +9,12 @@ import stem from '../../assets/icons/technologywork/stem.png'
 import oculus from '../../assets/icons/technologywork/oculus.png'
 import webvr from '../../assets/icons/technologywork/webvr.png'
 import Unity from '../../assets/icons/technologywork/Unity.png'
-
+import htc from '../../assets/icons/technologywork/htc.png'
+import oculusrift from '../../assets/icons/technologywork/oculusrift.png'
+import oculusgo from '../../assets/icons/technologywork/oculusgo.png'
+import oculusquest from '../../assets/icons/technologywork/oculusquest.png'
+import hololens from '../../assets/icons/technologywork/hololens.png'
+import oculus2 from '../../assets/icons/technologywork/oculus2.png'
 
 const TechnologyWork = () => {
   return (
@@ -32,7 +37,7 @@ const TechnologyWork = () => {
               <label>Tablets</label>
             </li>
             <li>
-              <div><img src={web}/></div>
+              <div><img src={web} alt="web"/></div>
               <label>Web</label>
             </li>
             </ul>
@@ -59,10 +64,34 @@ const TechnologyWork = () => {
                   <div><img src={Unity} alt="unity"/></div>
                   <label>Unity</label>
                 </li>
-                <li>
-                  <div><img /></div>
-                  <label></label>
-                </li>
+              </ul>
+            </Tab>
+            <Tab eventKey='Hardware' title="Hardware">
+              <ul>
+              <li>
+                <div><img src={htc} alt="htc"/></div>
+                <label>HTC Vive</label>
+              </li>
+              <li>
+                <div><img src={oculusrift} alt="oculusrift"/></div>
+                <label>Oculus Rift</label>
+              </li>
+              <li>
+                <div><img src={oculusgo} alt="oculusgo"/></div>
+                <label>Oculus Go</label>
+              </li>
+              <li>
+                <div><img src={oculusquest} alt="oculusquest"/></div>
+                <label>Oculus Quest</label>
+              </li>
+              <li>
+                <div><img src={hololens} alt="hololens"/></div>
+                <label>HoloLens</label>
+              </li>
+              <li>
+                <div><img src={oculus2} alt="oculus2"/></div>
+                <label>Oculus Quest 2</label>
+              </li>
               </ul>
             </Tab>
         </Tabs>

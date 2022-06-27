@@ -11,6 +11,7 @@ import hardware from '../../assets/icons/whatwecando2/hardware.png'
 const WhatWeCanDoo = () => {
   return (
     <div>
+      <Container>
       <h3>WHAT WE CAN DO FOR YOU</h3>
        <Tab.Container id="left-tabs-example" defaultActiveKey="training">
   <Row>
@@ -87,6 +88,7 @@ const WhatWeCanDoo = () => {
     </Col>
   </Row>
 </Tab.Container>
+</Container>
     </div>
   )
 }
