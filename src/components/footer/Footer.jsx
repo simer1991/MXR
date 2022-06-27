@@ -1,9 +1,22 @@
 import React from 'react'
 import './footer.css'
 import logo from '../../assets/icons/footer/logo.png'
-import {Col,Row,Container, NavLink} from 'react-bootstrap-v5'
+import {Col,Row,Container,Form,NavLink} from 'react-bootstrap-v5'
 import {FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn} from 'react-icons/fa';
-function Footer() {
+import emailjs from '@emailjs/browser'
+
+const Footer = () => {
+  const sendEmail = (e)=>{
+    e.preventDefault();
+    emailjs.send('service_gn1atii','template_cae5z8b',sendEmail,'oamdoX8gpeRyb1_R6')
+   .then(res=>{
+        console.log(res);
+    }).catch(err=>console.log(err));
+    emailjs.send('service_gn1atii','template_g8n3ovx',sendEmail,'oamdoX8gpeRyb1_R6')
+   .then(res=>{
+        console.log(res);
+    }).catch(err=>console.log(err));
+}
   return (
     <div className='mxr__footer'>
        
@@ -16,14 +29,16 @@ function Footer() {
             </Col>
             <Col lg={3} xs={12}>
               <h6>IMPORTANT LINKS</h6>
+
               <ul className='mxr__footer-links'>
-                <li><NavLink to="/mr">Mixed Reality</NavLink></li>
+                 <li><NavLink to ="/mr">Mixed Reality</NavLink></li>
                 <li><NavLink to='/vr'>Virtual Reality</NavLink></li>
-                <li><NavLink>Augmented Reality</NavLink></li>
+                <li><NavLink to="">Augmented Reality</NavLink></li>
                 <li><NavLink>Mobile Development</NavLink></li>
                 <li><NavLink>Web Design and Development</NavLink></li>
                 <li><NavLink>Research and Innovation</NavLink></li>
               </ul>
+              
             </Col>
             <Col lg={3} xs={12}>
               <h6>CONTACT US</h6>
@@ -41,8 +56,10 @@ function Footer() {
             <Col lg={3} xs={12}>
               <h6>SUBSCRIBE TO OUR NEWSLETTER</h6>
               <div className='mxr__footer-subscribe'>
+                <Form >
                 <input type="email"  className="form-control" placeholder="Email Address*"/>
-                <button className='mxr__section-btn'>SUBSCRIBE</button>
+                <button className='mxr__section-btn' onSubscribe={sendEmail} >Subscribe</button>
+                </Form>
               </div>
             </Col>
         </Row>

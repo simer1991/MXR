@@ -31,6 +31,7 @@ function App() {
             <Route path="/mad" element={<MAD />} />
             <Route path="/wdd" element={<WDD />} />
             <Route path="/ri" element={<RI />} />
+           
           </Routes>
       </Router>
       <Footer />
