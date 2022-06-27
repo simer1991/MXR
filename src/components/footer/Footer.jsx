@@ -1,5 +1,6 @@
 import React from 'react'
 import './footer.css'
+import ReactDOM from 'react-dom/client';
 import logo from '../../assets/icons/footer/logo.png'
 import {Col,Row,Container,Form,NavLink} from 'react-bootstrap-v5'
 import {FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn} from 'react-icons/fa';
@@ -57,8 +58,8 @@ const Footer = () => {
               <h6>SUBSCRIBE TO OUR NEWSLETTER</h6>
               <div className='mxr__footer-subscribe'>
                 <Form >
-                <input type="email"  className="form-control" placeholder="Email Address*"/>
-                <button className='mxr__section-btn' onSubscribe={sendEmail} >Subscribe</button>
+                <input type="email"  className="form-control" placeholder="Email Address*" required />
+                <input type="submit" value="subscribe" onclick={sendEmail} />
                 </Form>
               </div>
             </Col>
