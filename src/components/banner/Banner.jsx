@@ -8,14 +8,14 @@ function Banner() {
   return (
     <div>
       <Carousel fade>
-        <Carousel.Item interval={100}>
-        <video src={video} autoPlay muted loop />
+        <Carousel.Item interval={1000}>
+          <video src={video} autoPlay muted loop />
           <Carousel.Caption>
             <h3>LET US HELP YOU TO DEVELOPE THE NEXT GENERATION TRAINING EXPERIENCES (MXR)</h3>
             <button>CONTACT US</button>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item interval={100}>
+        <Carousel.Item interval={1000}>
           <img
             className="d-block w-100"
             src={img1}
@@ -26,7 +26,7 @@ function Banner() {
             <button>CONTACT US</button>
           </Carousel.Caption>
         </Carousel.Item >
-        <Carousel.Item interval={100}>
+        <Carousel.Item interval={1000}>
           <img
             className="d-block w-100"
             src={img2}

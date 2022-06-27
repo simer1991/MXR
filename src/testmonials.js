@@ -8,7 +8,7 @@ export const testmonials=[
     },
     {
         name:"John",
-        image:"john.png",
+        image:"johan.png",
         text:"“I have had the pleasure of working with MXR Team for a few years now. While I have greatly appreciated their expertise and technology in the rapidly evolving VR space, I am always impressed with their utmost commitment to the highest quality product, all while embracing the newest and most novel applications of the technology. Team is a highly innovative thinker and deeply thoughtful around where VR and AR are going, such that they were able to demonstrate an entirely new way to recreate the experience of walking through our Health & Technology to share it around the world.”",
         company:"SCB Systems",
         stars:"4"

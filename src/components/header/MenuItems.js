@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import { NavLink } from 'react-router-dom';
 import Dropdown from "./Dropdown";
-import {FaCaretDown} from 'react-icons/fa';
+import Megamenu from "./Megamenu";
+import { FaCaretDown } from 'react-icons/fa';
 
 const MenuItems = ({ items, depthLevel }) => {
   const [dropdown, setDropdown] = useState(false);
@@ -38,7 +39,7 @@ const MenuItems = ({ items, depthLevel }) => {
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
-      {items.submenu ? (
+      {items.megamenu ? (
         <>
           <div
             type="button"
@@ -49,15 +50,38 @@ const MenuItems = ({ items, depthLevel }) => {
             {items.title}{" "}
             {depthLevel > 0 ? <span>&raquo;</span> : <FaCaretDown />}
           </div>
-          <Dropdown
+          <Megamenu
             depthLevel={depthLevel}
-            submenus={items.submenu}
+            submenus={items.menusections}
             dropdown={dropdown}
           />
         </>
       ) : (
-        <NavLink className="nav-link" to={items.link}>{items.title}</NavLink>
+        <>
+          {items.submenu ? (
+            <>
+              <div
+                type="button"
+                aria-haspopup="menu"
+                aria-expanded={dropdown ? "true" : "false"}
+                onClick={() => setDropdown((prev) => !prev)}
+              >
+                {items.title}{" "}
+                {depthLevel > 0 ? <span>&raquo;</span> : <FaCaretDown />}
+              </div>
+              <Dropdown
+                depthLevel={depthLevel}
+                submenus={items.submenu}
+                dropdown={dropdown}
+              />
+            </>
+          ) : (
+            <NavLink className="nav-link" to={items.link}>{items.title}</NavLink>
+          )}
+        </>
       )}
+
+
     </li>
   );
 };
