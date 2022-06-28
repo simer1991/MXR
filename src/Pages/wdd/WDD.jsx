@@ -1,8 +1,9 @@
 import React from 'react'
-import { Innerbanner } from '../../components'
+import { Innerbanner, Process } from '../../components'
 import Design from '../vr/Design'
 import wdd from '../../assets/icons/intro/wdd.png'
 import DevelopmentService from './DevelopmentService'
+
 
 const bannerdata = {
   img: 'webdesign.jpg',
@@ -31,6 +32,7 @@ function WDD() {
      <Innerbanner banner={bannerdata} />
      <Design intro={introduction}/>
      <DevelopmentService />
+     <Process title="OUR SOFTWARE DEVELOPMENT PROCESS"/>
     </div>
   )
 }
