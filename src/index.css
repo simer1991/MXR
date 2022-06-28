@@ -25,7 +25,7 @@ body{
   line-height: 1.5;
   text-align: center;
   font-weight: 600;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .card-text{
@@ -44,18 +44,10 @@ p{
   font-weight: 400;
 }
 
-.mxr__section-btn{
-  background: #3393ab;
-  font-size: 15px;
-  color: #fff;
-  font-weight: 600;
-  border-radius: 4px;
-  padding: 12px 43px;
-  margin-top: 10px;
-  box-shadow:none;
-  border-width: 0;
-  outline:0;
-  text-transform: uppercase;
+button.mxr__section-btn {
+  border: unset;
+  background: unset;
+  padding-left: 0;
 }
 
 .mxr__tabs{

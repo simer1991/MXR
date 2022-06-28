@@ -13,7 +13,7 @@
     text-align: center;
 }
 .mxr__clients .d-block {
-    display: inline-block;
+    display: inline-block !important;
 }
 .mxr__clients .carousel-caption h3 {
     color: #333333;

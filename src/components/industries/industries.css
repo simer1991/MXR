@@ -19,3 +19,12 @@
     font-size: 16px;
     font-weight: 400;
 }
+@media screen and (max-width: 767px){
+    .mxr__industries-icon_box {
+        width: 100%;
+        text-align: center;
+    }
+    .mxr__industries-icons {
+        display: inline-grid;
+    }
+}
