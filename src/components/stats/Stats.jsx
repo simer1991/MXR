@@ -7,7 +7,7 @@ import star from '../../assets/icons/stats/star-2.png'
 import hands from '../../assets/icons/stats/hands-3.png'
 const Stats = () => {
   return (
-    <div className='mxr__stats'>
+    <div className='mxr__stats mxr__section'>
       <div className='mxr__stats-video'>
         <video src={videoBg} autoPlay muted loop />
       </div>

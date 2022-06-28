@@ -4,9 +4,10 @@ import { Container, Row, Col } from 'react-bootstrap-v5';
 import styled from "styled-components";
 
 const Outerdiv = styled.div`background-image: url('${require(`../../assets/icons/readytotalk/ready.jpg`)}')`;
+
 const Readytotalk = (props) => {
   return (
-    <div className='mxr__readytotalk'>
+    <div className='mxr__readytotalk mxr__section'>
       <Outerdiv banner={props.discuss.img}  >
         <Container>
           <Row>

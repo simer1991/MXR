@@ -8,7 +8,7 @@ const Outerdiv = styled.div`background-image: url('${require(`../../assets/icons
 
 const Innerbanner = (props) => {
   return (
-    <div className='mxr__innerbanner'>
+    <div >
       <Outerdiv banner={props.banner.img}  >
         <Container>
           <Row>

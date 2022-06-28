@@ -8,7 +8,7 @@ import top from '../../assets/icons/clients/top.jpg';
 import reviewpphn from '../../assets/icons/clients/review-pphn.jpg';
 const Clients = () => {
   return (
-    <div className='mxr__clients'>
+    <div className='mxr__clients mxr__section'>
       <Container>
         <Row>
           <Col sm={12} lg={6} md={6}>
