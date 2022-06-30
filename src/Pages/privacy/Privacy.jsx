@@ -5,8 +5,8 @@ const Privacy = () => {
   return (
     <div>
       <Container>
-        <div>
-        <h3>1 Introduction</h3>
+        <div className='mxr__privacy mxr__section'>
+        <h3 className='mxr__section-title'>1 Introduction</h3>
         <p>1.1 It is necessary for mxr.ai to collect and use certain types of personal data to provide tuition services to clients, to maintain accounts and to manage employees and consultants. We are committed to safeguarding and respecting the privacy of clients and students and this policy explains how any personal data we collect from you, or that you provide to us will be processed.</p>
         <p>1.2 This policy applies where we are acting as a data controller with respect to the personal data of our website visitors and clients; in other words, where we determine the purposes and means of the processing of that personal data.</p>
         <p>1.3 We will ask you to consent to our use of cookies in accordance with the terms of this policy when you first visit our website.</p>
@@ -14,7 +14,7 @@ const Privacy = () => {
         <p>1.5 In this policy, “we”, “us” and “our” refer to mxr.ai .For more information about us, see Section 12.</p>
        </div>
        <div>
-        <h3>2 How we use your personal data</h3>
+        <h3 className='mxr__section-title'>2 How we use your personal data</h3>
         <p>2.1 In this Section 2 we have set out:</p>
         <ul>
             <li>the general categories of personal data that we may process;</li>
@@ -40,7 +40,7 @@ const Privacy = () => {
         <p>2.14 Please do not supply any other person’s personal data to us, unless we prompt you to do so.</p>
       </div>
       <div>
-        <h3>3 Providing your personal data to others</h3>
+        <h3 className='mxr__section-title'>3 Providing your personal data to others</h3>
         <p>3.1 We may disclose your personal data to any member of our group of companies (this means our subsidiaries, our ultimate holding company and all its subsidiaries) insofar as reasonably necessary for the purposes, and on the legal bases, set out in this policy.</p>
         <p>3.2 We may disclose your personal data to our insurers and/or professional advisers insofar as reasonably necessary for the purposes of obtaining or maintaining insurance coverage, managing risks, obtaining professional advice, or the establishment, exercise or defence of legal claims, whether in court proceedings or in an administrative or out-of-court procedure.</p>
         <p>3.3 We may disclose enquiry data and service data to our web design and hosting company, Create Designs insofar as reasonably necessary for managing our website.</p>
@@ -48,7 +48,7 @@ const Privacy = () => {
         <p>3.5 In addition to the specific disclosures of personal data set out in this Section 3, we may disclose your personal data where such disclosure is necessary for compliance with a legal obligation to which we are subject, or in order to protect your vital interests or the vital interests of another natural person. We may also disclose your personal data where such disclosure is necessary for the establishment, exercise or defence of legal claims, whether in court proceedings or in an administrative or out-of-court procedure.</p>
       </div>
       <div>
-        <h3>4 Retaining and deleting personal data</h3>
+        <h3 className='mxr__section-title'>4 Retaining and deleting personal data</h3>
         <p>4.1 This Section 4 sets out our data retention policies and procedure, which are designed to help ensure that we comply with our legal obligations in relation to the retention and deletion of personal data.</p>
         <p>4.2 Personal data that we process for any purpose or purposes shall not be kept for longer than is necessary for that purpose or those purposes.</p>
         <p>4.3 Paper enrolment forms will be securely kept for a full academic year after the client has ceased their relationship with us after which all forms will disposed of safely. We will hold your data electronically for up to 8 years for the purposes of emailing newsletters unless you unsubscribe.</p>
@@ -56,13 +56,13 @@ const Privacy = () => {
         <p>4.5 Notwithstanding the other provisions of this Section 4, we may retain your personal data where such retention is necessary for compliance with a legal obligation to which we are subject, or in order to protect your vital interests or the vital interests of another natural person.</p>
       </div>
       <div>
-        <h3>5 Amendments</h3>
+        <h3 className='mxr__section-title'>5 Amendments</h3>
         <p>5.1 We may update this policy from time to time by publishing a new version on our website.</p>
         <p>5.2 You should check this page occasionally to ensure you are happy with any changes to this policy.</p>
         <p>5.3 We may notify you of changes to this policy by email.</p>
       </div>
       <div>
-        <h3>6 Your rights</h3>
+        <h3 className='mxr__section-title'>6 Your rights</h3>
         <p>6.1 You may instruct us to provide you with any personal information we hold about you; provision of such information will be subject to:</p>
         <p>(a) no fee and</p>
         <p>(b) the supply of appropriate evidence of your identity (for this purpose, we will usually accept a photocopy of your passport certified by a solicitor or bank plus an original copy of a utility bill showing your current address).</p>
@@ -71,13 +71,13 @@ const Privacy = () => {
         <p>6.4 In practice, you will usually either expressly agree in advance to our use of your personal information for marketing purposes, or we will provide you with an opportunity to opt out of the use of your personal information for marketing purposes.</p>
       </div>
       <div>
-        <h3>7 About cookies</h3>
+        <h3 className='mxr__section-title'>7 About cookies</h3>
         <p>7.1 A cookie is a file containing an identifier (a string of letters and numbers) that is sent by a web server to a web browser and is stored by the browser. The identifier is then sent back to the server each time the browser requests a page from the server.</p>
         <p>7.2 Cookies may be either “persistent” cookies or “session” cookies: a persistent cookie will be stored by a web browser and will remain valid until its set expiry date, unless deleted by the user before the expiry date; a session cookie, on the other hand, will expire at the end of the user session, when the web browser is closed.</p>
         <p>7.3 Cookies do not typically contain any information that personally identifies a user, but personal information that we store about you may be linked to the information stored in and obtained from cookies.</p>
       </div>
       <div>
-        <h3>8 Cookies that we use</h3>
+        <h3 className='mxr__section-title'>8 Cookies that we use</h3>
         <p>8.1 We use cookies for the following purposes:</p>
         <p>(a) authentication – we use cookies to identify you when you visit our website and as you navigate our website;</p>
         <p>(b) status – we use cookies to help us to determine if you are logged into our website;</p>
@@ -88,11 +88,11 @@ const Privacy = () => {
         <p>(g) cookie consent – we use cookies.</p>
       </div>
       <div>
-        <h3>9 Cookies used by our service providers</h3>
+        <h3 className='mxr__section-title'>9 Cookies used by our service providers</h3>
         <p>9.1 Our service providers use cookies and those cookies may be stored on your computer when you visit our website.</p>
       </div>
       <div>
-        <h3>10 Our details</h3>
+        <h3 className='mxr__section-title'>10 Our details</h3>
         <p>10.1 This website is owned and operated by mxr.ai</p>
         <p>10.2 You can contact us:</p>
         <p>(a) by post, to the postal address given above;</p>

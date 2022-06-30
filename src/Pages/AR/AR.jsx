@@ -1,17 +1,63 @@
 import React from 'react'
 import Capabilities from './Capabilities'
 import Process from '../../components/process/Process'
+import images from '../../assets/icons/benifits/ar-benifits.png'
 import WhatWeCanDo from './WhatWeCanDo'
 import Technology from './Technology'
-import Project from './Project'
+import { Innerbanner, Readytotalk } from '../../components'
+import Benifits from '../../Pages/vr360/Benifits'
+import Project from '../project/Project'
+
+
+const dataList =[
+  { id:"1",
+   heading:"LEADING AR APP DEVELOPMENT COMPANY",
+   images:<img src={images} alt='benifits of vr 360'/>,
+   pharagraphs:[
+    "Meta Extended Reality (MXR) is a leading augmented reality app development company with a team of experts capable of pushing the limits of the latest technologies. Boasting years of combined experience, MXR has created the best augmented reality experiences for a countless number of devices, platforms, and technologies.",
+    "Our team is fully qualified to handle full cycle AR development, from developing a product strategy to delivering it with all the bells and whistles attached. Choose from a range of business models, including hiring an entire team or dedicated developers to see the project through to the end.",
+  ],
+  },
+];
+
+const bannerdata = {
+  img: 'ar.jpg',
+  title: "AUGMENTED REALITY APP DEVELOPMENT",
+  text: "Take your company to a new level of market supremacy with our outstanding AR development services"
+}
+
+const readytotalk = {
+  img: 'about-banner.jpg',
+  title: "READY TO DISCUSS YOUR PROJECT?",
+  text: "We would love to hear about your idea and make it happen. You come to us with your idea, and we do all of the planning and costing for you.",
+  button:"CONTACT US",
+}
+
+const formdata=[
+  {
+   heading:<h6>Project Type *</h6>,
+   labels:
+   [
+     'Tourism and culture AR apps',
+     'Real estate AR apps',
+     'Training and education AR apps',
+     'Retail AR apps',
+     'Healthcare AR apps',
+   ],
+  }
+];
+
 function AR() {
   return (
     <div>
+       <Innerbanner banner={bannerdata}/>
+       <Benifits data={dataList}/>
+       <WhatWeCanDo />
        <Capabilities />
        <Process title="OUR SOFTWARE DEVELOPMENT PROCESS"/>
-       <WhatWeCanDo />
+       <Readytotalk discuss={readytotalk} />
        <Technology />
-       <Project />
+       <Project form={formdata}/>
     </div>
   )
 }

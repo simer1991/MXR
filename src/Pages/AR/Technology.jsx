@@ -32,9 +32,9 @@ import amazonetranscribe from '../../assets/icons/technology/amazonetranscribe.w
 
 const Technology = () => {
   return (
-    <div>
+    <div className='mxr__teachnology mxr__section'>
         <Container>
-          <h3>TECHNOLOGIES WE WORK WITH</h3>
+          <h3 className='mxr__section-title'>TECHNOLOGIES WE WORK WITH</h3>
         <Tabs>
         <Tab eventKey="development" title="Development Tools">
             <ul>

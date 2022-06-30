@@ -6,14 +6,14 @@ import   {FaCheckCircle}     from 'react-icons/fa';
 
 const HireUs = () => {
   return (
-    <div>
+    <div className='mxr__hireus mxr__section'>
       <Container>
         <Row>
             <Col>
                <img src={hireus} alt="hire us" />
             </Col>
             <Col>
-               <h3>WHY SHOULD YOU HIRE US</h3>
+               <h3 className='mxr__section-title'>WHY SHOULD YOU HIRE US</h3>
                <p>We believe in people and technology, the never ending self improvement that pushes us to strive for excellence.After all those years on the market, we have learned that life is too short for building software no one needs and no one will use. Before starting a new partnership, we don’t ask if the project is feasible. We want to know if it’s desirable, will it make a difference.</p>
                <p><FaCheckCircle /> Our team get involved and care about our client’s success</p>
                <p><FaCheckCircle /> We deliver excellence</p>

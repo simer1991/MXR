@@ -18,9 +18,9 @@ import oculus2 from '../../assets/icons/technologywork/oculus2.png'
 
 const TechnologyWork = () => {
   return (
-    <div>
+    <div className='mxr__technology mxr__section'>
       <Container>
-        <h3>TECHNOLOGIES WE WORK WITH</h3>
+        <h3 className='mxr__section-title'>TECHNOLOGIES WE WORK WITH</h3>
         <Tabs>
             <Tab eventKey='platform' title="Platforms">
             <ul>

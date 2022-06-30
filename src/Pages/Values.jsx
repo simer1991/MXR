@@ -15,7 +15,7 @@ import research from '../assets/icons/values/research.png';
 import innovation from '../assets/icons/values/innovation.png';
 function Values() {
   return (
-    <div>
+    <div className='mxr__values mxr__section'>
       <Container>
         <h3 className='mxr__section-title'>VALUES</h3>
         <Tabs className='mb-3 mxr__tabs'>

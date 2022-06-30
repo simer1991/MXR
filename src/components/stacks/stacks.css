@@ -15,6 +15,25 @@
     display: inline-block;
     width: 100% !important;
 }
+.mxr__stats-number-sec {
+    height: auto;
+    overflow: visible;
+    background: #ffffff38;
+    padding: 30px;
+    color: #fff;
+    border-right: 1px solid #1d1d1e !important;
+}
+.mxr__stats-number-txt {
+    padding-left: 20px;
+}
+.mxr__stats-number-txt h4 {
+    color: #fff !important;
+    font-size: 19px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-family: 'Poppins' !important;
+    line-height: 28px;
+}
 @media screen and (max-width: 767px){
 
     .mxr__stats {
@@ -34,7 +53,7 @@
     }
     .mxr__stats-number-sec {
         background: #ffffff38;
-        border-right: UNSET;
+        border-right: UNSET !important;
         color: #fff;
         height: auto;
         overflow: visible;

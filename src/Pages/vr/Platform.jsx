@@ -4,9 +4,9 @@ import unity from '../../assets/icons/platform/unity.png'
 
 const Platform = () => {
   return (
-    <div>
+    <div className='mxr__platform mxr__section'>
       <Container>
-        <h3>BUILD ONCE DEPLOY MULTIPLE PLATFORMS</h3>
+        <h3 className='mxr__section-title'>BUILD ONCE DEPLOY MULTIPLE PLATFORMS</h3>
         <img src={unity} alt="unity"/>
       </Container>
     </div>

@@ -7,10 +7,10 @@ import viable from '../../assets/icons/research/viable.jpg'
 
 const Landscape = () => {
   return (
-    <div>
+    <div className='mxr__landscape mxr__section'>
       <Container>
         <div>
-        <h3>SERVICE LANDSCAPE</h3>
+        <h3 className='mxr__section-title'>SERVICE LANDSCAPE</h3>
         <Row>
           <Col>
             <FaPaintBrush size={30}/>

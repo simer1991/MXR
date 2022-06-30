@@ -5,7 +5,8 @@ import React from 'react'
 
 const TimeLine = () => {
   return (
-    <div className='mxr__timeline'>
+    <div className='mxr__timeline mxr__section'>
+      <h3 className='mxr__section-title'>WHY WE STAND OUT</h3>
       <VerticalTimeline >
           <VerticalTimelineElement
           className="vertical-timeline-element--work"

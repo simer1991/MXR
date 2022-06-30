@@ -1,14 +1,24 @@
 import React from 'react'
-import { Container } from 'react-bootstrap-v5'
 import './readytotalk.css'
-const Readytotalk = () => {
+import { Container, Row, Col } from 'react-bootstrap-v5';
+import styled from "styled-components";
+
+const Outerdiv = styled.div`background-image: url('${require(`../../assets/icons/readytotalk/ready.jpg`)}')`;
+
+const Readytotalk = (props) => {
   return (
-    <div className='mxr__readytotalk'>
-      <Container>
-      <h3 >READY TO TALK</h3>
-      <p>We would love to hear about your idea and make it happen. You come to us with your idea, and we do all of the planning and costing for you.</p>
-      <button>LETS DO IT</button>
-      </Container>
+    <div className='mxr__readytotalk mxr__section'>
+      <Outerdiv banner={props.discuss.img}  >
+        <Container>
+          <Row>
+            <Col lg={6} md={6}>
+              <h2>{props.discuss.title}</h2>
+              <p>{props.discuss.text}</p>
+              <button>{props.discuss.button}</button>
+            </Col>
+          </Row>
+        </Container>
+      </Outerdiv >
     </div>
   )
 }
