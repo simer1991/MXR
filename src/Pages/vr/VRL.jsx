@@ -15,49 +15,49 @@ const bannerdata = {
   text: "Immersive learning evolve your staff’s skills more effectively through virtual reality training."
 }
 
-const formdata=[
+const formdata = [
   {
-   heading:<h6>Project Type *</h6>,
-   labels:
-   [
-     'VR for Corporate Training',
-     'VR for Health & Safety',
-     'Retail VR Lab for trade marketing',
-     'VR for marketing exhibitions',
-     'VR for sales presentations',
-     'VR quest',
-     'VR showroom',
-     'VR welcome tour 360 panoramic',
-     'VR tour',
-     'Interactive VR set',
-   ],
+    heading: <h6>Project Type *</h6>,
+    labels:
+      [
+        'VR for Corporate Training',
+        'VR for Health & Safety',
+        'Retail VR Lab for trade marketing',
+        'VR for marketing exhibitions',
+        'VR for sales presentations',
+        'VR quest',
+        'VR showroom',
+        'VR welcome tour 360 panoramic',
+        'VR tour',
+        'Interactive VR set',
+      ],
   }
 ];
 
-const introduction=[
+const introduction = [
   {
-    image:<img src={vr} alt="virtual reality"/>,
-    title:<h3 className='mxr__section-title'>DESIGNED TO DELIVER RESULTS AND INCREASE KNOWLEDGE RETENTION</h3>,
-    features:[
+    image: <img src={vr} alt="virtual reality" />,
+    title: <h3 className='mxr__section-title'>DESIGNED TO DELIVER RESULTS AND INCREASE KNOWLEDGE RETENTION</h3>,
+    features: [
       'Process driven training',
       'Perception based training',
       'Exploration based training',
     ],
   }
 ]
- 
+
 function VRL() {
   return (
     <div>
-      <Innerbanner banner={bannerdata}/>
-      <Design intro={introduction}/>
+      <Innerbanner banner={bannerdata} />
+      <Design intro={introduction} />
       <WhatWeCanDoo />
       <KeyBenifits />
       <Platform />
-      <Process title="OUR SOFTWARE DEVELOPMENT PROCESS"/>
+      <Process title="OUR SOFTWARE DEVELOPMENT PROCESS" />
       <TechnologyWork />
       <Project form={formdata} />
-    </div>
+    </div >
   )
 }
 

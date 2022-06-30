@@ -14,12 +14,12 @@ const Header = () => {
             <div className='mxr__header-top'>
                 <Container>           
                 <Row>
-                   <div className='col-6 mxr__header-align-left'>
+                   <div className='col-md-6 col-sm-12 mxr__header-align-left'>
                         <span class="mxr__header-phone">Call Us Today! (+44) 20 7193 5407</span>
                         <span class="mxr__header-separator">|</span>
                         <span class="mxr__header-email">team@mxr.ai</span>
                     </div>
-                   <div className='col-6 mxr__header-align-right'>
+                   <div className='col-md-6 col-sm-12 mxr__header-align-right'>
                        <FaFacebookF size={18}/>
                        <FaTwitter size={18}/>    
                        <FaInstagram size={18}/>    

@@ -11,7 +11,7 @@ const Clients = () => {
     <div className='mxr__clients mxr__section'>
       <Container>
         <Row>
-          <Col sm={12} lg={6} md={6}>
+          <Col sm={12} lg={4} md={4}>
             <h3 className='mxr__section-title'>OVER 900+ SATISFIED CLIENTS</h3>
             <div className='mxr__clients-desktop d-none d-sm-block w-100'>
               <Row>
@@ -35,13 +35,13 @@ const Clients = () => {
               <img src={reviewpphn} alt="review" />
             </div>
           </Col>
-          <Col sm={12} lg={6} md={6}>
+          <Col sm={12} lg={8} md={8}>
             <Carousel variant='dark'>
               {testmonials.map((testi, index) => (
 
                 <Carousel.Item>
                   <img
-                    className="d-block "
+                    className="d-block user_image"
                     src={require(`../../assets/icons/clients/${testi.image}`)}
                     alt="clutch"
                   />
