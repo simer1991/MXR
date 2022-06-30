@@ -10,9 +10,20 @@ const WhyChoose = (props) => {
                 <>
                 <Row>
                 <Col>
-                 <p>{list.icon}</p>
-                <h3>{list.heading}</h3>
-                <h5>{list.title}</h5>
+                  <h3 className='mxr__section-title'>{list.heading}</h3>
+                </Col>
+                </Row>
+                <Row>
+                {list.lists.map((data,index)=>
+                <Col sm={6}>
+                  {data.icon}
+                 <h5>{data.title}</h5>
+                  <p>{data.text}</p>
+                 </Col>
+                 )}
+               
+                <Col>
+                
                 </Col>
                 </Row>
                 </>
