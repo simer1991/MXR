@@ -1,9 +1,11 @@
 import React from 'react'
 
-function Project() {
+function Project(props) {
   return (
     <div>
-      Project
+      {props.labels.map((list) => (
+        <p><input type="radio" name="project_type" value={list} /> {list}</p>
+      ))}
     </div>
   )
 }
