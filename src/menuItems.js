@@ -45,77 +45,142 @@ export const menuItems = [
     megamenu: "yes",
     menusections: [
       {
-        sectiontitle: "section 1",
+        sectiontitle: "Server-Side",
         submenu: [
           {
-            title: "VR 360",
-            link: "/vr"
+            title: "Php",
+            link: "/php"
           },
           {
-            title: "Augmented Reality",
-            link: "/AR",
+            title: "Laravel",
+            link: "/laravel",
           },
           {
-            title: "Virtual Reality",
-            link: "/VRL"
+            title: "CodeIgniter",
+            link: "/code"
           },
           {
-            title: "Mixed Reality",
-            link: "/mr"
+            title: "Python",
+            link: "/python"
           },
           {
-            title: "Moblie  App Development",
-            link: "/mad"
-          },
-          {
-            title: "Web Design and Development",
-            link: "/wdd"
-          },
-          {
-            title: "Research and Innovation",
-            link: "/ri"
+            title: "Node.js",
+            link: "/node"
           },
         ],
       },
       {
-        sectiontitle: "section 2",
+        sectiontitle: "Frontend",
         submenu: [
           {
-            title: "VR 360",
-            link: "/vr"
+            title: "Angular",
+            link: "/angular"
           },
           {
-            title: "Augmented Reality",
-            link: "/AR",
+            title: "React.js",
+            link: "/reactjs",
           },
           {
-            title: "Virtual Reality",
-            link: "/VRL"
+            title: "Vue.js",
+            link: "/vue"
           },
           {
-            title: "Mixed Reality",
-            link: "/mr"
+            title: "MEAN Stack",
+            link: "/mean"
           },
           {
-            title: "Moblie  App Development",
-            link: "/mad"
-          },
-          {
-            title: "Web Design and Development",
-            link: "/wdd"
-          },
-          {
-            title: "Research and Innovation",
-            link: "/ri"
+            title: "MERN Stack",
+            link: "/mern"
           },
         ],
-      }
+      },
+      {
+        sectiontitle: "E-Commerce",
+        submenu: [
+          {
+            title: "Magento",
+            link: "/magento"
+          },
+          {
+            title: "WooCommerce",
+            link: "/commerce",
+          },
+          {
+            title: "Shopify",
+            link: "/shopify"
+          },
+        ],
+      },
+      {
+        sectiontitle: "Mobile",
+        submenu: [
+          {
+            title: "iOS",
+            link: "/ios"
+          },
+          {
+            title: "Android",
+            link: "/android",
+          },
+          {
+            title: "React Native",
+            link: "/reactnative"
+          },
+          {
+            title: "Hybrid",
+            link: "/hybrid"
+          },
+          {
+            title: "Flutter",
+            link: "/flutter"
+          },
+          {
+            title: "Ionic",
+            link: "/ionic"
+          },
+          {
+            title: "Swift",
+            link: "/swift"
+          },
+        ],
+      },
+      {
+        sectiontitle: "CMS",
+        submenu: [
+          {
+            title: "WordPress",
+            link: "/worldpress"
+          },
+          {
+            title: "Drupal",
+            link: "/drupal",
+          },
+          {
+            title: "Shopify",
+            link: "/shopify"
+          },
+          {
+            title: "Magento",
+            link: "/magento"
+          },
+        ],
+      },
+      {
+        sectiontitle: "AR/VR/MR",
+        submenu: [
+          {
+            title: "Custom Unreal Engine",
+            link: "/custom"
+          },
+          {
+            title: "Unity App Development",
+            link: "/unity",
+          },
+        ],
+      },
     ],
   },
-  {
-    title: "Project",
-    link: "/project"
-  },
+  
   {
     title: "Blog",
     link: "/blog"
