@@ -47,7 +47,7 @@ const Research = () => {
                       </div>
 
                   </div>
-                  <div className='col-lg-6 mxr__research-border4'>
+                  <div className='col-md-6 col-sm-12 mxr__research-border4'>
                       <div className="mxr__research-icon">
                       <img src={img4} alt="TECHNOLOGY RESEARCH" />
                       </div>
