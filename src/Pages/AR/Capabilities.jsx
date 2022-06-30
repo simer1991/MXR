@@ -4,9 +4,9 @@ import {FaDesktop,FaImage,FaTv,FaSun} from 'react-icons/fa'
 
 const Capabilities = () => {
   return (
-    <div>
+    <div className='mxr__capabilities mxr__section'>
         <Container>
-        <h3>OUR APP CAPABILITIES</h3>
+        <h3 className='mxr__section-title'>OUR APP CAPABILITIES</h3>
         <Row>
           <Col>
             <div><FaDesktop size={30} /></div>

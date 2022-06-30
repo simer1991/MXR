@@ -24,7 +24,8 @@ const Contact =() => {
   
   return (
   <Container>
-      <h2>CONTACT MXR TODAY</h2>
+    <div className='mxr__contact mxr__section'>
+      <h3 className='mxr__section-title'>CONTACT MXR TODAY</h3>
       <Row>
         <Col lg={4}>
         <Card style={{ width: '18rem' }}>
@@ -34,7 +35,7 @@ const Contact =() => {
              <FaMapMarkerAlt size={30}/>
             </div>
             <div>
-                <h3>Our Location</h3>
+                <h3 className='mxr__section-title'>Our Location</h3>
                 <p>20-22 Wenlock Road, <br/>London, N1 7GU, England</p>
             </div>
           </ListGroup.Item>
@@ -43,7 +44,7 @@ const Contact =() => {
              <FaPhoneAlt size={30}/>
             </div>
             <div>
-                <h3>Call Us</h3>
+                <h3 className='mxr__section-title'>Call Us</h3>
                 <p>(+44) 20 7193 5407</p>
             </div>
           </ListGroup.Item>
@@ -52,7 +53,7 @@ const Contact =() => {
                 <FaEnvelope size={30}/>
             </div>
             <div>
-                <h3>Email Address</h3>
+                <h3 className='mxr__section-title'>Email Address</h3>
                 <p>team@mxr.ai</p>
             </div>
           </ListGroup.Item>
@@ -100,6 +101,7 @@ const Contact =() => {
         </Form>
         </Col>
       </Row>
+      </div>
     </Container>
   )
 }

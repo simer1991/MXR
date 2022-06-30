@@ -10,9 +10,9 @@ import web from '../../assets/icons/whatwecando/web.png'
 
 const WhatWeCanDo = () => {
   return (
-    <div>
+    <div className='mxr__whatwecando mxr__section'>
       <Container>
-        <h3>WHAT WE CAN DO FOR YOU</h3>
+        <h3 className='mxr__section-title'>WHAT WE CAN DO FOR YOU</h3>
         <Tab.Container id="left-tabs-example" defaultActiveKey="training">
   <Row>
     <Col sm={3}>

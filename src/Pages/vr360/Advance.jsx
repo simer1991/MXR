@@ -5,9 +5,9 @@ import {FaSearch,FaChartLine,FaIdCardAlt} from 'react-icons/fa';
 
 const Advance = () => {
   return (
-    <div className='mxr__advance'>
+    <div className='mxr__advance mxr__section'>
       <Container>
-        <h3>ADVANCE FEATURES</h3>
+        <h3 className='mxr__section-title'>ADVANCE FEATURES</h3>
         <Row>
             <Col>
                <FaSearch size={40}/>

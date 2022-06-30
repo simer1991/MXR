@@ -6,9 +6,9 @@ import {FaTencentWeibo,FaLayerGroup,FaIdCardAlt,FaFilePowerpoint,FaTv,FaGlobe} f
 
 const Advance2 = () => {
   return (
-    <div>
+    <div className='mxr__advance2 mxr__section'>
       <Container>
-        <h3>Advance Features</h3>
+        <h3 className='mxr__section-title'>Advance Features</h3>
         <VerticalTimeline >
           <VerticalTimelineElement
           className="vertical-timeline-element--work"

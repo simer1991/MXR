@@ -20,7 +20,7 @@ const Footer = () => {
     
 }
   return (
-    <div className='mxr__footer'>
+    <div className='mxr__footer mxr__section'>
        
             <div className='mxr__footer-top'>
             <Container>

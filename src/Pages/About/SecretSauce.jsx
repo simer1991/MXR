@@ -3,9 +3,9 @@ import  {FaHourglassHalf,FaUserShield}     from 'react-icons/fa';
 import {Row,Container,Col,Card} from 'react-bootstrap-v5';
 const SecretSauce = () => {
   return (
-    <div>
+    <div className='mxr__secretsauce mxr__section'>
       <Container>
-        <h3>OUR “SECRET SAUCE”</h3>
+        <h3 className='mxr__section-title'>OUR “SECRET SAUCE”</h3>
       <Row>
           <Col sm={4} md={4} lg={4}>
             <Card>

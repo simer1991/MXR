@@ -4,7 +4,7 @@ import './cta2.css'
 import cta2 from '../../assets/icons/cta2/cta2.png'
 function Cta2() {
   return (
-    <div className='mxr__cta2'>
+    <div className='mxr__cta2 mxr__section'>
       <Container>
         <Row>
           <Col lg={6}>
