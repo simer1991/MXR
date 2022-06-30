@@ -16,7 +16,7 @@ const Research = () => {
             <div className='col-md-6 col-sm-12 mxr-reseach-secright'>
               <img src={ReasearchImg} alt="Reasearch and Innovation" className='w-100'/>
             </div>
-            <div className='col-6  mxr-reseach-secright'>
+            <div className='col-md-6 col-sm-12  mxr-reseach-secright'>
               
               <h2>R&D AND INNOVATION</h2>
               <p>Any new and innovative ideas are welcomed in our organization and we will provide you the right kind of R&D service which will act as a fuel to kick start your new business objective. MXR is an organization which not only creates technological solutions but also helps & guides people who want to develop something of their own. We support and guide you throughout your innovative journey by providing tech support, R&D engineers and a team of experienced people.</p>

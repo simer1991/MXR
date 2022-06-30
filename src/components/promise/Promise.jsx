@@ -13,7 +13,7 @@ function Promise() {
           <h3 className='mxr__section-title'>WE PROMISE, WE INNOVATE, WE CREATE, WE DELIVER.</h3>          
           <p>Here at <strong>MXR</strong> we are focused on delivering simple, reliable and affordable solutions to minimize downtime, maximize return, and satisfy customers’ requirements.</p>
           <p> Work with us and see how it goes. We promise to go the extra mile for every project that we take onboard.</p>
-          <button className='mxr__section-btn'><NavLink > Contact Us</NavLink></button>
+          <NavLink className='mxr__section-btn'> Contact Us</NavLink>
           </div>
           </Col>
           <Col md={6} sm={12}>

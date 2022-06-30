@@ -59,3 +59,12 @@
     padding-bottom: 24px;
     padding-top: 20px;
 }
+@media screen and (max-width: 767px){
+    .mxr__research-border1 {
+        border-bottom: unset;
+        border-right: 0;
+    }
+    .mxr__research-border2 {
+        border-bottom: unset;
+    }
+}
