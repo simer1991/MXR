@@ -1,8 +1,9 @@
 import React from 'react'
-import { Innerbanner, Process } from '../../components'
+import { Innerbanner, Process, Readytotalk } from '../../components'
 import Design from '../vr/Design'
 import wdd from '../../assets/icons/intro/wdd.png'
 import DevelopmentService from './DevelopmentService'
+import TechnologyStacks from './TechnologyStack'
 
 
 const bannerdata = {
@@ -25,6 +26,12 @@ const introduction=[
     ],
   }
 ]
+const readytotalk = {
+  img: 'MR.jpg',
+  title: "READY TO DISCUSS YOUR PROJECT? ",
+  text: "We would love to hear about your idea and make it happen. You come to us with your idea, and we do all of the planning and costing for you.",
+  button:"CONTACT US",
+}
 
 function WDD() {
   return (
@@ -33,6 +40,8 @@ function WDD() {
      <Design intro={introduction}/>
      <DevelopmentService />
      <Process title="OUR SOFTWARE DEVELOPMENT PROCESS"/>
+     <Readytotalk discuss={readytotalk}  />
+     <TechnologyStacks />
     </div>
   )
 }
