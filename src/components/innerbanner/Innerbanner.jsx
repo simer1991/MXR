@@ -8,11 +8,11 @@ const Outerdiv = styled.div`background-image: url('${require(`../../assets/icons
 
 const Innerbanner = (props) => {
   return (
-    <div >
+    <div className='internal_page_banner' >
       <Outerdiv banner={props.banner.img}  >
         <Container>
           <Row>
-            <Col lg={6} md={6}>
+            <Col lg={4} md={4} className="left_internal_page">
               <h2>{props.banner.title}</h2>
               <p>{props.banner.text}</p>
             </Col>

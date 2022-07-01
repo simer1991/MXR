@@ -74,24 +74,24 @@ function Values() {
           <Tab eventKey="technology" title="Technology Culture">
            <ul>
             <li>
-              <img src={agile} alt="agile"/>
+            <div><img src={agile} alt="agile"/></div>
               <label>AGILE</label>
               <p>Our regular work practise is to use the Agile software development methodology and its latest methods. For both our clients and ourselves, Agile proven to be the most effective technique.</p>
             </li>
             <li>
-              <img src={decops} alt="devops"/>
+            <div> <img src={decops} alt="devops"/></div>
               <label>DEVOPS</label>
               <p>DevOps allows us to launch high-quality software that produces value quickly by facilitating close collaboration between development and operations.</p>
             </li>
            </ul>
            <ul>
            <li>
-              <img src={research} alt="research"/>
+              <div><img src={research} alt="research"/></div>
               <label>RESEARCH</label>
               <p>We conduct research in order to convert ideas into company value. From planning through product launch, research is a must for all of our project development stages.</p>
             </li>
             <li>
-              <img src={innovation} alt="innovation"/>
+            <div><img src={innovation} alt="innovation"/></div>
               <label>INNOVATION</label>
               <p>We choose technologies with great development potential and hire people who have the necessary abilities and enthusiasm for working with them.</p>
             </li>
