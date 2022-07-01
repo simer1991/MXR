@@ -4,6 +4,14 @@ import Design from '../vr/Design'
 import magento from '../../assets/icons/intro/magento.png'
 import PartnerWithMxr from '../../components/PartnerWithMxr'
 import WhyChoooseMxr from '../../components/WhyChoooseMxr'
+import TechnologyServices from '../../components/TechnologyServices'
+import migration from '../../assets/icons/technologyservices/magento/migration.png'
+import commerce from '../../assets/icons/technologyservices/magento/commerce.png'
+import b2b from '../../assets/icons/technologyservices/magento/b2b.png'
+import consulting from '../../assets/icons/technologyservices/magento/consulting.png'
+import extesions from '../../assets/icons/technologyservices/magento/extensions.png'
+
+
 
 const bannerdata = {
   img: 'technology-magento.jpg',
@@ -32,6 +40,46 @@ const readytotalk = {
   button:"CONTACT US",
 }
 
+const services=[
+  {
+    heading:"OUR MAGENTO COMPETENCIES",
+    data:[
+      {
+       title:"MAGENTO ENTERPRISE DEVELOPMENT",
+       text:"Certified Magento developers at MXR assists in building an enterprise site with modernized product catalogs, integrated analytics tools, SEO friendly features, order management systems more.",
+       icon:<img src={magento} alt="application"/>,
+      },
+      {
+        title:"MAGENTO EXTENSIONS",
+        text:"Our Magento developers are skilled at building customized Magento extensions for your eCommerce web portals.",
+        icon:<img src={extesions} alt="webservies"/>,
+      },
+      {
+        title:"MAGENTO MIGRATION",
+        text:"Our experienced team of developers can help you with the migration from Magento 1 to Magento 2, enabling a faster load time, full-page caching, a huge number of transactions, simplified registration process and smooth checkout.",
+        icon:<img src={migration} alt="support"/>,
+      },
+      {
+        title:"MAGENTO COMMERCE CLOUD",
+        text:"With a thriving release of Magento 2 Commerce solutions for multiple storefronts, B2B, and B2C clients, we direct businesses to craft personalized content and promotions while ensuring a smooth purchase path.",
+        icon:<img src={commerce} />,
+      },
+      {
+        title:"MAGENTO B2B DEVELOPMENT",
+        text:"Whether it is integrating complex shipping channels or customizing order processes to managing catalog systems, our dedicated Magento developers are proficient in everything.",
+        icon:<img src={b2b} />,
+      },
+      {
+        title:"MAGENTO CONSULTING",
+        text:"Our certified Magento consultants make a plan after discussion with you to cover both the strategic and the technical aspects of your site’s maintenance, offering a customer-focused, branded that extends your reach to success.",
+        icon:<img src={consulting} />,
+      },
+
+    ]
+  }
+]
+
+
 const Magento = () => {
   return (
     <div>
@@ -39,6 +87,7 @@ const Magento = () => {
       <Design intro={introduction} />
       <PartnerWithMxr />
       <WhyChoooseMxr />
+      <TechnologyServices service={services}/>
       <Industries />
       <Readytotalk discuss={readytotalk} />
       <Clients />

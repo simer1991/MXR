@@ -2,10 +2,12 @@ import React from 'react'
  import {VerticalTimeline,VerticalTimelineElement} from 'react-vertical-timeline-component';
  import {FaUserCheck, FaUserShield,FaTrophy,FaUser} from 'react-icons/fa';
  import './timeline.css'
+import { Container } from 'react-bootstrap-v5';
 
 const TimeLine = () => {
   return (
     <div className='mxr__timeline mxr__section'>
+      <Container>
       <h3 className='mxr__section-title'>WHY WE STAND OUT</h3>
       <VerticalTimeline >
           <VerticalTimelineElement
@@ -46,6 +48,7 @@ const TimeLine = () => {
           <p>We consult our clients on what business model and methodology to choose depending on project needs, scope, and capacity.</p>
           </VerticalTimelineElement>
       </VerticalTimeline>
+      </Container>
     </div>
   )
 }

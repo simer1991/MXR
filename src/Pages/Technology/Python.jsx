@@ -4,6 +4,10 @@ import Design from '../vr/Design'
 import python from '../../assets/icons/intro/python.png'
 import PartnerWithMxr from '../../components/PartnerWithMxr'
 import WhyChoooseMxr from '../../components/WhyChoooseMxr'
+import TechnologyServices from '../../components/TechnologyServices'
+import experiance from '../../assets/icons/technologyservices/python/experiance.png'
+import work from '../../assets/icons/technologyservices/python/work.png'
+import select from '../../assets/icons/technologyservices/python/select.png'
 
 const bannerdata = {
   img: 'technology-python.jpg',
@@ -33,6 +37,29 @@ const readytotalk = {
   button:"CONTACT US",
 }
 
+const services=[
+  {
+    heading:"3 STEPS TO HIRE YOUR REMOTE DEVELOPER",
+    data:[
+      {
+       title:"SELECT YOUR TEAM",
+       text:"We are here to help you out in terms of selecting the best candidate according to your requirement .We compare our teams’ skills with your needs.",
+       icon:<img src={select} alt="application"/>,
+      },
+      {
+        title:"WORK COMMENCES WITH DAILY REPORTING",
+        text:"Our programmers will work dedicatedly on your project. You will receive daily code check-ins and current reporting in timesheet software.",
+        icon:<img src={work} alt="webservies"/>,
+      },
+      {
+        title:"EXPERIENCE CONSISTENT DELIVERY",
+        text:"Assign one or several projects to them.  Increase or decrease team size according to business requirements.",
+        icon:<img src={experiance} />,
+      },
+    ]
+  }
+]
+
 const Python = () => {
   return (
     <div>
@@ -40,6 +67,7 @@ const Python = () => {
       <Design intro={introduction} />
       <PartnerWithMxr />
       <WhyChoooseMxr />
+      <TechnologyServices service={services}/>
       <Industries />
       <Readytotalk discuss={readytotalk} />
       <Clients />
