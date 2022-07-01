@@ -1,0 +1,92 @@
+.mxr__whoweare h3.mxr__section-title {
+    text-align: left;
+}
+.mxr__whoweare.mxr__section {
+    padding: 50px 0px 0px 0px !important;
+}
+.mxr__vision.mxr__section {
+    padding-top: 150px !important;
+    padding-right: 50px !important;
+    margin-right: 0;
+    padding-bottom: 150px !important;
+    padding-left: 50px !important;
+    margin-left: 0;
+}
+.mxr__vision h3.mxr__section-title {
+    color: #fff;
+}
+.mxr__vision p {
+    color: #fff;
+    text-align: center;
+}
+.mxr__secretsauce .card {
+    height: 380px;
+    padding: 30px 15px 15px;
+    text-align: center;
+    margin: 5%;
+}
+.mxr__secretsauce .card svg {
+    font-size: 5.96px;
+    line-height: 71.92px;
+    height: 73.92px;
+    width: 73.92px;
+    align-self: center;
+    border-color: #3e3e3e;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    background-clip: inherit;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 2px;
+}
+.mxr__secretsauce p.card-text {
+    color: #777777 !important;
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgb(242 242 242) !important;
+    border-radius: 0.25rem;
+}
+.mxr__secretsauce .card-title.h5 {
+    font-size: 24px !important;
+    margin-bottom: 15px !important;
+}
+.mxr__timeline.mxr__section{
+    background-image: url("../../assets/images/bg-image.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px;
+    border-width: 0px 0px 0px 0px;
+    border-color: #3e3e3e;
+    border-style: solid;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.timeline-right-image.col-lg-6.col-sm-12{
+    background-image: url("../../assets/images/about_us_page2.png");
+}
+.mxr__timeline h3.mxr__section-title {
+    color: #fff;
+    text-align: left;
+}
+.mxr__timeline .vertical-timeline-element-content.bounce-in {
+    background: #ff000000 !important;
+    color: #fff;
+}
+.mxr__timeline p {
+    color: #fff;
+}
+.mxr__timeline .vertical-timeline-element--work.vertical-timeline-element {
+    display: -webkit-inline-box;
+}

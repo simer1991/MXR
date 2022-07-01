@@ -11,7 +11,7 @@ const Readytotalk = (props) => {
       <Outerdiv banner={props.discuss.img}  >
         <Container>
           <Row>
-            <Col lg={6} md={6}>
+            <Col lg={12} md={12} className="ready">
               <h2>{props.discuss.title}</h2>
               <p>{props.discuss.text}</p>
               <button>{props.discuss.button}</button>

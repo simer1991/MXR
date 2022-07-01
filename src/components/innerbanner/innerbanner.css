@@ -3,3 +3,32 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.internal_page_banner >div {
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-width: 0px 0px 0px 0px;
+    border-color: #3e3e3e;
+    border-style: solid;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 400px;
+}
+.internal_page_banner h2 {
+    margin: 0px;
+    color: rgb(255, 255, 255);
+    --fontSize: 40;
+    line-height: 1.4;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.internal_page_banner p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+.left_internal_page.col-lg-4.col-md-4 {
+    padding-top: 8%;
+}

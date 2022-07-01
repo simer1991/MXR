@@ -8,6 +8,7 @@ import Vision from './vision/Vision';
 import HireUs from './hireus/HireUs';
 import Process from '../../components/process/Process'
 import TimeLine from './timeline/TimeLine';
+import "./about.css"
 
 const bannerdata = {
   img: 'about-banner.jpg',
