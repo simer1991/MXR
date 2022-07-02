@@ -99,3 +99,24 @@ p{
 .mxr__stack  .tab-content{
   display: inline-block;
 }
+.mxr__keybenifits .col-lg-4.col-sm-12 {
+  text-align: center;
+  padding-top: 5%;
+}
+.mxr__keybenifits h5 {
+  color: #2b7975;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+.mxr__keybenifits svg {
+  color: white;
+  background: #2b7975;
+  padding: 9px;
+  width: 40px;
+  MARGIN-BOTTOM: 24PX;
+  height: 40px;
+  border-radius: 50%;
+}
+.mxr__platform.mxr__section {
+  TEXT-ALIGN: CENTER;
+}

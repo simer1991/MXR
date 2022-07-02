@@ -8,34 +8,34 @@ const KeyBenifits = () => {
       <Container>
         <h3 className='mxr__section-title'>KEY BENEFITS</h3>
         <Row>
-            <Col>
+            <Col sm={12} lg={4}>
             <FaExclamationTriangle size={30} />
             <h5>HAZARD SIMULATION</h5>
             <p>The ability to simulate hazardous environments or complex procedures</p>
             </Col>
-            <Col>
+            <Col sm={12} lg={4}>
              <FaRedo size={30} />
              <h5>REPEATABILITY</h5>
              <p>Safe repeatable and controlled environments</p>
             </Col>
-            <Col>
+            <Col sm={12} lg={4}>
              <FaDice size={30} />
              <h5>3D INTERACTION</h5>
              <p>Learn by doing in room scale environments isolated from distractions</p>
             </Col>
         </Row>
         <Row>
-            <Col>
+            <Col sm={12} lg={4}>
             <FaLightbulb size={30} />
             <h5>HIGHLY ENGAGING</h5>
             <p>Fun immersive user engagement leading to increased knowledge retention</p>
             </Col>
-            <Col>
+            <Col sm={12} lg={4}>
             <FaEye size={30} />
             <h5>VISUAL</h5>
             <p>Highly visual, easy to interpret and understand</p>
             </Col>
-            <Col>
+            <Col sm={12} lg={4}>
             <FaThumbsUp size={30} />
             <h5>REALTIME ANALYTICS</h5>
             <p>Real time user monitoring and analysis providing quantifiable metrics</p>
