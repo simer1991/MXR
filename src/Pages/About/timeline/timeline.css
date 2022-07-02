@@ -1,0 +1,39 @@
+.mxr__timeline svg {
+    background: white;
+    width: 50px;
+    padding: 6px;
+    height: 50px;
+    border-radius: 50px;
+}
+.mxr__timeline span.vertical-timeline-element-icon.bounce-in {
+    background: #f000 !important;
+}
+.mxr__timeline svg {
+    background: white;
+    width: 50px;
+    padding: 6px;
+    margin-right: 23px;
+    height: 50px;
+    border-radius: 50px;
+}
+@media screen and (max-width: 767px){
+.mxr__timeline .col-lg-6.col-sm-12 {
+    text-align: center;
+}
+.mxr__timeline .vertical-timeline-element-content.bounce-in {
+    width: 100%;
+    float: left;
+    display: block;
+    text-align: center;
+}
+.mxr__timeline .vertical-timeline-element-content.bounce-in {
+    width: 100%;
+    float: left;
+    display: block;
+    padding-top: 21px;
+    text-align: center;
+}
+.mxr__timeline .vertical-timeline-element--work.vertical-timeline-element {
+    display: block;
+}
+}

@@ -8,3 +8,8 @@
 .mxr__hireus p {
     color: #777777 !important;
 }
+@media screen and (max-width: 767px){
+    .mxr__hireus img {
+        width: 100%;
+    }
+}
