@@ -16,6 +16,10 @@
     height: 50px;
     border-radius: 50px;
 }
+.mxr__timeline .vertical-timeline-element--work.vertical-timeline-element {
+    display: inline-flex !important;
+}
+
 @media screen and (max-width: 767px){
 .mxr__timeline .col-lg-6.col-sm-12 {
     text-align: center;
@@ -34,6 +38,6 @@
     text-align: center;
 }
 .mxr__timeline .vertical-timeline-element--work.vertical-timeline-element {
-    display: block;
+    display: inline-block !important;
 }
-}
+} 

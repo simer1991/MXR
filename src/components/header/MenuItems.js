@@ -35,6 +35,7 @@ const MenuItems = ({ items, depthLevel }) => {
   return (
     <li
       className="menu-items"
+      id={items.title}
       ref={ref}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}

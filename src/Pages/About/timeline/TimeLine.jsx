@@ -3,14 +3,16 @@ import React from 'react'
  import {FaUserCheck, FaUserShield,FaTrophy,FaUser} from 'react-icons/fa';
  import './timeline.css'
 import { Container,Row,Col } from 'react-bootstrap-v5';
+import timeline from '../../../assets/images/about_us_page2.png'
 
 const TimeLine = () => {
   return (
     <div className='mxr__timeline mxr__section'>
       <Container>
-      <h3 className='mxr__section-title'>WHY WE STAND OUT</h3>
+      
       <Row>
         <Col lg={6} sm={12}>
+        <h3 className='mxr__section-title'>WHY WE STAND OUT</h3>
       <VerticalTimeline >
           <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -52,7 +54,7 @@ const TimeLine = () => {
       </VerticalTimeline>
       </Col>
       <Col sm={12} lg={6} className="timeline-right-image">
-      
+      <img src={timeline}/>
       </Col>
       </Row>
       </Container>

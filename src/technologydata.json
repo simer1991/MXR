@@ -1,27 +1,140 @@
 [
     {
-        "tille" : "SERVER SIDE",
-        "list" :[
+        "title": "SERVER SIDE",
+        "list": [
             {
+<<<<<<< HEAD
                 "image" : "./assets/images/technology/php.png",
                 "link" : "/php"
+=======
+                "image": "assets/images/technology/php.png",
+                "link": "/php"
+>>>>>>> c9aa27dd2b3ec598da168fb8cf27c3fac1c984fb
             },
             {
-                "image": "php.jpeg",
+                "image": "assets/images/technology/laravel.png",
+                "link": "/laravel"
+            },
+            {
+                "image": "assets/images/technology/codeignator.png",
+                "link": "/codeignator"
+            },
+            {
+                "image": "assets/images/technology/python.png",
+                "link": "/python"
+            },
+            {
+                "image": "assets/images/technology/node.png",
+                "link": "/node"
+            }
+        ]
+    },
+    {
+        "title": "FRONTEND",
+        "list": [
+            {
+                "image": "assets/images/technology/angular.png",
+                "link": "/angular"
+            },
+            {
+                "image": "assets/images/technology/react.png",
+                "link": "/react"
+            },
+            {
+                "image": "assets/images/technology/vue.png",
+                "link": "/vue"
+            },
+            {
+                "image": "assets/images/technology/mern.png",
+                "link": "/mern"
+            },
+            {
+                "image": "assets/images/technology/mean.jpg",
+                "link": "/mean"
+            }
+        ]
+    },
+    {
+        "title": "E-COMMERCE",
+        "list": [
+            {
+                "image": "assets/images/technology/magento.png",
+                "link": "/magento"
+            },
+            {
+                "image": "assets/images/technology/woocommerce.png",
+                "link": "/woocommerce"
+            },
+            {
+                "image": "assets/images/technology/shopify.png",
+                "link": "/shopify"
+            }
+        ]
+    },
+    {
+        "title": "CMS",
+        "list": [
+            {
+                "image": "assets/images/technology/wordpress.png",
+                "link": "/wordpress"
+            },
+            {
+                "image": "assets/images/technology/drupal.png",
+                "link": "/drupal"
+            },
+            {
+                "image": "assets/images/technology/magento.png",
+                "link": "/magento"
+            },
+            {
+                "image": "assets/images/technology/shopify.png",
+                "link": "/shopify"
+            }
+        ]
+    },
+    {
+        "title": "MOBILITY",
+        "list": [
+            {
+                "image": "assets/images/technology/ios.png",
+                "link": "/ios"
+            },
+            {
+                "image": "assets/images/technology/android.png",
+                "link": "/android"
+            },
+            {
+                "image": "assets/images/technology/react-native.png",
+                "link": "/php"
+            },
+            {
+                "image": "assets/images/technology/hybrid.png",
+                "link": "/php"
+            },
+            {
+                "image": "assets/images/technology/flutter.png",
+                "link": "/php"
+            },
+            {
+                "image": "assets/images/technology/ionic.png",
+                "link": "/php"
+            },
+            {
+                "image": "assets/images/technology/swift.png",
                 "link": "/php"
             }
         ]
     },
     {
-        "tille": "Server",
+        "title": "AR/VR/MR",
         "list": [
             {
-                "image": "php.jpeg",
-                "link": "/php"
+                "image": "assets/images/technology/unreal.jpg",
+                "link": "/unreal-engine"
             },
             {
-                "image": "php.jpeg",
-                "link": "/php"
+                "image": "assets/images/technology/unity.jpg",
+                "link": "/unity"
             }
         ]
     }

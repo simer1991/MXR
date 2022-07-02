@@ -73,9 +73,7 @@
     -o-background-size: cover;
     background-size: cover;
 }
-.timeline-right-image.col-lg-6.col-sm-12{
-    background-image: url("../../assets/images/about_us_page2.png");
-}
+
 .mxr__timeline h3.mxr__section-title {
     color: #fff;
     text-align: left;

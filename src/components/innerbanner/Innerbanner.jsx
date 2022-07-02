@@ -4,12 +4,14 @@ import './innerbanner.css';
 import styled from "styled-components";
 
 
-const Outerdiv = styled.div`background-image: url('${require(`../../assets/icons/innerbanner/about-banner.jpg`)}')`;
+const Outerdiv = styled.div`
+  background-image: url('assets/images/Innerbanner/${props => props.$banner}');  
+  `;
 
 const Innerbanner = (props) => {
   return (
     <div className='internal_page_banner' >
-      <Outerdiv banner={props.banner.img}  >
+      <Outerdiv $banner={props.banner.img} >
         <Container>
           <Row>
             <Col lg={4} md={4} className="left_internal_page">

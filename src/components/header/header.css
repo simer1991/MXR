@@ -19,6 +19,9 @@
 .mxr__header .mxr__header-navbar .navbar-nav a{
     color: #fff;
 }
+.mxr__header .mxr__header-navbar .navbar-nav div .nav-link {
+    padding: .5rem 1rem;
+}
 .mxr__header .mxr__header-navbar .navbar-nav a.active{
     border-bottom: 3px solid #fff;
 }
@@ -35,10 +38,18 @@
     flex-grow: unset !important;
 }
 #basic-navbar-nav.navbar-collapse.collapse li.menu-items {
-    padding: 15px 30px 15px 30px;
+    padding: 18px 30px 18px 30px;
     OVERFLOW: VISIBLE;
     Z-INDEX: 9999;
-    LIST-STYLE: none;
+    LIST-STYLE: none; 
+}
+.menu-items svg {
+    position: absolute;
+    right: -6px;
+    top: 11px;
+}
+.mxr__header-navbar li#Services div {
+    padding: 0.5rem 1rem;
 }
 .mxr__header-navbar .menu-items span.arrow:before {
     content: "\f0d7";
@@ -80,8 +91,11 @@ span.arrow:before {
     position: absolute;
     width: auto;
     max-width: none;
-    top: 71px;
+    top: 76px;
    
+}
+.mxr__header-align-right a {
+    color: #fff;
 }
 .mxr__header-navbar ul.mxr__header-navbarmegamenu {
     display: none;
@@ -90,7 +104,7 @@ span.arrow:before {
     position: absolute;
     width: auto;
     max-width: none;
-    top: 71px;
+    top: 76px;
     left: 0;
 }
 .mxr__header-navbarmegamenu ul {
@@ -102,9 +116,9 @@ span.arrow:before {
     position: relative;
 }
 .navbar-light .menu-items div {
-    PADDING: 0.5rem 1rem;
     COLOR: #FFF;
     height: auto;
+    position: relative;
 }
 
 .mxr__header .mxr__header-navbar .navbar-nav a.active {
@@ -153,6 +167,13 @@ ul.dropdown.show.mxr__header-navbarmegamenu {
     border-right: 0px solid #ddd;
     border-bottom: 1px solid #ddd;
 }
+.dropdown .nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #0d6efd;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
 @media screen and (max-width: 767px){
     .navbar-brand img.mxr__header-logo {
         width: 168px;
@@ -192,9 +213,19 @@ ul.dropdown.show.mxr__header-navbarmegamenu {
         padding: 0px 0px !important;
         border-bottom: 1px solid #fff;
     }
-    .navbar-nav .menu-items a.nav-link {
+    .navbar-nav .menu-items a.nav-link { 
         padding: 0;
     }
+    .mxr__header-navbar .nav-link {
+        display: block;
+        padding: 0 !important;
+        color: #0d6efd;
+        text-decoration: none;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    }
+    a.nav-link {
+        padding: 0 !important;
+    }  
     .mxr__header-navbar ul.dropdown {
         background-color: #2b7975;
         display: none;
