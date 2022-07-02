@@ -1,41 +1,7 @@
 import './App.css';
 import { Header, Footer } from './components';
-import { Home, About } from './Pages';
+import { Home, About,Contact,VR,VRL,MAD,MR,WDD,RI,Php,Laravel,CodeIngenator,Python,Node,Android,Angular,Reactjs,Vue,Mean,Mern,Magento,WooCommerce,Shopify,IOS,ReactNative,Hybrid,Flutter,Ionic,Swift,Worldpress,Drupal,CustomUnrealEngine,UnityAppDevelopment,Project1,Project2,Projects,AR } from './Pages';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Contact from './Pages/contact/Contact';
-import Project from './Pages/project/Project';
-import VR from './Pages/vr360/VR';
-import AR from './Pages/AR/AR';
-import VRL from './Pages/vr/VRL';
-import MR from './Pages/mr/MR';
-import MAD from './Pages/mad/MAD';
-import WDD from './Pages/wdd/WDD';
-import RI from './Pages/ri/RI';
-import Php from './Pages/Technology/Php';
-import Laravel from './Pages/Technology/Laravel';
-import CodeIngenator from './Pages/Technology/CodeIngenator';
-import Python from './Pages/Technology/Python';
-import Node from './Pages/Technology/Node';
-import Angular from './Pages/Technology/Angular';
-import Reactjs from './Pages/Technology/Reactjs';
-import Vue from './Pages/Technology/Vue';
-import Mean from './Pages/Technology/Mean';
-import Mern from './Pages/Technology/Mern';
-import Magento from './Pages/Technology/Magento';
-import WooCommerce from './Pages/Technology/WooCommerce';
-import Shopify from './Pages/Technology/Shopify';
-import IOS from './Pages/Technology/IOS';
-import Android from './Pages/Technology/Android';
-import ReactNative from './Pages/Technology/ReactNative';
-import Hybrid from './Pages/Technology/Hybrid';
-import Flutter from './Pages/Technology/Flutter';
-import Ionic from './Pages/Technology/Ionic';
-import Swift from './Pages/Technology/Swift';
-import Worldpress from './Pages/Technology/Worldpress';
-import Drupal from './Pages/Technology/Drupal';
-import CustomUnrealEngine from './Pages/Technology/CustomUnrealEngine';
-import UnityAppDevelopment from './Pages/Technology/UnityAppDevelopment';
-import Technology from './Pages/Technology/Technology';
 
 function App() {
   return (
@@ -46,14 +12,13 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/project" element={<Project />} />
-          <Route path="/vr" element={<VR />} />
-          <Route path="/AR" element={<AR />} />
-          <Route path="/VRL" element={<VRL />} />
-          <Route path="/mr" element={<MR />} />
-          <Route path="/mad" element={<MAD />} />
-          <Route path="/wdd" element={<WDD />} />
-          <Route path="/ri" element={<RI />} />
+          <Route path="/vr-360" element={<VR />} />
+          <Route path="/augmented-reality" element={<AR />} />
+          <Route path="/virtual-reality" element={<VRL />} />
+          <Route path="/mixed-reality" element={<MR />} />
+          <Route path="/mobile-app-development" element={<MAD />} />
+          <Route path="/web-design-and-development" element={<WDD />} />
+          <Route path="/research-and-innovation" element={<RI />} />
           <Route path="/php" element={<Php />} />
           <Route path="/laravel" element={<Laravel />} />
           <Route path="/code" element={<CodeIngenator />} />
@@ -78,7 +43,9 @@ function App() {
           <Route path="/drupal" element={<Drupal />} />
           <Route path="/custom" element={<CustomUnrealEngine />} />
           <Route path="/unity" element={<UnityAppDevelopment />} />
-          <Route path="/tech" element={<Technology />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/project1" element={<Project1 />} />
+          <Route path="/project2" element={<Project2 />} />
         </Routes>
         <Footer />
       </Router>
