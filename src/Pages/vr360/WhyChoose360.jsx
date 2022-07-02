@@ -11,7 +11,7 @@ const WhyChoose360 = () => {
     <div className='mxr__whychoose360 mxr__section'>
       <Container>
         <h3 className='mxr__section-title'>WHY CHOOSE MXR FOR VR 360?</h3>
-         <Tabs>
+         <Tabs className="mb-3 mxr__tabs">
          <Tab  eventKey="Real Estate" title="Real Estate">
             <Row>
                 <Col>

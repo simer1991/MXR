@@ -10,7 +10,7 @@ import commerce from '../../assets/icons/technologyservices/magento/commerce.png
 import b2b from '../../assets/icons/technologyservices/magento/b2b.png'
 import consulting from '../../assets/icons/technologyservices/magento/consulting.png'
 import extesions from '../../assets/icons/technologyservices/magento/extensions.png'
-
+import magentos from '../../assets/icons/technologyservices/magento/magento.png'
 
 
 const bannerdata = {
@@ -47,7 +47,7 @@ const services=[
       {
        title:"MAGENTO ENTERPRISE DEVELOPMENT",
        text:"Certified Magento developers at MXR assists in building an enterprise site with modernized product catalogs, integrated analytics tools, SEO friendly features, order management systems more.",
-       icon:<img src={magento} alt="application"/>,
+       icon:<img src={magentos} alt="application"/>,
       },
       {
         title:"MAGENTO EXTENSIONS",
@@ -62,17 +62,17 @@ const services=[
       {
         title:"MAGENTO COMMERCE CLOUD",
         text:"With a thriving release of Magento 2 Commerce solutions for multiple storefronts, B2B, and B2C clients, we direct businesses to craft personalized content and promotions while ensuring a smooth purchase path.",
-        icon:<img src={commerce} />,
+        icon:<img src={commerce}  alt="commerce"/>,
       },
       {
         title:"MAGENTO B2B DEVELOPMENT",
         text:"Whether it is integrating complex shipping channels or customizing order processes to managing catalog systems, our dedicated Magento developers are proficient in everything.",
-        icon:<img src={b2b} />,
+        icon:<img src={b2b} alt="b2b" />,
       },
       {
         title:"MAGENTO CONSULTING",
         text:"Our certified Magento consultants make a plan after discussion with you to cover both the strategic and the technical aspects of your site’s maintenance, offering a customer-focused, branded that extends your reach to success.",
-        icon:<img src={consulting} />,
+        icon:<img src={consulting} alt="consulting"/>,
       },
 
     ]

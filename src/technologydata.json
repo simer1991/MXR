@@ -1,0 +1,28 @@
+[
+    {
+        "tille" : "SERVER SIDE",
+        "list" :[
+            {
+                "image" : "/assets/images/technology/php.png",
+                "link" : "/php"
+            },
+            {
+                "image": "php.jpeg",
+                "link": "/php"
+            }
+        ]
+    },
+    {
+        "tille": "Server",
+        "list": [
+            {
+                "image": "php.jpeg",
+                "link": "/php"
+            },
+            {
+                "image": "php.jpeg",
+                "link": "/php"
+            }
+        ]
+    }
+]

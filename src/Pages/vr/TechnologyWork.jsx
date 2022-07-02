@@ -21,9 +21,9 @@ const TechnologyWork = () => {
     <div className='mxr__technology mxr__section'>
       <Container>
         <h3 className='mxr__section-title'>TECHNOLOGIES WE WORK WITH</h3>
-        <Tabs>
+        <Tabs className="mb-3 mxr__tabs">
             <Tab eventKey='platform' title="Platforms">
-            <ul>
+            <ul className='mxr__stack-list'>
             <li>
             <div><img src={headset} alt="vr headset"/></div>
             <label>VR headsets</label>
@@ -43,7 +43,7 @@ const TechnologyWork = () => {
             </ul>
             </Tab>
             <Tab eventKey='software' title="Software">
-              <ul>
+              <ul className='mxr__stack-list'>
                 <li>
                   <div><img src={open} alt="open"/></div>
                   <label>OPEN VR</label>
@@ -67,7 +67,7 @@ const TechnologyWork = () => {
               </ul>
             </Tab>
             <Tab eventKey='Hardware' title="Hardware">
-              <ul>
+              <ul className='mxr__stack-list'>
               <li>
                 <div><img src={htc} alt="htc"/></div>
                 <label>HTC Vive</label>

@@ -1,9 +1,18 @@
 import React from 'react'
-import { Innerbanner, Readytotalk } from '../../components'
+import { Innerbanner, Readytotalk, Solution } from '../../components'
 import images from '../../assets/icons/benifits/unreal.png'
 import Benifits from '../vr360/Benifits'
 import {FaLaptop,FaMobileAlt,FaThumbsUp,FaGlobe} from 'react-icons/fa'
 import WhyChoose from '../../components/WhyChoose'
+import TechnologyServices from '../../components/TechnologyServices'
+import arvr from '../../assets/icons/technologyservices/customunrealengine/arvr.png'
+import digital from '../../assets/icons/technologyservices/customunrealengine/3d.png'
+import product from '../../assets/icons/technologyservices/customunrealengine/product.png'
+import solutions from '../../assets/icons/technologyservices/customunrealengine/solutions.png'
+import tour from '../../assets/icons/technologyservices/customunrealengine/tours.png'
+import training from '../../assets/icons/technologyservices/customunrealengine/training.png'
+import WhyShould from '../../components/WhyShould'
+
 
 const bannerdata = {
     img: 'technology-unreal-engine-development.jpg',
@@ -56,14 +65,55 @@ const bannerdata = {
       ]
     }
   ]
+
+  const services=[
+    {
+      heading:"WHAT WE ARE ABLE TO DO FOR YOU",
+      data:[
+        {
+         title:"TRAINING AND SIMULATION",
+         text:"We are prepared to create simulations based on common and uncommon working scenarios, as well as professional training and emergency safety measures such as evacuations and first aid.",
+         icon:<img src={training} alt="application"/>,
+        },
+        {
+          title:"PRODUCT CONFIGURATORS",
+          text:"You provide us with the product model and customization choices you desire, and we will convert them into a fully working configurator that gives buyers complete control over selecting the product of their dreams (within the set boundaries).",
+          icon:<img src={product} alt="webservies"/>,
+        },
+        {
+          title:"3D VISUALIZATION AND DIGITAL TWINS",
+          text:"You may rely on us to build 3D models of your equipment/product/model with millimeter-level accuracy and realism.",
+          icon:<img src={digital} alt="support"/>,
+        },
+        {
+          title:"SOLUTIONS FOR BROADCAST & STREAMING",
+          text:"We’ll leverage UE4’s amazing graphics capabilities to create a handy streaming application that customers can enjoy on a variety of screen sizes, from handheld to wall-projected.",
+          icon:<img src={solutions} alt="solutions"/>,
+        },
+        {
+          title:"TOURS & DIGITAL SHOWROOM",
+          text:"We will design an unrivalled user experience using UE4 that will introduce them to your product (or whatever else you are displaying) in all of its glorious detail and angles.",
+          icon:<img src={tour} alt="tour"/>,
+        },
+        {
+          title:"VR/AR SOLUTIONS FOR BUSINESS",
+          text:"Ace provides comprehensive and immersive virtual reality and augmented reality solutions for a variety of platforms, including Oculus, Vive, Cardboard, and PlayStation.",
+          icon:<img src={arvr} alt="arvr"/>,
+        },
+  
+      ]
+    }
+  ]
   
 const CustomUnrealEngine = () => {
   return (
     <div>
       <Innerbanner banner={bannerdata} />
       <Benifits data={dataList}/>
+      <WhyShould />
       <WhyChoose benifit={benifits}/>
       <Readytotalk discuss={readytotalk} />
+      <TechnologyServices service={services}/>  
     </div>
   )
 }

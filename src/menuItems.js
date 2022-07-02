@@ -42,6 +42,7 @@ export const menuItems = [
   },
   {
     title: "Technologies",
+    link:"/technology",
     megamenu: "yes",
     menusections: [
       {
@@ -180,7 +181,10 @@ export const menuItems = [
       },
     ],
   },
-  
+  {
+    title: "Projects",
+    link: "/"
+  },
   {
     title: "Blog",
     link: "/blog"

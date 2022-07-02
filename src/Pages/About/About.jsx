@@ -12,7 +12,7 @@ import "./about.css"
 
 const bannerdata = {
   img: 'about-banner.jpg',
-  title: "hii",
+  title: "THRIVING TO BE YOUR ONLY CHOICE",
   text: "Custom MXR experiences to empower your business with a new dimension of virtual reality, effectively used in multiple industries"
 }
 

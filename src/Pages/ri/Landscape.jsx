@@ -9,7 +9,6 @@ const Landscape = () => {
   return (
     <div className='mxr__landscape mxr__section'>
       <Container>
-        <div>
         <h3 className='mxr__section-title'>SERVICE LANDSCAPE</h3>
         <Row>
           <Col>
@@ -35,9 +34,11 @@ const Landscape = () => {
             <p>We will create a minimum viable product for your software startup, so that you can get quick market feedback without a significant investment and keep polishing your product until it is a complete fit for its market and target audience.</p>
           </Col>
         </Row>
-        </div>
-        <div>
-        <Tabs>
+        </Container>
+        <div className='mxr__tech'>
+          <Container>
+            <h3 className='mxr__section-title'>HOW IT WORKS</h3>
+        <Tabs className="mb-3 mxr__tabs">
           <Tab eventKey='research' title="Research">
            <Row>
             <Col>
@@ -69,9 +70,9 @@ const Landscape = () => {
             </Row>
           </Tab>
         </Tabs>
+        </Container>
         </div>
-      </Container>
-    </div>
+        </div>
   )
 }
 

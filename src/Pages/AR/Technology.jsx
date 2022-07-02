@@ -35,9 +35,9 @@ const Technology = () => {
     <div className='mxr__teachnology mxr__section'>
         <Container>
           <h3 className='mxr__section-title'>TECHNOLOGIES WE WORK WITH</h3>
-        <Tabs>
+        <Tabs className="mb-3 mxr__tabs">
         <Tab eventKey="development" title="Development Tools">
-            <ul>
+            <ul className='mxr__stack-list'>
               <li>
                 <div><img src={arkit} alt="arkit"/></div>
                 <label>ARKit</label>
@@ -61,7 +61,7 @@ const Technology = () => {
             </ul>
         </Tab>
         <Tab eventKey="hardware" title="Hardware">
-            <ul>
+            <ul className='mxr__stack-list'>
               <li>
                 <div><img src={apple} alt="apple"/></div>
                 <label>Apple</label>
@@ -83,7 +83,7 @@ const Technology = () => {
                 <label>Magic Loop</label>
               </li>
               </ul>
-              <ul>
+              <ul className='mxr__stack-list'>
               <li>
                 <div><img src={glass} alt="glass"/></div>
                 <label>Glass</label>
@@ -95,7 +95,7 @@ const Technology = () => {
             </ul>
         </Tab>
         <Tab eventKey="3D Modeling" title="3D Modeling">
-            <ul>
+            <ul className='mxr__stack-list'>
               <li>
                 <div><img src={maya} alt="maya"/></div>
                 <label>Maya</label>
@@ -111,7 +111,7 @@ const Technology = () => {
             </ul>
         </Tab>
         <Tab eventKey='Analysis' title="Analysis">
-            <ul>
+            <ul className='mxr__stack-list'>
               <li>
                 <div><img src={opencv} alt="opencv"/></div>
                 <label>OpenCV</label>
@@ -139,7 +139,7 @@ const Technology = () => {
             </ul>
         </Tab>
         <Tab eventKey='Learning Platforms' title="Learning Platforms">
-          <ul>
+          <ul className='mxr__stack-list'>
             <li>
               <div><img src={google} alt="google"/></div>
               <label>Google CloudAI Platform</label>
@@ -161,7 +161,7 @@ const Technology = () => {
               <label>Amazon SageMaker</label>
             </li>
           </ul>
-          <ul>
+          <ul className='mxr__stack-list'>
             <li>
               <div><img src= {amazonepoly} alt="amazonepoly"/></div>
               <label>Amazon Polly</label>

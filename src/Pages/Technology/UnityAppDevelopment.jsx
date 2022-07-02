@@ -4,6 +4,15 @@ import images from '../../assets/icons/benifits/unity.png'
 import Benifits from '../vr360/Benifits'
 import {FaLaptop,FaMobileAlt,FaThumbsUp,FaDice} from 'react-icons/fa'
 import WhyChoose from '../../components/WhyChoose'
+import TechnologyServices from '../../components/TechnologyServices'
+import training from '../../assets/icons/technologyservices/unity/traing.png'
+import config from '../../assets/icons/technologyservices/unity/config.png'
+import development from '../../assets/icons/technologyservices/unity/development.png'
+import talk from '../../assets/icons/technologyservices/unity/walk.png'
+import application from '../../assets/icons/technologyservices/unity/application.png'
+import archetecture from '../../assets/icons/technologyservices/unity/archetecture.png'
+import WhyShould from '../../components/WhyShould'
+import WhyShouldUnity from '../../components/WhyShouldUnity'
 
 const bannerdata = {
   img: 'technology-unity-app.jpg',
@@ -57,13 +66,55 @@ const benifits=[
   }
 ]
 
+const services=[
+  {
+    heading:"UNITY SOLUTIONS WE OFFER",
+    data:[
+      {
+       title:"ARCHITECTURE VISUALIZATION",
+       text:"Our Unity engineers, who strive for perfection in precise architecture and design, may be a valuable asset to your project, delivering high-performance visualisation and application design as well as assuring a positive user experience.",
+       icon:<img src={archetecture} alt="application"/>,
+      },
+      {
+        title:"TRAINING FOR INDUSTRY-SPECIFIC OBJECTIVES",
+        text:"We use Unity IDE to create highly realistic and efficient solutions for military, industry, and other industries, thanks to our hands-on experience in completely immersive training environments.",
+        icon:<img src={training} alt="webservies"/>,
+      },
+      {
+        title:"WALKTHROUGHS IN 360 DEGREES",
+        text:"We use Unity graphics to create interactive, 360-degree walkthroughs and flythroughs as a visual presentation of actual sites, possible buildings, or construction projects, concept art, and more to meet the demands of your business.",
+        icon:<img src={talk} alt="support"/>,
+      },
+      {
+        title:"CONFIGURATORS OF PRODUCTS",
+        text:"You will be able to show off your product to customers, business partners, and investors using an unique configurator created by our team.",
+        icon:<img src={config} />,
+      },
+      {
+        title:"APPLICATIONS FOR GAMIFICATION",
+        text:"Our knowledge of the topic enables us to create digital models, simulations, and systems that accurately duplicate real-world environments, objects, and processes.",
+        icon:<img src={application} />,
+      },
+      {
+        title:"DEVELOPMENT OF A DIGITAL TWIN",
+        text:"Ace provides comprehensive and immersive virtual reality and augmented reality solutions for a variety of platforms, including Oculus, Vive, Cardboard, and PlayStation.",
+        icon:<img src={development} />,
+      },
+
+    ]
+  }
+]
+
 const UnityAppDevelopment = () => {
   return (
     <div>
       <Innerbanner banner={bannerdata} />
       <Benifits data={dataList}/>
+      <WhyShouldUnity />
       <WhyChoose benifit={benifits}/>
       <Readytotalk discuss={readytotalk} />
+      <TechnologyServices service={services}/>
+     
     </div>
   )
 }

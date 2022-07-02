@@ -36,6 +36,7 @@ import Worldpress from './Pages/Technology/Worldpress';
 import Drupal from './Pages/Technology/Drupal';
 import CustomUnrealEngine from './Pages/Technology/CustomUnrealEngine';
 import UnityAppDevelopment from './Pages/Technology/UnityAppDevelopment';
+import Technology from './Pages/Technology/Technology';
 
 function App() {
   return (
@@ -79,6 +80,7 @@ function App() {
           <Route path="/drupal" element={<Drupal />} />
           <Route path="/custom" element={<CustomUnrealEngine />} />
           <Route path="/unity" element={<UnityAppDevelopment />} />
+          <Route path="/technology" element={<Technology />} />
         </Routes>
         <Footer />
       </Router>

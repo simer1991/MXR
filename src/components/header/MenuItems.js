@@ -47,7 +47,7 @@ const MenuItems = ({ items, depthLevel }) => {
             aria-expanded={dropdown ? "true" : "false"}
             onClick={() => setDropdown((prev) => !prev)}
           >
-            {items.title}{" "}
+            <NavLink className="nav-link" to={items.link}>{items.title}</NavLink>
             {depthLevel > 0 ? <span>&raquo;</span> : <FaCaretDown />}
           </div>
           <Megamenu
