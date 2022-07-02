@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Blog() {
+const Project = () => {
   return (
     <div>
-      Blog
+      hello
     </div>
   )
 }
 
-export default Blog
+export default Project

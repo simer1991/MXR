@@ -3,7 +3,7 @@
         "tille" : "SERVER SIDE",
         "list" :[
             {
-                "image" : "/assets/images/technology/php.png",
+                "image" : "./assets/images/technology/php.png",
                 "link" : "/php"
             },
             {

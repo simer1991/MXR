@@ -37,12 +37,6 @@ import CustomUnrealEngine from './Pages/Technology/CustomUnrealEngine';
 import UnityAppDevelopment from './Pages/Technology/UnityAppDevelopment';
 import Technology from './Pages/Technology/Technology';
 
-import {
-  Blog,
-  Posts,
-  Post,
-} from "./components";
-
 function App() {
   return (
     <>
@@ -52,18 +46,14 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/blog" element={<Blog />}>
-            <Route index element={<Posts />} />
-            <Route path=":postSlug" element={<Post />} />
-          </Route>
           <Route path="/project" element={<Project />} />
-          <Route path="/vr-360" element={<VR />} />
-          <Route path="/augmented-reality" element={<AR />} />
-          <Route path="/virtual-reality" element={<VRL />} />
-          <Route path="/mixed-reality" element={<MR />} />
-          <Route path="/mobile-app-development" element={<MAD />} />
-          <Route path="/web-design-and-development" element={<WDD />} />
-          <Route path="/research-and-innovation" element={<RI />} />
+          <Route path="/vr" element={<VR />} />
+          <Route path="/AR" element={<AR />} />
+          <Route path="/VRL" element={<VRL />} />
+          <Route path="/mr" element={<MR />} />
+          <Route path="/mad" element={<MAD />} />
+          <Route path="/wdd" element={<WDD />} />
+          <Route path="/ri" element={<RI />} />
           <Route path="/php" element={<Php />} />
           <Route path="/laravel" element={<Laravel />} />
           <Route path="/code" element={<CodeIngenator />} />
@@ -88,7 +78,7 @@ function App() {
           <Route path="/drupal" element={<Drupal />} />
           <Route path="/custom" element={<CustomUnrealEngine />} />
           <Route path="/unity" element={<UnityAppDevelopment />} />
-          <Route path="/technology" element={<Technology />} />
+          <Route path="/tech" element={<Technology />} />
         </Routes>
         <Footer />
       </Router>

@@ -183,7 +183,7 @@ export const menuItems = [
   },
   {
     title: "Projects",
-    link: "/"
+    link: "/projects"
   },
   {
     title: "Blog",

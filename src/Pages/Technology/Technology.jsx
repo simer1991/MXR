@@ -1,7 +1,7 @@
 import React from 'react'
 import TechnologyList from '../../../src/technologydata.json'
 
-const Technology = (props) => {
+const Technology = () => {
   return (
     <div>
       {TechnologyList.map((lists,index)=>
