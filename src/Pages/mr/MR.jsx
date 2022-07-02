@@ -7,6 +7,7 @@ import ClientsDevelopment from './ClientsDevelopment';
 import mr from '../../assets/icons/mixed/mr.jpg'
 import TechnologyWork from '../vr/TechnologyWork';
 import Project from '../project/Project';
+import { Container } from 'react-bootstrap-v5';
 
 
 const bannerdata = {
@@ -55,8 +56,10 @@ function MR() {
        <Process title="OUR SOFTWARE DEVELOPMENT PROCESS" />
        <ClientsDevelopment />
        <div className='mxr__classroom mxr__section'>
+        <Container>
         <h3 className='mxr__section-title'>MR IN CLASSROOM</h3>
        <img src={mr}/>
+       </Container>
        </div>
        <Readytotalk discuss={readytotalk} />
        <TechnologyWork />

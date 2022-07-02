@@ -1,9 +1,10 @@
 import React from 'react'
-import {Row,Col} from 'react-bootstrap-v5';
+import {Row,Col, Container} from 'react-bootstrap-v5';
 
 function Benifits(props){
   return (
    <div className='mxr__benifits mxr__section'>
+    <Container>
     {props.data.map((list,index)=>(
       <>
         <Row>
@@ -19,6 +20,7 @@ function Benifits(props){
         </Row>
       </>
     ))}
+    </Container>
  </div>
   )
 }

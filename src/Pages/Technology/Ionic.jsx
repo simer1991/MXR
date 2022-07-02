@@ -2,6 +2,8 @@ import React from 'react'
 import { Clients, Industries, Innerbanner, Readytotalk } from '../../components'
 import PartnerWithMxr from '../../components/PartnerWithMxr'
 import WhyChoooseMxr from '../../components/WhyChoooseMxr'
+import {FaIdCard,FaClock,FaPlug,FaFile,FaCode,FaUsers} from 'react-icons/fa'
+import WhyChoose from '../../components/WhyChoose'
 
 const bannerdata = {
   img: 'technology-ionic.jpg',
@@ -16,10 +18,50 @@ const readytotalk = {
   button:"CONTACT US",
 }
 
+const benifits=[
+  {
+    heading:"WHY CHOOSE IONIC?",
+    lists:[
+      {
+       title:"BEAUTIFUL UI COMPONENTS",
+       text:"Ionic comes with default styles that help developers create cross-platform apps with native elements within a short time. Built with intuitive UI elements with a collection of premium plugins, Ionic allows developers to add native device functionality to Android, iOS and web apps. Predefined styling helps developers create an engaging prototype quickly, without the need to add individual touches on each element, making development a cakewalk.",
+       icon:<FaIdCard size={30} />,
+      },
+      {
+        title:"EASY DEVELOPMENT AND QUICK TESTING",
+        text:"There is a feature in Ionic called the Ionic lab that shows how your app will look on multiple platforms. This makes app development, testing, and deployment easy and smooth. Moreover, if there is a change in the code, the live reload gets triggered instantly and every element is updated automatically.",
+        icon:<FaClock size={30} />,
+      },
+      {
+        title:"CORDOVA PLUGINS",
+        text:"The availability of Cordova plugins in Ionic helps developers access native APIs such as geolocation, camera, contacts, compass, logs, notifications, media storage, battery, etc. This allows the developers to customize and boost the app development process. Developers can leverage the Cordova plugins and extensions to create high-quality apps, and deploy them on multiple platforms. This saves them time, effort and money.",
+        icon:<FaPlug size={30} />,
+      },
+      {
+        title:"POWERFUL CLI",
+        text:"Ionic is renowned for its handy command-line interface. Its useful and powerful CLI steps up the scriptability, stability, and scalability of apps and reduces the development time. When it comes to creating new projects, new files and folders, and compiling projects to native apps, Ionic CLI tools prove to be of massive help.",
+        icon:<FaFile size={30} />,
+      },
+      {
+        title:"ONE CODE FOR ALL",
+        text:"Ionic developers can build multiple apps for different platforms using one code-base. This is a massive advantage for the developers since they need not write separate codes for building iOS, Android or Windows apps. They can simply reuse the same code structure for creating Ionic apps on different platforms, which saves them time and effort. Ionic’s code reusability helps in fewer development risks, improved performance, better maintenance, enhanced reliability and reduced development time.",
+        icon:<FaCode size={30} />,
+      },
+      {
+        title:"AWESOME COMMUNITY",
+        text:"Ionic is supported by an enormous community of over 5 million developers in more than 200 countries. Developers can easily connect and be a part of hundreds of meetups, conferences, forums and seminars, to expand their knowledge and improve their industry skills. This is a vibrant community that’s always ready to help people with valuable suggestions, articles, insights and ideas. And if someone gets lucky, he might also get answers directly from the founders of the Ionic framework.",
+        icon:<FaUsers size={30} />,
+      }
+
+    ]
+  }
+]
+
 const Ionic = () => {
   return (
     <div>
       <Innerbanner banner={bannerdata} />
+      <WhyChoose benifit={benifits}/>
       <PartnerWithMxr />
       <WhyChoooseMxr />
       <Industries />

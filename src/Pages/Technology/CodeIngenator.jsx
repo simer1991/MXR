@@ -4,6 +4,15 @@ import PartnerWithMxr from '../../components/PartnerWithMxr'
 import WhyChoooseMxr from '../../components/WhyChoooseMxr'
 import {FaShieldAlt,FaLaptopCode,FaTools,FaHandShake,FaAddressBook,FaSketch} from 'react-icons/fa'
 import WhyChoose from '../../components/WhyChoose'
+import TechnologyServices from '../../components/TechnologyServices'
+import codeingeter from '../../assets/icons/technologyservices/codeniger/codeingeter.png'
+import cloud from '../../assets/icons/technologyservices/codeniger/cloud.png'
+import codeigniterunit from '../../assets/icons/technologyservices/codeniger/codeigniter-unit.png'
+import consulting from '../../assets/icons/technologyservices/codeniger/consulting.png'
+import codeingeterdeve from '../../assets/icons/technologyservices/codeniger/codeingeterdeve.png'
+import maintenance from '../../assets/icons/technologyservices/codeniger/maintaince.png'
+import migration from '../../assets/icons/technologyservices/codeniger/migration.png'
+import custom from '../../assets/icons/technologyservices/codeniger/custom.png'
 
 const bannerdata = {
     img: 'codeigniter.jpg',
@@ -57,6 +66,54 @@ const bannerdata = {
     }
   ]
 
+  const services=[
+    {
+      heading:"CODEIGNITER SERVICES",
+      data:[
+        {
+         title:"MAINTENANCE AND SUPPORT",
+         text:"We’ll keep your CodeIgniter applications running error-free so that you can focus on your business. We will fix issues, oversee security, server updates and take responsibility for regular bug fixes and changes.",
+         icon:<img src={maintenance} alt="application"/>,
+        },
+        {
+          title:"CODEIGNITER APPLICATION DEVELOPMENT",
+          text:"Custom app development solutions based on CodeIgniter help developers create scalable, secure, and error-free apps. Our talented team ensures you get tailor-built application suited to your business needs.",
+          icon:<img src={codeingeter} alt="webservies"/>,
+        },
+        {
+          title:"CLOUD SOLUTIONS",
+          text:"We have extensive experience in providing ground-breaking cloud solutions to businesses. From the smallest applications to highly sophisticated web systems, our team has delivered cloud applications diversified business verticals.",
+          icon:<img src={cloud} alt="support"/>,
+        },
+        {
+          title:"CONSULTING",
+          text:"If your current systems are failing you or you are looking to drive innovation in your business, we’ll help you get things started by providing you services which include pre-project consultation and review of current applications.",
+          icon:<img src={consulting} />,
+        },
+        {
+          title:"CODEIGNITER WEB DEVELOPMENT",
+          text:"We use the CI framework based development to create outstanding websites. From eCommerce stores to brand websites with rich features, we do them all.",
+          icon:<img src={codeingeterdeve} />,
+        },
+        {
+          title:"CODEIGNITER UNIT AND AUTOMATED TESTING",
+          text:"Leveraging CodeIgniter’s unit testing class or using PHPUnit, we can ensure that your application is error-free. We can also run automated tests using Selenium.",
+          icon:<img src={codeigniterunit} />,
+        },
+        {
+          title:"CUSTOM DATABASE DEVELOPMENT",
+          text:"Created a customized database as per your business needs with CodeIgniter’s inbuilt supports popular databases like Oracle, Microsoft SQL Server, and DB2 and many more.",
+          icon:<img src={custom} />,
+        },
+        {
+          title:"MIGRATION",
+          text:"Migrate applications from ASP.NET, Python, RoR or other PHP frameworks (e.g., CakePHP, Symfony, and Zend) to CodeIgniter without any data or functionality loss.",
+          icon:<img src={migration} />,
+        },
+      ]
+    }
+  ]
+
 const CodeIngenator = () => {
   return (
     <div>
@@ -64,6 +121,7 @@ const CodeIngenator = () => {
       <WhyChoose benifit={benifits}/>
       <PartnerWithMxr />
       <WhyChoooseMxr />
+      <TechnologyServices service={services}/>
       <Industries />
       <Readytotalk discuss={readytotalk} />
       <Clients />

@@ -29,8 +29,8 @@ const Stats = () => {
               <div className='d-flex'>
                     <div className="mxr__stats-number-icon"><img src={thumb} alt="thumb"/></div>
                     <div className="mxr__stats-number-txt">
-                      <h3 className='fw-bold'>10+</h3>
-                      <h4>YEARS IN BUSINESS</h4>
+                      <h3 className='fw-bold'>1200+</h3>
+                      <h4>SOLUTIONS DELIVERED</h4>
                     </div>
                   </div>
               </div>
@@ -38,8 +38,8 @@ const Stats = () => {
                 <div className='d-flex'>
                     <div className="mxr__stats-number-icon"><img src={star} alt="star"/></div>
                     <div  className="mxr__stats-number-txt">
-                      <h3  className='fw-bold'>10+</h3>
-                      <h4>YEARS IN BUSINESS</h4>
+                      <h3  className='fw-bold'>150+</h3>
+                      <h4>TECHNOLOGY EXPERTS</h4>
                     </div>
                   </div>
               </div>
@@ -47,8 +47,8 @@ const Stats = () => {
               <div className='d-flex'>
                     <div className="mxr__stats-number-icon"><img src={hands} alt="hands"/></div>
                     <div  className="mxr__stats-number-txt">
-                      <h3 className='fw-bold'>10+</h3>
-                      <h4>YEARS IN BUSINESS</h4>
+                      <h3 className='fw-bold'>$50M+</h3>
+                      <h4>BUSINESS DELIVERED</h4>
                     </div>
                   </div>
               </div>

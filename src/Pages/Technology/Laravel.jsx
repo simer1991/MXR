@@ -5,6 +5,16 @@ import WhyChoooseMxr from '../../components/WhyChoooseMxr'
 import Readytotalk from '../../components/readytotalk/Readytotalk'
 import WhyChoose from '../../components/WhyChoose'
 import {FaFileAlt,FaLaptop,FaLaptopCode,FaTasks,FaUserLock,FaFileCode} from 'react-icons/fa'
+import TechnologyServices from '../../components/TechnologyServices'
+import laravel from '../../assets/icons/technologyservices/laravel/laravel.png'
+import lumen from '../../assets/icons/technologyservices/laravel/lumen.png'
+import full from '../../assets/icons/technologyservices/laravel/full.png'
+import sass from '../../assets/icons/technologyservices/laravel/saas.png'
+import browser from '../../assets/icons/technologyservices/laravel/browser.png'
+import maintenance from '../../assets/icons/technologyservices/laravel/maintenance.png'
+import migrate from '../../assets/icons/technologyservices/laravel/migrate.png'
+import laravelconsulting from '../../assets/icons/technologyservices/laravel/laravel-consulting.png'
+import laravelsupport from '../../assets/icons/technologyservices/laravel/laravelsupport.png'
 
 const bannerdata = {
   img: 'technology-laravel.jpg',
@@ -58,6 +68,60 @@ const benifits=[
   }
 ]
 
+const services=[
+  {
+    heading:"LARAVEL SERVICES",
+    data:[
+      {
+       title:"LARAVEL APPLICATION DEVELOPMENT",
+       text:"We help you design, build, and manage custom Laravel applications that help solve your most challenging problems and fit seamlessly into your current processes and practices and generate measurable outcomes for your enterprise.",
+       icon:<img src={laravel} alt="application"/>,
+      },
+      {
+        title:"LUMEN BASED WEB SERVICES & API DEVELOPMENT",
+        text:"Use Lumen Microservices framework to power your iOS & Android mobile applications or provide access to your platform data through secure, stable, and well-documented web services & APIs.",
+        icon:<img src={lumen} alt="webservies"/>,
+      },
+      {
+        title:"FULL-TEXT SEARCH",
+        text:"Implement lightning fast full text search on your website with Laravel’s Scout which also connects with Aloglia.",
+        icon:<img src={full} alt="support"/>,
+      },
+      {
+        title:"SAAS APPLICATION DEVELOPMENT",
+        text:"Using Laravel Cashier, Spark, Passport and Socialite other such Laravel packages we can help you develop a custom SaaS application.",
+        icon:<img src={sass} />,
+      },
+      {
+        title:"BROWSER TESTING AND AUTOMATION",
+        text:"Our automation testing services ensure complete test automation of website and application using Dusk.",
+        icon:<img src={browser} />,
+      },
+      {
+        title:"MAINTENANCE AND SUPPORT",
+        text:"We’ll keep your Laravel applications running error-free so that you can focus on your business. We will fix issues, oversee security, server updates, monitor performance, take periodic backups, and take responsibility for regular bug fixes and changes.",
+        icon:<img src={maintenance} />,
+      },
+      {
+        title:"LARAVEL BASED WEBSITE DEVELOPMENT",
+        text:"We can build custom features into your website using Laravel or help create a custom web site using Laravel based CMS such as Statamic and October.",
+        icon:<img src={laravelsupport} />,
+      },
+      {
+        title:"MIGRATE TO LARAVEL",
+        text:"We can help you migrate your application to PHP from ASP.NET, Java, Python without loss of any functionality or data.",
+        icon:<img src={migrate} />,
+      },
+      {
+        title:"LARAVEL CONSULTING",
+        text:"If your current systems are failing you or, you are looking to drive innovation in your business, we’ll help you get things started by provided you services such as pre-project consulting.",
+        icon:<img src={laravelconsulting} />,
+      },
+
+    ]
+  }
+]
+
 const Laravel = () => {
   return (
     <div>
@@ -65,6 +129,7 @@ const Laravel = () => {
       <WhyChoose benifit={benifits}/>
       <PartnerWithMxr />
       <WhyChoooseMxr />
+      <TechnologyServices service={services}/>
       <Industries />
       <Readytotalk discuss={readytotalk} />
       <Clients />
