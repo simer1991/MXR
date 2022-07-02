@@ -3,3 +3,23 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.mxr__readytotalk.mxr__section {
+    padding-bottom: 0;
+}
+.mxr__readytotalk .ready.col-lg-12.col-md-12 {
+    padding-top: 40px !important;
+    padding-right: 40px !important;
+    margin-right: 3.84%;
+    padding-bottom: 40px !important;
+    padding-left: 40px !important;
+    margin-left: 3.84%;
+    text-align: center;
+    background: #00000059;
+    margin: 6% 0%;
+}
+.ready h2 {
+    color: #fff;
+}
+.ready p {
+    color: #fff;
+}

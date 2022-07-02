@@ -32,3 +32,16 @@
 .left_internal_page.col-lg-4.col-md-4 {
     padding-top: 8%;
 }
+@media screen and (max-width: 767px){
+    .internal_page_banner >div {
+        background: #2b7975d6;
+    }
+    .left_internal_page.col-lg-4.col-md-4 {
+        padding-top: 50px;
+        margin-top: 0px;
+        padding-right: 30px;
+        padding-bottom: 50px;
+        margin-bottom: 0px;
+        padding-left: 30px;
+    }
+}
