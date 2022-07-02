@@ -86,7 +86,7 @@ function App() {
           <Route path="/swift" element={<Swift />} />
           <Route path="/worldpress" element={<Worldpress />} />
           <Route path="/drupal" element={<Drupal />} />
-          <Route path="/custom" element={<CustomUnrealEngine />} />
+          <Route path="/unreal-engine" element={<CustomUnrealEngine />} />
           <Route path="/unity" element={<UnityAppDevelopment />} />
           <Route path="/technology" element={<Technology />} />
         </Routes>
