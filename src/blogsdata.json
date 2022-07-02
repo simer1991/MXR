@@ -1,0 +1,311 @@
+[
+    {
+        "title": "What is Mixed Reality?",
+        "slug": "what-is-mixed-reality",
+        "date": "February 2nd, 2022",
+        "shortdesc": "Mixed Reality (MR) is a combination of multiple advanced technologies, primarily Virtual Reality and Augmented Reality.",
+        "body": [
+            {
+                "type": "para",
+                "content": [
+                    "(MR) is a combination of multiple advanced technologies, primarily Virtual Reality and Augmented Reality."
+                ]
+            },
+            {
+                "type": "title",
+                "content": "Hololens"
+            },
+            {
+                "type": "para",
+                "content": [
+                    "In the domain of workplace training, advancements in interactive-immersive technologies have opened up new options. Thousands of companies throughout the world are using immersive technologies to improve their training skills. Mixed reality training development is the most immersive and versatile solution.",
+                    "MR delivers an unrivalled learning environment by fusing the real and virtual worlds. It has the ability to completely transform how modern businesses and sectors conduct training programmes. MR offers the way to the next level of learning experience, from industrial training like hands-on learning to corporate training like soft skills.",
+                    "Recently, MR, along with HoloLens 2 and AR apps, has begun to gain traction in the training market. We’ll talk about how mixed reality can assist industries transform their training programmes in this blog article. But before we get started, let’s define mixed reality training."
+                ]
+            },
+            {
+                "type": "title",
+                "content": "What is mixed reality training, and how does it work?"
+            },
+            {
+                "type": "para",
+                "content": [
+                    "Training programmes that blend interactive digital items into real-world surroundings are referred to as mixed reality-based training. Both augmented reality (AR) and virtual reality (VR) immersive technologies are used in MR training. Let’s take a look at the capabilities of AR and VR in learning to get a better understanding of MR training.",
+                    "Augmented Reality (AR) uses a headset, phone, or tablet to provide learners with an interactive, digital picture of the actual environment. It allows students to engage in 3D space with computer-generated items.",
+                    "By overlaying layers of graphic information on top of existent material, immersive technologies provide a dynamic alternative to traditional learning. AR/VR/MR software and immersive devices like the HoloLens or HoloLens 2 are used to deliver mixed reality training.",
+                    "An augmented training app or a mixed reality training software, for example, allows users to overlay a piece of industrial equipment to train workers on it. Such training apps make use of virtual help, allowing trainers to obtain training at any time and from any location."
+                ]
+            },
+            {
+                "type": "title",
+                "content": "Mixed Reality’s Training Benefits"
+            },
+            {
+                "type": "list",
+                "content": [
+                    "Training costs are reduced.",
+                    "Analytics for advanced learning",
+                    "Learning that is converged",
+                    "Injury and accident hazards are reduced.",
+                    "Access to and mobility while training has improved.",
+                    "Microlearning with increased efficiency and remembrance",
+                    "It takes less time and is more favourable to learning.",
+                    "There are three ways that Mixed Reality might improve training."
+                ]
+            },
+            {
+                "type": "title",
+                "content": "1. Simulate learning that isn’t possible in real life."
+            },
+            {
+                "type": "para",
+                "content": [
+                    "Mixed reality can be used to create an interactive learning environment. It can assist you in replicating training regimens that are not possible to imitate in real life. For example, a corporation may need to provide training on how to repair and maintain a conveyor belt system. However, they must shut down the system in order to do the training, which will cost them hundreds of dollars. As a result, they chose to use mixed reality solutions to teach staff on simulated conveyor belt systems in a real-world setting."
+                ]
+            },
+            {
+                "type": "title",
+                "content": "2. A distant training environment with a high level of technicality"
+            },
+            {
+                "type": "para",
+                "content": [
+                    "Mixed reality, for example, can create a highly technical, safe teaching environment. It also allows you to build a collaborative learning environment where students may communicate with one another. For sectors that deal with life-threatening or dangerous conditions, MR training is safer. Because it demands a high level of stimulation and a safe, clean atmosphere, it is best suited for the medical or engineering fields. You may train your employees without having to hire an onsite trainer if you create a tech-driven, remote learning programme."
+                ]
+            },
+            {
+                "type": "title",
+                "content": "3. Provide a real-time, hands-on learning experience"
+            },
+            {
+                "type": "para",
+                "content": [
+                    "Instead of a theoretical approach, mixed reality emphasises hands-on practise. It lets you share fictitious learning experiences with your students. Learners do not even need to travel to a specific site to receive training with working equipment while using MR training. Immersive solutions provide real-time learning at the point of demand. You can deploy on-the-job training more quickly and accurately using the HoloLens training software."
+                ]
+            },
+            {
+                "type": "title",
+                "content": "Industry-specific Mixed Reality training use cases"
+            },
+            {
+                "type": "para",
+                "content": [
+                    "Manufacturing training: Teach workers how to safely operate and repair heavy machinery on the assembly line. Learn how a mixed reality solution gives automobile manufacturers an advantage in this article.",
+                    "HR training: Teach staff correct manners and give prospective hires a virtual tour of the company. Onboarding training may be made more effective and interactive with the use of MR.",
+                    "Demonstrate excellent safety procedures to employees without putting their lives at jeopardy. Consider the case of a building evacuation.",
+                    "Athletes should be taught the physics of their chosen sport through sports training. Professionals and hobbyists alike can benefit from MR’s assistance in learning all of the methods involved with a specific game.",
+                    "Healthcare training: Prepare healthcare workers and medical practitioners for emergency procedures such as surgery, blood drawing, and other medical procedures."
+                ]
+            },
+            {
+                "type": "title",
+                "content": "Welcome to the future of MR training!"
+            },
+            {
+                "type": "para",
+                "content": [
+                    "By superimposing digital features in the actual world, mixed reality may enhance and bring standard training management programmes to life. If you’ve decided to design your own immersive training programme, get in touch with our professionals. Our Microsoft certified professionals will give you a big push in the right direction when it comes to creating a virtual learning environment."
+                ]
+            }
+        ],
+        "author": "mario",
+        "id": 1
+    },
+    {
+        "title": "Virtual Reality (VR)",
+        "slug": "virtual-reality",
+        "date": "March 9th, 2021",
+        "shortdesc": "Virtual Reality (VR) There are bunches of meanings of the term Virtual Reality, and some are very long and confounded. How about we",
+        "body": [
+            {
+                "type": "para",
+                "content": [
+                    "There are bunches of meanings of the term Virtual Reality, and some are very long and confounded. How about we be brief and clear: computer generated simulation is a fake computerized climate that totally replaces this present reality.",
+                    "With VR, clients experience fake sounds and sights and feel as though they’re in an advanced world. Envision opening your eyes and seeing a PC produced world surrounding you; you can move in this climate and even collaborate with it. That is the thing that augmented experience resembles.",
+                    "Extraordinary VR headsets are utilized to submerge clients in computer generated simulation. There are two principle sorts of VR headsets:"
+                ]
+            },
+            {
+                "type": "title",
+                "content": "PC-connected headsets"
+            },
+            {
+                "type": "para",
+                "content": [
+                    "As their name recommends, these VR headsets are associated with a PC (or a gaming console) that creates top notch virtual encounters. The handling force of present day PCs is tremendous, so they can create sensible and influential computerized universes.",
+                    "VR headsets can be utilized alongside uncommon regulators. For this situation, clients can really associate with the virtual climate they’re submerged in. As may be normal, PC-associated headsets give the most captivating VR encounters."
+                ]
+            },
+            {
+                "type": "title",
+                "content": "Standalone headsets"
+            },
+            {
+                "type": "para",
+                "content": [
+                    "As you’ve most likely speculated, PC-associated VR headsets are very costly and generally couple of individuals are eager to drop that sort of money on them. However there’s another method to encounter augmented reality – utilizing independent headsets that don’t should be associated with a PC or reassure.",
+                    "Most independent VR headsets utilize a cell phone screen to give the augmented simulation experience. Such gadgets are very moderate, as clients can basically embed their cell phone into the headset to appreciate VR. Samsung Gear VR, Google Daydream, and Google Cardboard work precisely along these lines.",
+                    "Other independent headsets work all alone. Facebook’s Oculus Go, for instance, needs neither a PC nor a cell phone to create virtual encounters. This gadget makes computer generated reality innovation much more normal and moderate."
+                ]
+            },
+            {
+                "type": "title",
+                "content": "Immersive Videos as a Form of VR"
+            },
+            {
+                "type": "para",
+                "content": [
+                    "Devoted web clients realize that YouTube underpins 360-degree recordings. Today, these recordings are getting progressively far and wide. In contrast to regular recordings with a restricted field of view, 360-degree recordings are omnidirectional and, thusly, vivid.",
+                    "Despite the fact that this arrangement is contested, vivid recordings (just as photographs) are considered by numerous individuals as a type of augmented reality. Clients need to wear headsets to encounter them to their fullest. For instance, in a 360-degree video a client can move their head and check out the live scene."
+                ]
+            },
+            {
+                "type": "title",
+                "content": "Real-Life Applications of Virtual Reality"
+            },
+            {
+                "type": "para",
+                "content": [
+                    "What’s the main business you consider when you hear the term computer generated reality? It’s most likely gaming. The gaming business has just accepted this innovation – for example, you can associate the PlayStation VR headset to a PlayStation comfort and appreciate VR encounters.",
+                    "Gaming, in any case, isn’t the solitary field where augmented reality innovation can be utilized. See our rundown of the main uses of VR."
+                ]
+            },
+            {
+                "type": "title",
+                "content": "Education"
+            },
+            {
+                "type": "para",
+                "content": [
+                    "VR learning substance can reform schooling, making learning vivid and additionally captivating. Furthermore, aside from schools and colleges, virtual encounters can likewise help organizations train their staff. Universe is as of now offering VR instructive substance for organizations and foundations."
+                ]
+            },
+            {
+                "type": "title",
+                "content": "Real Estate"
+            },
+            {
+                "type": "para",
+                "content": [
+                    "Photographs have been utilized by realtors to grandstand properties for quite a long time. Yet, presently, specialists can utilize augmented reality for this reason. Not at all like photographs, VR is vivid, so potential purchasers can take three-dimensional walkthroughs and better comprehend what every property has to bring to the table prior to visiting face to face.",
+                    "Matter port is now utilizing 360-degree video exhibits to help specialists better associate with their customers."
+                ]
+            },
+            {
+                "type": "title",
+                "content": "Healthcare"
+            },
+            {
+                "type": "para",
+                "content": [
+                    "Being immersive, augmented experience can give an inside and out investigate human life systems, assisting specialists with bettering comprehend their patients’ necessities. VR innovation additionally proves to be useful for careful preparing. A stage worked by Medical Realities utilizes 360-degree recordings and virtual life systems to prepare future specialists."
+                ]
+            },
+            {
+                "type": "title",
+                "content": "Travel"
+            },
+            {
+                "type": "para",
+                "content": [
+                    "The movement business has consistently rushed to receive new technologies, and it’s to be expected – individuals need to understand what they’re paying for. Virtual visits can help travel organizations advance objections and draw in vacationers. VR is additionally an extraordinary path for individuals who make some harder memories getting around investigating the world.",
+                    "Google Street View is the best illustration of how VR innovation can be utilized in the movement business. Despite the fact that it’s conceivable to see all encompassing pictures directly on a PC, clients can likewise empower Google Cardboard mode for a computer generated simulation experience."
+                ]
+            }
+        ],
+        "author": "yoshi",
+        "id": 2
+    },
+    {
+        "title": "Augmented Reality (AR)",
+        "slug": "augmented-reality-ar",
+        "date": "March 9th, 2021",
+        "shortdesc": "Augmented Reality (AR) Expanded has just become a trendy expression, yet this innovation is as yet a secret for some individuals. So how",
+        "body": [
+            {
+                "type": "para",
+                "content": [
+                    "Expanded has just become a trendy expression, yet this innovation is as yet a secret for some individuals. So how about we give an unmistakable clarification: enlarged the truth is the overlay of advanced substance on this present reality climate. Virtual articles can be in different structures: pictures, recordings, or intelligent information.",
+                    "At the end of the day, on the off chance that you see this present reality enhanced with computerized objects, that is AR. Envision you need to purchase a household item – a seat, for instance. Expanded reality innovation can help you check how various seats will glance in your room and pick the one that fits best.",
+                    "So how might you rejuvenate AR encounters? There are two fundamental ways:"
+                ]
+            },
+            {
+                "type": "title",
+                "content": "Portable devices"
+            },
+            {
+                "type": "para",
+                "content": [
+                    "AR is the most available reality innovation, as individuals can utilize their cell phones or tablets to run expanded reality applications. AR applications utilize a telephone camera to catch this present reality; virtual items are then overlaid and clients can see them on their cell phone screen.",
+                    "That is the way normal AR applications work, the best model being Pokemon Go. A great many individuals have utilized their cell phones to play this game and catch virtual Pokemons that they can just see on their cell phone screens."
+                ]
+            },
+            {
+                "type": "title",
+                "content": "Smart glasses and AR headsets"
+            },
+            {
+                "type": "para",
+                "content": [
+                    "Another approach to make AR encounters is to utilize extraordinary savvy glasses or headsets. In contrast to VR headsets, these AR glasses and headsets don’t submerge clients into a completely virtual climate yet add computerized objects to this present reality. With Glass, for instance, advanced information is extended directly before the client’s eyes."
+                ]
+            },
+            {
+                "type": "title",
+                "content": "Applications of Augmented Reality Technology"
+            },
+            {
+                "type": "para",
+                "content": [
+                    "Since you understand what AR is and how it functions, attempt to think about what enterprises this innovation can be utilized in. What’s more, no, gaming doesn’t tally. In spite of the fact that Pokémon Go was a genuine forward leap in portable games, increased reality innovation has much more to bring to the table.",
+                    "AR, indeed, demonstrates valuable in an assortment of circles, from promoting to medication. How about we examine what fields enlarged reality innovation can be utilized in."
+                ]
+            },
+            {
+                "type": "title",
+                "content": "Manufacturing"
+            },
+            {
+                "type": "para",
+                "content": [
+                    "Assembling is an industry where new innovations can give an upper hand. Increased reality assists organizations with improving efficiency and quality. How? Assembling laborers can get help from AR contraptions to decrease human blunder, save time, and increment proficiency.",
+                    "For instance, Upskill offers an expanded reality stage for mechanical applications. A portion of the world’s greatest partnerships, for example, General Electric and Boeing, are as of now utilizing AR in their assembling measures."
+                ]
+            },
+            {
+                "type": "title",
+                "content": "Retail"
+            },
+            {
+                "type": "para",
+                "content": [
+                    "A huge number of individuals favor making buys on the web. Internet shopping is helpful, efficient, and cash saving. Be that as it may, imagine a scenario in which a thing isn’t actually what the purchaser expected when it shows up. AR applications are an extraordinary answer for this issue, as they permit clients to essentially see or even take a stab at items sold on the web."
+                ]
+            },
+            {
+                "type": "title",
+                "content": "Navigation"
+            },
+            {
+                "type": "para",
+                "content": [
+                    "Enlarged the truth is especially valuable for route. Virtual items covering this present reality can show headings and guide individuals to areas. Numerous organizations use AR to draw in individuals to their stores; Yelp, for instance, has a Monocle alternative that shows you the closest bistros and cafés."
+                ]
+            },
+            {
+                "type": "title",
+                "content": "Maintenance and Repairs"
+            },
+            {
+                "type": "para",
+                "content": [
+                    "Imagine you need to fix something and you don’t have a clue how. Most likely you’d either invest a ton of energy watching DIY recordings on the web or essentially request that an expert do it for you. There’s presently a third alternative, be that as it may – you can utilize an exceptional enlarged reality application to assist you with playing out a maintenance.",
+                    "On the off chance that you think this is something from what’s to come, you’re very mixed up. Organizations and people can utilize enlarged reality answers for do support and fixes today. Figure out how an AR application created by Inglobe Technologies encourages vehicle upkeep."
+                ]
+            }
+        ],
+        "author": "yoshi",
+        "id": 3
+    }
+]
