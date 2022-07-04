@@ -3,7 +3,7 @@ import {Row,Col, Container} from 'react-bootstrap-v5';
 
 function Benifits(props){
   return (
-   <div className='mxr__benifits mxr__section'>
+   <div className='mxr__benifits mxr__section mxr__hireus'>
     <Container>
     {props.data.map((list,index)=>(
       <>

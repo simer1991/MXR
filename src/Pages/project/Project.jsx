@@ -39,7 +39,7 @@ function Project(props) {
           </Row>
         </div>
         <Row>
-          <Col>
+          <Col className='project_type'>
             <div>
               {props.form.map((data, index) => (
                 <>
