@@ -3,6 +3,12 @@ import { Container,Row,Col,Card,ListGroup,Form } from 'react-bootstrap-v5'
 import {FaMapMarkerAlt,FaPhoneAlt,FaEnvelope,FaComment} from 'react-icons/fa';
 import ReCAPTCHA from 'react-google-recaptcha';
 import emailjs from '@emailjs/browser' 
+import { Innerbanner } from '../../components';
+
+const bannerdata = {
+  img: 'technology-reactjs.png',
+  title: "CONTACT MXR TODAY",
+}
 
 const Contact =() => {
   const [varified,setVarified]=useState(false)
@@ -23,8 +29,9 @@ const Contact =() => {
 }
   
   return (
-  <Container>
-    <div className='mxr__contact mxr__section'>
+   <div className='mxr__contact'> 
+   <Innerbanner banner={bannerdata}/>  
+    <Container>
       <h3 className='mxr__section-title'>CONTACT MXR TODAY</h3>
       <Row>
         <Col lg={4}>
@@ -101,8 +108,9 @@ const Contact =() => {
         </Form>
         </Col>
       </Row>
-      </div>
     </Container>
+    
+    </div>
   )
 }
 

@@ -10,7 +10,7 @@ import work from '../../assets/icons/technologyservices/python/work.png'
 import select from '../../assets/icons/technologyservices/python/select.png'
 
 const bannerdata = {
-  img: 'technology-python.jpg',
+  img: 'technology-phython.jpg',
   title: "HIRE DEDICATED PYTHON DEVELOPERS",
   text: "Our expert developers will analyze your organization’s unique requirements and implement the perfect upgrades or build new software from the ground up."
 }

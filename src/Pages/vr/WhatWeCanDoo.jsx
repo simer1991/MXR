@@ -10,7 +10,7 @@ import hardware from '../../assets/icons/whatwecando2/hardware.png'
 
 const WhatWeCanDoo = () => {
   return (
-    <div className='mxr__whatwecandoo mxr__section'>
+    <div className='mxr__whatwecandoo mxr__section vertical_tabs'>
       <Container>
       <h3 className='mxr__section-title'>WHAT WE CAN DO FOR YOU</h3>
        <Tab.Container id="left-tabs-example" defaultActiveKey="training">
