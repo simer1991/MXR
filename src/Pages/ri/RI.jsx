@@ -3,10 +3,6 @@ import { Innerbanner, Process, Readytotalk } from '../../components'
 import Landscape from './Landscape'
 import Benifits from '../vr360/Benifits'
 import images from '../../assets/icons/benifits/ri.png'
-<<<<<<< HEAD
-
-=======
->>>>>>> c9aa27dd2b3ec598da168fb8cf27c3fac1c984fb
 
 const bannerdata = {
   img: 'services-research and innovation.jpg',
@@ -40,10 +36,6 @@ const RI = () => {
       <Landscape />
       <Readytotalk discuss={readytotalk} />
       <Process title="OUR SOFTWARE DEVELOPMENT PROCESS" />
-<<<<<<< HEAD
-     
-=======
->>>>>>> c9aa27dd2b3ec598da168fb8cf27c3fac1c984fb
     </div>
   )
 }
