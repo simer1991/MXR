@@ -48,6 +48,8 @@ const Clients = () => {
                   <Carousel.Caption>
                     <h3>{testi.name}</h3>
                     <p>{testi.text}</p>
+                    <h5>{testi.company}</h5>
+                    <p>{testi.stars}</p>
                   </Carousel.Caption>
                 </Carousel.Item>
 

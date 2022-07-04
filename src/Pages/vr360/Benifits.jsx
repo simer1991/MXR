@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function Benifits(props){
   return (
-   <div className='mxr__benifits mxr__section'>
+   <div className='mxr__benifits mxr__section mxr__hireus'>
     <Container>
     {props.data.map((list,index)=>(
       <>

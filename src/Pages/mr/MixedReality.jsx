@@ -11,7 +11,7 @@ import visiualisation from '../../assets/icons/mixed/visiualisation.png';
 
 const MixedReality = () => {
   return (
-    <div className='mxr__mixedreality mxr__section'>
+    <div className='mxr__mixedreality mxr__section '>
     <Container>
     <h3 className='mxr__section-title'>MIXED REALITY APPLICATIONS</h3>
    <Tab.Container id="left-tabs-example" defaultActiveKey="training">

@@ -3,13 +3,8 @@
         "title": "SERVER SIDE",
         "list": [
             {
-<<<<<<< HEAD
-                "image" : "./assets/images/technology/php.png",
-                "link" : "/php"
-=======
                 "image": "assets/images/technology/php.png",
                 "link": "/php"
->>>>>>> c9aa27dd2b3ec598da168fb8cf27c3fac1c984fb
             },
             {
                 "image": "assets/images/technology/laravel.png",

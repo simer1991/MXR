@@ -18,14 +18,14 @@ function Project(props) {
         <div>
           <Row>
             <Col>
-              <input type="text" placeholder='First name*' />
+              <input type="text" placeholder='First name*' required/>
             </Col>
             <Col>
-              <input type="text" placeholder='Last name*' />
+              <input type="text" placeholder='Last name*' required />
             </Col>
             <Col>
               <label><FaPhoneAlt /></label>
-              <input type="text" placeholder='Home phone*' />
+              <input type="text" placeholder='Home phone*' required />
             </Col>
           </Row>
           <Row>

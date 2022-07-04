@@ -1,5 +1,5 @@
 import './App.css';
-import { Header, Footer } from './components';
+import { Header, Footer, Blog } from './components';
 import { Home, About,Contact,VR,VRL,MAD,MR,WDD,RI,Php,Laravel,CodeIngenator,Python,Node,Android,Angular,Reactjs,Vue,Mean,Mern,Magento,WooCommerce,Shopify,IOS,ReactNative,Hybrid,Flutter,Ionic,Swift,Worldpress,Drupal,CustomUnrealEngine,UnityAppDevelopment,Project1,Project2,Projects,AR } from './Pages';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -46,6 +46,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/project1" element={<Project1 />} />
           <Route path="/project2" element={<Project2 />} />
+          <Route path="/blog" element={<Blog />} />
         </Routes>
         <Footer />
       </Router>
