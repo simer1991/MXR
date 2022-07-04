@@ -1,6 +1,6 @@
 import './App.css';
-import { Header, Footer, Blog } from './components';
-import { Home, About,Contact,VR,VRL,MAD,MR,WDD,RI,Php,Laravel,CodeIngenator,Python,Node,Android,Angular,Reactjs,Vue,Mean,Mern,Magento,WooCommerce,Shopify,IOS,ReactNative,Hybrid,Flutter,Ionic,Swift,Worldpress,Drupal,CustomUnrealEngine,UnityAppDevelopment,Project1,Project2,Projects,AR } from './Pages';
+import { Header,Footer, Blog,Post,Posts } from './components';
+import { Home, About,Contact,VR,VRL,MAD,MR,WDD,RI,Php,Laravel,CodeIngenator,Python,Node,Android,Angular,Reactjs,Vue,Mean,Mern,Magento,WooCommerce,Shopify,IOS,ReactNative,Hybrid,Flutter,Ionic,Swift,Worldpress,Drupal,CustomUnrealEngine,UnityAppDevelopment,Project1,Project2,Projects,AR,Technology } from './Pages';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -12,6 +12,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/blog" element={<Blog />} >
+             <Route index element={<Posts />}/>
+             <Route path=":postSlug" element={<Post />} />
+          </Route>
           <Route path="/vr-360" element={<VR />} />
           <Route path="/augmented-reality" element={<AR />} />
           <Route path="/virtual-reality" element={<VRL />} />
@@ -46,7 +50,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/project1" element={<Project1 />} />
           <Route path="/project2" element={<Project2 />} />
-          <Route path="/blog" element={<Blog />} />
+          <Route path="/technology" element={<Technology />} />
         </Routes>
         <Footer />
       </Router>

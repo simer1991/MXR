@@ -4,6 +4,8 @@
         "slug": "what-is-mixed-reality",
         "date": "February 2nd, 2022",
         "shortdesc": "Mixed Reality (MR) is a combination of multiple advanced technologies, primarily Virtual Reality and Augmented Reality.",
+        "text":"Share The Virtual Reality Post!",
+        "img": "<i className=\"fa fa-desktop\" aria-hidden=\"true\"></i>",
         "body": [
             {
                 "type": "para",
@@ -107,7 +109,8 @@
                     "By superimposing digital features in the actual world, mixed reality may enhance and bring standard training management programmes to life. If you’ve decided to design your own immersive training programme, get in touch with our professionals. Our Microsoft certified professionals will give you a big push in the right direction when it comes to creating a virtual learning environment."
                 ]
             }
-        ],
+          ],
+
         "author": "mario",
         "id": 1
     },

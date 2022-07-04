@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router";
 import Bloglist from "../../blogsdata.json";
+import { Row,Col, NavLink } from 'react-bootstrap-v5'
+import {FacebookShareButton,FacebookIcon} from 'react-social-share-buttons'
 
 function Post() {
     let { postSlug } = useParams();
@@ -46,6 +48,25 @@ function Post() {
                         return null;
                     }
                 })}
+            </div>
+            <div>
+            <Row>
+            <Col>
+              <h4>Share The Virtual Reality Post!</h4>
+            </Col>
+            <Col>
+            <FacebookShareButton url={url} >
+                <FacebookIcon  size={40} round={true}/>
+         </FacebookShareButton>
+            </Col>
+        </Row>
+            </div>
+            <div>
+                <Row>
+                    <Col>
+                      <p>By <NavLink>admin</NavLink> |March 9th, 2021| <NavLink>blogs</NavLink> | <NavLink>0 Comments</NavLink> </p>
+                    </Col>
+                </Row>
             </div>
         </>
     );
