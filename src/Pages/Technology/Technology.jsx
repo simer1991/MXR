@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import TechnologyList from '../../../src/technologydata.json'
 import './technology.css';
 
-const Technology = (props) => {
+const Technology = () => {
   return (
     <div className="mxr__techno mxr__section">
       <div className='container'>

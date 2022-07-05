@@ -1,5 +1,6 @@
 import React from 'react'
 import {Row,Col, Container} from 'react-bootstrap-v5';
+import { Link } from 'react-router-dom';
 
 function Benifits(props){
   return (
@@ -16,6 +17,7 @@ function Benifits(props){
         {list.pharagraphs.map((read,index)=>(
           <p>{read}</p>
         ))}
+        {list.link && <Link className="mxr__section-btn" to="/project1">READ MORE</Link>}
         </Col>
         </Row>
       </>

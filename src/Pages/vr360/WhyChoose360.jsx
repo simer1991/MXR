@@ -62,8 +62,7 @@ const WhyChoose360 = () => {
                       <img src={virtual2} alt="virtual staging" />
                     </Col>
                     <Col>
-                      <p>
-It is one of the most important tasks for interior designers to present projects in an appealing and a comprehensible manner, in order to encourage imagination of their clients. Any property buyer only buys when he understands what exactly he is buying.</p>
+                      <p>It is one of the most important tasks for interior designers to present projects in an appealing and a comprehensible manner, in order to encourage imagination of their clients. Any property buyer only buys when he understands what exactly he is buying.</p>
                     </Col>
                 </Row>
             </Tab>

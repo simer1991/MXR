@@ -111,15 +111,21 @@ p {
 .mxr__stack .tab-content {
   display: inline-block;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8f8a90ce3c21b078e630c8b4b17ab8a4ef813f47
 .mxr__keybenifits .col-lg-4.col-sm-12 {
   text-align: center;
   padding-top: 5%;
 }
+
 .mxr__keybenifits h5 {
   color: #2b7975;
   font-weight: 800;
   margin-bottom: 15px;
 }
+
 .mxr__keybenifits svg {
   color: white;
   background: #2b7975;
@@ -129,6 +135,7 @@ p {
   height: 40px;
   border-radius: 50%;
 }
+
 .mxr__platform.mxr__section {
   TEXT-ALIGN: CENTER;
 }
