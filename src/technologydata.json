@@ -12,7 +12,7 @@
             },
             {
                 "image": "assets/images/technology/codeignator.png",
-                "link": "/codeignator"
+                "link": "/code"
             },
             {
                 "image": "assets/images/technology/python.png",
@@ -33,7 +33,7 @@
             },
             {
                 "image": "assets/images/technology/react.png",
-                "link": "/react"
+                "link": "/reactjs"
             },
             {
                 "image": "assets/images/technology/vue.png",
@@ -58,7 +58,7 @@
             },
             {
                 "image": "assets/images/technology/woocommerce.png",
-                "link": "/woocommerce"
+                "link": "/commerce"
             },
             {
                 "image": "assets/images/technology/shopify.png",
@@ -71,7 +71,7 @@
         "list": [
             {
                 "image": "assets/images/technology/wordpress.png",
-                "link": "/wordpress"
+                "link": "/worldpress"
             },
             {
                 "image": "assets/images/technology/drupal.png",
@@ -100,23 +100,23 @@
             },
             {
                 "image": "assets/images/technology/react-native.png",
-                "link": "/php"
+                "link": "/reactnative"
             },
             {
                 "image": "assets/images/technology/hybrid.png",
-                "link": "/php"
+                "link": "/hybrid"
             },
             {
                 "image": "assets/images/technology/flutter.png",
-                "link": "/php"
+                "link": "/flutter"
             },
             {
                 "image": "assets/images/technology/ionic.png",
-                "link": "/php"
+                "link": "/ionic"
             },
             {
                 "image": "assets/images/technology/swift.png",
-                "link": "/php"
+                "link": "/swift"
             }
         ]
     },

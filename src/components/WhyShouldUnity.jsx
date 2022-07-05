@@ -4,7 +4,7 @@ import rendering from '../assets/icons/technologyservices/whyshould/rendering.jp
 import cost from '../assets/icons/technologyservices/whyshould/cost.png'
 import multiple from '../assets/icons/technologyservices/whyshould/multiple.png'
 import sound from '../assets/icons/technologyservices/whyshould/sound.jpg'
-import security from '../assets/icons/technologyservices/whyshould/security.jpg'
+
 
 const WhyShouldUnity = () => {
   return (

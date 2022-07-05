@@ -6,6 +6,8 @@ import google from '../../assets/icons/clients/google.jpg';
 import good from '../../assets/icons/clients/good.jpg';
 import top from '../../assets/icons/clients/top.jpg';
 import reviewpphn from '../../assets/icons/clients/review-pphn.jpg';
+import  {AiOutlineStar,AiFillStar} from 'react-icons/ai'
+
 const Clients = () => {
   return (
     <div className='mxr__clients mxr__section'>
@@ -49,7 +51,13 @@ const Clients = () => {
                     <h3>{testi.name}</h3>
                     <p>{testi.text}</p>
                     <h5>{testi.company}</h5>
-                    <p>{testi.stars}</p>
+                    <div>
+                    <AiFillStar />
+                    <AiFillStar />
+                    <AiFillStar />
+                    <AiFillStar />
+                    <AiOutlineStar />
+                    </div>
                   </Carousel.Caption>
                 </Carousel.Item>
 

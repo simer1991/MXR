@@ -13,6 +13,7 @@ import codeingeterdeve from '../../assets/icons/technologyservices/codeniger/cod
 import maintenance from '../../assets/icons/technologyservices/codeniger/maintaince.png'
 import migration from '../../assets/icons/technologyservices/codeniger/migration.png'
 import custom from '../../assets/icons/technologyservices/codeniger/custom.png'
+import { AiOutlineDashboard ,  } from "react-icons/ai";
 
 const bannerdata = {
     img: 'codeigniter.jpg',
@@ -59,7 +60,7 @@ const bannerdata = {
         {
           title:"GREAT PERFORMANCE",
           text:"CodeIngiter is lightweight and performs better in comparison to many of its peers.",
-          icon:<FaSketch size={30} />,
+          icon:<AiOutlineDashboard size={30} />,
         }
   
       ]

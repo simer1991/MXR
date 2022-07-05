@@ -4,7 +4,7 @@ import {FaPaintBrush,FaUsers,FaSearchDollar,FaPenNib} from 'react-icons/fa';
 
 const DevelopmentService = () => {
   return (
-    <div className='mxr__developmentservice mxr__section'>
+    <div className='mxr__developmentservice mxr__section mxr__developmentservice'>
       <Container>
       <h3 className='mxr__section-title'>WHY CHOOSE OUR WEB DEVELOPMENT SERVICES</h3>
       <Row>

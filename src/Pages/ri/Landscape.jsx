@@ -7,7 +7,7 @@ import viable from '../../assets/icons/research/viable.jpg'
 
 const Landscape = () => {
   return (
-    <div className='mxr__landscape mxr__section'>
+    <div className='mxr__landscape mxr__section mxr__developmentservice'>
       <Container>
         <h3 className='mxr__section-title'>SERVICE LANDSCAPE</h3>
         <Row>
