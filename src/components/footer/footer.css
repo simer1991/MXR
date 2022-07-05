@@ -82,6 +82,12 @@ ul.mxr__footer-links {
 .mxr__footer-copyright .nav-link {
     display: inline-block;
 }
+.mxr__footer-top li {
+    padding: 3px 0px;
+}
+.mxr__footer.mxr__section {
+    padding-bottom: 0;
+}
 @media screen and (max-width: 767px){
     .mxr__footer-top {
         padding: 30px 30px;

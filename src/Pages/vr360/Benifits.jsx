@@ -8,10 +8,10 @@ function Benifits(props){
     {props.data.map((list,index)=>(
       <>
         <Row>
-        <Col>
+        <Col md={6} sm={12}>
         {list.images}  
         </Col>
-        <Col>
+        <Col md={6} sm={12} >
         <h3 className='mxr__section-title'>{list.heading}</h3>
         {list.pharagraphs.map((read,index)=>(
           <p>{read}</p>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container,Tab,Tabs } from 'react-bootstrap-v5'
+import { Container,Tab,Tabs,Row } from 'react-bootstrap-v5'
 import arkit from '../../assets/icons/technology/arkit.webp';
 import arcore from '../../assets/icons/technology/arcore.webp';
 import unity from '../../assets/icons/technology/unity.webp';
@@ -32,8 +32,10 @@ import amazonetranscribe from '../../assets/icons/technology/amazonetranscribe.w
 
 const Technology = () => {
   return (
-    <div className='mxr__teachnology mxr__section'>
+    <div className='mxr__teachnology mxr__section mxr_stack'>
+      <div className='mxr__stack'>
         <Container>
+          <Row>
           <h3 className='mxr__section-title'>TECHNOLOGIES WE WORK WITH</h3>
         <Tabs className="mb-3 mxr__tabs">
         <Tab eventKey="development" title="Development Tools">
@@ -177,7 +179,9 @@ const Technology = () => {
           </ul>
         </Tab>
          </Tabs>
+         </Row>
         </Container>
+        </div>
     </div>
   )
 }

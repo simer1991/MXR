@@ -19,8 +19,6 @@ body {
 
 .mxr__section {
   padding: 50px 0;
-  float: left;
-  width: 100%;
 }
 
 .mxr__section-title {
@@ -188,6 +186,15 @@ p {
 .mxr__platform.mxr__section {
   background: #e8e8e8;
 }
+.email svg {
+  position: absolute;
+  color: #fff;
+  font-size: 12px;
+  top: 5px;
+}
+.email.col-md-4.col-sm-12 {
+  position: relative;
+} 
 .mxr__project.mxr__section{
   background-image: url("../src/assets/images/contact-banner.png");
   background-position: center center;
@@ -205,7 +212,10 @@ p {
   color: #fff;
   margin-bottom: 20px;
 }
-.mxr__project input{
+.phone.col-md-4.col-sm-12 {
+  position: relative;
+}
+.mxr__project .inputfild input {
   background-color: rgba(252,252,252,0);
   color: #ffffff;
   border-top-width: 0px;
@@ -213,6 +223,23 @@ p {
   border-right-width: 0px;
   border-left-width: 0px;
   border-color: #ffffff;
+  width: 100%;
+  padding-bottom: 9px;
+  padding-left: 24px;
+  font-size: 14px;
+}  
+.phone svg {
+  position: absolute;
+  color: #fff;
+  width: 12px;
+  top: 5px;
+}
+.mxr__project .inputfild .col-md-4.col-sm-12 {
+  display: flex;
+}          
+.mxr__project .inputfild .col-md-4.col-sm-12 {
+  display: flex;
+  margin-bottom: 31px;
 }
 .mxr__project .container {
   background-position: left top;
@@ -259,6 +286,58 @@ p {
 .project_type.col {
   background: #246366d4 !important;
   border-radius: 6px;
+  padding: 20px;
+}
+.estimate input.slider {
+  width: 100%;
+  margin-left: 20px;
+}
+.mxr__project button {
+  BACKGROUND: #3393ab !important;
+  font-size: 15px !important;
+  COLOR: #FFFF !IMPORTANT;
+  font-weight: 600;
+  border-radius: 4px !important;
+  padding: 12px 43px !important;
+  margin-top: 10px;
+}
+.estimate.col-sm-12 {
+  display: flex;
+  width: 100%;
+  margin: 41px 0px;
+}
+.mxr__classroom img {
+  width: 100%;
+}
+.estimate .value {
+  color: #fff;
+  border-bottom: 1px solid;
+  padding: 0px 15px;
+}
+.project_type h6 {
+  color: #fff;
+}
+.project_type p {
+  color: #fff;
+}
+.mxr__project h6 {
+  color: #fff;
+}
+.mxr__whychoose h5 {
+  color: #2b7975;
+  font-weight: 600;
+}
+.mxr__whychoose .col-md-6.col-sm-12 {
+  display: flex;
+}
+.icon_leftside {
+  background: #2b7975;
+  height: 53px;
+  width: 54px;
+  border-radius: 50%;
+  padding: 12px;
+  color: #fff;
+  margin-right: 20px;
 }
 @media screen and (max-width: 767px){
   .vertical_tabs .nav-item {
