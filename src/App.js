@@ -1,7 +1,24 @@
 import './App.css';
+<<<<<<< HEAD
 import { Header,Footer, Blog,Post,Posts } from './components';
 import { Home, About,Contact,VR,VRL,MAD,MR,WDD,RI,Php,Laravel,CodeIngenator,Python,Node,Android,Angular,Reactjs,Vue,Mean,Mern,Magento,WooCommerce,Shopify,IOS,ReactNative,Hybrid,Flutter,Ionic,Swift,Worldpress,Drupal,CustomUnrealEngine,UnityAppDevelopment,Project1,Project2,Projects,AR,Technology } from './Pages';
+=======
+import {
+  Header, Footer, Blog, Posts, Post
+} from './components';
+import { Home, About, Contact, VR, VRL, MAD, MR, WDD, RI, Php, Laravel, CodeIngenator, Python, Node, Android, Angular, Reactjs, Vue, Mean, Mern, Magento, WooCommerce, Shopify, IOS, ReactNative, Hybrid, Flutter, Ionic, Swift, Worldpress, Drupal, CustomUnrealEngine, UnityAppDevelopment, Project1, Project2, Projects, AR, Technology } from './Pages';
+>>>>>>> 5296c7e66600dcc259ed652d697b60943245169e
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+const express = require("express");
+const app = express();
+
+app.get("/", (req, res) => {
+  res.send("Hello World!");
+});
+
+const PORT = process.env.PORT || 8080;
+
+app.listen(PORT, console.log(`Server started on port ${PORT}`));
 
 function App() {
   return (
@@ -12,9 +29,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/blog" element={<Blog />} >
-             <Route index element={<Posts />}/>
-             <Route path=":postSlug" element={<Post />} />
+          <Route path="/blog" element={<Blog />}>
+            <Route index element={<Posts />} />
+            <Route path=":postSlug" element={<Post />} />
           </Route>
           <Route path="/vr-360" element={<VR />} />
           <Route path="/augmented-reality" element={<AR />} />

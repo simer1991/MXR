@@ -108,7 +108,7 @@ span.arrow:before {
     left: 0;
 }
 .mxr__header-navbarmegamenu ul {
-    display: inline-block;
+    display: table-cell;
     padding: 5px 10px 6px 8px;
     list-style-type: none;
 }

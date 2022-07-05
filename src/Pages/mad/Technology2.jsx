@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container,Tab,Tabs } from 'react-bootstrap-v5'
+import { Container,Row,Tab,Tabs } from 'react-bootstrap-v5'
 import android from '../../assets/icons/stacks/android.png'
 import react from '../../assets/icons/stacks/react.png'
 import ionic from '../../assets/icons/stacks/ionic.png'
@@ -15,6 +15,7 @@ const Technology2 = () => {
   return (
     <div className='mxr__technology2 mxr__section'>
         <Container>
+          <Row>
             <h3 className='mxr__section-title'>TECHNOLOGY STACK</h3>
        <Tabs
     defaultActiveKey="mobile"
@@ -68,6 +69,7 @@ const Technology2 = () => {
       </ul>
     </Tab>
     </Tabs>
+    </Row>
     </Container>
     </div>
   )

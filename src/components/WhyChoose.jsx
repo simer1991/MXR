@@ -15,10 +15,14 @@ const WhyChoose = (props) => {
                 </Row>
                 <Row>
                 {list.lists.map((data,index)=>
-                <Col sm={6}>
+                <Col md={6} sm={12}>
+                  <div className='icon_leftside'>
                   {data.icon}
+                  </div>
+                  <div>
                  <h5>{data.title}</h5>
                   <p>{data.text}</p>
+                  </div>
                  </Col>
                  )}
                

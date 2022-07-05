@@ -15,31 +15,31 @@ function Project(props) {
     <div className='mxr__project mxr__section'>
       <Container>
         <h3 className='mxr__section-title'>READY TO DISCUSS YOUR PROJECT?</h3>
-        <div>
+        <div className='inputfild'>
           <Row>
-            <Col>
-              <input type="text" placeholder='First name*' required/>
+            <Col md={4} sm={12}>
+              <input type="text" placeholder='First name*' />
             </Col>
-            <Col>
-              <input type="text" placeholder='Last name*' required />
+            <Col md={4} sm={12} >
+              <input type="text" placeholder='Last name*' />
             </Col>
-            <Col>
+            <Col md={4} sm={12} className='phone'>
               <label><FaPhoneAlt /></label>
               <input type="text" placeholder='Home phone*' required />
             </Col>
           </Row>
           <Row>
-            <Col>
+            <Col md={4} sm={12} className='email'>
               <label><FaEnvelope /></label>
               <input type="email" placeholder='Email' />
             </Col>
-            <Col>
+            <Col md={4} sm={12}>
               <input type="text" placeholder="Company name" />
             </Col>
           </Row>
         </div>
         <Row>
-          <Col>
+          <Col className='project_type'>
             <div>
               {props.form.map((data, index) => (
                 <>
@@ -55,7 +55,7 @@ function Project(props) {
               ))}
             </div>
           </Col>
-          <Col>
+          <Col sm={12} md={6} className='recaptcha'>
             <h6>Estimated Budget *</h6>
             <Slider />
             <ReCAPTCHA

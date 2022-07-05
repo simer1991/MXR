@@ -1,0 +1,74 @@
+.mxr__contact input {
+    width: 100%;
+    border: 1px solid #d9d9d9 !important;
+    border-radius: 5px;
+    box-shadow: 0 1px 6px #efefef inset !important;
+    width: 100%;
+    padding: 0 1em;
+    outline: 0;
+    transition: all .2s ease;
+    height: 44px;
+}
+.mxr__contact textarea {
+    border: 1px solid #d9d9d9 !important;
+    border-radius: 5px;
+    box-shadow: 0 1px 6px #efefef inset !important;
+    width: 100%;
+    padding: 0 1em;
+    outline: 0;
+    transition: all .2s ease;
+    height: 103px;
+    resize: vertical;
+}
+.mxr__contact button {
+    BACKGROUND: #3393ab !important;
+    font-size: 15px !important;
+    COLOR: #FFFF !IMPORTANT;
+    font-weight: 600;
+    border-radius: 4px !important;
+    padding: 12px 43px !important;
+    margin-top: 10px;
+    border: unset;
+    width: 36%;
+}
+.mxr__contact form .row {
+    margin-top: 22px;
+}
+.left_instruction svg {
+    color: #2b7975;
+    width: 19px;
+}
+.left_instruction h3.mxr__section-title {
+    color: #4a4a4a;
+    font-weight: 500 !important;
+    font-size: 24px !important;
+    margin-bottom: 0;
+    text-align: left;
+    padding-bottom: 2px;
+}
+.left_instruction .list-group-item {
+    display: flex;
+    padding: 36px;
+}
+.left_instruction .list-group-item >div {
+    padding-right: 24px;
+}
+.left_instruction .card {
+    border: 1px solid #d9d9d9 !important;
+    border-radius: 5px;
+    box-shadow: 0 1px 6px #efefef inset !important;
+    width: 100%;
+    outline: 0;
+    transition: all .2s ease;
+}
+
+
+@media screen and (max-width: 767px){
+    .mxr__contact button {
+        width: 100%;
+    }
+    .left_instruction .list-group-item {
+        display: flex;
+        padding: 16px;
+    }
+}

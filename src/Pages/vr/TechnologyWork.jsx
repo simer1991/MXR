@@ -20,6 +20,7 @@ const TechnologyWork = () => {
   return (
     <div className='mxr__technology mxr__section mxr__stack'>
       <Container>
+        <div className='row'>
         <h3 className='mxr__section-title'>TECHNOLOGIES WE WORK WITH</h3>
         <Tabs className="mb-3 mxr__tabs">
             <Tab eventKey='platform' title="Platforms">
@@ -95,6 +96,7 @@ const TechnologyWork = () => {
               </ul>
             </Tab>
         </Tabs>
+        </div>
       </Container>
     </div>
   )

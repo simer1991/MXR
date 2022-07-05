@@ -2,7 +2,11 @@ import React from 'react'
 import { Innerbanner, Process, Readytotalk } from '../../components'
 import Landscape from './Landscape'
 import Benifits from '../vr360/Benifits'
+<<<<<<< HEAD
 import images from '../../assets/icons/benifits/ri.png';
+=======
+import images from '../../assets/icons/benifits/ri.png'
+>>>>>>> 5296c7e66600dcc259ed652d697b60943245169e
 
 const bannerdata = {
   img: 'services-research and innovation.jpg',
@@ -36,7 +40,6 @@ const RI = () => {
       <Landscape />
       <Readytotalk discuss={readytotalk} />
       <Process title="OUR SOFTWARE DEVELOPMENT PROCESS" />
-     
     </div>
   )
 }

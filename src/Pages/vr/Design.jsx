@@ -9,10 +9,10 @@ const Design = (props) => {
       <Row>
       {props.intro.map((data,index)=>(
         <>
-        <Col>
+        <Col sm={12} md={6}>
         {data.image}
         </Col>
-         <Col>
+         <Col sm={12} md={6}>
          {data.title}
          <div>
         {data.features.map((list,index)=>(
