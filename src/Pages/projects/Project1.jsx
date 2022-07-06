@@ -5,7 +5,7 @@ import video from '../../assets/videos/video.mov'
 import {FaCheckCircle} from 'react-icons/fa'
 
 const bannerdata = {
-    img: 'projects.jpg',
+    img: 'project1.jpg',
     title: "VR MAINTENANCE SIMULATOR",
     text:"Wind energy turbine direct drive generator virtual reality application simulator",
   }

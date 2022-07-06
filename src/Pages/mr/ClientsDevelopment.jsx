@@ -4,7 +4,7 @@ import {FaUserAlt,FaFileAlt,FaHistory,FaThumbsUp} from 'react-icons/fa'
 
 const ClientsDevelopment = () => {
   return (
-    <div className='mxr__clientdevelopment mxr__section'>
+    <div className='mxr__clientdevelopment mxr__section mxr__developmentservice '>
       <Container>
         <h3 className='mxr__section-title'>CLIENT DEVELOPMENT PROCESS</h3>
         <Row>

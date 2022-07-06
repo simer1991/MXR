@@ -25,7 +25,7 @@ function Project(props) {
             </Col>
             <Col md={4} sm={12} className='phone'>
               <label><FaPhoneAlt /></label>
-              <input type="text" placeholder='Home phone*' />
+              <input type="text" placeholder='Home phone*' required />
             </Col>
           </Row>
           <Row>

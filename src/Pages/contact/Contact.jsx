@@ -24,8 +24,9 @@ const Contact =() => {
 }
   
   return (
-  <Container>
-    <div className='mxr__contact mxr__section'>
+   <div className='mxr__contact'> 
+   <Innerbanner banner={bannerdata}/>  
+    <Container>
       <h3 className='mxr__section-title'>CONTACT MXR TODAY</h3>
       <Row>
         <Col sm={12} md={4} className='left_instruction'>
@@ -119,8 +120,9 @@ const Contact =() => {
         </Form>
         </Col>
       </Row>
-      </div>
     </Container>
+    
+    </div>
   )
 }
 

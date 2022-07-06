@@ -21,7 +21,7 @@ const dataList =[
 ];
 
 const bannerdata = {
-  img: 'ar.jpg',
+  img: 'ar.webp',
   title: "AUGMENTED REALITY APP DEVELOPMENT",
   text: "Take your company to a new level of market supremacy with our outstanding AR development services"
 }

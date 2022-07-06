@@ -13,7 +13,7 @@ const WhatWeCanDoo = () => {
     <div className='mxr__whatwecandoo mxr__section vertical_tabs'>
       <Container>
       <h3 className='mxr__section-title'>WHAT WE CAN DO FOR YOU</h3>
-       <Tab.Container id="left-tabs-example" defaultActiveKey="training">
+       <Tab.Container id="left-tabs-example" defaultActiveKey="training" className="">
   <Row>
     <Col md={6} sm={3}>
       <Nav variant="pills" className="flex-column">
@@ -45,43 +45,45 @@ const WhatWeCanDoo = () => {
       <Tab.Pane eventKey="training">
         <div>
         <img src={engage} alt="AUGMENTED TRAINING AND SIMULATIONS"/>
-        <p>AR education apps are becoming increasingly popular in visualizing complex information. We have developed several augmented reality training apps for education, including AR learning apps for auto repair, wheel replacement, and water skiing.</p>
+        <p>Immersive Technologies are transforming how enterprises train their workforce, with enhanced delivery, richer engagement, and quantifiable results.</p>
         </div>
         </Tab.Pane>
         <Tab.Pane eventKey="product">
          <div>   
          <img src={trusted} alt="AUGMENTED PRODUCT CONFIGURATORS" />
-         <p>Customization is one of the biggest selling points in e-commerce and lots of other industries. With AR configurators, businesses and consumers can visualize and modify a product, look at it in more detail, and test its functions. As one of the top augmented reality companies we have created AR configurators to suit different business needs, as we can do for you.</p>
+         <p>Working with some of the world’s leading companies MXR have developed a platform for optimised development and deployment of immersive training solutions.</p>
          </div>
         </Tab.Pane>
         <Tab.Pane eventKey="virtual">
         <div>   
          <img src={our} alt="AUGMENTED VIRTUAL TOURS" />
-         <p>We use augmented reality to add some unique interactive elements to locations to enhance the exploration process and bring a new experience to the viewer. This can be very helpful in case you want to engage the audience in the exploration process and deliver an enhanced experience of interaction with objects.</p>
+         <p>Guided learning – Step by step guided learning similar to one on one mentoring.</p>
+          <p>Practice Mode – The Ability to practice and learn at the students own pace.</p>
+          <p>Assessment Mode – Trainer lead assessment with data driven metrics and results</p>
          </div>
         </Tab.Pane>
         <Tab.Pane eventKey="visiual">
         <div>   
          <img src={maximise} alt="AUGMENTED VISUAL PRESENTATIONS" />
-         <p>When you need to showcase a product, few things are more impressive than presenting it digitally via augmented reality. Our team will capture the structure, appearance, and other characteristics of your product with great accuracy, and make sure that the AR model is just as distinguished as the original, and accessible on different platforms, including mobile AR.</p>
+         <p>Web based dashboard provides easy trainer class and course setup and tracks every user action providing measurable analytics.</p>
          </div>
         </Tab.Pane>
         <Tab.Pane eventKey="design">
         <div>   
          <img src={scalable} alt="AR FOR INTERIOR DESIGN AND REAL ESTATE" />
-         <p>We are a leading company in the development of markerless AR solutions such as interior design apps. Starting from high poly models creation and perfectly accurate surface detection to uniquely useful feature integration and app deployment to any platform that supports AR we are ready to create a fully immersive experience that will convince users of your quality and professional approach.</p>
+         <p>Our solution can be deployed on premise for security sensitive applications or via Azure and the cloud for remote multiple site configuration and management backed by institutional grade security.</p>
          </div>
         </Tab.Pane>
         <Tab.Pane eventKey="reality">
         <div>   
          <img src={reduce} alt="reality" />
-         <p>Over the past several years, the game industry has been reinvigorated with some of the best AR games ever developed, and the augmented reality games market is stronger than ever.</p>
+         <p>We’ve created an optimised pipeline and development method to create reusable assets and code to drastically reduce the cost and time of development</p>
          </div>
         </Tab.Pane>
         <Tab.Pane eventKey="web">
         <div>   
          <img src={hardware} alt="web" />
-         <p>Applying our longstanding experience with all forms of AR, we can create unparalleled experiences for the web. These applications will be accessible on all modern movie devices and take advantage of hardware without promoting downloads of standalone apps. Our WebAR apps can be a valuable addition to your website and a boon to your business.</p>
+         <p>We’ve focused on creating reusable solutions that are hardware agnostic. This allows us to deploy training using the best hardware for your specific training requirements whether it is virtual reality, AR or MR.</p>
          </div>
         </Tab.Pane>
       </Tab.Content>

@@ -4,7 +4,7 @@ import {FaThumbtack,FaCity,FaUserCog,FaBuilding} from 'react-icons/fa'
 
 const PartnerWithMxr = () => {
   return (
-    <div className='mxr__partnerwithmxr mxr__section'>
+    <div className='mxr__partnerwithmxr mxr__section '>
       <Container>
         <h3 className='mxr__section-title'>PARTNER WITH MXR</h3>
         <Row>

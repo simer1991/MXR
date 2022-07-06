@@ -3,7 +3,7 @@ import { Container,Card,Row,Col } from 'react-bootstrap-v5'
 
 const TechnologyServices = (props) => {
   return (
-    <div>
+    <div className='mxr__technologyservices mxr__section mxr__solution'>
       <Container>
         <div>
         {props.service.map((list,index)=>(
@@ -19,8 +19,10 @@ const TechnologyServices = (props) => {
                 <Col lg={4}>
                 <Card className='mxr__cards'>
                 {lists.icon}
+                <div className='card-body'>
                 <Card.Title>{lists.title}</Card.Title>
                 <Card.Text>{lists.text}</Card.Text>
+                </div>
                 </Card>
                 </Col>
                  )}

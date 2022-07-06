@@ -15,7 +15,7 @@ import WhyShould from '../../components/WhyShould'
 
 
 const bannerdata = {
-    img: 'technology-unreal-engine-development.jpg',
+    img: 'technology-unreal-engine-development.webp',
     title: "HIRE ANGULAR DEVELOPERSCUSTOM UNREAL ENGINE ",
     text: "Developing efficient and inventive solutions that fully utilise the capabilities of Unreal Engine."
   }

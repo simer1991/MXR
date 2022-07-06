@@ -16,7 +16,7 @@ import maintenance from '../../assets/icons/technologyservices/reactjs/maintenan
 import archetecture from '../../assets/icons/technologyservices/reactjs/archetecture.png'
 
 const bannerdata = {
-  img: 'technology-reactjs.jpg',
+  img: 'technology-reactjs.png',
   title: "HIRE EXPERT REACT.JS DEVELOPERS",
   text: "Hire dedicated senior React.js developers as your extended team."
 }

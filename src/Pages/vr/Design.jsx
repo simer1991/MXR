@@ -4,7 +4,7 @@ import {FaCheckCircle} from 'react-icons/fa'
 
 const Design = (props) => {
   return (
-    <div className='mxr__design mxr__section '>
+    <div className='mxr__design mxr__section mxr__developmentservice'>
       <Container>
       <Row>
       {props.intro.map((data,index)=>(
