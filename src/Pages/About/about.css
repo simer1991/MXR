@@ -88,3 +88,12 @@
 .mxr__timeline .vertical-timeline-element--work.vertical-timeline-element {
     display: -webkit-inline-box;
 }
+.mxr__whoweare .col-lg-7.col-sm-12 {
+    padding-top: 7%;
+}
+.mxr__whoweare .col-lg-5.col-sm-12 img {
+    width: 100%;
+}
+.vertical-timeline .vertical-timeline-element-content.bounce-in {
+    display: flex;
+}

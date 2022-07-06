@@ -111,12 +111,7 @@ p {
 .mxr__stack .tab-content {
   display: inline-block;
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 
->>>>>>> 8f8a90ce3c21b078e630c8b4b17ab8a4ef813f47
 .mxr__keybenifits .col-lg-4.col-sm-12 {
   text-align: center;
   padding-top: 5%;
@@ -141,7 +136,7 @@ p {
 .mxr__platform.mxr__section {
   TEXT-ALIGN: CENTER;
 }
->>>>>>> 5296c7e66600dcc259ed652d697b60943245169e
+
 
 .mxr__hireus p,
 .mxr__design p {
@@ -157,8 +152,7 @@ p {
 .mxr__hireus h3.mxr__section-title,
 .mxr__design h3.mxr__section-title {
   text-align: left;
-<<<<<<< HEAD
-=======
+
 }
 .vertical_tabs {
   background: #2b7975;
@@ -283,15 +277,16 @@ p {
 .mxr__developmentservice .col-md-6.col-sm-12 {
   display: flex;
 }
-.mxr__developmentservice svg {
-  background: #fff;
-  color: #2b7975;
-  width: 94px;
+.icon_leftside_bg {
+  background: #ffffff;
   height: 53px;
-  margin-right: 28px;
+  width: 54px;
   border-radius: 50%;
-  padding: 11px;
+  padding: 12px;
+  color: #2b7975;
+  margin-right: 20px;
 }
+
 .mxr__developmentservice .row {
   margin-top: 26px;
 } 
@@ -306,7 +301,7 @@ p {
 }
 .mxr__project button {
   BACKGROUND: #3393ab !important;
-  font-size: 15px !important;
+  font-size: 15px !important; 
   COLOR: #FFFF !IMPORTANT;
   font-weight: 600;
   border-radius: 4px !important;
@@ -351,6 +346,86 @@ p {
   color: #fff;
   margin-right: 20px;
 }
+.white_bg_point .col-md-6.col-sm-12 {
+  display: flex;
+}
+
+.mxr__whychoose h3.mxr__section-title {
+  MARGIN-BOTTOM: 29PX;
+}
+.simple_tabs {
+  background: #f2f2f2;
+}
+.bg_3steps {
+  background-color: #2b7975;
+}
+.simple_tabs {
+  background: #f2f2f2;
+}
+
+.mxr__advance.mxr__section.bg_3steps {
+  background-color: #2b7975;
+}
+.bg_3steps_icon {
+  background: #ffffff;
+  height: 54px;
+  display: inline-flex;
+  width: 54px;
+  border-radius: 50%;
+  padding: 6px;
+  color: #2b7975;
+  text-align: center;
+  margin-bottom: 19px;
+  margin-right: 20px;
+}
+.bg_3steps h5 {
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+}
+.bg_3steps p {
+  color: #fff;
+  text-align: center;
+}
+.bg_3steps .col-md-4.col-sm-12 {
+  text-align: center;
+  padding: 40px;
+}
+.bg_3steps h3.mxr__section-title {
+  color: #fff;
+  margin-bottom: 1%;
+}
+.mxr__pictures.mxr__section {
+  text-align: center;
+  width: 100%;
+}
+.simple_tabs .mxr__tabs .nav-link.active {
+  border-color: #f2f2f2 #f2f2f2#2b7975 #f2f2f2;
+  border-width: 2px;
+}
+
+.simple_tabs .tab-content {
+  margin-top: 3% !important;
+}
+.simple_tabs a.nav-item.nav-link.active {
+  background: #f2f2f2;
+}
+.white_simple_tabs .tab-content {
+  margin-top: 3%;
+}
+.white_simple_tabs .tab-content {
+  margin-top: 3%;
+} 
+.white_simple_tabs p {
+  padding-top: 6%;
+}
+.mxr__hireus h3.mxr__section-title {
+  text-align: left;
+  padding-top: 15%;
+}
+.white_bg_point h3.mxr__section-title {
+  margin-bottom: 30PX;
+}
 @media screen and (max-width: 767px){
   .vertical_tabs .nav-item {
     text-align: right;
@@ -364,14 +439,12 @@ p {
 .mxr__design img {
   width: 100%;
 }
-.mxr__developmentservice svg {
-  background: #fff;
-  color: #2b7975;
-  width: 91px;
-  height: 31px;
-  margin-right: 14px;
-  border-radius: 50%;
-  padding: 7px;
+.simple_tabs img {
+  width: 100%;
+  margin-bottom: 20px;
 }
->>>>>>> 5296c7e66600dcc259ed652d697b60943245169e
+.mxr__pictures img {
+  width: 100%;
+}
+
 }

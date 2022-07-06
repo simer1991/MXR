@@ -1,13 +1,8 @@
 import './App.css';
-<<<<<<< HEAD
-import { Header,Footer, Blog,Post,Posts } from './components';
-import { Home, About,Contact,VR,VRL,MAD,MR,WDD,RI,Php,Laravel,CodeIngenator,Python,Node,Android,Angular,Reactjs,Vue,Mean,Mern,Magento,WooCommerce,Shopify,IOS,ReactNative,Hybrid,Flutter,Ionic,Swift,Worldpress,Drupal,CustomUnrealEngine,UnityAppDevelopment,Project1,Project2,Projects,AR,Technology } from './Pages';
-=======
 import {
   Header, Footer, Blog, Posts, Post
 } from './components';
 import { Home, About, Contact, VR, VRL, MAD, MR, WDD, RI, Php, Laravel, CodeIngenator, Python, Node, Android, Angular, Reactjs, Vue, Mean, Mern, Magento, WooCommerce, Shopify, IOS, ReactNative, Hybrid, Flutter, Ionic, Swift, Worldpress, Drupal, CustomUnrealEngine, UnityAppDevelopment, Project1, Project2, Projects, AR, Technology } from './Pages';
->>>>>>> 5296c7e66600dcc259ed652d697b60943245169e
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {

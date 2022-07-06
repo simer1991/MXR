@@ -4,7 +4,7 @@ import {FaExclamationTriangle,FaRedo,FaDice,FaLightbulb,FaEye,FaThumbsUp} from '
 
 const KeyBenifits = () => {
   return (
-    <div className='mxr__keybenifits mxr__section'>
+    <div className='mxr__keybenifits mxr__section text_center_withicon'>
       <Container>
         <h3 className='mxr__section-title'>KEY BENEFITS</h3>
         <Row>
