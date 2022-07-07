@@ -28,7 +28,13 @@
 .mxr__header-align-right svg {
     margin: 7px 10px 10px;
 }
+.dropdown a.nav-link:hover {
+    color: #fff !important;
+}
 
+.mxr__header-navbarmegamenu a.nav-link:hover {
+    color: red !important;
+}
 .mxr__header-align-left span.mxr__header-phone {
     font-size: 12px;
 } 
@@ -207,7 +213,19 @@ ul.dropdown.show.mxr__header-navbarmegamenu {
         OVERFLOW: VISIBLE;
         Z-INDEX: 9999;
         LIST-STYLE: none;
-    padding: 0 !important;
+        padding: 0 !important;
+    }
+    .navbar-nav li.menu-items>div {
+        padding: 0 !important;
+        border-bottom: unset !important;
+    }
+    .mxr__header-navbar li#Services div {
+        padding: 7px 18px 7px 18px !important;
+    }
+    .menu-items svg {
+        position: absolute;
+        right: 10px;
+        top: 11px;
     }
     .navbar-nav .menu-items {
         padding: 0px 0px !important;
@@ -218,10 +236,14 @@ ul.dropdown.show.mxr__header-navbarmegamenu {
     }
     .mxr__header-navbar .nav-link {
         display: block;
-        padding: 0 !important;
+        padding: 7px 18px 7px 18px !important;
         color: #0d6efd;
         text-decoration: none;
         transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    }
+    .dropdown a.nav-link {
+        font-size: 15px;
+        color: #ffffff !important;
     }
     a.nav-link {
         padding: 0 !important;
@@ -235,10 +257,7 @@ ul.dropdown.show.mxr__header-navbarmegamenu {
         width: auto;
         z-index: unset;
     }
-    .navbar-nav li.menu-items>div {
-        padding: 10px !important;
-        border-bottom: 1px solid;
-    }
+
     .navbar-nav .nav-link {
         padding-left: 10px;
         padding-right: 0;

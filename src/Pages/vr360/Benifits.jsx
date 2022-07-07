@@ -17,7 +17,6 @@ function Benifits(props){
         {list.pharagraphs.map((read,index)=>(
           <p>{read}</p>
         ))}
-        {list.link && <Link className="mxr__section-btn" to="/project1">READ MORE</Link>}
         </Col>
         </Row>
       </>
