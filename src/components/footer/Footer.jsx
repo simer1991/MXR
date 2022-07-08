@@ -71,7 +71,7 @@ const Footer = () => {
         <Container>
           <Row>
             <Col>
-              <p>Copyright {new Date().getFullYear()} MXR | All Rights Reserved |<Link to='/vr'>Privacy Policy</Link>  | <Link to='/vr'>Terms and Conditions</Link></p></Col>
+              <p>Copyright {new Date().getFullYear()} MXR | All Rights Reserved |<Link to='/privacy-policy'>Privacy Policy</Link>  | <Link to='/term-and-condition'>Terms and Conditions</Link></p></Col>
           </Row>
         </Container>
       </div>

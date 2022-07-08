@@ -39,12 +39,12 @@ const benifits=[
       },
       {
         title:"WORK WITH REACT.JS EXPERTS",
-        text:"Inconsistent coding leads to delayed releases and rising costs. However, Angular’s component-based architecture provides code consistency, optimizes cohesion, improves code readability, and updates predefined snippets within apps, thereby ensuring a smooth development process with improved code style.We’ll help you hire React.js developers with a deep understanding of React Architecture, Redux, HTML5, CSS3/SASS, Jest, Enzyme, Mocha, MaterialUI, GIT, and more.        ",
+        text:"We’ll help you hire React.js developers with a deep understanding of React Architecture, Redux, HTML5, CSS3/SASS, Jest, Enzyme, Mocha, MaterialUI, GIT, and more.        ",
         icon:<FaUser size={30} />,
       },
       {
-        title:"COMMAND-LINE INTERFACE (CLI)",
-        text:"The Angular CLI is a powerful tool that helps scaffold, generate, develop, test, and deploy application code with greater ease. It takes away the tedious tasks of manually configuring files. It allows developers to add components and run end-to-end unit tests with the minimum command, thereby facilitating faster development and cutting down JS fatigue",
+        title:"HASSLE-FREE PRODUCTION",
+        text:"Our HR specialists, office managers, and system administrators make sure your React.js development team’s working conditions are perfect.",
         icon:<FaUserCog size={30} />,
       },
       

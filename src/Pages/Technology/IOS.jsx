@@ -4,6 +4,13 @@ import PartnerWithMxr from '../../components/PartnerWithMxr'
 import WhyChoooseMxr from '../../components/WhyChoooseMxr'
 import {FaSitemap,FaUserCog,FaCheckCircle,FaShieldAlt,FaUserCheck,FaMobileAlt} from 'react-icons/fa'
 import WhyChoose from '../../components/WhyChoose'
+import TechnologyServices from '../../components/TechnologyServices'
+import ios from '../../assets/icons/technologyservices/ios/ios.png'
+import application from '../../assets/icons/technologyservices/ios/application.png'
+import consultation from '../../assets/icons/technologyservices/ios/consultation.png'
+import design from '../../assets/icons/technologyservices/ios/design.png'
+import support from '../../assets/icons/technologyservices/ios/support.png'
+import upgrades from '../../assets/icons/technologyservices/ios/upgrades.png'
 
 const bannerdata = {
   img: 'technology-ios.jpg',
@@ -57,6 +64,46 @@ const benifits=[
   }
 ]
 
+const services=[
+  {
+    heading:"IOS SERVICES",
+    data:[
+      {
+       title:"IOS APPLICATION DEVELOPMENT AND DEPLOYMENT",
+       text:"Contact us if you’re looking to build user-friendly and feature-packed iOS apps for diverse industry verticals including Education, Logistics, Retail, Travel, and more.",
+       icon:<img src={ios} alt="application"/>,
+      },
+      {
+        title:"IOS APPLICATION QA AND TESTING",
+        text:"We have a dedicated QA team that offers a multi-faceted approach to testing your apps.  you will also be assured of an effective and economical testing approach that meets your budget and time.",
+        icon:<img src={application} alt="webservies"/>,
+      },
+      {
+        title:"IOS SUPPORT AND MAINTENANCE",
+        text:"Right from bug fixes, app and library updates, code maintenance, data migration services, server performance optimization, security enhancements, features extensions, UI/UX enhancements to OS updates, we offer it all.",
+        icon:<img src={support} alt="support"/>,
+      },
+      {
+        title:"IOS APPLICATION DESIGN",
+        text:"Talk to us if you’re looking for compelling and futuristic app layouts and designs for your iPads, iPhones and other iOS devices. We have a deep industry understanding of developing attractive prototypes, interfaces, and custom-made POCs for your iOS apps.",
+        icon:<img src={design}  alt="commerce"/>,
+      },
+      {
+        title:"IOS APPLICATION MIGRATION AND UPGRADES",
+        text:"Our certified app migration team is adept at porting your app to new platforms, operating systems, and languages, that brings down your cost of app maintenance.",
+        icon:<img src={upgrades} alt="b2b" />,
+      },
+      {
+        title:"IOS CONSULTATION",
+        text:"We can help you on your iOS journey by offering consulting services related to iOS app architecture, UI/UX evaluation, database planning, documentation development and Application Lifecycle Management (ALM).",
+        icon:<img src={consultation} alt="consulting"/>,
+      },
+
+    ]
+  }
+]
+
+
 const IOS = () => {
   return (
     <div>
@@ -64,6 +111,7 @@ const IOS = () => {
       <WhyChoose benifit={benifits}/>
       <PartnerWithMxr />
       <WhyChoooseMxr />
+      <TechnologyServices service={services}/>
       <Industries />
       <Readytotalk discuss={readytotalk}/>
       <Clients />

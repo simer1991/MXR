@@ -18,6 +18,7 @@ function Post() {
                     if (list.slug === postSlug) {
                         return (
                             <>
+                             
                                 <h1 className="mt-5" key={list.id}>{list.title}</h1>
                                 {list.body.map((data, index) => {
 

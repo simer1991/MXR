@@ -16,7 +16,7 @@ const dataList =[
    heading:"VIRTUAL REALITY MAINTENANCE SIMULATOR",
    images:<img src={images} alt='benifits of vr 360'/>,
    pharagraphs:[
-   "Any new and innovative ideas are welcomed in our organization and we will provide you the right kind of R&D service which will act as a fuel to kick start your new business objective. Meta Extended Reality (MXR) is an organization which not only creates technological solutions but also helps & guides people who want to develop something of their own. We support and guide you throughout your innovative journey by providing tech support, R&D engineers and a team of experienced people.",
+   "Training in the maintenance of large-scale facilities such as wind turbines is prohibitively expensive. Delivering personnel to the workplace and training them on an actual installation is not only a time investment, but also a substantial costly one, especially if the installation is in a remote region.",
   ],
   link:<input type="button" value="READ MORE" />
   },

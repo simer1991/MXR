@@ -4,6 +4,13 @@ import PartnerWithMxr from '../../components/PartnerWithMxr'
 import WhyChoooseMxr from '../../components/WhyChoooseMxr'
 import {FaIdCard,FaClock,FaPlug,FaFile,FaCode,FaUsers} from 'react-icons/fa'
 import WhyChoose from '../../components/WhyChoose'
+import TechnologyServices from '../../components/TechnologyServices'
+import migration from '../../assets/icons/technologyservices/ionic/migration.png'
+import ionic from '../../assets/icons/technologyservices/ionic/ionic.png'
+import support from '../../assets/icons/technologyservices/ionic/support.png'
+import testing from '../../assets/icons/technologyservices/ionic/testing.png'
+import custom from '../../assets/icons/technologyservices/ionic/custom.png'
+import app from '../../assets/icons/technologyservices/ionic/app.png'
 
 const bannerdata = {
   img: 'technology-ionic.jpg',
@@ -57,6 +64,46 @@ const benifits=[
   }
 ]
 
+const services=[
+  {
+    heading:"IONIC SERVICES",
+    data:[
+      {
+       title:"CUSTOM IONIC APP DEVELOPMENT",
+       text:"Connect with us if you’re interested in tailor-built Ionic apps. We work around your unique needs by creating visually appealing Ionic apps with AngularJS, NodeJS, HTML5, and CSS.",
+       icon:<img src={custom} alt="application"/>,
+      },
+      {
+        title:"IONIC ECOMMERCE APP DEVELOPMENT",
+        text:"Let us build high-quality eCommerce apps on Ionic that render an awesome experience to users with its attractive UI and UX.",
+        icon:<img src={ionic} alt="webservies"/>,
+      },
+      {
+        title:"IONIC TESTING SERVICES",
+        text:"Industry leaders, startups, SMEs and mature businesses rely on our quality assurance and control services for their complex apps and systems.",
+        icon:<img src={testing} alt="support"/>,
+      },
+      {
+        title:"IONIC APP UI/UX DESIGN",
+        text:"Trust us for trailblazing UI/UX solutions from our dedicated team of Ionic experts. Based on your specific business requirements, our Ionic app developers can create sketches, wireframes, user flow and websites for best-in-class visual interfaces.",
+        icon:<img src={app}  alt="commerce"/>,
+      },
+      {
+        title:"IONIC MIGRATION SERVICES",
+        text:"We can help your business gain an extra edge by migrating your legacy apps to the Ionic framework. Our coders are experts at migrating your data across databases and apps across development platforms.",
+        icon:<img src={migration} alt="b2b" />,
+      },
+      {
+        title:"IONIC APP SUPPORT AND MAINTENANCE",
+        text:"Talk to our experts to keep your Ionic apps competitive, flawless, high-performant and up-to-date.",
+        icon:<img src={support} alt="consulting"/>,
+      },
+
+    ]
+  }
+]
+
+
 const Ionic = () => {
   return (
     <div>
@@ -64,6 +111,7 @@ const Ionic = () => {
       <WhyChoose benifit={benifits}/>
       <PartnerWithMxr />
       <WhyChoooseMxr />
+      <TechnologyServices service={services}/>
       <Industries />
       <Readytotalk discuss={readytotalk}/>
       <Clients />

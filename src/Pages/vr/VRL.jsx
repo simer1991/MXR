@@ -3,7 +3,7 @@ import Platform from './Platform'
 import WhatWeCanDoo from './WhatWeCanDoo'
 import Process from '../../components/process/Process'
 import TechnologyWork from './TechnologyWork'
-import { Innerbanner } from '../../components'
+import { Innerbanner, Readytotalk } from '../../components'
 import Project from '../project/Project'
 import vr from '../../assets/icons/intro/vr.png'
 import Design from './Design'
@@ -46,6 +46,13 @@ const introduction = [
   }
 ]
 
+const readytotalk = {
+  img: 'ready.jpg',
+  title: "READY TO DISCUSS YOUR PROJECT?",
+  text: "We would love to hear about your idea and make it happen. You come to us with your idea, and we do all of the planning and costing for you.",
+  button:"CONTACT US",
+}
+
 function VRL() {
   return (
     <div>
@@ -53,8 +60,9 @@ function VRL() {
       <Design intro={introduction} />
       <WhatWeCanDoo />
       <KeyBenifits />
-      <Platform />
+      <Readytotalk discuss={readytotalk} />
       <Process title="OUR SOFTWARE DEVELOPMENT PROCESS" />
+      <Platform />
       <TechnologyWork />
       <Project form={formdata} />
     </div >

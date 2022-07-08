@@ -111,12 +111,6 @@ p {
 .mxr__stack .tab-content {
   display: inline-block;
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> 8f8a90ce3c21b078e630c8b4b17ab8a4ef813f47
 .mxr__keybenifits .col-lg-4.col-sm-12 {
   text-align: center;
   padding-top: 5%;
@@ -141,7 +135,6 @@ p {
 .mxr__platform.mxr__section {
   TEXT-ALIGN: CENTER;
 }
->>>>>>> 5296c7e66600dcc259ed652d697b60943245169e
 
 .mxr__hireus p,
 .mxr__design p {
@@ -157,8 +150,6 @@ p {
 .mxr__hireus h3.mxr__section-title,
 .mxr__design h3.mxr__section-title {
   text-align: left;
-<<<<<<< HEAD
-=======
 }
 .vertical_tabs {
   background: #2b7975;
@@ -329,6 +320,10 @@ p {
 .project_type h6 {
   color: #fff;
 }
+.internal_page_text_height .card .card-body {
+  padding: 0;
+  height: 250px;
+}
 .project_type p {
   color: #fff;
 }
@@ -350,6 +345,42 @@ p {
   padding: 12px;
   color: #fff;
   margin-right: 20px;
+}
+.bg_3steps_icon {
+  background: #ffffff;
+  height: 54px;
+  display: inline-flex;
+  width: 54px;
+  border-radius: 50%;
+  padding: 12px;
+  color: #2b7975;
+  text-align: center;
+  margin-bottom: 19px;
+  margin-right: 20px;
+}
+.bg_3steps h5 {
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+}
+.bg_3steps p {
+  color: #fff;
+  text-align: center;
+}
+.bg_3steps .col-md-4.col-sm-12 {
+  text-align: center;
+  padding: 40px;
+}
+.bg_3steps h3.mxr__section-title {
+  color: #fff;
+  margin-bottom: 1%;
+}
+.bg_3steps .col-md-6.col-sm-12 {
+  text-align: center;
+  padding: 40px;
+}
+.bg_3steps {
+  background: #2b7975;
 }
 @media screen and (max-width: 767px){
   .vertical_tabs .nav-item {
@@ -373,5 +404,4 @@ p {
   border-radius: 50%;
   padding: 7px;
 }
->>>>>>> 5296c7e66600dcc259ed652d697b60943245169e
 }

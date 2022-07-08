@@ -10,7 +10,7 @@ const MobileDevelopment = () => {
     <div className='mxr__mobiledevelopment mxr__section'>
       <Container>
         <h3 className='mxr__section-title'>WHY CHOOSE MXR FOR MOBILE DEVELOPMENT?</h3>
-        <Tabs>
+        <Tabs className="mb-3 mxr__tabs">
             <Tab eventKey="ios" title="IOS & Android">
                 <Row>
                     <Col>

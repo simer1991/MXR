@@ -92,12 +92,12 @@ const services=[
       },
       {
         title:"APPLICATIONS FOR GAMIFICATION",
-        text:"Our knowledge of the topic enables us to create digital models, simulations, and systems that accurately duplicate real-world environments, objects, and processes.",
+        text:"Changing your application’s nature to that of a game is a terrific method to make it more exciting and engaging for users. We’ve been designing gamification solutions for a long time and will figure out the best way to make the shift.",
         icon:<img src={application} />,
       },
       {
         title:"DEVELOPMENT OF A DIGITAL TWIN",
-        text:"Ace provides comprehensive and immersive virtual reality and augmented reality solutions for a variety of platforms, including Oculus, Vive, Cardboard, and PlayStation.",
+        text:"Our knowledge of the topic enables us to create digital models, simulations, and systems that accurately duplicate real-world environments, objects, and processes.",
         icon:<img src={development} />,
       },
 

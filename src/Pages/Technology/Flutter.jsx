@@ -4,6 +4,15 @@ import PartnerWithMxr from '../../components/PartnerWithMxr'
 import WhyChoooseMxr from '../../components/WhyChoooseMxr'
 import {FaFileCode,FaDraftingCompass,FaChartLine,FaSync,FaPaintBrush,FaCogs} from 'react-icons/fa'
 import WhyChoose from '../../components/WhyChoose'
+import TechnologyServices from '../../components/TechnologyServices'
+import theme from '../../assets/icons/technologyservices/flutter/theme.png'
+import consulting from '../../assets/icons/technologyservices/flutter/consulting.png'
+import desktop from '../../assets/icons/technologyservices/flutter/desktop.png'
+import flutter from '../../assets/icons/technologyservices/flutter/flutter.png'
+import hybrid from '../../assets/icons/technologyservices/flutter/hybrid.png'
+import support from '../../assets/icons/technologyservices/flutter/support.png'
+import testing from '../../assets/icons/technologyservices/flutter/testing.png'
+import ui from '../../assets/icons/technologyservices/flutter/ui.png'
 
 const bannerdata = {
   img: 'technology-flutter.jpg',
@@ -57,6 +66,56 @@ const benifits=[
   }
 ]
 
+const services=[
+  {
+    heading:"FLUTTER SERVICES",
+    data:[
+      {
+       title:"FLUTTER APP DEVELOPMENT",
+       text:"Looking to build eye-catching Flutter apps with new widgets and attractive UI? Choose from our team of expert Flutter app developers who have the solid technical proficiency to take care of your project.",
+       icon:<img src={flutter} alt="application"/>,
+      },
+      {
+        title:"FLUTTER HYBRID APP DEVELOPMENT",
+        text:"With us, be assured to get powerful Flutter hybrid apps that run smoothly on web and mobile to offer your customers the ultimate digital experience.",
+        icon:<img src={hybrid} alt="webservies"/>,
+      },
+      {
+        title:"FLUTTER TESTING SERVICES",
+        text:"We perform unit tests, widget tests and integration tests for monitoring methods, classes, widgets, and other integrated services within your app.",
+        icon:<img src={testing} alt="support"/>,
+      },
+      {
+        title:"FLUTTER DESKTOP APP DEVELOPMENT",
+        text:"Talk to us if you’re interested in a Mac, Linux or Windows compatible Flutter application. Our qualified Flutter app developers have deep knowledge in creating rich desktop apps with high performance from a single codebase.",
+        icon:<img src={desktop}  alt="commerce"/>,
+      },
+      {
+        title:"FLUTTER API AND UI DEVELOPMENT",
+        text:"Our competent and creative Flutter team can help you turn your dream project into a reality. We have proven industry experience of building rich APIs for sophisticated, expressive and responsive UIs.",
+        icon:<img src={ui} alt="b2b" />,
+      },
+      {
+        title:"FLUTTER SUPPORT AND MAINTENANCE",
+        text:"We keep your business objectives in mind and offer quick maintenance solutions related to database server optimization,  code maintenance, security, and other functional enhancements.",
+        icon:<img src={support} alt="consulting"/>,
+      },
+      {
+        title:"FLUTTER NATIVE THEME DEVELOPMENT",
+        text:"Our Flutter team is our prized asset. We can develop next-gen and leading-edge Flutter native apps by using a single code structure for different themes in record time.",
+        icon:<img src={theme} alt="b2b" />,
+      },
+      {
+        title:"FLUTTER CONSULTING",
+        text:"We consider each project to be unique, and therefore, we deliver custom-design solutions and consulting services, keeping your customers under focus.",
+        icon:<img src={consulting} alt="consulting"/>,
+      },
+
+    ]
+  }
+]
+
+
 const Flutter = () => {
   return (
     <div>
@@ -64,6 +123,7 @@ const Flutter = () => {
       <WhyChoose benifit={benifits}/>
       <PartnerWithMxr />
       <WhyChoooseMxr />
+      <TechnologyServices service={services}/>
       <Industries />
       <Readytotalk discuss={readytotalk} />
       <Clients />

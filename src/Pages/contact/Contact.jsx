@@ -3,7 +3,14 @@ import { Container,Row,Col,Card,ListGroup,Form } from 'react-bootstrap-v5'
 import {FaMapMarkerAlt,FaPhoneAlt,FaEnvelope,FaComment} from 'react-icons/fa';
 import ReCAPTCHA from 'react-google-recaptcha';
 import emailjs from '@emailjs/browser' 
+import { Innerbanner } from '../../components';
 import './contact.css'
+
+const bannerdata = {
+  img: 'contact.png',
+  title: "CONTACT MXR TODAY",
+}
+
 
 const Contact =() => {
   const [varified,setVarified]=useState(false)

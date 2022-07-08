@@ -1,6 +1,7 @@
 [
     {
         "title": "What is Mixed Reality?",
+        "image": "assets/images/blog/blog-2.png",
         "slug": "what-is-mixed-reality",
         "date": "February 2nd, 2022",
         "shortdesc": "Mixed Reality (MR) is a combination of multiple advanced technologies, primarily Virtual Reality and Augmented Reality.",
@@ -34,6 +35,7 @@
                 "content": [
                     "Training programmes that blend interactive digital items into real-world surroundings are referred to as mixed reality-based training. Both augmented reality (AR) and virtual reality (VR) immersive technologies are used in MR training. Let’s take a look at the capabilities of AR and VR in learning to get a better understanding of MR training.",
                     "Augmented Reality (AR) uses a headset, phone, or tablet to provide learners with an interactive, digital picture of the actual environment. It allows students to engage in 3D space with computer-generated items.",
+                    "Virtual Reality (VR) produces a stimulating atmosphere or circumstance that allows students to experience realistic experiences without the dangers of real life. It offers a completely digital environment.",
                     "By overlaying layers of graphic information on top of existent material, immersive technologies provide a dynamic alternative to traditional learning. AR/VR/MR software and immersive devices like the HoloLens or HoloLens 2 are used to deliver mixed reality training.",
                     "An augmented training app or a mixed reality training software, for example, allows users to overlay a piece of industrial equipment to train workers on it. Such training apps make use of virtual help, allowing trainers to obtain training at any time and from any location."
                 ]
@@ -116,6 +118,7 @@
     },
     {
         "title": "Virtual Reality (VR)",
+        "image": "assets/images/blog/2.png",
         "slug": "virtual-reality",
         "date": "March 9th, 2021",
         "shortdesc": "Virtual Reality (VR) There are bunches of meanings of the term Virtual Reality, and some are very long and confounded. How about we",
@@ -221,6 +224,7 @@
     },
     {
         "title": "Augmented Reality (AR)",
+        "image": "assets/images/blog/ar-blog-1.png",
         "slug": "augmented-reality-ar",
         "date": "March 9th, 2021",
         "shortdesc": "Augmented Reality (AR) Expanded has just become a trendy expression, yet this innovation is as yet a secret for some individuals. So how",

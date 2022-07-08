@@ -3,7 +3,7 @@ import { Container,Card,Row,Col } from 'react-bootstrap-v5'
 
 const TechnologyServices = (props) => {
   return (
-    <div className='mxr__technologyservices mxr__section mxr__solution'>
+    <div className='mxr__technologyservices mxr__section mxr__solution internal_page_text_height'>
       <Container>
         <div>
         {props.service.map((list,index)=>(

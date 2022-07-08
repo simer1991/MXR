@@ -14,7 +14,7 @@ const WhyChoose360 = () => {
          <Tabs className="mb-3 mxr__tabs">
          <Tab  eventKey="Real Estate" title="Real Estate">
             <Row>
-                <Col>
+                <Col >
                    <img src={real} alt="Real Estate"/>
                 </Col>
                 <Col>

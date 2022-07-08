@@ -4,6 +4,13 @@ import PartnerWithMxr from '../../components/PartnerWithMxr'
 import WhyChoooseMxr from '../../components/WhyChoooseMxr'
 import {FaLanguage,FaMobileAlt,FaUserCheck,FaSignal,FaCheckCircle,} from 'react-icons/fa'
 import WhyChoose from '../../components/WhyChoose'
+import TechnologyServices from '../../components/TechnologyServices'
+import migration from '../../assets/icons/technologyservices/drupal/migration.png'
+import integration from '../../assets/icons/technologyservices/drupal/integration.png'
+import staff from '../../assets/icons/technologyservices/drupal/staff.png'
+import support from '../../assets/icons/technologyservices/drupal/support.png'
+import commerce from '../../assets/icons/technologyservices/drupal/commerce.png'
+import drupal from '../../assets/icons/technologyservices/drupal/drupal.png'
 
 const bannerdata = {
   img: 'technology-drupal.jpg',
@@ -57,6 +64,46 @@ const benifits=[
   }
 ]
 
+const services=[
+  {
+    heading:"DRUPAL SERVICES",
+    data:[
+      {
+       title:"DRUPAL WEB DEVELOPMENT",
+       text:"Our experience and expertise ensure we create complex web applications which are customizable, SEO-friendly and mobile-first.",
+       icon:<img src={drupal} alt="application"/>,
+      },
+      {
+        title:"DRUPAL STAFF AUGMENTATION",
+        text:"We offer quick and impactful solutions for developing sites by bringing in experienced in-house workers along with full-time employees. Our staff augmentation helps in risk-reduction, cost-effectiveness and added flexibility.",
+        icon:<img src={staff} alt="webservies"/>,
+      },
+      {
+        title:"DRUPAL INTEGRATION",
+        text:"We offer integration with legacy systems, API and web service integration, seamless SMS, social, SSO and third party integration, CMS and CRM integration and custom development.",
+        icon:<img src={integration} alt="support"/>,
+      },
+      {
+        title:"DRUPAL COMMERCE",
+        text:"Our well-rounded Drupal team takes a multidisciplinary approach to build fully featured eCommerce sites with well-defined workflows, lists, data structures and displays.",
+        icon:<img src={commerce}  alt="commerce"/>,
+      },
+      {
+        title:"DRUPAL MIGRATION",
+        text:"We help your business upgrade to Drupal 8 from earlier versions of Drupal. Our experienced team members can import data from external datasources such as CSV, XML, JSON and MySQL.",
+        icon:<img src={migration} alt="b2b" />,
+      },
+      {
+        title:"DRUPAL MAINTENANCE AND SUPPORT",
+        text:"A maintenance and support agreement with us can help you keep your applications technically sound. We fix bugs, offer security upgrades, tweak Drupal views, rules and blocks, and amend user roles, among other day-to-day operations.",
+        icon:<img src={support} alt="consulting"/>,
+      },
+
+    ]
+  }
+]
+
+
 const Drupal = () => {
   return (
     <div>
@@ -64,6 +111,7 @@ const Drupal = () => {
       <WhyChoose benifit={benifits}/>
       <PartnerWithMxr />
       <WhyChoooseMxr />
+      <TechnologyServices service={services}/>
       <Industries />
       <Readytotalk discuss={readytotalk}/>
       <Clients />

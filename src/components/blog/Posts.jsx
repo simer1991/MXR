@@ -12,6 +12,7 @@ function Posts() {
                         <div className="col-lg-4" key={list.id}>
                             <Card>
                                 <Link to={list.slug}>
+                                    <img src={list.image}/>
                                     <h4 class="font-weight-light">{list.title}</h4>
                                 </Link>
                                 <span>{list.date}</span>

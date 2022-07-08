@@ -49,8 +49,8 @@ const benifits=[
         icon:<FaChartLine size={30} />,
       },
       {
-        title:"E-COMMERCE",
-        text:"We can help you create custom online stores using leading PHP platforms such as WooCommerce, Magento or even build a custom store from scratch. We can also provide integration with Shipping, Inventory and 3rd party services as needed.",
+        title:"CROSS-PLATFORM",
+        text:"PHP’s cross-platform integration is excellent as it can work on different platforms such as Linux, UNIX, Solaris, and Windows.",
         icon:<FaLaptopCode size={30} />,
       },
       {
@@ -60,7 +60,7 @@ const benifits=[
       },
       {
         title:"RAPID DEVELOPMENT",
-        text:"PHP is fundamentally an Internet-aware system with built-in modules for accessing FTP servers and many database servers, including PostgreSQL, MySQL, Microsoft SQL Server, LDAP servers, and others.PHP offers several frameworks for Rapid Application Development including PRADO, CakePHP, Symfony, CodeIgniter, Laravel, Yii Framework, Phalcon, and Zend Framework.",
+        text:"PHP offers several frameworks for Rapid Application Development including PRADO, CakePHP, Symfony, CodeIgniter, Laravel, Yii Framework, Phalcon, and Zend Framework.",
         icon:<FaUserCog size={30} />,
       }
 

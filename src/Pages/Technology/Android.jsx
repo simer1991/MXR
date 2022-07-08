@@ -4,6 +4,13 @@ import PartnerWithMxr from '../../components/PartnerWithMxr'
 import WhyChoooseMxr from '../../components/WhyChoooseMxr'
 import {FaIdCard,FaDesktop,FaChartLine,FaExchangeAlt,FaCopy,FaPassport} from 'react-icons/fa'
 import WhyChoose from '../../components/WhyChoose'
+import TechnologyServices from '../../components/TechnologyServices'
+import app from '../../assets/icons/technologyservices/android/app.png'
+import support from '../../assets/icons/technologyservices/android/support.png'
+import custom from '../../assets/icons/technologyservices/android/custom.png'
+import native from '../../assets/icons/technologyservices/android/native.png'
+import hire from '../../assets/icons/technologyservices/android/hire.png'
+import android from '../../assets/icons/technologyservices/android/android.png'
 
 const bannerdata = {
   img: 'technology-android.jpg',
@@ -57,6 +64,44 @@ const benifits=[
   }
 ]
 
+const services=[
+  {
+    heading:"ANDROID SERVICES",
+    data:[
+      {
+       title:"CUSTOM ANDROID APP DEVELOPMENT",
+       text:"We can offer you diverse solutions to custom-build your app that runs seamlessly across all Android devices. Our certified Android developers have brilliantly created numerous custom apps for a mix of industry verticals within a short time.",
+       icon:<img src={custom} alt="application"/>,
+      },
+      {
+        title:"ANDROID APP UI/UX DESIGN",
+        text:"Our extensive experience in UI/UX design has earned us a good repute among our clients. We’ve been consistently focused on creating reliable and power-packed Android apps that render awesome user experience.",
+        icon:<img src={android} alt="webservies"/>,
+      },
+      {
+        title:"ANDROID APP SUPPORT AND MAINTENANCE",
+        text:"Do you need someone to take care of your Android software and platforms? Talk to us in that case. We extend all kinds of app support that you need for your business success.",
+        icon:<img src={support} alt="support"/>,
+      },
+      {
+        title:"NATIVE ANDROID APP DEVELOPMENT",
+        text:"Right from performance optimization to integrations with newest technologies, our vetted Android programmers are deft at building responsive, intuitive and super-fast native Android apps that offer unmatched UI designs.",
+        icon:<img src={native}  alt="commerce"/>,
+      },
+      {
+        title:"ANDROID APP TESTING",
+        text:"Partner with us if you want bug-free app launches and higher app installs. We perform rigorous tests with emulators, simulators and other tools, and check its functionality, usability, and accessibility before they’re launched in the market.",
+        icon:<img src={app} alt="b2b" />,
+      },
+      {
+        title:"HIRE ANDROID DEVELOPERS",
+        text:"Hire expert Android developers “On-Demand” and save time and money. Developers work as your extended team and save you 50% costs in the process.",
+        icon:<img src={hire} alt="consulting"/>,
+      },
+
+    ]
+  }
+]
 
 const Android = () => {
   return (
@@ -65,6 +110,7 @@ const Android = () => {
       <WhyChoose benifit={benifits}/>
       <PartnerWithMxr />
       <WhyChoooseMxr />
+      <TechnologyServices service={services}/>
       <Industries />
       <Readytotalk discuss={readytotalk}/>
       <Clients />

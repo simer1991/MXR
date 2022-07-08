@@ -15,7 +15,7 @@ const bannerdata = {
 const introduction=[
   {
     image:<img src={mad} alt="virtual reality"/>,
-    title:<h3 className='mxr__section-title'>DESIGNED TO DELIVER RESULTS AND INCREASE KNOWLEDGE RETENTION</h3>,
+    title:<h3 className='mxr__section-title'>MOBILE APP DEVELOPMENT SERVICES</h3>,
     features:[
       'Mobile development services for intergrated software systems',
       'Augmented reality for business driven mobile development',

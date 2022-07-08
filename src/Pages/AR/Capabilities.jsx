@@ -4,19 +4,19 @@ import {FaDesktop,FaImage,FaTv,FaSun} from 'react-icons/fa'
 
 const Capabilities = () => {
   return (
-    <div className='mxr__capabilities mxr__section mxr__developmentservice'>
+    <div className='mxr__capabilities mxr__section mxr__whychoose'>
         <Container>
         <h3 className='mxr__section-title'>OUR APP CAPABILITIES</h3>
         <Row>
-          <Col>
-            <div><FaDesktop size={30} /></div>
+          <Col md={6} sm={12}>
+            <div className='icon_leftside' ><FaDesktop size={30} /></div>
             <div>
                 <h5>SCENE DETECTION</h5>
                 <p>Our AR apps scan real life surroundings with the camera lens, perceive gathered data as an image on a coordinate plane, and translate it into a depth map to ensure realistic 3D model placement.</p>
             </div>
           </Col>
-          <Col>
-          <div>
+          <Col md={6} sm={12}>
+          <div className='icon_leftside'>
              <FaImage size={30} />
           </div>
           <div>
@@ -26,8 +26,8 @@ const Capabilities = () => {
           </Col>
         </Row>
         <Row>
-            <Col>
-            <div>
+            <Col md={6} sm={12}>
+            <div className='icon_leftside'>
                <FaTv size={30} />
             </div>
             <div>
@@ -35,8 +35,8 @@ const Capabilities = () => {
                 <p>Common for all smartphones and tablets, GPS, gyroscope, and accelerometer allow our AR apps dynamically resize and calibrate augmentations on the screen as you and your device move around.</p>
             </div>
             </Col>
-            <Col>
-               <div>
+            <Col md={6} sm={12}>
+               <div className='icon_leftside'>
                   <FaSun size={30} />
                </div>
                <div>

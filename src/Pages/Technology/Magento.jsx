@@ -15,8 +15,8 @@ import magentos from '../../assets/icons/technologyservices/magento/magento.png'
 
 const bannerdata = {
   img: 'technology-magento.jpg',
-  title: "HIRE ANGULAR DEVELOPERS",
-  text: "Hire Developers on a full-time, hourly, or fixed cost project basis and manage them as your extended team."
+  title: "MAGENTO DESIGN & DEVELOPMENT",
+  text: "Magento is an open-source technology and its based on e-commerce platform that provides an array of features and flexibility to online merchants."
 }
 
 const introduction=[
