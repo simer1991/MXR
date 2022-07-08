@@ -22,6 +22,10 @@
 .mxr__clients .carousel-caption p {
     color: #777 !important;
 }
+.mxr__clients svg {
+    color: #ffb900;
+    font-size: 23px;
+}
 .mxr__clients {
     padding: 50px 0!important;
 }

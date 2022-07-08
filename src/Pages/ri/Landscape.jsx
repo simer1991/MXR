@@ -45,44 +45,44 @@ const Landscape = () => {
           </Col>
         </Row>
         </Container>
-        </div>
-        <div className='mxr__tech mxr__section '>
+        <div className='mxr__tech mxr__section white_simple_tabs'>
           <Container>
             <h3 className='mxr__section-title'>HOW IT WORKS</h3>
         <Tabs className="mb-3 mxr__tabs">
           <Tab eventKey='research' title="Research">
            <Row>
-            <Col>
+            <Col md={5} sm={12}>
               <img src={research} alt="reseach"/>
               </Col>
-              <Col>
+              <Col md={7} sm={12}>
               <p>Our R&D analysts and market research specialists conduct comprehensive, in depth research of your idea needed for its validation, defining the scope of work, framing the budget, and identifying all the technical constraints and risks. It is a fundamental part of the R&D process necessary for establishing technology excellence and the strong market potential of the future product</p>
             </Col>
            </Row>
           </Tab>
           <Tab eventKey='Proof Of Concept' title="Proof Of Concept">
             <Row>
-              <Col>
+              <Col md={5} sm={12}>
                <img src={proof} alt="Proof Of Concept" />
               </Col>
-              <Col>
+              <Col md={7} sm={12}>
               <p>Based on the previous research, we build an initial product prototype to establish the viability of the idea and solution, which is necessary for moving forward with the R&D process. We provide maximum flexibility during this process, where the client gets complete freedom of creativity accompanied with professional R&D consulting.</p>
-              </Col>
+              </Col >
             </Row>
           </Tab>
           <Tab eventKey='Viable Product' title="Viable Product">
             <Row>
-              <Col>
+              <Col md={5} sm={12}>
                 <img src={viable} alt="Viable Product"/>
               </Col>
-              <Col>
+              <Col md={7} sm={12}>
               <p>Meta Extended Reality (MXR) is the right way to deliver the product to the market on time before the competitors do. It is necessary for further solution validation and quick market feedback. Our R&D engineers will create a minimum viable product based on your idea and solution prototypes, so that your solution can pass a battle test and get ready for further improvements</p>
               </Col>
             </Row>
           </Tab>
         </Tabs>
-        </Container>
+        </Container> 
         </div>
+      </div>
       </>
   )
 }

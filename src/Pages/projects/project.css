@@ -1,0 +1,43 @@
+.Project_video video {
+    max-width: 100%;
+}
+.project h3 {
+    margin: 0px;
+    color: rgb(43, 121, 117);
+    --fontSize: 33;
+    line-height: 1.5;
+    font-weight: 600;
+    margin-bottom: 26px;
+    margin-top: 33px;
+}
+.project svg {
+    color: #2b7975;
+    margin-right: 8px;
+}
+.project h6 {
+    color: #777;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.main_project.mxr__section.\32 nd_sec {
+    background: whitesmoke;
+}
+.main_project h3 {
+    font-size: 33px !important;
+    color: #383838;
+    margin-bottom: 23px;
+    font-weight: 600 !important;
+}
+.main_project p {
+    margin-bottom: 6%;
+}
+@media screen and (max-width: 767px){
+    .project_image img {
+        width: 100%;
+        padding-top: 42px;
+    }
+    .main_project img {
+        width: 100%;
+    }
+}

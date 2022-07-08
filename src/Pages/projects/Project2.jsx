@@ -21,14 +21,14 @@ const Project2 = () => {
   return (
     <div>
      <Innerbanner  banner={bannerdata} />
-     <div>
+     <div class='mxr__section project'>
         <Container>
             <Row>
-                <Col>
+                <Col md={6} sm={12}>
                 <h3>CONTEXT</h3>
                 <p>Compliance with warehouse safety regulations is critical for the protection of people’s lives and property. The use of virtual reality technology enables learners to quickly acquire proper behaviour and safety skills in a warehouse environment that is as close to reality as possible without putting themselves in danger.</p>
                 </Col>
-                <Col>
+                <Col md={6} sm={12} className='Project_video'>
                 <video src={video2} autoPlay muted loop />
                 </Col>
             </Row>

@@ -9,14 +9,14 @@ const KeyBenifits = () => {
         <h3 className='mxr__section-title'>KEY BENEFITS</h3>
         <Row>
             <Col sm={12} lg={4}>
-            <div className='icon_textcnetersection' >
+              <div className='icon_textcnetersection'>
             <FaExclamationTriangle size={30} />
             </div>
             <h5>HAZARD SIMULATION</h5>
             <p>The ability to simulate hazardous environments or complex procedures</p>
             </Col>
             <Col sm={12} lg={4}>
-            <div className='icon_textcnetersection'>
+              <div className='icon_textcnetersection'>
              <FaRedo size={30} />
              </div>
              <h5>REPEATABILITY</h5>
@@ -32,21 +32,21 @@ const KeyBenifits = () => {
         </Row>
         <Row>
             <Col sm={12} lg={4}>
-            <div className='icon_textcnetersection'>
+              <div className='icon_textcnetersection'>
             <FaLightbulb size={30} />
             </div>
             <h5>HIGHLY ENGAGING</h5>
             <p>Fun immersive user engagement leading to increased knowledge retention</p>
             </Col>
             <Col sm={12} lg={4}>
-            <div className='icon_textcnetersection'>
+              <div className='icon_textcnetersection'>
             <FaEye size={30} />
             </div>
             <h5>VISUAL</h5>
             <p>Highly visual, easy to interpret and understand</p>
             </Col>
             <Col sm={12} lg={4}>
-            <div className='icon_textcnetersection'>
+              <div className='icon_textcnetersection'>
             <FaThumbsUp size={30} />
             </div>
             <h5>REALTIME ANALYTICS</h5>

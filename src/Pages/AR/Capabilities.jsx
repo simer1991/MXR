@@ -4,12 +4,12 @@ import {FaDesktop,FaImage,FaTv,FaSun} from 'react-icons/fa'
 
 const Capabilities = () => {
   return (
-    <div className='mxr__capabilities mxr__section mxr__whychoose'>
+    <div className='mxr__capabilities mxr__section white_bg_point'>
         <Container>
         <h3 className='mxr__section-title'>OUR APP CAPABILITIES</h3>
         <Row>
           <Col md={6} sm={12}>
-            <div className='icon_leftside' ><FaDesktop size={30} /></div>
+            <div className='icon_leftside'><FaDesktop size={30} /></div>
             <div>
                 <h5>SCENE DETECTION</h5>
                 <p>Our AR apps scan real life surroundings with the camera lens, perceive gathered data as an image on a coordinate plane, and translate it into a depth map to ensure realistic 3D model placement.</p>

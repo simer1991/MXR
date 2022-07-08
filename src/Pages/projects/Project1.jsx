@@ -3,6 +3,7 @@ import { Container, Row,Col } from 'react-bootstrap-v5'
 import { Innerbanner, Readytotalk } from '../../components'
 import video from '../../assets/videos/video.mov'
 import {FaCheckCircle} from 'react-icons/fa'
+import './project.css'
 
 const bannerdata = {
     img: 'project1.jpg',
@@ -21,16 +22,16 @@ const Project1 = () => {
   return (
     <div>
       <Innerbanner banner={bannerdata} />
-      <div>
+      <div class='mxr__section project'>
       <Container>
       <div>
             <Row>
-                <Col>
+                <Col md={6} sm={12}>
                 <h3>CONTEXT</h3>
                 <p>Training in the maintenance of large-scale facilities such as wind turbines is prohibitively expensive. Delivering personnel to the workplace and training them on an actual installation is not only a time investment, but also a substantial costly one, especially if the installation is in a remote region.</p>
                 <p>An approach is to do classroom instruction on particular components of the installation. This approach, however, does not provide comprehensive training in the proper sequence of actions. As an alternative to traditional training, we designed a virtual reality simulator that immerses the trainee completely and greatly reduces the cost of teaching corporate workers.</p>
                  </Col>
-                 <Col>
+                 <Col md={6} sm={12} className='Project_video'>
                  <video src={video} autoPlay muted loop />
                 </Col>
             </Row> 

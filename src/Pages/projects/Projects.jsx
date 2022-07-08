@@ -11,6 +11,7 @@ const bannerdata = {
   title: "PROJECTS",
 }
 
+<<<<<<< HEAD
 const dataList =[
   { id:"1",
    heading:"VIRTUAL REALITY MAINTENANCE SIMULATOR",
@@ -22,6 +23,8 @@ const dataList =[
   },
 ];
 
+=======
+>>>>>>> ca461ec2a76abf96eb210e2962ceb826ffad8854
 const readytotalk = {
   img: 'python.webp',
   title: "READY TO DISCUSS YOUR PROJECT? ",
@@ -33,21 +36,37 @@ const Projects = () => {
   return (
     <div>
      <Innerbanner banner={bannerdata} />
-     <Benifits data={dataList}/>
-     <div>
+     <div className='main_project mxr__section'>
       <Container>
         <Row>
-        <Col>
+          <Col md={6} sm={12}>
+           <img src={images}/>
+          </Col>
+          <Col md={6} sm={12}>
+          <h3>VIRTUAL REALITY MAINTENANCE SIMULATOR</h3>
+          <p>Training in the maintenance of large-scale facilities such as wind turbines is prohibitively expensive. Delivering personnel to the workplace and training them on an actual installation is not only a time investment, but also a substantial costly one, especially if the installation is in a remote region.</p>
+          <Link to="/project1" className="mxr__section-btn" >READ MORE</Link>
+          </Col>
+        </Row>
+         </Container>
+         </div>
+         <div  className=' main_project mxr__section 2nd_sec'>
+          <Container>
+          <Row>
+        
+        <Col md={6} sm={12} className='text_project'>
         <h3>VIRTUAL REALITY WAREHOUSE SAFETY TRAINING</h3>
         <p>Compliance with warehouse safety regulations is critical for the protection of people’s lives and property. The use of virtual reality technology enables learners to quickly acquire proper behaviour and safety skills in a warehouse environment that is as close to reality as possible without putting themselves in danger.</p>
         <Link to="/project2" className="mxr__section-btn" >READ MORE</Link>
         </Col>
-        <Col>
+        <Col md={6} sm={12} className='project_image'>
         <img src={virtual} />
         </Col>
+      
         </Row>
-      </Container>
+          </Container>
      </div>
+     
      <Readytotalk discuss={readytotalk} />
     </div>
   )

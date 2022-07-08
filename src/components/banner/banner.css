@@ -36,6 +36,12 @@
 .slide .carousel-caption p {
     color: #fff;
 }
+.carousel-fade .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 800px;
+}
 @media screen and (max-width: 767px){
     .carousel-fade h3.mxr__section-title {
         font-weight: 900 !important;
@@ -46,7 +52,12 @@
         float: left;
         line-height: 28px !important;
     }
-    
+    .carousel-fade .carousel-inner {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        height: 300px;
+    }
 
     .carousel.slide.carousel-fade .carousel-caption {
         position: absolute;
@@ -62,5 +73,8 @@
     }
     .carousel-fade button {
         margin-top: 15px;
+    }
+    .carousel-fade img.d-block.w-100 {
+        height: 300px;
     }
 }

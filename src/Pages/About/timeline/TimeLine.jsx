@@ -19,37 +19,53 @@ const TimeLine = () => {
           contentStyle={{background:"#fff"}}
           contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
           iconStyle={{ background: "#fff", color: "#2b7975" }}
-          icon={<FaUserCheck />}
           >
+            <div className='time_line-icon'>
+            <FaUserCheck />
+            </div>
+            <div className='time_line-icon_text'>
             <h4>DEDICATION TO CLIENT SUCCESS</h4>
             <p>Our team and works and revolves around a user-centric approach, which certainly means 100% client success rate.</p>
+            </div>
           </VerticalTimelineElement>
           <VerticalTimelineElement 
           className="vertical-timeline-element--work"
           contentStyle={{background:"#fff"}}
           iconStyle={{ background: "#fff", color: "#2b7975" }}
-          icon={<FaUserShield />}
           >
+            <div className='time_line-icon'>
+            <FaUserShield />
+            </div>
+            <div className='time_line-icon_text'>
             <h4>TRANSPARENCY</h4>
             <p>Timely disclosure of information, insights for collaboration and discussion are a daily routine at MXR.</p>
+            </div>
           </VerticalTimelineElement>
           <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{background:"#fff"}}
           iconStyle={{ background: "#fff", color: "#2b7975" }}
-          icon={<FaTrophy />}
           >
+            <div className='time_line-icon'>
+            <FaTrophy />
+            </div>
+            <div className='time_line-icon_text'>
            <h4>AWARD-WINNING TEAM</h4>
            <p>We have been recognized and appreciated not only by our clients but also by many professionally reputed organizations for excellence in our business.</p>
+           </div>
           </VerticalTimelineElement>
           <VerticalTimelineElement
-          className="vertical-timeline-element--work"
+          className="vertical-timeline-element--work last"
           contentStyle={{background:"#fff"}}
           iconStyle={{ background: "#fff", color: "#2b7975" }}
-          icon={<FaUser />}
           >
+            <div className='time_line-icon'>
+            <FaUser />
+            </div>
+            <div className='time_line-icon_text'>
           <h4>USER FRIENDLY INTERFACE</h4>
           <p>We consult our clients on what business model and methodology to choose depending on project needs, scope, and capacity.</p>
+          </div>
           </VerticalTimelineElement>
       </VerticalTimeline>
       </Col>
