@@ -11,20 +11,6 @@ const bannerdata = {
   title: "PROJECTS",
 }
 
-<<<<<<< HEAD
-const dataList =[
-  { id:"1",
-   heading:"VIRTUAL REALITY MAINTENANCE SIMULATOR",
-   images:<img src={images} alt='benifits of vr 360'/>,
-   pharagraphs:[
-   "Training in the maintenance of large-scale facilities such as wind turbines is prohibitively expensive. Delivering personnel to the workplace and training them on an actual installation is not only a time investment, but also a substantial costly one, especially if the installation is in a remote region.",
-  ],
-  link:<input type="button" value="READ MORE" />
-  },
-];
-
-=======
->>>>>>> ca461ec2a76abf96eb210e2962ceb826ffad8854
 const readytotalk = {
   img: 'python.webp',
   title: "READY TO DISCUSS YOUR PROJECT? ",

@@ -2,7 +2,7 @@ import React,{useState,useRef} from 'react'
 import { Container,Row,Col,Card,ListGroup,Form } from 'react-bootstrap-v5'
 import {FaMapMarkerAlt,FaPhoneAlt,FaEnvelope,FaComment} from 'react-icons/fa';
 import ReCAPTCHA from 'react-google-recaptcha';
-import emailjs from '@emailjs/browser' 
+import axios from 'axios' 
 import { Innerbanner } from '../../components';
 import './contact.css'
 
@@ -18,18 +18,24 @@ const Contact =() => {
     console.log("Captcha value:", value);
     setVarified(true);
   }
-  function sendEmail(e){
-    e.preventDefault();
-    emailjs.send('service_gn1atii','template_cae5z8b',sendEmail,'oamdoX8gpeRyb1_R6')
-   .then(res=>{
-        console.log(res);
-    }).catch(err=>console.log(err));
-    emailjs.send('service_gn1atii','template_g8n3ovx',sendEmail,'oamdoX8gpeRyb1_R6')
-   .then(res=>{
-        console.log(res);
-    }).catch(err=>console.log(err));
-}
+
+    const [msg,setMsg] = useState('');
+    const [user, setUser] = useState({
+      to: ""
+    });
+   
+    const { to,name,number,address} = user;
+    const onInputChange = e => {
+      setUser({ ...user, [e.target.name]: e.target.value });
+    };
+   
+    const onSubmit = async e => {
+      e.preventDefault();
+      await axios.post("http://localhost:5000/users/",user)
+     .then(response => setMsg(response.data.respMesg));
+    };
   
+
   return (
    <div className='mxr__contact'> 
    <Innerbanner banner={bannerdata}/>  
@@ -70,14 +76,20 @@ const Contact =() => {
         </Card> 
         </Col>
         <Col sm={12} md={8}>
-        <Form onSubmit={sendEmail}>
+        <Form>
            <Row>
                 <Col md={6}>
                    <Form.Group as={Col} controlId="formGridEmail">
                     <div>
                    <Form.Label>Your Name *</Form.Label>
                    </div>
-                   <input type="text" name="name" />
+                   <input 
+                   type="text" 
+                   name="name" 
+                   onChange={onInputChange}
+                   value={name}
+                   required
+                    />
                    </Form.Group>
                    </Col>
                    <Col md={6}>
@@ -85,7 +97,13 @@ const Contact =() => {
                     <div>
                    <Form.Label>Your Email *</Form.Label>
                    </div>
-                   <input type="email" name="email" />
+                   <input 
+                   type="email" 
+                   name="to"
+                   onChange={onInputChange}
+                   value={to}
+                   required
+                    />
                    </Form.Group>
                 </Col>
                 <Row>
@@ -94,7 +112,13 @@ const Contact =() => {
                     <div>
                    <Form.Label>Phone number *</Form.Label>
                    </div>
-                   <input type="number" name="number" />
+                   <input 
+                   type="number" 
+                   name="number"  
+                   onChange={onInputChange}
+                   value={number}
+                   required
+                   />
                    </Form.Group> 
                    </Col>
                    <Col md={6}>
@@ -102,7 +126,13 @@ const Contact =() => {
                     <div>
                    <Form.Label>Your Address *</Form.Label>
                    </div>
-                   <input type="text"  name="address"/>
+                   <input 
+                   type="text"  
+                   name="address"
+                   onChange={onInputChange}
+                   value={address}
+                   required
+                   />
                    </Form.Group>
                 </Col>
                 </Row>
@@ -120,7 +150,8 @@ const Contact =() => {
                   /></Row>
                   <Row>
                    <div> 
-                  <button><FaComment/>Submit</button>
+                   <p className="mb-3 mt-2" style={{color:"green",marginLeft:"57px"}}><b>{msg}</b></p>
+                  <button onClick={onSubmit}><FaComment/>Submit</button>
                   </div>
                   </Row>
             </Row>
