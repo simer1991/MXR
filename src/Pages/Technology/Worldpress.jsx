@@ -14,6 +14,7 @@ import web from '../../assets/icons/technologyservices/wordpress/web.png'
 import website from '../../assets/icons/technologyservices/wordpress/website.png'
 import Wordpress from '../../assets/icons/technologyservices/wordpress/wordpress.png'
 import support from '../../assets/icons/technologyservices/wordpress/support.png'
+import { Helmet } from 'react-helmet'
 
 const bannerdata = {
   img: 'technology-worldpress.jpg',
@@ -124,6 +125,9 @@ const services=[
 const Worldpress = () => {
   return (
     <div>
+      <Helmet>
+        <title>wordpress - MXR</title>
+      </Helmet>
       <Innerbanner banner={bannerdata} />
       <WhyChoose benifit={benifits}/>
       <PartnerWithMxr />

@@ -11,6 +11,7 @@ import mern from '../../assets/icons/technologyservices/mern/mern.png'
 import migration from '../../assets/icons/technologyservices/mern/migration.png'
 import mernstack from '../../assets/icons/technologyservices/mern/mernstack.png'
 import ecommerce from '../../assets/icons/technologyservices/mern/ecommerce.png'
+import { Helmet } from 'react-helmet'
 
 const bannerdata = {
   img: 'technology-mern.jpg',
@@ -107,6 +108,9 @@ const services=[
 const Mern = () => {
   return (
     <div>
+      <Helmet>
+        <title>mern-stack - MXR</title>
+      </Helmet>
       <Innerbanner banner={bannerdata} />
       <WhyChoose benifit={benifits}/>
       <PartnerWithMxr />

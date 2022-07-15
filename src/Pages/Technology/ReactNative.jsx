@@ -12,6 +12,7 @@ import dedicated from '../../assets/icons/technologyservices/reactnative/dedicat
 import react from '../../assets/icons/technologyservices/reactnative/react.png'
 import support from '../../assets/icons/technologyservices/reactnative/support.png'
 import backend from '../../assets/icons/technologyservices/reactnative/backend.png'
+import { Helmet } from 'react-helmet'
 
 const bannerdata = {
   img: 'technology-reactnative.jpg',
@@ -107,6 +108,11 @@ const services=[
 const ReactNative = () => {
   return (
     <div>
+      <Helmet>
+        <title>
+        react-native - MXR
+        </title>
+      </Helmet>
       <Innerbanner banner={bannerdata} />
       <WhyChoose benifit={benifits}/>
       <PartnerWithMxr />

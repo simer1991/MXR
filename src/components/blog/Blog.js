@@ -3,6 +3,7 @@ import { Col, Row } from "react-bootstrap-v5";
 import { Outlet } from "react-router-dom";
 import Innerbanner from "../innerbanner/Innerbanner";
 import { useParams } from "react-router";
+import { Helmet } from "react-helmet";
 
 const bannerdata = {
     img: 'blog-page-main.jpg',
@@ -39,7 +40,10 @@ function Blog() {
     }
     return (
         <>
-            <div className="mxr__blog">
+         <div className="mxr__blog">
+            <Helmet>
+                <title>Blog - MXR</title>
+            </Helmet>
                 {banner}
                 <div className="mxr__blog-content mxr__section">
                     <div className="container">

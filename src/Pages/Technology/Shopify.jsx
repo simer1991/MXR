@@ -11,6 +11,7 @@ import qa from '../../assets/icons/technologyservices/shopify/qa.png'
 import shopify from '../../assets/icons/technologyservices/shopify/shopify.png'
 import theme from '../../assets/icons/technologyservices/shopify/theme.png'
 import consulting from '../../assets/icons/technologyservices/shopify/consulting.png'
+import { Helmet } from 'react-helmet'
 
 const bannerdata = {
   img: 'technology-shopify.jpg',
@@ -106,6 +107,9 @@ const services=[
 const Shopify = () => {
   return (
     <div>
+      <Helmet>
+        <title>shopify - MXR</title>
+      </Helmet>
       <Innerbanner banner={bannerdata}/>
       <WhyChoose benifit={benifits}/>
       <PartnerWithMxr />

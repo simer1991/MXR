@@ -8,7 +8,7 @@ import mr from '../../assets/icons/mixed/mr.jpg'
 import TechnologyWork from '../vr/TechnologyWork';
 import Project from '../project/Project';
 import { Container } from 'react-bootstrap-v5';
-
+import { Helmet } from 'react-helmet';
 
 
 const bannerdata = {
@@ -51,6 +51,9 @@ const formdata=[
 function MR() {
   return (
     <div>
+      <Helmet>
+        <title>Mixed Reality - MXR</title>
+        </Helmet>
        <Innerbanner banner={bannerdata}/>
        <Benifits data={dataList}/>
        <MixedReality />

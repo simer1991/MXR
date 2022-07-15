@@ -12,6 +12,7 @@ import support from '../../assets/icons/technologyservices/swift/support.png'
 import swift from '../../assets/icons/technologyservices/swift/swift.png'
 import testing from '../../assets/icons/technologyservices/swift/testing.png'
 import upgradation from '../../assets/icons/technologyservices/swift/upgradation.png'
+import { Helmet } from 'react-helmet'
 
 const bannerdata = {
   img: 'technology-swift.jpg',
@@ -107,6 +108,9 @@ const services=[
 const Swift = () => {
   return (
     <div>
+      <Helmet>
+        <title>swift - MXR</title>
+      </Helmet>
     <Innerbanner banner={bannerdata}/>
     <WhyChoose benifit={benifits}/>
     <PartnerWithMxr />

@@ -9,6 +9,7 @@ import HireUs from './hireus/HireUs';
 import Process from '../../components/process/Process'
 import TimeLine from './timeline/TimeLine';
 import "./about.css"
+import { Helmet } from 'react-helmet';
 
 const bannerdata = {
   img: 'about-banner.jpg',
@@ -25,6 +26,10 @@ const readytotalk = {
 const About = () => {
   return (
     <div>
+       <Helmet>
+        <title>About Us | MXR</title>
+        <meta name="description" content="MXR is UK based software development company delivering reliable and in-budget solutions for AR, VR, MR, Web and Mobile App development to clients globally." />
+        </Helmet>
       <Innerbanner banner={bannerdata} />
       <WhoWeAre />
       <Vision />

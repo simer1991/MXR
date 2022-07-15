@@ -14,6 +14,7 @@ import react from '../../assets/icons/technologyservices/reactjs/react.png'
 import reactjs from '../../assets/icons/technologyservices/reactjs/reactjs.png'
 import maintenance from '../../assets/icons/technologyservices/reactjs/maintenance.png'
 import archetecture from '../../assets/icons/technologyservices/reactjs/archetecture.png'
+import { Helmet } from 'react-helmet'
 
 const bannerdata = {
   img: 'technology-reactjs.png',
@@ -125,6 +126,9 @@ const services=[
 const Reactjs = () => {
   return (
     <div>
+      <Helmet>
+        <title>reactjs - MXR</title>
+      </Helmet>
       <Innerbanner banner={bannerdata} />
       <WhyChoose benifit={benifits}/>
       <PartnerWithMxr />

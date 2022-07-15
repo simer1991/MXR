@@ -11,6 +11,7 @@ import angular from '../../assets/icons/technologyservices/angular/angular.png'
 import dedicated from '../../assets/icons/technologyservices/angular/dedicated.png'
 import real from '../../assets/icons/technologyservices/angular/real.png'
 import migration from '../../assets/icons/technologyservices/angular/migration.png'
+import { Helmet } from 'react-helmet'
 
 const bannerdata = {
   img: 'technology-angular.jpg',
@@ -105,6 +106,9 @@ const services=[
 const Angular = () => {
   return (
     <div>
+      <Helmet>
+        <title>angular - MXR</title>
+      </Helmet>
       <Innerbanner banner={bannerdata} />
       <WhyChoose benifit={benifits}/>
       <PartnerWithMxr />

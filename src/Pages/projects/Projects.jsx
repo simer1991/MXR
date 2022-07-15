@@ -5,6 +5,7 @@ import Benifits from '../vr360/Benifits'
 import { Container, Row,Col } from 'react-bootstrap-v5'
 import virtual from '../../assets/images/projects/virtual.jpg'
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet'
 
 const bannerdata = {
   img: 'projects.jpg',
@@ -21,6 +22,9 @@ const readytotalk = {
 const Projects = () => {
   return (
     <div>
+      <Helmet>
+        <title>Projects - MXR</title>
+      </Helmet>
      <Innerbanner banner={bannerdata} />
      <div className='main_project mxr__section'>
       <Container>

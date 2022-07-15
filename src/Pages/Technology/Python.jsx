@@ -8,6 +8,7 @@ import TechnologyServices from '../../components/TechnologyServices'
 import experiance from '../../assets/icons/technologyservices/python/experiance.png'
 import work from '../../assets/icons/technologyservices/python/work.png'
 import select from '../../assets/icons/technologyservices/python/select.png'
+import { Helmet } from 'react-helmet'
 
 const bannerdata = {
   img: 'technology-phython.jpg',
@@ -63,6 +64,11 @@ const services=[
 const Python = () => {
   return (
     <div>
+      <Helmet>
+        <title>
+        python - MXR
+        </title>
+      </Helmet>
       <Innerbanner banner={bannerdata} />
       <Design intro={introduction} />
       <PartnerWithMxr />

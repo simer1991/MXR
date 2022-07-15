@@ -13,6 +13,7 @@ import hybrid from '../../assets/icons/technologyservices/flutter/hybrid.png'
 import support from '../../assets/icons/technologyservices/flutter/support.png'
 import testing from '../../assets/icons/technologyservices/flutter/testing.png'
 import ui from '../../assets/icons/technologyservices/flutter/ui.png'
+import { Helmet } from 'react-helmet'
 
 const bannerdata = {
   img: 'technology-flutter.jpg',
@@ -119,6 +120,9 @@ const services=[
 const Flutter = () => {
   return (
     <div>
+      <Helmet>
+        <title>flutter - MXR</title>
+      </Helmet>
       <Innerbanner banner={bannerdata} />
       <WhyChoose benifit={benifits}/>
       <PartnerWithMxr />

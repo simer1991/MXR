@@ -3,6 +3,7 @@ import { Innerbanner, Process, Readytotalk } from '../../components'
 import Landscape from './Landscape'
 import Benifits from '../vr360/Benifits'
 import images from '../../assets/icons/benifits/ri.png'
+import { Helmet } from 'react-helmet';
 
 const bannerdata = {
   img: 'services-research and innovation.jpg',
@@ -31,6 +32,10 @@ const readytotalk = {
 const RI = () => {
   return (
     <div>
+      <Helmet>
+        <title>Research And Development | MXR</title>
+        <meta name="description" content="MXR is UK based software development company delivering reliable and in-budget solutions for AR, VR, MR, Web and Mobile App development to clients globally." />
+        </Helmet>
       <Innerbanner banner={bannerdata} />
       <Benifits data={dataList} />
       <Landscape />

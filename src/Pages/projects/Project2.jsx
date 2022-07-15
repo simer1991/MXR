@@ -3,6 +3,7 @@ import { Container,Row,Col} from 'react-bootstrap-v5'
 import { Innerbanner, Readytotalk } from '../../components'
 import video2 from '../../assets/videos/video2.mp4'
 import {FaCheckCircle} from 'react-icons/fa'
+import { Helmet } from 'react-helmet'
 
 const bannerdata = {
     img: 'project2.jpg',
@@ -20,6 +21,9 @@ const bannerdata = {
 const Project2 = () => {
   return (
     <div>
+      <Helmet>
+        <title>VR Warehouse Safety Training - MXR</title>
+      </Helmet>
      <Innerbanner  banner={bannerdata} />
      <div class='mxr__section project'>
         <Container>

@@ -8,6 +8,7 @@ import Project from '../project/Project'
 import vr from '../../assets/icons/intro/vr.png'
 import Design from './Design'
 import KeyBenifits from './KeyBenifits'
+import { Helmet } from 'react-helmet';
 
 const bannerdata = {
   img: 'vr.jpg',
@@ -56,6 +57,10 @@ const readytotalk = {
 function VRL() {
   return (
     <div>
+      <Helmet>
+        <title>AR, VR and MR Company in UK - MXR</title>
+        <meta name="description" content="MXR is UK based software development company delivering reliable and in-budget solutions for AR, VR, MR, Web and Mobile App development to clients globally." />
+        </Helmet>
       <Innerbanner banner={bannerdata} />
       <Design intro={introduction} />
       <WhatWeCanDoo />

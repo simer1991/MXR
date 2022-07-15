@@ -11,6 +11,7 @@ import custom from '../../assets/icons/technologyservices/android/custom.png'
 import native from '../../assets/icons/technologyservices/android/native.png'
 import hire from '../../assets/icons/technologyservices/android/hire.png'
 import android from '../../assets/icons/technologyservices/android/android.png'
+import { Helmet } from 'react-helmet'
 
 const bannerdata = {
   img: 'technology-android.jpg',
@@ -106,6 +107,9 @@ const services=[
 const Android = () => {
   return (
     <div>
+      <Helmet>
+        <title>android - MXR</title>
+      </Helmet>
       <Innerbanner banner={bannerdata} />
       <WhyChoose benifit={benifits}/>
       <PartnerWithMxr />

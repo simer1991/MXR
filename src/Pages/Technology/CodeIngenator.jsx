@@ -14,6 +14,7 @@ import maintenance from '../../assets/icons/technologyservices/codeniger/maintai
 import migration from '../../assets/icons/technologyservices/codeniger/migration.png'
 import custom from '../../assets/icons/technologyservices/codeniger/custom.png'
 import { AiFillDashboard,  } from "react-icons/ai";
+import { Helmet } from 'react-helmet'
 
 const bannerdata = {
     img: 'codeigniter.jpg',
@@ -118,6 +119,9 @@ const bannerdata = {
 const CodeIngenator = () => {
   return (
     <div>
+      <Helmet>
+        <title>Codeigniter-development - MXR</title>
+      </Helmet>
       <Innerbanner banner={bannerdata} />
       <WhyChoose benifit={benifits}/>
       <PartnerWithMxr />

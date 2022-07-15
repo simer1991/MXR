@@ -11,6 +11,7 @@ import staff from '../../assets/icons/technologyservices/drupal/staff.png'
 import support from '../../assets/icons/technologyservices/drupal/support.png'
 import commerce from '../../assets/icons/technologyservices/drupal/commerce.png'
 import drupal from '../../assets/icons/technologyservices/drupal/drupal.png'
+import { Helmet } from 'react-helmet'
 
 const bannerdata = {
   img: 'technology-drupal.jpg',
@@ -107,6 +108,9 @@ const services=[
 const Drupal = () => {
   return (
     <div>
+      <Helmet>
+        <title>drupal - MXR</title>
+      </Helmet>
       <Innerbanner banner={bannerdata}/>
       <WhyChoose benifit={benifits}/>
       <PartnerWithMxr />

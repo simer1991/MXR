@@ -11,6 +11,7 @@ import support from '../../assets/icons/technologyservices/ionic/support.png'
 import testing from '../../assets/icons/technologyservices/ionic/testing.png'
 import custom from '../../assets/icons/technologyservices/ionic/custom.png'
 import app from '../../assets/icons/technologyservices/ionic/app.png'
+import { Helmet } from 'react-helmet'
 
 const bannerdata = {
   img: 'technology-ionic.jpg',
@@ -107,6 +108,9 @@ const services=[
 const Ionic = () => {
   return (
     <div>
+      <Helmet>
+        <title>ionic - MXR</title>
+      </Helmet>
       <Innerbanner banner={bannerdata} />
       <WhyChoose benifit={benifits}/>
       <PartnerWithMxr />

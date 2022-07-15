@@ -12,6 +12,7 @@ import solutions from '../../assets/icons/technologyservices/customunrealengine/
 import tour from '../../assets/icons/technologyservices/customunrealengine/tours.png'
 import training from '../../assets/icons/technologyservices/customunrealengine/training.png'
 import WhyShould from '../../components/WhyShould'
+import { Helmet } from 'react-helmet'
 
 
 const bannerdata = {
@@ -108,6 +109,9 @@ const bannerdata = {
 const CustomUnrealEngine = () => {
   return (
     <div>
+      <Helmet>
+        <title>CUSTOM UNREAL ENGINE DEVELOPMENT SERVICES - MXR</title>
+      </Helmet>
       <Innerbanner banner={bannerdata} />
       <Benifits data={dataList}/>
       <WhyShould />

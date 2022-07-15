@@ -1,9 +1,13 @@
 import React from 'react'
 import { Container } from 'react-bootstrap-v5'
+import { Helmet } from 'react-helmet'
 
 const Terms = () => {
   return (
     <div>
+        <Helmet>
+            <title>Terms and Conditions - MXR</title>
+        </Helmet>
       <Container>
         <div className='mxr__term mxr__section'>
             <h3 className='mxr__section-title'>1. Welcome to MXR</h3>

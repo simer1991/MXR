@@ -11,6 +11,7 @@ import interactive from '../../assets/icons/technologyservices/vue/interactive.p
 import single from '../../assets/icons/technologyservices/vue/single.png'
 import support from '../../assets/icons/technologyservices/vue/support.png'
 import vuejs from '../../assets/icons/technologyservices/vue/vuejs.png'
+import { Helmet } from 'react-helmet'
 
 const bannerdata = {
   img: 'technology-vue.jpg',
@@ -105,6 +106,9 @@ const services=[
 const Vue = () => {
   return (
     <div>
+      <Helmet>
+        <title>vuejs - MXR</title>
+      </Helmet>
       <Innerbanner banner={bannerdata}/>
       <WhyChoose benifit={benifits}/>
       <PartnerWithMxr />

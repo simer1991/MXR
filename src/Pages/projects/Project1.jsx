@@ -4,6 +4,7 @@ import { Innerbanner, Readytotalk } from '../../components'
 import video from '../../assets/videos/video.mov'
 import {FaCheckCircle} from 'react-icons/fa'
 import './project.css'
+import { Helmet } from 'react-helmet'
 
 const bannerdata = {
     img: 'project1.jpg',
@@ -21,6 +22,9 @@ const bannerdata = {
 const Project1 = () => {
   return (
     <div>
+      <Helmet>
+        <title>VR maintenance simulator - MXR</title>
+      </Helmet>
       <Innerbanner banner={bannerdata} />
       <div class='mxr__section project'>
       <Container>

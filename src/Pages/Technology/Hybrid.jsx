@@ -8,6 +8,7 @@ import TechnologyServices from '../../components/TechnologyServices'
 import work from '../../assets/icons/technologyservices/hybrid/work.png'
 import easier from '../../assets/icons/technologyservices/hybrid/easier.png'
 import access from '../../assets/icons/technologyservices/hybrid/access.png'
+import { Helmet } from 'react-helmet'
 
 
 const bannerdata = {
@@ -65,6 +66,9 @@ const services=[
 const Hybrid = () => {
   return (
     <div>
+      <Helmet>
+        <title>hybrid - MXR</title>
+      </Helmet>
       <Innerbanner banner={bannerdata} />
       <Design intro={introduction}/>
       <PartnerWithMxr />

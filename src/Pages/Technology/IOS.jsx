@@ -11,6 +11,7 @@ import consultation from '../../assets/icons/technologyservices/ios/consultation
 import design from '../../assets/icons/technologyservices/ios/design.png'
 import support from '../../assets/icons/technologyservices/ios/support.png'
 import upgrades from '../../assets/icons/technologyservices/ios/upgrades.png'
+import { Helmet } from 'react-helmet'
 
 const bannerdata = {
   img: 'technology-ios.jpg',
@@ -107,6 +108,9 @@ const services=[
 const IOS = () => {
   return (
     <div>
+      <Helmet>
+        <title>ios - MXR</title>
+      </Helmet>
       <Innerbanner banner={bannerdata}/>
       <WhyChoose benifit={benifits}/>
       <PartnerWithMxr />

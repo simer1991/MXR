@@ -15,6 +15,7 @@ import cloud from '../../assets/icons/technologyservices/php/cloud.png'
 import ecommerce from '../../assets/icons/technologyservices/php/e-commerce.png'
 import hirephp from '../../assets/icons/technologyservices/php/hirephp.png'
 import migration from '../../assets/icons/technologyservices/php/migration.png'
+import { Helmet } from 'react-helmet'
 
 const bannerdata = {
   img: 'technology-php.jpg',
@@ -124,6 +125,9 @@ const services=[
 const Php = () => {
   return (
     <div>
+      <Helmet>
+        <title>php-MXR</title>
+        </Helmet>
        <Innerbanner banner={bannerdata} />
        <WhyChoose benifit={benifits}/>
        <PartnerWithMxr />

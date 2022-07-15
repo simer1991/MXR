@@ -1,5 +1,6 @@
 import React from "react";
 import { Card } from "react-bootstrap-v5";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import Bloglist from "../../blogsdata.json";
 

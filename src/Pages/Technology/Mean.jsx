@@ -11,6 +11,7 @@ import mean from '../../assets/icons/technologyservices/mean/mean.png'
 import meanstack from '../../assets/icons/technologyservices/mean/meanstack.png'
 import migration from '../../assets/icons/technologyservices/mean/migration.png'
 import ecommerce from '../../assets/icons/technologyservices/mean/ecommerce.png'
+import { Helmet } from 'react-helmet'
 
 const bannerdata = {
   img: 'technology-mean.jpg',
@@ -106,6 +107,9 @@ const services=[
 const Mean = () => {
   return (
     <div>
+      <Helmet>
+        <title>mean-stack - MXR</title>
+      </Helmet>
       <Innerbanner banner={bannerdata} />
       <WhyChoose benifit={benifits}/>
       <PartnerWithMxr />

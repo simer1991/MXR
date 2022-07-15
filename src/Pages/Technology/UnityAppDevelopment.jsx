@@ -13,6 +13,7 @@ import application from '../../assets/icons/technologyservices/unity/application
 import archetecture from '../../assets/icons/technologyservices/unity/archetecture.png'
 import WhyShould from '../../components/WhyShould'
 import WhyShouldUnity from '../../components/WhyShouldUnity'
+import { Helmet } from 'react-helmet'
 
 const bannerdata = {
   img: 'technology-unity-app.jpg',
@@ -108,6 +109,9 @@ const services=[
 const UnityAppDevelopment = () => {
   return (
     <div>
+      <Helmet>
+        <title>UNITY APP DEVELOPMENT - MXR</title>
+      </Helmet>
       <Innerbanner banner={bannerdata} />
       <Benifits data={dataList}/>
       <WhyShouldUnity />

@@ -4,7 +4,7 @@ import Design from '../vr/Design'
 import wdd from '../../assets/icons/intro/wdd.png'
 import DevelopmentService from './DevelopmentService'
 import TechnologyStacks from './TechnologyStack'
-
+import { Helmet } from 'react-helmet';
 
 
 const bannerdata = {
@@ -37,6 +37,10 @@ const readytotalk = {
 function WDD() {
   return (
     <div>
+       <Helmet>
+        <title>Web Development Services |Wordpress| PHP|Node js | MXR</title>
+        <meta name="description" content="MXR is UK based software development company delivering reliable and in-budget solutions for AR, VR, MR, Web and Mobile App development to clients globally." />
+        </Helmet>
      <Innerbanner banner={bannerdata} />
      <Design intro={introduction}/>
      <DevelopmentService />

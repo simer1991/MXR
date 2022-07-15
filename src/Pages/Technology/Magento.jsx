@@ -11,6 +11,7 @@ import b2b from '../../assets/icons/technologyservices/magento/b2b.png'
 import consulting from '../../assets/icons/technologyservices/magento/consulting.png'
 import extesions from '../../assets/icons/technologyservices/magento/extensions.png'
 import magentos from '../../assets/icons/technologyservices/magento/magento.png'
+import { Helmet } from 'react-helmet'
 
 
 const bannerdata = {
@@ -83,6 +84,9 @@ const services=[
 const Magento = () => {
   return (
     <div>
+      <Helmet>
+        <title>magento - MXR</title>
+      </Helmet>
       <Innerbanner banner={bannerdata} />
       <Design intro={introduction} />
       <PartnerWithMxr />
