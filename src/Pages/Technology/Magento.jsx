@@ -11,12 +11,13 @@ import b2b from '../../assets/icons/technologyservices/magento/b2b.png'
 import consulting from '../../assets/icons/technologyservices/magento/consulting.png'
 import extesions from '../../assets/icons/technologyservices/magento/extensions.png'
 import magentos from '../../assets/icons/technologyservices/magento/magento.png'
+import { Helmet } from 'react-helmet'
 
 
 const bannerdata = {
   img: 'technology-magento.jpg',
-  title: "HIRE ANGULAR DEVELOPERS",
-  text: "Hire Developers on a full-time, hourly, or fixed cost project basis and manage them as your extended team."
+  title: "MAGENTO DESIGN & DEVELOPMENT",
+  text: "Magento is an open-source technology and its based on e-commerce platform that provides an array of features and flexibility to online merchants."
 }
 
 const introduction=[
@@ -83,6 +84,9 @@ const services=[
 const Magento = () => {
   return (
     <div>
+      <Helmet>
+        <title>magento - MXR</title>
+      </Helmet>
       <Innerbanner banner={bannerdata} />
       <Design intro={introduction} />
       <PartnerWithMxr />

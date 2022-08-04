@@ -3,11 +3,12 @@ import Platform from './Platform'
 import WhatWeCanDoo from './WhatWeCanDoo'
 import Process from '../../components/process/Process'
 import TechnologyWork from './TechnologyWork'
-import { Innerbanner } from '../../components'
+import { Innerbanner, Readytotalk } from '../../components'
 import Project from '../project/Project'
 import vr from '../../assets/icons/intro/vr.png'
 import Design from './Design'
 import KeyBenifits from './KeyBenifits'
+import { Helmet } from 'react-helmet';
 
 const bannerdata = {
   img: 'vr.jpg',
@@ -46,15 +47,27 @@ const introduction = [
   }
 ]
 
+const readytotalk = {
+  img: 'ready.jpg',
+  title: "READY TO DISCUSS YOUR PROJECT?",
+  text: "We would love to hear about your idea and make it happen. You come to us with your idea, and we do all of the planning and costing for you.",
+  button:"CONTACT US",
+}
+
 function VRL() {
   return (
     <div>
+      <Helmet>
+        <title>AR, VR and MR Company in UK - MXR</title>
+        <meta name="description" content="MXR is UK based software development company delivering reliable and in-budget solutions for AR, VR, MR, Web and Mobile App development to clients globally." />
+        </Helmet>
       <Innerbanner banner={bannerdata} />
       <Design intro={introduction} />
       <WhatWeCanDoo />
       <KeyBenifits />
-      <Platform />
+      <Readytotalk discuss={readytotalk} />
       <Process title="OUR SOFTWARE DEVELOPMENT PROCESS" />
+      <Platform />
       <TechnologyWork />
       <Project form={formdata} />
     </div >

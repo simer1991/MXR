@@ -1,9 +1,13 @@
 import React from 'react'
 import { Container } from 'react-bootstrap-v5'
+import { Helmet } from 'react-helmet'
 
 const Privacy = () => {
   return (
     <div>
+      <Helmet>
+        <title>privacy-policy - MXR</title>
+      </Helmet>
       <Container>
         <div className='mxr__privacy mxr__section'>
         <h3 className='mxr__section-title'>1 Introduction</h3>

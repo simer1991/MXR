@@ -14,6 +14,7 @@ import re from '../../assets/icons/technologyservices/nodejs/re.png'
 import support from '../../assets/icons/technologyservices/nodejs/support.png'
 import real from '../../assets/icons/technologyservices/nodejs/real.png'
 import application from '../../assets/icons/technologyservices/nodejs/application.png'
+import { Helmet } from 'react-helmet'
 
 
 const bannerdata = {
@@ -99,6 +100,9 @@ const bannerdata = {
 const Node = () => {
   return (
     <div>
+      <Helmet>
+        <title>nodejs - MXR</title>
+        </Helmet>
       <Innerbanner banner={bannerdata} />
       <Design intro={introduction} />
       <PartnerWithMxr />

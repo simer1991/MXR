@@ -4,6 +4,17 @@ import PartnerWithMxr from '../../components/PartnerWithMxr'
 import WhyChoooseMxr from '../../components/WhyChoooseMxr'
 import {FaClipboard,FaMobileAlt,FaUserCog,FaLaptopCode,FaSwatchbook,FaShieldAlt} from 'react-icons/fa'
 import WhyChoose from '../../components/WhyChoose'
+import TechnologyServices from '../../components/TechnologyServices'
+import consulting from '../../assets/icons/technologyservices/wordpress/consulting.png'
+import api from '../../assets/icons/technologyservices/wordpress/api.png'
+import psd from '../../assets/icons/technologyservices/wordpress/psd.png'
+import custom from '../../assets/icons/technologyservices/wordpress/custom.png'
+import security from '../../assets/icons/technologyservices/wordpress/security.png'
+import web from '../../assets/icons/technologyservices/wordpress/web.png'
+import website from '../../assets/icons/technologyservices/wordpress/website.png'
+import Wordpress from '../../assets/icons/technologyservices/wordpress/wordpress.png'
+import support from '../../assets/icons/technologyservices/wordpress/support.png'
+import { Helmet } from 'react-helmet'
 
 const bannerdata = {
   img: 'technology-worldpress.jpg',
@@ -57,13 +68,71 @@ const benifits=[
   }
 ]
 
+const services=[
+  {
+    heading:"WORDPRESS SERVICES",
+    data:[
+      {
+       title:"WEB DEVELOPMENT",
+       text:"Are you looking for smart WordPress solutions? We can help you evaluate your business needs and create impressive WordPress sites for mobile devices, PCs, and big screens with our WordPress experts.",
+       icon:<img src={web} alt="application"/>,
+      },
+      {
+        title:"SUPPORT AND MAINTENANCE",
+        text:"Hire a WordPress developer for regular site maintenance, development solutions, upgrades, expansions, and uninterrupted support, suited to your specific business needs.",
+        icon:<img src={support} alt="webservies"/>,
+      },
+      {
+        title:"PSD TO WORDPRESS",
+        text:"Our WordPress developers can take a PSD design, slice it and code it into a fully-featured WP responsive site. We can create pixel-perfect, easy-to-use, and fast loading WordPress themes keeping note of the PSD design.",
+        icon:<img src={psd} alt="support"/>,
+      },
+      {
+        title:"API DEVELOPMENT",
+        text:"Our top WordPress developers can integrate third-party tools and systems, like Google Maps, Google Analytics, MailChimp, etc., through API integrations to make your site extensible.",
+        icon:<img src={api}  alt="commerce"/>,
+      },
+      {
+        title:"CONSULTING AND ANALYSIS",
+        text:"Our WordPress experts help you identify the best strategies for your WordPress projects. Contact us for specific recommendations and evaluations related to your site repairs, installations, and updates, whenever required.",
+        icon:<img src={consulting} alt="b2b" />,
+      },
+      {
+        title:"ENTERPRISE WORDPRESS DEVELOPMENT",
+        text:"Our WordPress developers’ team can help create secure, scalable, and fast-loading enterprise applications that offer a top-notch user experience.",
+        icon:<img src={Wordpress} alt="consulting"/>,
+      },
+      {
+        title:"WEBSITE MIGRATION",
+        text:"Our WordPress developers are efficient in taking files and database backups while migrating sites to new servers so that no critical information is lost.",
+        icon:<img src={website}  alt="commerce"/>,
+      },
+      {
+        title:"CUSTOM PLUGIN DEVELOPMENT",
+        text:"There’s no doubt that altering the core WP code can be catastrophic. However, our experts are skilled at adding multiple customized plugins in WordPress to modify the way core functions work without changing their code.",
+        icon:<img src={custom} alt="b2b" />,
+      },
+      {
+        title:"PERFORMANCE AND SECURITY",
+        text:"Hire WordPress experts who are experienced and adept at implementing the best cyber practices to prevent your WordPress platforms from security threats and malware attacks.",
+        icon:<img src={security} alt="consulting"/>,
+      },
+
+    ]
+  }
+]
+
 const Worldpress = () => {
   return (
     <div>
+      <Helmet>
+        <title>wordpress - MXR</title>
+      </Helmet>
       <Innerbanner banner={bannerdata} />
       <WhyChoose benifit={benifits}/>
       <PartnerWithMxr />
       <WhyChoooseMxr />
+      <TechnologyServices service={services}/>
       <Industries />
       <Readytotalk discuss={readytotalk} />
       <Clients />

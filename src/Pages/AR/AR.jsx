@@ -7,6 +7,7 @@ import Technology from './Technology'
 import { Innerbanner, Readytotalk } from '../../components'
 import Benifits from '../../Pages/vr360/Benifits'
 import Project from '../project/Project'
+import { Helmet } from 'react-helmet';
 
 
 const dataList =[
@@ -50,6 +51,10 @@ const formdata=[
 function AR() {
   return (
     <div>
+      <Helmet>
+        <title>AUGMENTED REALITY APP DEVELOPMENT | MXR</title>
+        <meta name="description" content="MXR is UK based software development company delivering reliable and in-budget solutions for AR, VR, MR, Web and Mobile App development to clients globally." />
+        </Helmet>
        <Innerbanner banner={bannerdata}/>
        <Benifits data={dataList}/>
        <WhatWeCanDo />

@@ -1,27 +1,32 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './footer.css'
 import logo from '../../assets/icons/footer/logo.png'
 import { Col, Row, Container, Form, } from 'react-bootstrap-v5'
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
-import emailjs from '@emailjs/browser'
+import axios from 'axios'
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
-  const sendEmail = (e) => {
-    e.preventDefault();
-    emailjs.send('service_gn1atii', 'template_cae5z8b', sendEmail, 'oamdoX8gpeRyb1_R6')
-      .then(res => {
-        console.log(res);
-      }).catch(err => console.log(err));
-    emailjs.send('service_gn1atii', 'template_g8n3ovx', sendEmail, 'oamdoX8gpeRyb1_R6')
-      .then(res => {
-        console.log(res);
-      }).catch(err => console.log(err));
 
-  }
+  const [msg,setMsg] = useState('');
+  const [user, setUser] = useState({
+    to: ""
+  });
+ 
+  const { to} = user;
+  const onInputChange = e => {
+    setUser({ ...user, [e.target.name]: e.target.value });
+  };
+ 
+  const onSubmit = async e => {
+    e.preventDefault();
+    await axios.post("http://localhost:5000/users/",user)
+   .then(response => setMsg(response.data.respMesg));
+  };
+
   return (
     <div className='mxr__footer mxr__section'>
-
+     
       <div className='mxr__footer-top'>
         <Container>
           <Row>
@@ -58,9 +63,16 @@ const Footer = () => {
             <Col lg={3} xs={12}>
               <h6>SUBSCRIBE TO OUR NEWSLETTER</h6>
               <div className='mxr__footer-subscribe'>
-                <Form onSubmit={sendEmail}>
-                  <input type="email" className="form-control" placeholder="Email Address*" required />
-                  <input type="submit" value="Submit" />
+              <p className="mb-3 mt-2" style={{color:"green",marginLeft:"57px"}}><b>{msg}</b></p>
+                <Form >
+                  <input type="email"
+                   className="form-control" 
+                   placeholder="Email Address*" 
+                   name="to" 
+                   onChange={onInputChange}
+                   value={to}
+                   require />
+                   <button onClick={onSubmit} className="mxr__section-btn" >SUBSCRIBE</button>
                 </Form>
               </div>
             </Col>
@@ -71,7 +83,7 @@ const Footer = () => {
         <Container>
           <Row>
             <Col>
-              <p>Copyright {new Date().getFullYear()} MXR | All Rights Reserved |<Link to='/vr'>Privacy Policy</Link>  | <Link to='/vr'>Terms and Conditions</Link></p></Col>
+              <p>Copyright {new Date().getFullYear()} MXR | All Rights Reserved |<Link to='/privacy-policy'>Privacy Policy</Link>  | <Link to='/term-and-condition'>Terms and Conditions</Link></p></Col>
           </Row>
         </Container>
       </div>

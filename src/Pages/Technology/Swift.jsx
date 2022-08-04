@@ -2,8 +2,17 @@ import React from 'react'
 import { Clients, Industries, Innerbanner, Readytotalk } from '../../components'
 import PartnerWithMxr from '../../components/PartnerWithMxr'
 import WhyChoooseMxr from '../../components/WhyChoooseMxr'
-import {FaIdCard,FaLayerGroup,FaLanguage,FaLaptopCode,FaCode,FaAddressCard} from 'react-icons/fa'
+import {FaLayerGroup,FaLanguage,FaLaptopCode,FaCode,FaAddressCard} from 'react-icons/fa'
 import WhyChoose from '../../components/WhyChoose'
+import {AiFillDashboard} from 'react-icons/ai'
+import TechnologyServices from '../../components/TechnologyServices'
+import custom from '../../assets/icons/technologyservices/swift/custom.png'
+import optimisation from '../../assets/icons/technologyservices/swift/optimisation.png'
+import support from '../../assets/icons/technologyservices/swift/support.png'
+import swift from '../../assets/icons/technologyservices/swift/swift.png'
+import testing from '../../assets/icons/technologyservices/swift/testing.png'
+import upgradation from '../../assets/icons/technologyservices/swift/upgradation.png'
+import { Helmet } from 'react-helmet'
 
 const bannerdata = {
   img: 'technology-swift.jpg',
@@ -25,7 +34,7 @@ const benifits=[
       {
        title:"FAST AND POWERFUL",
        text:"Swift is extremely fast and high-performing, thanks to the powerful LLVM compiler technology. This technology transforms the Swift code into optimized native code that gets the most out of modern hardware systems. The syntax and library in Swift also help developers write codes easily and run apps effortlessly on watches as well as on servers.",
-       icon:<FaIdCard size={30} />,
+       icon:<AiFillDashboard size={30} />,
       },
       {
         title:"DYNAMIC LIBRARIES",
@@ -57,14 +66,56 @@ const benifits=[
   }
 ]
 
+const services=[
+  {
+    heading:"SWIFT SERVICES",
+    data:[
+      {
+       title:"CUSTOM IOS SWIFT DEVELOPMENT",
+       text:"Let us build rich, cleaner and attractive UI with safer codes using Swift language. Our Swift programmers provide fully customized iOS development services.",
+       icon:<img src={custom} alt="application"/>,
+      },
+      {
+        title:"SWIFT UPGRADATION",
+        text:"Keep pace with the ever-evolving technological landscape with our Swift up-gradation services. Our proficient Swift programmers help you avoid outdated information, keep up and stay up-to-date with the latest versions of Swift.",
+        icon:<img src={upgradation} alt="webservies"/>,
+      },
+      {
+        title:"SWIFT APP TESTING",
+        text:"Our qualified testers offer full-range testing services that include areas such as performance, usability, accessibility, security, load, automation and functionality of your Swift applications.",
+        icon:<img src={testing} alt="support"/>,
+      },
+      {
+        title:"SWIFT APP OPTIMIZATION",
+        text:"We use a comprehensive approach to Swift app optimization by taking into account the design look and feel, user experience, code quality, crash data, app functionalities, bug issues, layouts, and business requirements.",
+        icon:<img src={optimisation}  alt="commerce"/>,
+      },
+      {
+        title:"MIGRATION TO SWIFT",
+        text:"We’ll help you step up the logic, architecture, and performance of your existing systems and apps by replacing each element in Swift.",
+        icon:<img src={swift} alt="b2b" />,
+      },
+      {
+        title:"SUPPORT AND MAINTENANCE",
+        text:"Our advanced support services can keep your Swift applications and platforms safe, prevent it from bugs and malware, and make it technologically compatible.",
+        icon:<img src={support} alt="consulting"/>,
+      },
+
+    ]
+  }
+]
 
 const Swift = () => {
   return (
     <div>
+      <Helmet>
+        <title>swift - MXR</title>
+      </Helmet>
     <Innerbanner banner={bannerdata}/>
     <WhyChoose benifit={benifits}/>
     <PartnerWithMxr />
     <WhyChoooseMxr />
+    <TechnologyServices service={services}/>
     <Industries />
     <Readytotalk discuss={readytotalk}/>
     <Clients />

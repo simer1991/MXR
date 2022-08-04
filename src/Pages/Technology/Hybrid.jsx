@@ -4,6 +4,12 @@ import Design from '../vr/Design'
 import hybrid from '../../assets/icons/intro/hybrid.png'
 import PartnerWithMxr from '../../components/PartnerWithMxr'
 import WhyChoooseMxr from '../../components/WhyChoooseMxr'
+import TechnologyServices from '../../components/TechnologyServices'
+import work from '../../assets/icons/technologyservices/hybrid/work.png'
+import easier from '../../assets/icons/technologyservices/hybrid/easier.png'
+import access from '../../assets/icons/technologyservices/hybrid/access.png'
+import { Helmet } from 'react-helmet'
+
 
 const bannerdata = {
   img: 'technology-hybrid.jpg',
@@ -32,13 +38,42 @@ const readytotalk = {
   button:"CONTACT US",
 }
 
+const services=[
+  {
+    heading:"BENEFITS",
+    data:[
+      {
+       title:"WORK OFFLINE",
+       text:"Hybrid apps allow you to work offline, so you can continue to be productive and manage your resources even when not connected to the internet.",
+       icon:<img src={work} alt="application"/>,
+      },
+      {
+        title:"ACCESS TO MORE RESOURCES",
+        text:"With Hybrid Apps, you get access to both online and offline resources. So while hybrid apps can use native data, provided by GPS location, contacts, or camera, it can also access web data, like online videos or music.",
+        icon:<img src={access} alt="webservies"/>,
+      },
+      {
+        title:"EASIER SCALING WITH WEB TECHNOLOGY",
+        text:"Hybrid apps require much less work when you want to scale to different platforms.",
+        icon:<img src={easier} alt="support"/>,
+      },
+
+    ]
+  }
+]
+
+
 const Hybrid = () => {
   return (
     <div>
+      <Helmet>
+        <title>hybrid - MXR</title>
+      </Helmet>
       <Innerbanner banner={bannerdata} />
       <Design intro={introduction}/>
       <PartnerWithMxr />
       <WhyChoooseMxr />
+      <TechnologyServices service={services}/>
       <Industries />
       <Readytotalk discuss={readytotalk}/>
       <Clients />

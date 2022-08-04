@@ -36,3 +36,5 @@ export  {default as Technology} from './Technology/Technology';
 export  {default as Projects} from './projects/Projects';
 export  {default as Project1} from './projects/Project1';
 export  {default as Project2} from './projects/Project2';
+export  {default as Privacy} from './privacy/Privacy';
+export  {default as Terms} from './terms/Terms';

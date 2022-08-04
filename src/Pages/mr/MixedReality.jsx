@@ -11,12 +11,12 @@ import visiualisation from '../../assets/icons/mixed/visiualisation.png';
 
 const MixedReality = () => {
   return (
-    <div className='mxr__mixedreality mxr__section '>   
+    <div className='mxr__mixedreality mxr__section vertical_tabs'>   
     <Container>
     <h3 className='mxr__section-title'>MIXED REALITY APPLICATIONS</h3>
    <Tab.Container id="left-tabs-example" defaultActiveKey="training">
   <Row>
-    <Col sm={4} >
+    <Col sm={3} md={6} >
       <Nav variant="pills" className="flex-column">
         <Nav.Item>
           <Nav.Link eventKey="training">INCREASE STUDENT ENGAGEMENT IN CLASSROOM WITH MR</Nav.Link>
@@ -44,7 +44,7 @@ const MixedReality = () => {
         </Nav.Item>
       </Nav>
     </Col>
-    <Col sm={8} >
+    <Col sm={9} md={6} >
       <Tab.Content>
       <Tab.Pane eventKey="training">
         <div>

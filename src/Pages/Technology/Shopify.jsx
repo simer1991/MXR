@@ -4,6 +4,14 @@ import PartnerWithMxr from '../../components/PartnerWithMxr'
 import WhyChoooseMxr from '../../components/WhyChoooseMxr'
 import {FaUserCheck,FaPlay,FaMobileAlt,FaTools,FaShoppingCart,FaSitemap} from 'react-icons/fa'
 import WhyChoose from '../../components/WhyChoose'
+import TechnologyServices from '../../components/TechnologyServices'
+import migration from '../../assets/icons/technologyservices/shopify/migration.png'
+import integration from '../../assets/icons/technologyservices/shopify/integration.png'
+import qa from '../../assets/icons/technologyservices/shopify/qa.png'
+import shopify from '../../assets/icons/technologyservices/shopify/shopify.png'
+import theme from '../../assets/icons/technologyservices/shopify/theme.png'
+import consulting from '../../assets/icons/technologyservices/shopify/consulting.png'
+import { Helmet } from 'react-helmet'
 
 const bannerdata = {
   img: 'technology-shopify.jpg',
@@ -57,13 +65,56 @@ const benifits=[
   }
 ]
 
+const services=[
+  {
+    heading:"SHOPIFY SERVICES",
+    data:[
+      {
+       title:"SHOPIFY MOBILE STORE DEVELOPMENT",
+       text:"We create custom mobile storefronts with cross-device compatibility. Our experts have deep industry knowledge to create visually engaging Shopify stores.",
+       icon:<img src={shopify} alt="application"/>,
+      },
+      {
+        title:"SHOPIFY INTEGRATION",
+        text:"As Shopify integration experts, we focus on creating Shopify storefronts that connect diverse third-party modules and addons.",
+        icon:<img src={integration} alt="webservies"/>,
+      },
+      {
+        title:"SHOPIFY MIGRATION",
+        text:"Our certified and experienced migration experts help in shifting your business from eCommerce platforms like BigCommerce, Magento, WooCommerce and Volusion to Shopify.",
+        icon:<img src={migration} alt="support"/>,
+      },
+      {
+        title:"SHOPIFY THEME DESIGN AND CUSTOMIZATION",
+        text:"We follow Shopify standards to develop and create custom themes from scratch. We ensure that the design and the theme created for your eCommerce store helps in engaging customers and new leads.",
+        icon:<img src={theme}  alt="commerce"/>,
+      },
+      {
+        title:"SHOPIFY QA AND TESTING",
+        text:"We have a dedicated Quality Assurance and Testing team that helps in assessing the usability of your Shopify store.",
+        icon:<img src={qa} alt="b2b" />,
+      },
+      {
+        title:"CONSULTING AND SUPPORT",
+        text:"If you want your Shopify web store to function with optimum effectiveness without any technical glitches, talk to us.",
+        icon:<img src={consulting} alt="consulting"/>,
+      },
+
+    ]
+  }
+]
+
 const Shopify = () => {
   return (
     <div>
+      <Helmet>
+        <title>shopify - MXR</title>
+      </Helmet>
       <Innerbanner banner={bannerdata}/>
       <WhyChoose benifit={benifits}/>
       <PartnerWithMxr />
       <WhyChoooseMxr />
+      <TechnologyServices service={services}/>
       <Industries />
       <Readytotalk discuss={readytotalk} />
       <Clients />

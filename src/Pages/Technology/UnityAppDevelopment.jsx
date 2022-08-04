@@ -13,6 +13,7 @@ import application from '../../assets/icons/technologyservices/unity/application
 import archetecture from '../../assets/icons/technologyservices/unity/archetecture.png'
 import WhyShould from '../../components/WhyShould'
 import WhyShouldUnity from '../../components/WhyShouldUnity'
+import { Helmet } from 'react-helmet'
 
 const bannerdata = {
   img: 'technology-unity-app.jpg',
@@ -92,12 +93,12 @@ const services=[
       },
       {
         title:"APPLICATIONS FOR GAMIFICATION",
-        text:"Our knowledge of the topic enables us to create digital models, simulations, and systems that accurately duplicate real-world environments, objects, and processes.",
+        text:"Changing your application’s nature to that of a game is a terrific method to make it more exciting and engaging for users. We’ve been designing gamification solutions for a long time and will figure out the best way to make the shift.",
         icon:<img src={application} />,
       },
       {
         title:"DEVELOPMENT OF A DIGITAL TWIN",
-        text:"Ace provides comprehensive and immersive virtual reality and augmented reality solutions for a variety of platforms, including Oculus, Vive, Cardboard, and PlayStation.",
+        text:"Our knowledge of the topic enables us to create digital models, simulations, and systems that accurately duplicate real-world environments, objects, and processes.",
         icon:<img src={development} />,
       },
 
@@ -108,6 +109,9 @@ const services=[
 const UnityAppDevelopment = () => {
   return (
     <div>
+      <Helmet>
+        <title>UNITY APP DEVELOPMENT - MXR</title>
+      </Helmet>
       <Innerbanner banner={bannerdata} />
       <Benifits data={dataList}/>
       <WhyShouldUnity />

@@ -80,12 +80,17 @@ p {
 .mxr__tabs .nav-link:hover {
   border: none;
 }
-
-.mxr__tabs .nav-link.active {
-  border-color: #fff #fff #2b7975 #fff;
-  border-width: 2px;
+.blog_content_info {
+  padding: 30px 25px 20px 25px;
+}
+.mxr__readytotalk.mxr__section {
+  padding-top: 0;
 }
 
+.mxr__tabs .nav-link.active {
+  border-width: 2px;
+  border-bottom: 2px solid #2b7975 !important;
+}
 .mxr__section-btn {
   border-color: #105378;
   BACKGROUND: #3393ab !important;
@@ -96,8 +101,14 @@ p {
   padding: 12px 43px !important;
   margin-top: 10px;
   width: 180px;
+  border: unset !important;
 }
-
+.landscap_left_sec.col-md-6.col-sm-12 {
+  text-align: center;
+}
+.mxr__benifits h3.mxr__section-title {
+  margin-top: 12%;
+}
 .mxr__stack-list {
   float: left;
   width: 100%;
@@ -140,7 +151,6 @@ p {
   TEXT-ALIGN: CENTER;
 }
 
-
 .mxr__hireus p,
 .mxr__design p {
   color: #777777 !important;
@@ -155,7 +165,6 @@ p {
 .mxr__hireus h3.mxr__section-title,
 .mxr__design h3.mxr__section-title {
   text-align: left;
-
 }
 .vertical_tabs {
   background: #2b7975;
@@ -312,6 +321,9 @@ p {
   margin-top: 10px;
   border: unset;
 }
+.mxr__design h3.mxr__section-title {
+  margin-top: 45px;
+}
 .estimate.col-sm-12 {
   display: flex;
   width: 100%; 
@@ -327,6 +339,10 @@ p {
 }
 .project_type h6 {
   color: #fff;
+}
+.internal_page_text_height .card .card-body {
+  padding: 0;
+  height: 250px;
 }
 .project_type p {
   color: #fff;
@@ -413,6 +429,13 @@ p {
 .bg_3steps h3.mxr__section-title {
   color: #fff;
   margin-bottom: 1%;
+}
+.bg_3steps .col-md-6.col-sm-12 {
+  text-align: center;
+  padding: 40px;
+}
+.bg_3steps {
+  background: #2b7975;
 }
 .mxr__pictures.mxr__section {
   text-align: center;

@@ -5,6 +5,7 @@ import Design from '../vr/Design';
 import MobileDevelopment from './MobileDevelopment';
 import Project from '../project/Project';
 import Technology2 from './Technology2';
+import { Helmet } from 'react-helmet';
 
 const bannerdata = {
   img: 'mad.jpg',
@@ -15,7 +16,7 @@ const bannerdata = {
 const introduction=[
   {
     image:<img src={mad} alt="virtual reality"/>,
-    title:<h3 className='mxr__section-title'>DESIGNED TO DELIVER RESULTS AND INCREASE KNOWLEDGE RETENTION</h3>,
+    title:<h3 className='mxr__section-title'>MOBILE APP DEVELOPMENT SERVICES</h3>,
     features:[
       'Mobile development services for intergrated software systems',
       'Augmented reality for business driven mobile development',
@@ -51,6 +52,10 @@ const formdata=[
 function MAD() {
   return (
     <div>
+       <Helmet>
+        <title>Mobile Development Services | iOS & Android App | MXR</title>
+        <meta name="description" content="MXR is UK based software development company delivering reliable and in-budget solutions for AR, VR, MR, Web and Mobile App development to clients globally." />
+        </Helmet>
      <Innerbanner banner={bannerdata} />
      <Design intro={introduction}/>
      <MobileDevelopment />

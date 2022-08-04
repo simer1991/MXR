@@ -3,6 +3,7 @@ import { useParams } from "react-router";
 import Bloglist from "../../blogsdata.json";
 import { Row,Col, NavLink } from 'react-bootstrap-v5'
 import ShareButton from 'react-social-share-buttons'
+import { Helmet } from "react-helmet";
 
 function Post() {
     let { postSlug } = useParams();
@@ -18,6 +19,9 @@ function Post() {
                     if (list.slug === postSlug) {
                         return (
                             <>
+                             <Helmet>
+                                <title>{list.metatag}</title>
+                             </Helmet>
                                 <h1 className="mt-5" key={list.id}>{list.title}</h1>
                                 {list.body.map((data, index) => {
 

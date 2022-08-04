@@ -7,6 +7,7 @@ import Pictures from './Pictures';
 import WhyChoose360 from './WhyChoose360';
 import { Innerbanner, Readytotalk } from '../../components';
 import TechnologyWork from '../vr/TechnologyWork';
+import { Helmet } from 'react-helmet';
 
 const dataList =[
   { id:"1",
@@ -32,6 +33,10 @@ const readytotalk = {
 function VR() {
   return (
     <div>
+      <Helmet>
+        <title>360 VIRTUAL TOURS | VR 360 | MXR</title>
+        <meta name="description" content="360° Virtual Reality (VR) Tours became a perfect marketing tool in real estate and design. It is particularly useful for those projects that are still in the development stage or under construction." />
+      </Helmet>
       <Innerbanner banner={bannerdata}/>
       <Benifits data={dataList}/>
       <Advance />

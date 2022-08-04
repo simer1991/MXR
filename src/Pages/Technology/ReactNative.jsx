@@ -4,7 +4,15 @@ import PartnerWithMxr from '../../components/PartnerWithMxr'
 import WhyChoooseMxr from '../../components/WhyChoooseMxr'
 import WhyChoose from '../../components/WhyChoose'
 import {FaIdCard,FaLaptopCode,FaUserLock,FaMobile,FaUserFriends,FaChartLine} from 'react-icons/fa'
-
+import {AiFillDashboard} from 'react-icons/ai'
+import TechnologyServices from '../../components/TechnologyServices'
+import consulting from '../../assets/icons/technologyservices/reactnative/consulting.png'
+import custom from '../../assets/icons/technologyservices/reactnative/custom.png'
+import dedicated from '../../assets/icons/technologyservices/reactnative/dedicated.png'
+import react from '../../assets/icons/technologyservices/reactnative/react.png'
+import support from '../../assets/icons/technologyservices/reactnative/support.png'
+import backend from '../../assets/icons/technologyservices/reactnative/backend.png'
+import { Helmet } from 'react-helmet'
 
 const bannerdata = {
   img: 'technology-reactnative.jpg',
@@ -36,7 +44,7 @@ const benifits=[
       {
         title:"FAST DEVELOPMENT AND COST-EFFECTIVE",
         text:"React Native helps developers build applications at lightning-fast speed, thanks to the power of JavaScript. The framework enables an Android software to be compiled to suit an iOS platform, and vice-versa, This cuts down on the development time and even reduces the maintenance cost immensely",
-        icon:<FaChartLine size={30} />,
+        icon:<AiFillDashboard size={30} />,
       },
       {
         title:"ACCESS TO NATIVE COMPONENTS",
@@ -58,13 +66,58 @@ const benifits=[
   }
 ]
 
+const services=[
+  {
+    heading:"REACT NATIVE SERVICES",
+    data:[
+      {
+       title:"CUSTOM MOBILE APP DEVELOPMENT",
+       text:"We pride ourselves in delivering end-to-end React Native solutions that range from designing UIs, prototyping, developing iOS, Android, and cross-platform apps to deployment.",
+       icon:<img src={custom} alt="application"/>,
+      },
+      {
+        title:"REACT NATIVE MIGRATION",
+        text:"Whether you want to revamp your legacy mobile app or migrate it to React Native for enhanced UI/UX, our dedicated professionals and solution architects have got your back.",
+        icon:<img src={react} alt="webservies"/>,
+      },
+      {
+        title:"REACT NATIVE SUPPORT AND MAINTENANCE",
+        text:"We have a decade-long experience as mature problem-solvers that has helped us tackle critical business challenges and deliver top-class support services for complex React Native projects.",
+        icon:<img src={support} alt="support"/>,
+      },
+      {
+        title:"REACT NATIVE CONSULTING",
+        text:"Our proven consultants thoroughly analyze your existing business processes and advise new approaches, trends, and techs to drive your project forward while ensuring optimized costs.",
+        icon:<img src={consulting}  alt="commerce"/>,
+      },
+      {
+        title:"MOBILE APP BACKEND & API DEVELOPMENT",
+        text:"Our engineers are skilled in Node.js, PHP, and Python and create custom backend and API services for your mobile app to consume.",
+        icon:<img src={backend} alt="b2b" />,
+      },
+      {
+        title:"HIRE DEDICATED REACT NATIVE DEVELOPERS",
+        text:"Our easy and flexible hiring models can help you handpick your ideal team on an hourly, part-time or full-time basis.",
+        icon:<img src={dedicated} alt="consulting"/>,
+      },
+
+    ]
+  }
+]
+
 const ReactNative = () => {
   return (
     <div>
+      <Helmet>
+        <title>
+        react-native - MXR
+        </title>
+      </Helmet>
       <Innerbanner banner={bannerdata} />
       <WhyChoose benifit={benifits}/>
       <PartnerWithMxr />
       <WhyChoooseMxr />
+      <TechnologyServices service={services}/>
       <Industries />
       <Readytotalk discuss={readytotalk}/>
       <Clients />

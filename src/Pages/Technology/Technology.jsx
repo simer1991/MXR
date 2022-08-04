@@ -3,10 +3,15 @@ import { Col, Row } from 'react-bootstrap-v5'
 import { Link } from 'react-router-dom';
 import TechnologyList from '../../../src/technologydata.json'
 import './technology.css';
+import { Helmet } from 'react-helmet';
 
 const Technology = () => {
   return (
     <div className="mxr__techno mxr__section">
+      <Helmet>
+    <title>AR, VR and MR Company in UK - MXR</title>
+    <meta name="description" content="MXR is UK based software development company delivering reliable and in-budget solutions for AR, VR, MR, Web and Mobile App development to clients globally." />
+   </Helmet>
       <div className='container'>
         {TechnologyList.map((lists, index) =>
           <>

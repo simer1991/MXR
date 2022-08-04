@@ -15,6 +15,7 @@ import maintenance from '../../assets/icons/technologyservices/laravel/maintenan
 import migrate from '../../assets/icons/technologyservices/laravel/migrate.png'
 import laravelconsulting from '../../assets/icons/technologyservices/laravel/laravel-consulting.png'
 import laravelsupport from '../../assets/icons/technologyservices/laravel/laravelsupport.png'
+import { Helmet } from 'react-helmet'
 
 const bannerdata = {
   img: 'technology-laravel.jpg',
@@ -125,6 +126,9 @@ const services=[
 const Laravel = () => {
   return (
     <div>
+      <Helmet>
+        <title>Laravel - MXR</title>
+        </Helmet>
       <Innerbanner banner={bannerdata} />
       <WhyChoose benifit={benifits}/>
       <PartnerWithMxr />

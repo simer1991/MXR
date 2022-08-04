@@ -14,6 +14,7 @@ import payment from '../../assets/icons/technologyservices/woocommerce/payment.p
 import plugin from '../../assets/icons/technologyservices/woocommerce/plugin.png'
 import theme from '../../assets/icons/technologyservices/woocommerce/theme.png'
 import web from '../../assets/icons/technologyservices/woocommerce/web.png'
+import { Helmet } from 'react-helmet'
 
 const bannerdata = {
   img: 'technology-woocommerce.jpg',
@@ -123,6 +124,9 @@ const services=[
 const WooCommerce = () => {
   return (
     <div>
+      <Helmet>
+        <title>woocommerce - MXR</title>
+      </Helmet>
       <Innerbanner banner={bannerdata}/>
       <WhyChoose benifit={benifits}/>
       <PartnerWithMxr />

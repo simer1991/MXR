@@ -1,9 +1,13 @@
 import React from 'react'
 import { Container } from 'react-bootstrap-v5'
+import { Helmet } from 'react-helmet'
 
 const Terms = () => {
   return (
     <div>
+        <Helmet>
+            <title>Terms and Conditions - MXR</title>
+        </Helmet>
       <Container>
         <div className='mxr__term mxr__section'>
             <h3 className='mxr__section-title'>1. Welcome to MXR</h3>
@@ -85,7 +89,6 @@ const Terms = () => {
             <p>By visiting our Services and accessing the information, resources, services, products, and tools we provide for you, either directly or indirectly (hereafter referred to as “Resources”), you agree to use the Services and these Resources only for the purposes intended as permitted by (a) the Terms, (b) this Acceptable Use Policy and (c) applicable laws, regulations and generally accepted online practices or guidelines (“Acceptable Use”). Wherein, you understand that:.</p>
             <p>a. In order to access our Services and Resources, you may be required to provide certain information about yourself (such as identification, contact details, etc.) as part of the registration process, or as part of your ability to use the Services and Resources. You agree that any information you provide will always be accurate, correct, and up to date..</p>
             <p>b. You are responsible for maintaining the confidentiality of any login information associated with any account you use to access our Services and Resources. Accordingly, you are responsible for all activities that occur under your account/s..</p>
-            <p>c. Accessing (or attempting to access) any of our Services and Resources by any means other than through the means we provide, is strictly prohibited. You specifically agree not to access (or attempt to access) any of our Services and Resources through any automated, unethical or unconventional means..</p>
             <p>c. Accessing (or attempting to access) any of our Services and Resources by any means other than through the means we provide, is strictly prohibited. You specifically agree not to access (or attempt to access) any of our Services and Resources through any automated, unethical or unconventional means..</p>
             <p>d. Engaging in any activity that disrupts or interferes with our Services and Resources, including the servers and/or networks to which our Services and Resources are located or connected, is strictly prohibited..</p>
             <p>e. Attempting to copy, duplicate, reproduce, sell, trade, or resell our Resources is strictly prohibited..</p>
