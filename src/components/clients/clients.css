@@ -10,6 +10,9 @@
     position: unset !important;
     text-align: center;
 }
+.mxr__clients .carousel-item {
+    height: 464px;
+}
 
 .mxr__clients .carousel-caption h3 {
     color: #333333;

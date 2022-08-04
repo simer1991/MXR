@@ -1,5 +1,5 @@
 import React from 'react'
-import  {FaHourglassHalf,FaUserShield}     from 'react-icons/fa';
+import  {FaHourglassHalf,FaUserShield,FaGem}     from 'react-icons/fa';
 import {Row,Container,Col,Card} from 'react-bootstrap-v5';
 const SecretSauce = () => {
   return (
@@ -9,7 +9,7 @@ const SecretSauce = () => {
       <Row>
           <Col sm={4} md={4} lg={4}>
             <Card>
-            <FaHourglassHalf size={50} />
+            <FaGem size={50} />
             <Card.Body>
               <Card.Title>SKILLS</Card.Title>
               <Card.Text>

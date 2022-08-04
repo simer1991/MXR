@@ -24,9 +24,9 @@ const Features = () => {
             Our immersive web development ideas are all what a user would want in his website. When it comes to design a website should look attractive, theme based and should be easy to use.
             </Card.Text>
           </Card.Body>
-          <Link to="/web-design-and-development"  >Explore</Link>
+          <Link to="/web-design-and-development"  >Explore ></Link>
         </Card>
-      </Col >
+      </Col > 
       <Col sm={4} md={4} lg={4}>
         <Card>
           <img src={mobile} alt="MOBILE APP DEVELOPMENT" />
@@ -36,7 +36,7 @@ const Features = () => {
             MXR team thrives to create best software applications in the form of mobile apps which cover all the requirements of client side.{' '}
             </Card.Text>
           </Card.Body>
-          <Link to="/mobile-app-development"  >Explore</Link>
+          <Link to="/mobile-app-development"  >Explore ></Link>
         </Card>
       </Col>
       <Col sm={4} md={4} lg={4}>
@@ -48,7 +48,7 @@ const Features = () => {
             Virtual reality (VR) is a simulated experience that can be similar to or completely different from the real world. Applications of virtual reality include entertainment and education
             </Card.Text>
           </Card.Body>
-          <Link to="/vr-360">Explore</Link>
+          <Link to="/vr-360">Explore ></Link>
         </Card>
       </Col>
     </Row>
@@ -61,7 +61,7 @@ const Features = () => {
             <Card.Text>
               Meta Extended Reality (MXR) believes and promises to deliver the best services in regards to auditory effects, visual effects, sensory requirements and all that comes under AR.      </Card.Text>
             </Card.Body>
-            <Link to="/augmented-reality">Explore</Link>
+            <Link to="/augmented-reality">Explore ></Link>
         </Card>
       </Col>
       <Col sm={4} md={4} lg={4} >
@@ -72,7 +72,7 @@ const Features = () => {
               <Card.Text>
               MXR provides its users a whole new world and experience to the actual VR technology and application. Turning your dream environment and imaginations into virtual reality is what we do at MXR.      </Card.Text>
             </Card.Body>
-            <Link to="/virtual-reality">Explore</Link>
+            <Link to="/virtual-reality">Explore ></Link>
           </Card>
       </Col>
       <Col sm={4} md={4} lg={4}>
@@ -84,12 +84,12 @@ const Features = () => {
               As the name suggests, MR is the blending of physical and virtual environments to create new digitized environment and visualizations.
               </Card.Text>
             </Card.Body>
-            <Link to="/mixed-reality">Explore</Link>
+            <Link to="/mixed-reality">Explore ></Link>
           </Card>
       </Col>
     </Row>
 </Container>
-  </div>
+  </div> 
   )
 }
 

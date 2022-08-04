@@ -57,9 +57,11 @@ const WhatWeCanDoo = () => {
         <Tab.Pane eventKey="virtual">
         <div>   
          <img src={our} alt="AUGMENTED VIRTUAL TOURS" />
+         <div className='list_paragrph'>
          <p>Guided learning – Step by step guided learning similar to one on one mentoring.</p>
           <p>Practice Mode – The Ability to practice and learn at the students own pace.</p>
           <p>Assessment Mode – Trainer lead assessment with data driven metrics and results</p>
+          </div>
          </div>
         </Tab.Pane>
         <Tab.Pane eventKey="visiual">

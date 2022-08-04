@@ -15,7 +15,7 @@ const WhatWeCanDo = () => {
         <h3 className='mxr__section-title'>WHAT WE CAN DO FOR YOU</h3>
         <Tab.Container id="left-tabs-example" defaultActiveKey="training">
   <Row>
-    <Col sm={3}>
+    <Col sm={5}>
       <Nav variant="pills" className="flex-column">
         <Nav.Item>
           <Nav.Link eventKey="training">AUGMENTED TRAINING AND SIMULATIONS</Nav.Link>
@@ -40,7 +40,7 @@ const WhatWeCanDo = () => {
         </Nav.Item>
       </Nav>
     </Col>
-    <Col sm={9}>
+    <Col sm={7}>
       <Tab.Content>
       <Tab.Pane eventKey="training">
         <div>

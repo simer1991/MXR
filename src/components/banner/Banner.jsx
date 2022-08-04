@@ -3,9 +3,9 @@ import './banner.css'
 import { Carousel } from 'react-bootstrap-v5';
 import img1 from '../../assets/icons/banner/img1.jpg'
 import img2 from '../../assets/icons/banner/img2.jpg'
-import video from '../../assets/icons/banner/video.mov'
+import video from '../../assets/icons/banner/video.mov' 
 import { Link } from 'react-router-dom';
-
+ 
 function Banner() {
   return (
     <div>

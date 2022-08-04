@@ -17,6 +17,9 @@
     background: #00000059;
     margin: 6% 0%;
 }
+.mxr__readytotalk p {
+    padding-bottom: 1%;
+}
 .ready h2 {
     color: #fff;
 }

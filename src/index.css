@@ -28,7 +28,7 @@ body {
   line-height: 1.5;
   text-align: center;
   font-weight: 600;
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
 }
 
 .card-text {
@@ -64,6 +64,17 @@ p {
 .mxr__tabs .nav-link {
   padding: 10px 30px;
   color: #777;
+  border: unset !important;
+
+}
+.mxr__whoweare .mxr__section-title {
+  margin: 0px;
+  color: var(--color-heading);
+  font-size: 33px;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 600;
+  padding-bottom: 1rem;
 }
 
 .mxr__tabs .nav-link:hover {
@@ -299,10 +310,11 @@ p {
   border-radius: 4px !important;
   padding: 12px 43px !important;
   margin-top: 10px;
+  border: unset;
 }
 .estimate.col-sm-12 {
   display: flex;
-  width: 100%;
+  width: 100%; 
   margin: 41px 0px;
 }
 .mxr__classroom img {
@@ -354,7 +366,10 @@ p {
 .simple_tabs {
   background: #f2f2f2;
 }
-
+.simple_tabs a.nav-item.nav-link.active {
+  background: #f2f2f2;
+  border-bottom: 2px solid #2b7975 !important;
+}
 .mxr__advance.mxr__section.bg_3steps {
   background-color: #2b7975;
 }
@@ -364,11 +379,23 @@ p {
   display: inline-flex;
   width: 54px;
   border-radius: 50%;
-  padding: 6px;
+  padding: 13px;
   color: #2b7975;
   text-align: center;
   margin-bottom: 19px;
   margin-right: 20px;
+}
+.mxr__advance2 h4 {
+  font-size: 18px;
+  line-height: 1.28;
+  --fontSize: 18;
+  --minFontSize: 18;
+  FONT-WEIGHT: 800;
+  COLOR: #2b7975;
+}
+.bg_3steps_icon svg {
+  WIDTH: 30PX;
+  HEIGHT: 30PX;
 }
 .bg_3steps h5 {
   text-align: center;
@@ -413,7 +440,7 @@ p {
 }
 .mxr__hireus h3.mxr__section-title {
   text-align: left;
-  padding-top: 15%;
+  padding-top: 5%;
 }
 .white_bg_point h3.mxr__section-title {
   margin-bottom: 30PX;
@@ -439,6 +466,35 @@ p {
 }
 .mxr__cta2.mxr__section {
   padding-bottom: 0;
+}
+.mxr__header-align-left span.mxr__header-email {
+  font-size: 12px;
+}
+.mxr__header-email a {
+  color: #fff;
+}
+.mxr__features .col-lg-4.col-md-4.col-sm-4 a {
+  color: #3393ab;
+  font-weight: 700;
+  font-family: 'Poppins';
+}
+.mxr_footer-social-icons span:hover {
+  background: #3393ab;
+  border: 1px solid #3393ab;
+}
+.white_bg_point h5 {
+  color: #2b7975;
+  font-weight: 600;
+  font-size: 18px;
+}
+.mxr__project ::placeholder {
+  color: #fff;
+}
+.list_paragrph p {
+  line-height: 0px;
+}
+.text_center_withicon p {
+  padding: 0px 38px;
 }
 @media screen and (max-width: 767px){
   .vertical_tabs .nav-item {

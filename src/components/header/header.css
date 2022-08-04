@@ -48,6 +48,7 @@
     OVERFLOW: VISIBLE;
     Z-INDEX: 9999;
     LIST-STYLE: none; 
+    font-size: 14px;
 }
 .menu-items svg {
     position: absolute;
@@ -97,7 +98,7 @@ span.arrow:before {
     position: absolute;
     width: auto;
     max-width: none;
-    top: 76px;
+    top: 73px;
    
 }
 .mxr__header-align-right a {
