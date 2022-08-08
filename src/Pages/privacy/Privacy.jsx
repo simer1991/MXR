@@ -8,6 +8,7 @@ const Privacy = () => {
       <Helmet>
         <title>privacy-policy - MXR</title>
       </Helmet>
+      <div className='ploicy_page'>
       <Container>
         <div className='mxr__privacy mxr__section'>
         <h3 className='mxr__section-title'>1 Introduction</h3>
@@ -17,7 +18,7 @@ const Privacy = () => {
         <p>1.4 Our website incorporates privacy controls which affect how we will process your personal data. By using the privacy controls, you can specify whether you would like to receive direct marketing communications and limit the publication of your information. You can access your information held by us using the request form at the bottom of this page.</p>
         <p>1.5 In this policy, “we”, “us” and “our” refer to mxr.ai .For more information about us, see Section 12.</p>
        </div>
-       <div>
+       <div className="ploicy_page">
         <h3 className='mxr__section-title'>2 How we use your personal data</h3>
         <p>2.1 In this Section 2 we have set out:</p>
         <ul>
@@ -105,6 +106,7 @@ const Privacy = () => {
         <p>(d) by email, using the email address published on our website from time to time.</p>
       </div>
        </Container>
+          </div>
     </div>
   )
 }

@@ -8,6 +8,7 @@ const Terms = () => {
         <Helmet>
             <title>Terms and Conditions - MXR</title>
         </Helmet>
+        <div className='ploicy_page'>
       <Container>
         <div className='mxr__term mxr__section'>
             <h3 className='mxr__section-title'>1. Welcome to MXR</h3>
@@ -102,6 +103,7 @@ const Terms = () => {
             <p>h. You agree to indemnify and hold harmless mxr.ai and its parent company and affiliates, and their directors, officers, managers, employees, donors, agents, and licensors, from and against all losses, expenses, damages and costs, including reasonable attorneys’ fees, resulting from any violation of this Acceptable Use Policy or the failure to fulfill any obligations relating to your account incurred by you or any other person using your account. We reserve the right to take over the exclusive defense of any claim for which we are entitled to indemnification under this Acceptable Use Policy. In such event, you shall provide us with such cooperation as is reasonably requested by us.</p>
         </div>
       </Container>
+      </div>
     </div>
   )
 }

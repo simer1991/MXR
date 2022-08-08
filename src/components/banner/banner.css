@@ -51,6 +51,28 @@
         width: 100%;
         float: left;
         line-height: 28px !important;
+        margin-bottom: 30px;
+    }
+    .mxr__section {
+        padding: 50px 30px;
+    } 
+    .mxr__promise .mxr__section-title {
+        line-height: 34px;
+    }
+    .mxr__promise.mxr__section p {
+        margin-bottom: 23px;
+    }
+    .mxr__promise-content {
+        padding: 0;
+    }
+    .mxr__promise.mxr__section {
+        text-align: center;
+    }
+    .mxr__promise .mxr__section-title {
+        font-size: 33px;
+        color: #383838;
+        font-weight: 600;
+        text-align: center;
     }
     .carousel-fade .carousel-inner {
         position: relative;

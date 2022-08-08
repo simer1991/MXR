@@ -9,7 +9,9 @@ const SecretSauce = () => {
       <Row>
           <Col sm={4} md={4} lg={4}>
             <Card>
+              <div className='icons_secret'>
             <FaGem size={50} />
+            </div>
             <Card.Body>
               <Card.Title>SKILLS</Card.Title>
               <Card.Text>
