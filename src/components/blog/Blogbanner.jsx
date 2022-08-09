@@ -8,7 +8,7 @@ const Outerdiv = styled.div`
   `;
 const Blogbanner = (props) => {
   return (
-    <div className='internal_page_banner' >
+    <div className='internal_page_banner blog_banner' >
     <Outerdiv $banner={props.banner.img} >
     </Outerdiv >
   </div >
@@ -16,3 +16,4 @@ const Blogbanner = (props) => {
 }
 
 export default Blogbanner
+ 
