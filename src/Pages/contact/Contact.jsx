@@ -3,9 +3,9 @@ import { Container,Row,Col,Card,ListGroup,Form } from 'react-bootstrap-v5'
 import {FaMapMarkerAlt,FaPhoneAlt,FaEnvelope,FaComment} from 'react-icons/fa';
 import ReCAPTCHA from 'react-google-recaptcha';
 import axios from 'axios' 
-import { Innerbanner } from '../../components';
 import './contact.css'
 import { Helmet } from 'react-helmet';
+import Blogbanner from '../../components/blog/Blogbanner';
 
 const bannerdata = {
   img: 'contact.png',
@@ -43,7 +43,7 @@ const Contact =() => {
     <title>Contact Us | AR, VR and MR Technology | MXR</title>
     <meta name="description" content="MXR is UK based software development company delivering reliable and in-budget solutions for AR, VR, MR, Web and Mobile App development to clients globally." />
    </Helmet>
-   <Innerbanner banner={bannerdata}/>  
+   <Blogbanner banner={bannerdata}/>  
     <Container>
       <h3 className='mxr__section-title'>CONTACT MXR TODAY</h3>
       <Row>
