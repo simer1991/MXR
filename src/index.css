@@ -20,7 +20,12 @@ body {
 .mxr__section {
   padding: 50px 0;
 }
-
+#Services [type=button], [type=reset], [type=submit], button {
+  -webkit-appearance: unset !important;
+} 
+#Technologies [type=button], [type=reset], [type=submit], button {
+  -webkit-appearance: unset !important;
+}  
 .mxr__section-title {
   margin: 0px;
   color: var(--color-heading);
@@ -155,7 +160,8 @@ p {
   padding: 12px 43px !important;
   margin-top: 10px;
   width: 180px;
-  border: unset !important;
+  border: unset !important; 
+  text-transform: uppercase; 
 }
 .landscap_left_sec.col-md-6.col-sm-12 {
   text-align: center;
@@ -299,6 +305,8 @@ p {
   padding-bottom: 9px;
   padding-left: 24px;
   font-size: 14px;
+  border-radius: 0px;
+
 }  
 .phone svg {
   position: absolute;
@@ -573,6 +581,18 @@ p {
 .text_center_withicon p {
   padding: 0px 38px;
 }
+.mxr__features a {
+  font-weight: 700;
+}
+.carousel-item {
+  position: relative;
+  display: none;
+  float: left;
+  width: 100%;
+  margin-right: -100%;
+  backface-visibility: hidden;
+  transition: transform 2.8s cubic-bezier(0, 0.81, 0.58, 1) !important;
+}
 @media screen and (max-width: 767px){
   .vertical_tabs .nav-item {
     text-align: left;
@@ -581,6 +601,24 @@ p {
     margin-left: 0px !important;
     margin-bottom: 16px;
 }
+.mxr__whyshould p {
+  margin-top: 13px;
+}
+.main_project h3 { 
+  margin-top: 17px;
+}
+.mxr__whyshouldunity img {
+  width: 100%;
+}
+.mxr__whyshould img {
+  width: 100%;
+}
+.mxr__secretsauce .card {
+  height: 430px !important;
+  padding: 30px 15px 15px;
+  text-align: center; 
+  margin: 5%;
+} 
 .vertical_tabs img {
   width: 100%;
 }
@@ -617,22 +655,21 @@ p {
 .mxr__clients {
   padding: 50px 30px !important;
 }
-.contact_pagge .col-md-6 {
-  margin-bottom: 19px;
-}
+
 .mxr__footer-copyright {
   padding: 20px 0 0 0px;
 }
 .contact_pagge {
   padding: 34px 30px !important;
-}
-.mxr__features .card .card-text {
+} 
+.mxr__features .card .card-text { 
   font-weight: 400 !important;
 }
 .mxr__solution .card .card-body {
   padding: 0;
   height: auto !important;
 }
+
 .mxr__clients span.carousel-control-prev-icon {
   border: 1px solid #858585;
   padding: 12px;
@@ -672,4 +709,42 @@ div#research {
 .mxr__advance2 .vertical-timeline-element-content-arrow {
   height: 182px;
 }
+.internal_page_banner.blog_banner {
+  display: none;
+}
+.mxr__stats-number-txt h4 {
+  color: #fff !important;
+  font-size: 16px !important;
+  padding: 0 !important;
+  margin: 0 !important; 
+  font-family: 'Poppins' !important;
+  line-height: 20px;
+}
+.mxr__section-btn {
+  padding: 8px 15px !important;
+}
+.mxr__clients .carousel-item {
+  height: auto !important;
+}
+.mxr__whyshouldunity p {
+  margin-top: 20px;
+}
+.mxr__contact svg {
+  margin-right: 12px;
+}
+.dropdown a.nav-link:hover {
+  color: #918686!important;
+}
+#Services .dropdown a.nav-link.active {
+  color: #ffffff !important;
+  background: #2b7975;
+}
+.bottm_bar p {
+  color: #777;
+  font-size: 12px;
+  line-height: 1.6;
+  font-weight: 400;
+  letter-spacing: 1px;
+} 
+
 }

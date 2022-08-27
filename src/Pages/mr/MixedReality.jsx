@@ -16,7 +16,7 @@ const MixedReality = () => {
     <h3 className='mxr__section-title'>MIXED REALITY APPLICATIONS</h3>
    <Tab.Container id="left-tabs-example" defaultActiveKey="training">
   <Row>
-    <Col sm={3} md={6} >
+    <Col md={6} sm={12} >
       <Nav variant="pills" className="flex-column">
         <Nav.Item>
           <Nav.Link eventKey="training">INCREASE STUDENT ENGAGEMENT IN CLASSROOM WITH MR</Nav.Link>
@@ -44,7 +44,7 @@ const MixedReality = () => {
         </Nav.Item>
       </Nav>
     </Col>
-    <Col sm={9} md={6} >
+    <Col md={6} sm={12} >
       <Tab.Content>
       <Tab.Pane eventKey="training">
         <div>

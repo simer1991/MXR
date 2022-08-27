@@ -7,7 +7,7 @@ const SecretSauce = () => {
       <Container>
         <h3 className='mxr__section-title'>OUR “SECRET SAUCE”</h3>
       <Row>
-          <Col sm={4} md={4} lg={4}>
+          <Col sm={12} md={4} lg={12}>
             <Card>
               <div className='icons_secret'>
             <FaGem size={50} />
@@ -20,7 +20,7 @@ const SecretSauce = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col sm={4} md={4} lg={4}>
+          <Col sm={12} md={4} lg={12}>
             <Card>
              <FaHourglassHalf size={50} />
               <Card.Body>
@@ -31,7 +31,7 @@ const SecretSauce = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col sm={4} md={4} lg={4}>
+          <Col sm={12} md={4} lg={12}>
             <Card>
                 <FaUserShield size={50}/>
               <Card.Body>

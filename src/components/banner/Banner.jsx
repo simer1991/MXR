@@ -13,7 +13,7 @@ function Banner() {
         <Carousel.Item interval={1000}>
           <video src={video} autoPlay muted loop />
           <Carousel.Caption>
-            <h3 className='mxr__section-title'>LET US HELP YOU TO DEVELOPE THE NEXT GENERATION TRAINING EXPERIENCES (MXR)</h3>
+            <h3 className='mxr__section-title'>LET US HELP YOU TO DEVELOP THE NEXT GENERATION TRAINING EXPERIENCES (MXR)</h3>
             <Link to="/contact" className="mxr__section-btn" >CONTACT US</Link>
           </Carousel.Caption>
         </Carousel.Item>
@@ -35,7 +35,7 @@ function Banner() {
             alt="Second slide"
           />
          <Carousel.Caption>
-            <h3 className='mxr__section-title'>SCALE YOUR DEVELOPMENT WITH META EXTANDERED REALITY (MXR)</h3>
+            <h3 className='mxr__section-title'>SCALE YOUR DEVELOPMENT WITH META EXTENDED REALITY (MXR)</h3>
             <Link to="/contact" className="mxr__section-btn" >CONTACT US</Link>
           </Carousel.Caption>
         </Carousel.Item>

@@ -3,9 +3,10 @@ import { Container,Row,Col,Card,ListGroup,Form } from 'react-bootstrap-v5'
 import {FaMapMarkerAlt,FaPhoneAlt,FaEnvelope,FaComment} from 'react-icons/fa';
 import ReCAPTCHA from 'react-google-recaptcha';
 import axios from 'axios' 
-import { Innerbanner } from '../../components';
 import './contact.css'
 import { Helmet } from 'react-helmet';
+import Blogbanner from '../../components/blog/Blogbanner';
+import Innerbanner from '../../components/innerbanner/Innerbanner';
 
 const bannerdata = {
   img: 'contact.png',
@@ -42,9 +43,9 @@ const Contact =() => {
    <Helmet>
     <title>Contact Us | AR, VR and MR Technology | MXR</title>
     <meta name="description" content="MXR is UK based software development company delivering reliable and in-budget solutions for AR, VR, MR, Web and Mobile App development to clients globally." />
-   </Helmet>
-   <Innerbanner banner={bannerdata}/>  
-   <div className='contact_pagge'>
+   </Helmet> 
+   <div >
+   <Blogbanner banner={bannerdata}/>  
     <Container>
       <h3 className='mxr__section-title'></h3>
       <Row>
@@ -156,13 +157,13 @@ const Contact =() => {
                  
                    <div> 
                    <p className="mb-3 mt-2" style={{color:"green",marginLeft:"57px"}}><b>{msg}</b></p>
-                  <button onClick={onSubmit}><FaComment/>Submit</button>
+                  <button onClick={onSubmit}><FaComment/>  Submit</button>
                   </div>
                  
             </Row>
         </Form>
         </Col>
-      </Row>
+      </Row> 
     </Container>
     </div>
     </div>

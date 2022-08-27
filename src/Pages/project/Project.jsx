@@ -24,19 +24,19 @@ function Project(props) {
               <input type="text" placeholder='Last name*' />
             </Col>
             <Col md={4} sm={12} className='phone'>
-              <label><FaPhoneAlt /></label>
+              <label></label>
               <input type="text" placeholder='Home phone*' required />
             </Col>
           </Row>
           <Row>
             <Col md={4} sm={12} className='email'>
-              <label><FaEnvelope /></label>
+              <label></label>
               <input type="email" placeholder='Email' />
             </Col>
             <Col md={4} sm={12}>
               <input type="text" placeholder="Company name" />
             </Col>
-          </Row>
+          </Row>   
         </div>
         <Row>
           <Col className='project_type'>
@@ -59,10 +59,10 @@ function Project(props) {
             <h6>Estimated Budget *</h6>
             <Slider />
             <ReCAPTCHA
-              sitekey="6LczRmYgAAAAAFc5pZRi9-opvqmOw9H1BEjp7nM6"
+              sitekey="6Lc4hYwhAAAAADxuPBNLjyH5aILUENJodF2aOpHN"
               onChange={onChange}
             />
-            <button onChange={varified}>SEND</button>
+            <button onChange={varified}>SEND</button> 
           </Col>
         </Row>
       </Container>

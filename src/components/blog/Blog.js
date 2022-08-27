@@ -35,11 +35,14 @@ function Blog() {
         introtext = "From virtual to augmented reality, we discuss how brands are innovating through the use of new technologies. We investigate emerging trends and prevalent use cases in order to give our readers with information that enables them to make more educated decisions. Additionally, we offer company news to keep you informed about how we operate and what we do.";
     } else if (postSlug === 'what-is-mixed-reality') {
         
-        banner = <Blogbanner banner={innerbanner} />;
+        /*  banner = <Blogbanner banner={innerbanner} />;*/
+        banner = "";
     } else if (postSlug === 'virtual-reality') {
-        banner = <Blogbanner banner={virtualreality} />;
+       /*  banner = <Blogbanner banner={virtualreality} />; */
+       banner = "";
     } else if (postSlug === 'augmented-reality-ar') {
-        banner = <Blogbanner banner={augumentedreality} />;
+       /*  banner = <Blogbanner banner={augumentedreality} />; */
+       banner = "";
     }
     return (
         <>

@@ -21,7 +21,7 @@ const readytotalk = {
   img: 'about-banner.jpg',
   title: "READY TO TALK",
   text: "We would love to hear about your idea and make it happen. You come to us with your idea, and we do all of the planning and costing for you.",
-  button:"LETS DO IT",
+  button:"LET'S DO IT",
 }
 const About = () => {
   return (

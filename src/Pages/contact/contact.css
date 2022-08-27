@@ -53,6 +53,9 @@
 .left_instruction .list-group-item >div {
     padding-right: 24px;
 }
+.mxr__contact .col-md-6 {
+    margin-bottom: 22px !important;
+} 
 .left_instruction .card {
     border: 1px solid #d9d9d9 !important;
     border-radius: 5px;
@@ -61,9 +64,19 @@
     outline: 0;
     transition: all .2s ease;
 }
-.contact_pagge {
-    padding: 34px 0px;
-}
+.mxr__contact .container {
+    padding: 50px 30px;
+} 
+.blog_banner h1 {
+    margin: 0px;
+    color: rgb(255, 255, 255);
+    --fontSize: 40;
+    line-height: 1.4;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 120px;
+} 
 .contact_pagge svg {
     margin-right: 12px;
 }

@@ -22,7 +22,7 @@ function Post() {
                              <Helmet>
                                 <title>{list.metatag}</title>
                              </Helmet>
-                                <h1 className="mt-5" key={list.id}>{list.title}</h1>
+                                <h1 className="" key={list.id}>{list.title}</h1>
                                 {list.body.map((data, index) => {
 
                                     if (data.type === "para") {

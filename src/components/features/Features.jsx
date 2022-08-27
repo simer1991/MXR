@@ -15,7 +15,7 @@ const Features = () => {
     <Container>
       <h3 className="mxr__section-title">WHAT WE CAN HELP YOU WITH</h3>
     <Row>
-      <Col sm={4} md={4} lg={4}>
+      <Col sm={12} md={4} lg={4}>
         <Card>          
           <img src={webdesingn} alt="WEB DESIGN AND DEVELOPMENT" />
           <Card.Title>WEB DESIGN AND DEVELOPMENT</Card.Title>
@@ -27,7 +27,7 @@ const Features = () => {
           <Link to="/web-design-and-development"  >Explore ></Link>
         </Card>
       </Col > 
-      <Col sm={4} md={4} lg={4}>
+      <Col sm={12} md={4} lg={4}>
         <Card>
           <img src={mobile} alt="MOBILE APP DEVELOPMENT" />
           <Card.Title>MOBILE APP DEVELOPMENT</Card.Title>          
@@ -39,7 +39,7 @@ const Features = () => {
           <Link to="/mobile-app-development"  >Explore ></Link>
         </Card>
       </Col>
-      <Col sm={4} md={4} lg={4}>
+      <Col sm={12} md={4} lg={4}>
         <Card>
           <img src={vr} alt="VR 360" />
           <Card.Title>VR 360</Card.Title>
@@ -53,7 +53,7 @@ const Features = () => {
       </Col>
     </Row>
     <Row> 
-      <Col sm={4} md={4} lg={4}>
+      <Col sm={12} md={4} lg={4}>
         <Card>            
             <img src={augumented} alt="Augumented Reality" />  
             <Card.Title>AUGUMENTED REALITY</Card.Title>         
@@ -64,7 +64,7 @@ const Features = () => {
             <Link to="/augmented-reality">Explore ></Link>
         </Card>
       </Col>
-      <Col sm={4} md={4} lg={4} >
+      <Col sm={12} md={4} lg={4} >
       <Card>
           <Card.Img variant="top" src={virtual} />
           <Card.Title>VIRTUAL REALITY</Card.Title>
@@ -75,7 +75,7 @@ const Features = () => {
             <Link to="/virtual-reality">Explore ></Link>
           </Card>
       </Col>
-      <Col sm={4} md={4} lg={4}>
+      <Col sm={12} md={4} lg={4}>
           <Card>            
             <Card.Img variant="top" src={mixed} />
             <Card.Title>MIXED REALITY</Card.Title>
@@ -89,7 +89,7 @@ const Features = () => {
       </Col>
     </Row>
 </Container>
-  </div> 
+  </div>    
   )
 }
 

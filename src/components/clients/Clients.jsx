@@ -17,18 +17,18 @@ const Clients = () => {
             <h3 className='mxr__section-title'>OVER 900+ SATISFIED CLIENTS</h3>
             <div className='mxr__clients-desktop d-none d-sm-block w-100'>
               <Row>
-                <Col sm={12} lg={6} md={6}>
+                <Col sm={6} lg={6} md={6}>
                   <img src={clutch} alt="clutch" />
                 </Col>
-                <Col sm={12} lg={6} md={6}>
+                <Col sm={6} lg={6} md={6}>
                   <img src={google} alt="google" />
                 </Col>
               </Row>
               <Row>
-                <Col sm={12} lg={6} md={6}>
+                <Col sm={6} lg={6} md={6}>
                   <img src={good} alt="good" />
                 </Col>
-                <Col sm={12} lg={6} md={6}>
+                <Col sm={6} lg={6} md={6}>
                   <img src={top} alt="top" />
                 </Col>
               </Row>

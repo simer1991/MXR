@@ -29,11 +29,10 @@ const Header = () => {
                         </Container>
                     </div>
                     <div className='mxr__header-navbar'>
-
-                        <Navbar expand="lg">
+                        <Navbar expand="lg" varient='light'>
                             <Container>
                                 <Navbar.Brand href="#home"><img src={Logo} className="mxr__header-logo" alt='Meta Extended Reality' /></Navbar.Brand>
-                                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                                <Navbar.Toggle aria-controls="basic-navbar-nav"  />
                                 <Navbar.Collapse id="basic-navbar-nav">
                                     <Nav className="me-auto">
                                         {menuItems.map((menu, index) => {
