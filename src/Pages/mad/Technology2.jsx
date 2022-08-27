@@ -13,7 +13,7 @@ import ios from '../../assets/icons/stacks/ios.png'
 
 const Technology2 = () => {
   return (
-    <div className='mxr__technology2 mxr__section'>
+    <div className='mxr__technology mxr__section mxr__stack'>
         <Container>
           <Row>
             <h3 className='mxr__section-title'>TECHNOLOGY STACK</h3>

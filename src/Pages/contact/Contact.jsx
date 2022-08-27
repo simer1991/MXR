@@ -6,6 +6,7 @@ import axios from 'axios'
 import './contact.css'
 import { Helmet } from 'react-helmet';
 import Blogbanner from '../../components/blog/Blogbanner';
+import Innerbanner from '../../components/innerbanner/Innerbanner';
 
 const bannerdata = {
   img: 'contact.png',
@@ -42,10 +43,11 @@ const Contact =() => {
    <Helmet>
     <title>Contact Us | AR, VR and MR Technology | MXR</title>
     <meta name="description" content="MXR is UK based software development company delivering reliable and in-budget solutions for AR, VR, MR, Web and Mobile App development to clients globally." />
-   </Helmet>
+   </Helmet> 
+   <div >
    <Blogbanner banner={bannerdata}/>  
     <Container>
-      <h3 className='mxr__section-title'>CONTACT MXR TODAY</h3>
+      <h3 className='mxr__section-title'></h3>
       <Row>
         <Col sm={12} md={4} className='left_instruction'>
         <Card >
@@ -82,7 +84,7 @@ const Contact =() => {
         </Col>
         <Col sm={12} md={8}>
         <Form>
-           <Row>
+           <Row >
                 <Col md={6}>
                    <Form.Group as={Col} controlId="formGridEmail">
                     <div>
@@ -111,7 +113,7 @@ const Contact =() => {
                     />
                    </Form.Group>
                 </Col>
-                <Row>
+                
                 <Col md={6}>
                    <Form.Group as={Col} controlId="formGridEmail">
                     <div>
@@ -140,31 +142,30 @@ const Contact =() => {
                    />
                    </Form.Group>
                 </Col>
-                </Row>
-                <Row>
-                   <div>
-                  <label>Message</label> </div>
-                  <div>
+                
+                
+                   <Col md={12}>
+                  <label>Message</label> 
                   <textarea col={4} name="message"></textarea>
-                 </div>
-                  </Row>
-                  <Row>
+                 </Col>
+                 
+                  
                   <ReCAPTCHA
                    sitekey="6LczRmYgAAAAAFc5pZRi9-opvqmOw9H1BEjp7nM6"
                    onChange={onChange}
-                  /></Row>
-                  <Row>
+                  />
+                 
                    <div> 
                    <p className="mb-3 mt-2" style={{color:"green",marginLeft:"57px"}}><b>{msg}</b></p>
-                  <button onClick={onSubmit}><FaComment/>Submit</button>
+                  <button onClick={onSubmit}><FaComment/>  Submit</button>
                   </div>
-                  </Row>
+                 
             </Row>
         </Form>
         </Col>
-      </Row>
+      </Row> 
     </Container>
-    
+    </div>
     </div>
   )
 }

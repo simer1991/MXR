@@ -21,10 +21,25 @@
 }
 @media screen and (max-width: 767px){
     .mxr__industries-icon_box {
-        width: 100%;
+    
         text-align: center;
     }
-    .mxr__industries-icons {
-        display: inline-grid;
+    
+    .mxr__whoweare.mxr__section {
+        padding: 50px 30px 0px 30px !important;
     }
+    .mxr__industries-icon_box {
+        width: 50%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    ul.row.mxr__industries-icons { 
+        padding-left: 0;
+    }
+    .mxr__industries-icon_box h4 {
+        color: var(--color-text);
+        font-size: 14.5px;
+        font-weight: 400;
+    }
+    
 }

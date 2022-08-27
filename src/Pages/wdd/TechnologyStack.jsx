@@ -30,6 +30,7 @@ const TechnologyStacks = () => {
 <div className='mxr__stack mxr__section'>
 <div className='mxr__stack'>
 <Container>
+<h3 className='mxr__section-title'>TECHNOLOGIES WE WORK WITH</h3>
 <Tabs
 efaultActiveKey="frontend"
 id="tech-stack"

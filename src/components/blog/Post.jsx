@@ -22,7 +22,7 @@ function Post() {
                              <Helmet>
                                 <title>{list.metatag}</title>
                              </Helmet>
-                                <h1 className="mt-5" key={list.id}>{list.title}</h1>
+                                <h1 className="" key={list.id}>{list.title}</h1>
                                 {list.body.map((data, index) => {
 
                                     if (data.type === "para") {
@@ -54,11 +54,12 @@ function Post() {
                 })}
             </div>
             <div>
-            <Row>
-            <Col>
+            <Row className="bottm_bar">
+            <Col md={6}>
               <h4>Share The Virtual Reality Post!</h4>
+                <p>By <NavLink>admin</NavLink> | March 9th, 2021 | <NavLink>blogs</NavLink> | <NavLink>0 Comments</NavLink> </p>
             </Col>
-            <Col>
+            <Col md={6} className="social_links_bottom">
             <ShareButton
                 compact
                 socialMedia={'facebook'}
@@ -80,16 +81,11 @@ function Post() {
                 media={"https://imgs.xkcd.com/comics/error_code.png"}
                 text="Sit by a lake"
             />
-            </Col>
+            </Col> 
+            
         </Row>
             </div>
-            <div>
-                <Row>
-                    <Col>
-                      <p>By <NavLink>admin</NavLink> |March 9th, 2021| <NavLink>blogs</NavLink> | <NavLink>0 Comments</NavLink> </p>
-                    </Col>
-                </Row>
-            </div>
+           
         </>
     );
 }

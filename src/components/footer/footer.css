@@ -11,6 +11,9 @@
     font-size: 14px;
     font-weight: 300;
 }
+.mxr__footer-subscribe button.mxr__section-btn {
+    width: 100%;
+}
 ul.mxr__footer-links {
     margin: 0;
     padding: 0;

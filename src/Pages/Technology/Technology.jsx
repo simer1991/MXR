@@ -20,7 +20,8 @@ const Technology = () => {
     <meta name="description" content="MXR is UK based software development company delivering reliable and in-budget solutions for AR, VR, MR, Web and Mobile App development to clients globally." />
    </Helmet>
    <Innerbanner banner={bannerdata}/>
-      <div className='container'>
+   <div className='mxr__section'>
+      <div className='  container'>
       
         {TechnologyList.map((lists, index) =>
           <>
@@ -29,7 +30,6 @@ const Technology = () => {
               <Row>
                 {lists.list.map(data => {
                   return (
-
                     <Col lg={3}>
                       <div className='mxr__techno-icons'>
                         <Link to={data.link}>
@@ -47,6 +47,7 @@ const Technology = () => {
             </div>
           </>
         )}
+      </div>
       </div>
     </div >
   )

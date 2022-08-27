@@ -14,8 +14,8 @@ const Innerbanner = (props) => {
       <Outerdiv $banner={props.banner.img} >
         <Container>
           <Row>
-            <Col lg={4} md={4} className="left_internal_page">
-              <h2>{props.banner.title}</h2>
+            <Col lg={5} md={5} className="left_internal_page">
+              <h1>{props.banner.title}</h1>
               <p>{props.banner.text}</p>
             </Col>
           </Row>

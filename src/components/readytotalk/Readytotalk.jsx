@@ -13,9 +13,11 @@ const Readytotalk = (props) => {
         <Container>
           <Row>
             <Col lg={12} md={12} className="ready">
+              <div className='ready_content'>
               <h2>{props.discuss.title}</h2>
               <p>{props.discuss.text}</p>
               <Link to="/contact"  className="mxr__section-btn" >{props.discuss.button}</Link>
+              </div>
             </Col>
           </Row>
         </Container>

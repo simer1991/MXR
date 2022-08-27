@@ -15,7 +15,7 @@
     background-size: cover;
     min-height: 400px;
 }
-.internal_page_banner h2 {
+.internal_page_banner h1 {
     margin: 0px;
     color: rgb(255, 255, 255);
     --fontSize: 40;
@@ -23,20 +23,23 @@
     font-weight: 700;
     text-transform: uppercase;
 }
+.mxr__vision .mxr__section-title {
+    padding-bottom: 1rem;
+}
 .internal_page_banner p {
     color: #fff;
     font-size: 15px;
     line-height: 1.6;
     font-weight: 400;
 }
-.left_internal_page.col-lg-4.col-md-4 {
+.left_internal_page.col-lg-5.col-md-5 {
     padding-top: 8%;
 }
 @media screen and (max-width: 767px){
     .internal_page_banner >div {
         background: #2b7975d6;
     }
-    .left_internal_page.col-lg-4.col-md-4 {
+    .left_internal_page.col-lg-5.col-md-5 {
         padding-top: 50px;
         margin-top: 0px;
         padding-right: 30px;

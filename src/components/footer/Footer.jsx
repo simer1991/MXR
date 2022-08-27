@@ -30,11 +30,11 @@ const Footer = () => {
       <div className='mxr__footer-top'>
         <Container>
           <Row>
-            <Col lg={3} xs={12}>
+            <Col lg={3} sm={6} xs={12}>
               <img src={logo} alt="logo" />
               <p>We build software that inspires people. We use transformational tools, such as AI, XR and IoT to provide businesses with the most innovative solutions.</p>
             </Col>
-            <Col lg={3} xs={12}>
+            <Col lg={3} sm={6} xs={12}>
               <h6>IMPORTANT LINKS</h6>
 
               <ul className='mxr__footer-links'>
@@ -47,7 +47,7 @@ const Footer = () => {
               </ul>
 
             </Col>
-            <Col lg={3} xs={12}>
+            <Col lg={3} sm={6} xs={12}>
               <h6>CONTACT US</h6>
               <div class="mxr_footer-social-icons d-flex">
                 <span><a href="https://www.facebook.com/metaextendedreality.official"><FaFacebookF size={17} /></a></span>
@@ -60,7 +60,7 @@ const Footer = () => {
                 <p class="mxr__header-email">Email: team@mxr.ai</p>
               </div>
             </Col>
-            <Col lg={3} xs={12}>
+            <Col lg={3} sm={6} xs={12}>
               <h6>SUBSCRIBE TO OUR NEWSLETTER</h6>
               <div className='mxr__footer-subscribe'>
               <p className="mb-3 mt-2" style={{color:"green",marginLeft:"57px"}}><b>{msg}</b></p>
@@ -83,7 +83,7 @@ const Footer = () => {
         <Container>
           <Row>
             <Col>
-              <p>Copyright {new Date().getFullYear()} MXR | All Rights Reserved |<Link to='/privacy-policy'>Privacy Policy</Link>  | <Link to='/term-and-condition'>Terms and Conditions</Link></p></Col>
+              <p>Copyright {new Date().getFullYear()} MXR | All Rights Reserved |<Link to='/privacy-policy'> Privacy Policy</Link>  | <Link to='/term-and-condition'>Terms and Conditions</Link></p></Col>
           </Row>
         </Container>
       </div>

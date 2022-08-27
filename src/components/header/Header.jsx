@@ -17,7 +17,7 @@ const Header = () => {
                                 <div className='col-md-6 col-sm-12 mxr__header-align-left'>
                                     <span class="mxr__header-phone">Call Us Today! (+44) 20 7193 5407</span>
                                     <span class="mxr__header-separator">|</span>
-                                    <span class="mxr__header-email">team@mxr.ai</span>
+                                    <span class="mxr__header-email"><a href="mailto:team@mxr.ai">team@mxr.ai</a></span>
                                 </div>
                                 <div className='col-md-6 col-sm-12 mxr__header-align-right'>
                                     <a href="https://www.facebook.com/metaextendedreality.official"><FaFacebookF size={18} /></a>
@@ -29,11 +29,10 @@ const Header = () => {
                         </Container>
                     </div>
                     <div className='mxr__header-navbar'>
-
-                        <Navbar expand="lg">
+                        <Navbar expand="lg" varient='light'>
                             <Container>
                                 <Navbar.Brand href="#home"><img src={Logo} className="mxr__header-logo" alt='Meta Extended Reality' /></Navbar.Brand>
-                                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                                <Navbar.Toggle aria-controls="basic-navbar-nav"  />
                                 <Navbar.Collapse id="basic-navbar-nav">
                                     <Nav className="me-auto">
                                         {menuItems.map((menu, index) => {

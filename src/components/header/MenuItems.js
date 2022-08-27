@@ -42,7 +42,7 @@ const MenuItems = ({ items, depthLevel }) => {
     >
       {items.megamenu ? (
         <>
-          <div
+          <div className="testing"
             type="button"
             aria-haspopup="menu"
             aria-expanded={dropdown ? "true" : "false"}
@@ -62,12 +62,13 @@ const MenuItems = ({ items, depthLevel }) => {
           {items.submenu ? (
             <>
               <div
-                type="button"
+                type="button" className="testing"
                 aria-haspopup="menu"
                 aria-expanded={dropdown ? "true" : "false"}
                 onClick={() => setDropdown((prev) => !prev)}
               >
-                {items.title}{" "}
+               
+                <NavLink className="nav-link" to="#">{items.title}</NavLink>
                 {depthLevel > 0 ? <span>&raquo;</span> : <FaCaretDown />}
               </div>
               <Dropdown

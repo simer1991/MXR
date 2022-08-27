@@ -52,7 +52,7 @@ const Landscape = () => {
         <Tabs className="mb-3 mxr__tabs">
           <Tab eventKey='research' title="Research">
            <Row>
-            <Col md={6} sm={12}>
+            <Col md={6} sm={12} className="landscap_left_sec">
               <img src={research} alt="reseach"/>
               </Col>
               <Col md={6} sm={12}>
@@ -62,7 +62,7 @@ const Landscape = () => {
           </Tab>
           <Tab eventKey='Proof Of Concept' title="Proof Of Concept">
             <Row>
-              <Col md={6} sm={12}>
+              <Col md={6} sm={12} className="landscap_left_sec">
                <img src={proof} alt="Proof Of Concept" />
               </Col>
               <Col md={6} sm={12}>
@@ -72,7 +72,7 @@ const Landscape = () => {
           </Tab>
           <Tab eventKey='Viable Product' title="Viable Product">
             <Row>
-              <Col md={6} sm={12}>
+              <Col md={6} sm={12} className="landscap_left_sec">
                 <img src={viable} alt="Viable Product"/>
               </Col>
               <Col md={6} sm={12}>

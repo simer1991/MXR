@@ -14,19 +14,24 @@ function Posts() {
                             <Card>
                                 <Link to={list.slug}>
                                     <img src={list.image}/>
-                                    <h4 class="font-weight-light">{list.title}</h4>
-                                </Link>
+                                   
+                                </Link> 
+                                <div className="blog_content_info">
+                                <div className="heading_para">
+                                <Link to={list.slug}>
+                                <h4 class="font-weight-light">{list.title}</h4> </Link> 
                                 <span>{list.date}</span>
+                                </div>
                                 <p>{list.shortdesc}</p>
                                 <Link to={list.slug}>
                                     <button className="mxr__section-btn"> Read More</button>
-                                </Link>
+                                </Link></div>
                             </Card>
                         </div>
                     )
                 })}
             </div>
-        </div>
+        </div> 
     );
 }
 

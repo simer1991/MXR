@@ -14,7 +14,7 @@ const Stats = () => {
       <div className='mxr__stats-numbers'>
         <div className='container'>
           <div className='row'>
-              <div className='col-md-3 col-sm-3 col-lg-3 mxr__stats-number-sec'>
+              <div className='col-md-3 col-sm-6 col-lg-3 mxr__stats-number-sec'>
                   <div className='d-flex'>
                     <div  className="mxr__stats-number-icon">
                       <img src={increse} alt="increase"/>
@@ -25,7 +25,7 @@ const Stats = () => {
                     </div>
                   </div>
               </div>
-              <div className='col-md-3 col-sm-3 col-lg-3 mxr__stats-number-sec'>
+              <div className='col-md-3 col-sm-6 col-lg-3 mxr__stats-number-sec'>
               <div className='d-flex'>
                     <div className="mxr__stats-number-icon"><img src={thumb} alt="thumb"/></div>
                     <div className="mxr__stats-number-txt">
@@ -34,7 +34,7 @@ const Stats = () => {
                     </div>
                   </div>
               </div>
-              <div className='col-md-3 col-sm-3 col-lg-3 mxr__stats-number-sec'>
+              <div className='col-md-3 col-sm-6 col-lg-3 mxr__stats-number-sec'>
                 <div className='d-flex'>
                     <div className="mxr__stats-number-icon"><img src={star} alt="star"/></div>
                     <div  className="mxr__stats-number-txt">
@@ -43,7 +43,7 @@ const Stats = () => {
                     </div>
                   </div>
               </div>
-              <div className='col-md-3 col-sm-3 col-lg-3 mxr__stats-number-sec'>
+              <div className='col-md-3 col-sm-6 col-lg-3 mxr__stats-number-sec'>
               <div className='d-flex'>
                     <div className="mxr__stats-number-icon"><img src={hands} alt="hands"/></div>
                     <div  className="mxr__stats-number-txt">

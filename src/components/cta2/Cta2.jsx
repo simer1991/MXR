@@ -12,8 +12,9 @@ function Cta2() {
             <div className='mxr__cta2-content'>
               <h3 className='mxr__section-title'>LET YOUR CREATIVE JUICE FLOW WITH META EXTENDED REALITY (MXR)</h3>
               <p>We specialize in cutting edge software solutions, using top modern technologies, such as augmented, virtual and mixed reality, blockchain, IoT, state of the art web and mobile technologies, and many more.</p>
-              <Link to="/contact" className='mxr__section-btn'> Contact Us</Link>
+            
           </div>
+          <Link to="/contact" className='mxr__section-btn'> Contact Us</Link>
            </Col>
           <Col lg={6}>
             <img className="w-100" src={cta2} alt="MXR"/>

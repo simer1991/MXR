@@ -8,12 +8,12 @@ const Outerdiv = styled.div`
   `;
 const Blogbanner = (props) => {
   return (
-    <div className='internal_page_banner' >
+    <div className='internal_page_banner blog_banner' >
     <Outerdiv $banner={props.banner.img} >
     <Container>
           <Row>
-            <Col lg={4} md={4} >
-              <h2>{props.banner.title}</h2>
+            <Col lg={12} md={12} >
+              <h1>{props.banner.title}</h1>
             </Col>
           </Row>
         </Container>
@@ -23,3 +23,4 @@ const Blogbanner = (props) => {
 }
 
 export default Blogbanner
+ 

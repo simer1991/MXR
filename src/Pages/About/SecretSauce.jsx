@@ -1,5 +1,5 @@
 import React from 'react'
-import  {FaHourglassHalf,FaUserShield}     from 'react-icons/fa';
+import  {FaHourglassHalf,FaUserShield,FaGem}     from 'react-icons/fa';
 import {Row,Container,Col,Card} from 'react-bootstrap-v5';
 const SecretSauce = () => {
   return (
@@ -7,9 +7,11 @@ const SecretSauce = () => {
       <Container>
         <h3 className='mxr__section-title'>OUR “SECRET SAUCE”</h3>
       <Row>
-          <Col sm={4} md={4} lg={4}>
+          <Col sm={12} md={4} lg={12}>
             <Card>
-            <FaHourglassHalf size={50} />
+              <div className='icons_secret'>
+            <FaGem size={50} />
+            </div>
             <Card.Body>
               <Card.Title>SKILLS</Card.Title>
               <Card.Text>
@@ -18,7 +20,7 @@ const SecretSauce = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col sm={4} md={4} lg={4}>
+          <Col sm={12} md={4} lg={12}>
             <Card>
              <FaHourglassHalf size={50} />
               <Card.Body>
@@ -29,7 +31,7 @@ const SecretSauce = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col sm={4} md={4} lg={4}>
+          <Col sm={12} md={4} lg={12}>
             <Card>
                 <FaUserShield size={50}/>
               <Card.Body>
