@@ -77,6 +77,8 @@ function Project(props) {
   const validate = (values) => {
     const regex =
       /^[A-Za-z]{1,}[A_Za-z_.0-9]{3,}@[A-Za-z]{3,}[.]{1}[A-Za-z.]{2,6}$/;
+    const pjhone_regex =
+      /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
     const errors = {};
 
     if (!values.firstName) {
@@ -87,6 +89,8 @@ function Project(props) {
     }
     if (!values.homePhone) {
       errors.homePhone = "homePhone is required";
+    } else if (!regex.test(values.email)) {
+      errors.pjhone_regex = "please enter a valid mobile number";
     }
     if (!values.email) {
       errors.email = "email is required";
