@@ -4,7 +4,7 @@ import SendEmail from "../utilits/email.js";
 export const userDetails = async (req, res) => {
   let { name, phoneNumber, email, address, text } = req.body;
   const validateMobile =
-    /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
+    /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
   const validateEmail =
     /^[A-Za-z]{1,}[A_Za-z_.0-9]{3,}@[A-Za-z]{3,}[.]{1}[A-Za-z.]{2,6}$/;
   try {
@@ -12,14 +12,16 @@ export const userDetails = async (req, res) => {
       return res
         .status(400)
         .json({ status: "fails", message: "please fill all the fields" });
-    if (!validateMobile.test(homePhone))
+    if (!validateMobile.test(phoneNumber)) {
       return res
         .status(400)
         .json({ status: "failed", message: "mobile number is not valid" });
-    if (!validateEmail.test(email))
+    }
+    if (!validateEmail.test(email)) {
       return res
         .status(400)
         .json({ status: "failed", message: "Email is not valid" });
+    }
     const user = await User.create({
       name: name,
       email: email,

@@ -8,7 +8,6 @@ export const contactSchema = YUP.object({
   address: YUP.string().min(10).max(50).required(),
   phoneNumber: YUP.string()
     .matches(phoneRegExp, "Phone number is not valid")
-    .min(10, "Too short")
     .required(),
 });
 
@@ -18,6 +17,5 @@ export const projectSchema = YUP.object({
   homePhone: YUP.string().matches(phoneRegExp, "Phone number is not valid"),
   email: YUP.string().email().required(),
   companyName: YUP.string().required(),
-  // list: YUP.string().required(),
   estimatedBudget: YUP.number().required(),
 });
