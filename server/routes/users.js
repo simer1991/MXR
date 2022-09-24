@@ -4,7 +4,7 @@ import { vitrualreality } from "../controller/projectsController/vitualReality.j
 
 const router = express.Router();
 
-router.post("/contact/user", userDetails);
-router.post("/services/user/projects",vitrualreality)
+router.post("/user/contact", userDetails);
+router.post("/services/user/projects", vitrualreality);
 
 export default router;
