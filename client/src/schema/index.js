@@ -8,6 +8,7 @@ export const contactSchema = YUP.object({
   address: YUP.string().min(10).max(50).required(),
   phoneNumber: YUP.string()
     .matches(phoneRegExp, "Phone number is not valid")
+    .min(10, "Too short")
     .required(),
 });
 
