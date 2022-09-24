@@ -1,41 +1,56 @@
 .mxr__advance2 img {
-    width: 791px;
+  width: 791px;
 }
 .mxr__advance2 .vertical-timeline-element-content.bounce-in {
-    display: flex;
-    POSITION: RELATIVE;
+  display: flex;
+  position: RELATIVE;
 }
 .icon_timeline {
-    background: #2b7975;
-    height: 42px;
-    display: inline-flex;
-    width: 42px;
-    border-radius: 50%;
-    padding: 13px;
-    color: #ffffff;
-    text-align: center;
-    margin-bottom: 19px;
-    margin-right: 20px;
-    z-index: 99999;
-
+  background: #2b7975;
+  height: 42px;
+  display: inline-flex;
+  width: 42px;
+  border-radius: 50%;
+  padding: 13px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 19px;
+  margin-right: 20px;
+  z-index: 99999;
 }
 .mxr__advance2 .vertical-timeline-element-content-arrow {
-    border-color: #619e85;
-    left: 20px;
-    -webkit-transition-duration: 350ms;
-    animation-duration: 350ms;
-    display: block;
-    border-left-style: solid;
-    border-left-width: 1px;
-    position: absolute;
-    border-right: 0.5px solid #2b7975 !important;
-    height: 120px;
+  border-color: #619e85;
+  left: 20px;
+  -webkit-transition-duration: 350ms;
+  animation-duration: 350ms;
+  display: block;
+  border-left-style: solid;
+  border-left-width: 1px;
+  position: absolute;
+  border-right: 0.5px solid #2b7975 !important;
+  height: 120px;
 }
 .last .vertical-timeline-element-content-arrow {
-    border: unset !important;
+  border: unset !important;
 }
-@media screen and (max-width: 767px){
-    .mxr__advance2 img {
-        display: none;
-    }
+@media screen and (max-width: 767px) {
+  .mxr__advance2 img {
+    display: none;
+  }
+}
+
+.advance_Features_heading h4:hover {
+  color: #000;
+}
+.icon_timeline:hover {
+  background-color: #000;
+  animation: slide 0.3s linear;
+}
+@keyframes slide {
+  from {
+    transform: translateX(4px);
+  }
+  to {
+    transform: translateX(-4px);
+  }
 }

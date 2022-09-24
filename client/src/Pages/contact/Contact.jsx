@@ -43,7 +43,7 @@ const Contact = () => {
       console.log(values);
       try {
         const response = await axios.post(
-          "http://localhost:5001/mxr/contact/user",
+          `${process.env.REACT_APP_BASE_URL}/user/contact`,
           values,
           {
             headers: {

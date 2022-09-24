@@ -55,7 +55,7 @@ function Project(props) {
 
     try {
       let response = await axios.post(
-        "http://localhost:5001/mxr/services/user/projects",
+        `${process.env.REACT_APP_BASE_URL}/services/user/projects`,
         {
           firstName,
           lastName,
