@@ -35,6 +35,11 @@ export const vitrualreality = async (req, res) => {
       return res
         .status(400)
         .json({ status: "failed", message: "Email is not valid" });
+    if (estimatedBudget === "0")
+      return res.status(400).json({
+        status: "failed",
+        message: "EstimatedBudget should be  greater than 0",
+      });
     const virtual = await VirtualReality.create({
       firstName: firstName,
       lastName: lastName,
