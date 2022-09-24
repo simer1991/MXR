@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap-v5";
 // import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 // import Slider from "./Slider";
@@ -14,7 +14,7 @@ function Project(props) {
   }
 
   const [projectType, setProjectType] = useState("");
-  // const [isSubmit, setisSubmit] = useState(false);
+  const [isSubmit, setisSubmit] = useState(false);
   const [formErrors, setFormErrrors] = useState({});
   const [errMsg, setErrMsg] = useState(false);
   const [errorMsg, setErrorMsg] = useState(false);
@@ -26,12 +26,12 @@ function Project(props) {
     companyName: "",
     estimatedBudget: "",
   });
-  // useEffect(() => {
-  //   console.log(formErrors);
-  //   if (Object.keys(formErrors).length === 0 && isSubmit) {
-  //     console.log(project + projectType);
-  //   }
-  // }, [formErrors]);
+  useEffect(() => {
+    console.log(formErrors);
+    if (Object.keys(formErrors).length === 0 && isSubmit) {
+      console.log(project + projectType);
+    }
+  }, [formErrors]);
   const handleChange = (e) => {
     const { name, value } = e.target;
     setProject((project) => {
@@ -43,7 +43,7 @@ function Project(props) {
     e.preventDefault();
     setFormErrrors(validate(project));
     validateProjectType();
-
+    setisSubmit(true);
     const {
       firstName,
       lastName,
@@ -89,8 +89,8 @@ function Project(props) {
     }
     if (!values.homePhone) {
       errors.homePhone = "homePhone is required";
-    } else if (!regex.test(values.email)) {
-      errors.phone_regex = "please enter a valid mobile number";
+    } else if (!phone_regex.test(values.homePhone)) {
+      errors.homePhone = "please enter a valid mobile number";
     }
     if (!values.email) {
       errors.email = "email is required";

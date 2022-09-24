@@ -16,7 +16,15 @@ const virtualRealitySchema = new mongoose.Schema({
   },
   homePhone: {
     type: String,
-    required: [true, "phone number is required"],
+    validate: {
+      validator: function (v) {
+        return /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im.test(
+          v
+        );
+      },
+      message: "{VALUE} is not a valid phone number!",
+    },
+    required: [true, "User phone number required"],
   },
   email: {
     type: String,
