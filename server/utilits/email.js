@@ -20,17 +20,16 @@ const sendEmail = async (options) => {
   };
   transporter.verify(function (error, success) {
     if (error) {
-      console.log(error);
+      return error;
     } else {
-      console.log("Server is ready to take our messages", success);
+      return success;
     }
   });
 
   await transporter.sendMail(mailOptions, (err, info) => {
     if (err) {
-      return console.log("Unable to send the mail :", err.message);
+      return err.message;
     }
-    console.log("message sent", info.messageId);
   });
 };
 export default sendEmail;
