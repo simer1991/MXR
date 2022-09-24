@@ -14,7 +14,15 @@ const userSchema = new mongoose.Schema({
   },
   phoneNumber: {
     type: String,
-    required: true,
+    validate: {
+      validator: function (v) {
+        return /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/.test(
+          v
+        );
+      },
+      message: `${v} is not a valid phone number!`,
+    },
+    required: [true, "User phone number required"],
   },
   text: {
     type: String,
