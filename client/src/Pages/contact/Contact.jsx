@@ -1,173 +1,296 @@
-import React,{useState,useRef} from 'react'
-import { Container,Row,Col,Card,ListGroup,Form } from 'react-bootstrap-v5'
-import {FaMapMarkerAlt,FaPhoneAlt,FaEnvelope,FaComment} from 'react-icons/fa';
-import ReCAPTCHA from 'react-google-recaptcha';
-import axios from 'axios' 
-import './contact.css'
-import { Helmet } from 'react-helmet';
-import Blogbanner from '../../components/blog/Blogbanner';
-import Innerbanner from '../../components/innerbanner/Innerbanner';
+import React, { useState } from "react";
+import { Container, Row, Col, Card, ListGroup, Form } from "react-bootstrap-v5";
+import {
+  FaMapMarkerAlt,
+  FaPhoneAlt,
+  FaEnvelope,
+  FaComment,
+} from "react-icons/fa";
+import ReCAPTCHA from "react-google-recaptcha";
+import axios from "axios";
+import "./contact.css";
+import { Helmet } from "react-helmet";
+import Blogbanner from "../../components/blog/Blogbanner";
+import { useFormik } from "formik";
+import { contactSchema } from "../../schema";
+// import Innerbanner from "../../components/innerbanner/Innerbanner";
 
 const bannerdata = {
-  img: 'contact.png',
+  img: "contact.png",
   title: "CONTACT MXR TODAY",
-}
+};
+const initialValues = {
+  name: "",
+  email: "",
+  phoneNumber: "",
+  address: "",
+  text: "",
+};
 
-
-const Contact =() => {
-  const [varified,setVarified]=useState(false)
+const Contact = () => {
+  const [varified, setVarified] = useState(false);
   function onChange(value) {
     console.log("Captcha value:", value);
     setVarified(true);
   }
 
-    const [msg,setMsg] = useState('');
-    const [user, setUser] = useState({
-      to: ""
-    });
-   
-    const { to,name,number,address} = user;
-    const onInputChange = e => {
-      setUser({ ...user, [e.target.name]: e.target.value });
-    };
-   
-    const onSubmit = async e => {
-      e.preventDefault();
-      await axios.post("http://localhost:5000/users/",user)
-     .then(response => setMsg(response.data.respMesg));
-    };
-  
+  const [msg, setMsg] = useState("");
+
+  const { values, errors, touched, handleSubmit, handleChange } = useFormik({
+    initialValues: initialValues,
+    validationSchema: contactSchema,
+    onSubmit: async (values) => {
+      console.log(values);
+      try {
+        const response = await axios.post(
+          "http://localhost:5001/mxr/contact/user",
+          values,
+          {
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        );
+
+        setMsg(response.data.message);
+      } catch (error) {
+        setMsg(error.response.data.message);
+      }
+    },
+  });
 
   return (
-   <div className='mxr__contact'> 
-   <Helmet>
-    <title>Contact Us | AR, VR and MR Technology | MXR</title>
-    <meta name="description" content="MXR is UK based software development company delivering reliable and in-budget solutions for AR, VR, MR, Web and Mobile App development to clients globally." />
-   </Helmet> 
-   <div >
-   <Blogbanner banner={bannerdata}/>  
-    <Container>
-      <h3 className='mxr__section-title'></h3>
-      <Row>
-        <Col sm={12} md={4} className='left_instruction'>
-        <Card >
-          <ListGroup variant="flush">
-          <ListGroup.Item>
-            <div>
-             <FaMapMarkerAlt size={30}/>
-            </div>
-            <div>
-                <h3 className='mxr__section-title'>Our Location</h3>
-                <p>20-22 Wenlock Road, <br/>London, N1 7GU, England</p>
-            </div>
-          </ListGroup.Item>
-          <ListGroup.Item>
-            <div>
-             <FaPhoneAlt size={30}/>
-            </div>
-            <div>
-                <h3 className='mxr__section-title'>Call Us</h3>
-                <p>(+44) 20 7193 5407</p>
-            </div>
-          </ListGroup.Item>
-          <ListGroup.Item>
-            <div>
-                <FaEnvelope size={30}/>
-            </div>
-            <div>
-                <h3 className='mxr__section-title'>Email Address</h3>
-                <p>team@mxr.ai</p>
-            </div>
-          </ListGroup.Item>
-          </ListGroup>
-        </Card> 
-        </Col>
-        <Col sm={12} md={8}>
-        <Form>
-           <Row >
-                <Col md={6}>
-                   <Form.Group as={Col} controlId="formGridEmail">
+    <div className="mxr__contact">
+      <Helmet>
+        <title>Contact Us | AR, VR and MR Technology | MXR</title>
+        <meta
+          name="description"
+          content="MXR is UK based software development company delivering reliable and in-budget solutions for AR, VR, MR, Web and Mobile App development to clients globally."
+        />
+      </Helmet>
+      <div>
+        <Blogbanner banner={bannerdata} />
+        <Container>
+          <h3 className="mxr__section-title">{""}</h3>
+          <Row>
+            <Col sm={12} md={4} className="left_instruction">
+              <Card>
+                <ListGroup variant="flush">
+                  <ListGroup.Item>
                     <div>
-                   <Form.Label>Your Name *</Form.Label>
-                   </div>
-                   <input 
-                   type="text" 
-                   name="name" 
-                   onChange={onInputChange}
-                   value={name}
-                   required
-                    />
-                   </Form.Group>
-                   </Col>
-                   <Col md={6}>
-                   <Form.Group as={Col} controlId="formGridEmail">
+                      <FaMapMarkerAlt size={30} />
+                    </div>
                     <div>
-                   <Form.Label>Your Email *</Form.Label>
-                   </div>
-                   <input 
-                   type="email" 
-                   name="to"
-                   onChange={onInputChange}
-                   value={to}
-                   required
-                    />
-                   </Form.Group>
-                </Col>
-                
-                <Col md={6}>
-                   <Form.Group as={Col} controlId="formGridEmail">
+                      <h3 className="mxr__section-title">Our Location</h3>
+                      <p>
+                        20-22 Wenlock Road, <br />
+                        London, N1 7GU, England
+                      </p>
+                    </div>
+                  </ListGroup.Item>
+                  <ListGroup.Item>
                     <div>
-                   <Form.Label>Phone number *</Form.Label>
-                   </div>
-                   <input 
-                   type="number" 
-                   name="number"  
-                   onChange={onInputChange}
-                   value={number}
-                   required
-                   />
-                   </Form.Group> 
-                   </Col>
-                   <Col md={6}>
-                   <Form.Group as={Col} controlId="formGridEmail">
+                      <FaPhoneAlt size={30} />
+                    </div>
                     <div>
-                   <Form.Label>Your Address *</Form.Label>
-                   </div>
-                   <input 
-                   type="text"  
-                   name="address"
-                   onChange={onInputChange}
-                   value={address}
-                   required
-                   />
-                   </Form.Group>
-                </Col>
-                
-                
-                   <Col md={12}>
-                  <label>Message</label> 
-                  <textarea col={4} name="message"></textarea>
-                 </Col>
-                 
-                  
-                  <ReCAPTCHA
-                   sitekey="6LczRmYgAAAAAFc5pZRi9-opvqmOw9H1BEjp7nM6"
-                   onChange={onChange}
-                  />
-                 
-                   <div> 
-                   <p className="mb-3 mt-2" style={{color:"green",marginLeft:"57px"}}><b>{msg}</b></p>
-                  <button onClick={onSubmit}><FaComment/>  Submit</button>
-                  </div>
-                 
-            </Row>
-        </Form>
-        </Col>
-      </Row> 
-    </Container>
-    </div>
-    </div>
-  )
-}
+                      <h3 className="mxr__section-title">Call Us</h3>
+                      <p>(+44) 20 7193 5407</p>
+                    </div>
+                  </ListGroup.Item>
+                  <ListGroup.Item>
+                    <div>
+                      <FaEnvelope size={30} />
+                    </div>
+                    <div>
+                      <h3 className="mxr__section-title">Email Address</h3>
+                      <p>team@mxr.ai</p>
+                    </div>
+                  </ListGroup.Item>
+                </ListGroup>
+              </Card>
+            </Col>
+            <Col sm={12} md={8}>
+              <Form onSubmit={handleSubmit}>
+                <Row>
+                  <Col md={6}>
+                    <Form.Group as={Col} controlId="formGridEmail">
+                      <div>
+                        <Form.Label>Your Name *</Form.Label>
+                      </div>
+                      {errors.name && touched.name ? (
+                        <p
+                          className="error"
+                          style={{
+                            alignItems: "center",
+                            justifyContent: "center",
+                            padding: "4px",
+                            color: "#f50f0f",
+                            textTransform: "capitalize",
+                            fontSize: ".8rem",
+                          }}
+                        >
+                          {errors.name}
+                        </p>
+                      ) : null}
+                      <input
+                        type="text"
+                        name="name"
+                        value={values.name}
+                        onChange={handleChange}
+                        placeholder="name"
+                      />
+                    </Form.Group>
+                  </Col>
+                  <Col md={6}>
+                    <Form.Group as={Col} controlId="formGridEmail">
+                      <div>
+                        <Form.Label>Your Email *</Form.Label>
+                      </div>
+                      {errors.email && touched.email ? (
+                        <p
+                          className="error"
+                          style={{
+                            alignItems: "center",
+                            justifyContent: "center",
+                            padding: "4px",
+                            color: "#f50f0f",
+                            textTransform: "capitalize",
+                            fontSize: ".8rem",
+                          }}
+                        >
+                          {errors.email}
+                        </p>
+                      ) : null}
+                      <input
+                        type="email"
+                        name="email"
+                        value={values.email}
+                        onChange={handleChange}
+                        placeholder="email"
+                      />
+                    </Form.Group>
+                  </Col>
 
-export default Contact
+                  <Col md={6}>
+                    <Form.Group as={Col} controlId="formGridEmail">
+                      <div>
+                        <Form.Label>Phone number *</Form.Label>
+                      </div>
+                      {errors.phoneNumber && touched.phoneNumber ? (
+                        <p
+                          className="error"
+                          style={{
+                            alignItems: "center",
+                            justifyContent: "center",
+                            padding: "4px",
+                            color: "#f50f0f",
+                            textTransform: "capitalize",
+                            fontSize: ".8rem",
+                          }}
+                        >
+                          {errors.phoneNumber}
+                        </p>
+                      ) : null}
+                      <input
+                        type="text"
+                        name="phoneNumber"
+                        value={values.phoneNumber}
+                        onChange={handleChange}
+                        placeholder="mobile"
+                      />
+                    </Form.Group>
+                  </Col>
+                  <Col md={6}>
+                    <Form.Group as={Col} controlId="formGridEmail">
+                      <div>
+                        <Form.Label>Your Address *</Form.Label>
+                      </div>
+                      {errors.address && touched.address ? (
+                        <p
+                          className="error"
+                          style={{
+                            alignItems: "center",
+                            justifyContent: "center",
+                            padding: "4px",
+                            color: "#f50f0f",
+                            textTransform: "capitalize",
+                            fontSize: ".8rem",
+                          }}
+                        >
+                          {errors.address}
+                        </p>
+                      ) : null}
+                      <input
+                        type="text"
+                        name="address"
+                        value={values.address}
+                        onChange={handleChange}
+                        placeholder="address"
+                      />
+                    </Form.Group>
+                  </Col>
+
+                  <Col md={12}>
+                    {errors.text && touched.text ? (
+                      <p
+                        className="error"
+                        style={{
+                          alignItems: "center",
+                          justifyContent: "center",
+                          padding: "4px",
+                          color: "#f50f0f",
+                          textTransform: "capitalize",
+                          fontSize: ".8rem",
+                        }}
+                      >
+                        {errors.text}
+                      </p>
+                    ) : null}
+                    <label>Message</label>
+                    <textarea
+                      col={4}
+                      name="text"
+                      value={values.text}
+                      onChange={handleChange}
+                      placeholder="message"
+                    ></textarea>
+                  </Col>
+
+                  <ReCAPTCHA
+                    sitekey="6LczRmYgAAAAAFc5pZRi9-opvqmOw9H1BEjp7nM6"
+                    onChange={onChange}
+                  />
+
+                  <div>
+                    <p
+                      className="mb-3 mt-2"
+                      style={{ color: "green", marginLeft: "57px" }}
+                    >
+                      <p
+                        style={{
+                          color: "green",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          padding: "4px",
+                          textTransform: "capitalize",
+                          fontSize: ".8rem",
+                        }}
+                      >
+                        {msg}
+                      </p>
+                    </p>
+                    <button type="submit">
+                      <FaComment /> Submit
+                    </button>
+                  </div>
+                </Row>
+              </Form>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+    </div>
+  );
+};
+
+export default Contact;

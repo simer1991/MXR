@@ -1,0 +1,9 @@
+.formCol {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #ef1515;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
