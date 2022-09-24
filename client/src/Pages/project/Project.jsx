@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap-v5";
 // import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 // import Slider from "./Slider";
 import ReCAPTCHA from "react-google-recaptcha";
 import axios from "axios";
 import "./project.css";
-// import { useEffect } from "react";
 function Project(props) {
   const [varified, setVarified] = useState(false);
   function onChange(value) {
@@ -14,7 +13,6 @@ function Project(props) {
   }
 
   const [projectType, setProjectType] = useState("");
-  const [isSubmit, setisSubmit] = useState(false);
   const [formErrors, setFormErrrors] = useState({});
   const [errMsg, setErrMsg] = useState(false);
   const [errorMsg, setErrorMsg] = useState(false);
@@ -26,12 +24,6 @@ function Project(props) {
     companyName: "",
     estimatedBudget: "",
   });
-  useEffect(() => {
-    console.log(formErrors);
-    if (Object.keys(formErrors).length === 0 && isSubmit) {
-      console.log(project + projectType);
-    }
-  }, [formErrors]);
   const handleChange = (e) => {
     const { name, value } = e.target;
     setProject((project) => {
@@ -43,7 +35,6 @@ function Project(props) {
     e.preventDefault();
     setFormErrrors(validate(project));
     validateProjectType();
-    setisSubmit(true);
     const {
       firstName,
       lastName,
@@ -99,6 +90,8 @@ function Project(props) {
     }
     if (!values.estimatedBudget) {
       errors.estimatedBudget = "estimatedBudget is required";
+    } else if (values.estimatedBudget === "0") {
+      errors.estimatedBudget = "EstimatedBudget should be  greater than 0";
     }
     if (!values.companyName) {
       errors.companyName = "companyName is required";
@@ -247,7 +240,7 @@ function Project(props) {
                 type="range"
                 min={0}
                 max={100}
-                value={project.estimatedBudget}
+                value={project.estimatedBudget ? project.estimatedBudget : 0}
                 name="estimatedBudget"
                 className="slider"
                 onChange={handleChange}
