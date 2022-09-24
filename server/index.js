@@ -21,8 +21,6 @@ const DBconnect = async () => {
   }
 };
 
-//MIDDLEWARE
-app.use(express.json());
 app.use(cors());
 app.use("/mxr", userRouter);
 app.all("*", (req, res, next) => {
