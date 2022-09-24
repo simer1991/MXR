@@ -22,7 +22,7 @@ const virtualRealitySchema = new mongoose.Schema({
           v
         );
       },
-      message: "{VALUE} is not a valid phone number!",
+      message: "{v} is not a valid phone number!",
     },
     required: [true, "User phone number required"],
   },
