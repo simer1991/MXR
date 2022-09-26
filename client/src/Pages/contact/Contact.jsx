@@ -121,19 +121,7 @@ const Contact = () => {
                         <Form.Label>Your Name *</Form.Label>
                       </div>
                       {errors.name && touched.name ? (
-                        <p
-                          className="error"
-                          style={{
-                            alignItems: "center",
-                            justifyContent: "center",
-                            padding: "4px",
-                            color: "#f50f0f",
-                            textTransform: "capitalize",
-                            fontSize: ".8rem",
-                          }}
-                        >
-                          {errors.name}
-                        </p>
+                        <p className="error">{errors.name}</p>
                       ) : null}
                       <input
                         type="text"
@@ -150,19 +138,7 @@ const Contact = () => {
                         <Form.Label>Your Email *</Form.Label>
                       </div>
                       {errors.email && touched.email ? (
-                        <p
-                          className="error"
-                          style={{
-                            alignItems: "center",
-                            justifyContent: "center",
-                            padding: "4px",
-                            color: "#f50f0f",
-                            textTransform: "capitalize",
-                            fontSize: ".8rem",
-                          }}
-                        >
-                          {errors.email}
-                        </p>
+                        <p className="error">{errors.email}</p>
                       ) : null}
                       <input
                         type="email"
@@ -180,19 +156,7 @@ const Contact = () => {
                         <Form.Label>Phone number *</Form.Label>
                       </div>
                       {errors.phoneNumber && touched.phoneNumber ? (
-                        <p
-                          className="error"
-                          style={{
-                            alignItems: "center",
-                            justifyContent: "center",
-                            padding: "4px",
-                            color: "#f50f0f",
-                            textTransform: "capitalize",
-                            fontSize: ".8rem",
-                          }}
-                        >
-                          {errors.phoneNumber}
-                        </p>
+                        <p className="error">{errors.phoneNumber}</p>
                       ) : null}
                       <input
                         type="text"
@@ -209,19 +173,7 @@ const Contact = () => {
                         <Form.Label>Your Address *</Form.Label>
                       </div>
                       {errors.address && touched.address ? (
-                        <p
-                          className="error"
-                          style={{
-                            alignItems: "center",
-                            justifyContent: "center",
-                            padding: "4px",
-                            color: "#f50f0f",
-                            textTransform: "capitalize",
-                            fontSize: ".8rem",
-                          }}
-                        >
-                          {errors.address}
-                        </p>
+                        <p className="error">{errors.address}</p>
                       ) : null}
                       <input
                         type="text"
@@ -235,19 +187,7 @@ const Contact = () => {
 
                   <Col md={12}>
                     {errors.text && touched.text ? (
-                      <p
-                        className="error"
-                        style={{
-                          alignItems: "center",
-                          justifyContent: "center",
-                          padding: "4px",
-                          color: "#f50f0f",
-                          textTransform: "capitalize",
-                          fontSize: ".8rem",
-                        }}
-                      >
-                        {errors.text}
-                      </p>
+                      <p className="error">{errors.text}</p>
                     ) : null}
                     <label>Message</label>
                     <textarea

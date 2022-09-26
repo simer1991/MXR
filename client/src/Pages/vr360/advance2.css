@@ -17,6 +17,7 @@
   margin-bottom: 19px;
   margin-right: 20px;
   z-index: 99999;
+  transition: 1s;
 }
 .mxr__advance2 .vertical-timeline-element-content-arrow {
   border-color: #619e85;
@@ -44,7 +45,8 @@
 }
 .icon_timeline:hover {
   background-color: #000;
-  animation: slide 0.3s linear;
+  transform: 1s;
+  animation: slide 1s linear;
 }
 @keyframes slide {
   from {

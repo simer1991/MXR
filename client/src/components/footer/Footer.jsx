@@ -200,7 +200,7 @@ const Footer = () => {
           <Row>
             <Col>
               <p>
-                &copy; Copyright {new Date().getFullYear()} MXR | All Rights
+                Copyright &copy; {new Date().getFullYear()} MXR | All Rights
                 Reserved |<Link to="/privacy-policy"> Privacy Policy</Link> |{" "}
                 <Link to="/term-and-condition">Terms and Conditions</Link>
               </p>

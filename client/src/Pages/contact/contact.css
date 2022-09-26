@@ -1,92 +1,102 @@
 .mxr__contact input {
-    width: 100%;
-    border: 1px solid #d9d9d9 !important;
-    border-radius: 5px;
-    box-shadow: 0 1px 6px #efefef inset !important;
-    width: 100%;
-    padding: 0 1em;
-    outline: 0;
-    transition: all .2s ease;
-    height: 44px;
+  width: 100%;
+  border: 1px solid #d9d9d9 !important;
+  border-radius: 5px;
+  box-shadow: 0 1px 6px #efefef inset !important;
+  width: 100%;
+  padding: 0 1em;
+  outline: 0;
+  transition: all 0.2s ease;
+  height: 44px;
 }
 .mxr__contact textarea {
-    border: 1px solid #d9d9d9 !important;
-    border-radius: 5px;
-    box-shadow: 0 1px 6px #efefef inset !important;
-    width: 100%;
-    padding: 0 1em;
-    outline: 0;
-    transition: all .2s ease;
-    height: 103px;
-    resize: vertical;
+  border: 1px solid #d9d9d9 !important;
+  border-radius: 5px;
+  box-shadow: 0 1px 6px #efefef inset !important;
+  width: 100%;
+  padding: 0 1em;
+  outline: 0;
+  transition: all 0.2s ease;
+  height: 103px;
+  resize: vertical;
 }
 .mxr__contact button {
-    BACKGROUND: #3393ab !important;
-    font-size: 15px !important;
-    COLOR: #FFFF !IMPORTANT;
-    font-weight: 600;
-    border-radius: 4px !important;
-    padding: 12px 43px !important;
-    margin-top: 10px;
-    border: unset;
-    width: 36%;
+  background: #3393ab !important;
+  font-size: 15px !important;
+  color: #ffff !important;
+  font-weight: 600;
+  border-radius: 4px !important;
+  padding: 12px 43px !important;
+  margin-top: 10px;
+  border: unset;
+  width: 36%;
 }
 .mxr__contact form .row {
-    margin-top: 22px;
+  margin-top: 22px;
 }
 .left_instruction svg {
-    color: #2b7975;
-    width: 19px;
+  color: #2b7975;
+  width: 19px;
 }
 .left_instruction h3.mxr__section-title {
-    color: #4a4a4a;
-    font-weight: 500 !important;
-    font-size: 24px !important;
-    margin-bottom: 0;
-    text-align: left;
-    padding-bottom: 2px;
+  color: #4a4a4a;
+  font-weight: 500 !important;
+  font-size: 24px !important;
+  margin-bottom: 0;
+  text-align: left;
+  padding-bottom: 2px;
 }
 .left_instruction .list-group-item {
-    display: flex;
-    padding: 36px;
+  display: flex;
+  padding: 36px;
 }
-.left_instruction .list-group-item >div {
-    padding-right: 24px;
+.left_instruction .list-group-item > div {
+  padding-right: 24px;
 }
 .mxr__contact .col-md-6 {
-    margin-bottom: 22px !important;
-} 
+  margin-bottom: 22px !important;
+}
 .left_instruction .card {
-    border: 1px solid #d9d9d9 !important;
-    border-radius: 5px;
-    box-shadow: 0 1px 6px #efefef inset !important;
-    width: 100%;
-    outline: 0;
-    transition: all .2s ease;
+  border: 1px solid #d9d9d9 !important;
+  border-radius: 5px;
+  box-shadow: 0 1px 6px #efefef inset !important;
+  width: 100%;
+  outline: 0;
+  transition: all 0.2s ease;
 }
 .mxr__contact .container {
-    padding: 50px 30px;
-} 
+  padding: 50px 30px;
+}
 .blog_banner h1 {
-    margin: 0px;
-    color: rgb(255, 255, 255);
-    --fontSize: 40;
-    line-height: 1.4;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 120px;
-} 
+  margin: 0px;
+  color: rgb(255, 255, 255);
+  --fontSize: 40;
+  line-height: 1.4;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 120px;
+}
 .contact_pagge svg {
-    margin-right: 12px;
+  margin-right: 12px;
 }
 
-@media screen and (max-width: 767px){
-    .mxr__contact button {
-        width: 100%;
-    }
-    .left_instruction .list-group-item {
-        display: flex;
-        padding: 16px;
-    }
+@media screen and (max-width: 767px) {
+  .mxr__contact button {
+    width: 100%;
+  }
+  .left_instruction .list-group-item {
+    display: flex;
+    padding: 16px;
+  }
+}
+
+.error {
+  color: #e0284f;
+  align-items: center;
+  justify-content: center;
+  padding: "4px";
+
+  text-transform: capitalize;
+  font-size: 0.8rem;
 }

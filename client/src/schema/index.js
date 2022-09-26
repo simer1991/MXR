@@ -27,6 +27,6 @@ export const projectSchema = YUP.object({
 export const subscribeSchema = YUP.object({
   email: YUP.string()
     .email()
-    .matches(validateEmail, "please enter a valid email")
-    .required(),
+    .matches(validateEmail, "Please specify a valid email address.")
+    .required("Please specify a valid email address."),
 });

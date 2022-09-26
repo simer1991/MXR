@@ -1,32 +1,37 @@
-.mxr__advance{
-    background-color: #2b7975;
+.mxr__advance {
+  background-color: #2b7975;
 }
 .bg_3steps_icon {
-    background: #ffffff;
-    height: 54px;
-    display: inline-flex;
-    width: 54px;
-    border-radius: 50%;
-    padding: 6px;
-    color: #2b7975;
-    text-align: center;
-    margin-bottom: 19px;
-    margin-right: 20px;
-  }
-  .bg_3steps h5 {
-    text-align: center;
-    color: #fff;
-    font-weight: 600;
-  }
-  .bg_3steps p {
-    color: #fff;
-    text-align: center;
-  }
-  .bg_3steps .col-md-4.col-sm-12 {
-    text-align: center;
-    padding: 40px;
-  }
-  .bg_3steps h3.mxr__section-title {
-    color: #fff;
-    margin-bottom: 1%;
-  }
+  background: #ffffff;
+  height: 54px;
+  display: inline-flex;
+  width: 54px;
+  border-radius: 50%;
+  padding: 6px;
+  color: #2b7975;
+  text-align: center;
+  margin-bottom: 19px;
+  margin-right: 20px;
+  transition: 1s;
+}
+.bg_3steps h5 {
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+}
+.bg_3steps p {
+  color: #fff;
+  text-align: center;
+}
+.bg_3steps .col-md-4.col-sm-12 {
+  text-align: center;
+  padding: 40px;
+}
+.bg_3steps h3.mxr__section-title {
+  color: #fff;
+  margin-bottom: 1%;
+}
+
+.bg_3steps_icon:first-child:hover {
+  width: 56px;
+}

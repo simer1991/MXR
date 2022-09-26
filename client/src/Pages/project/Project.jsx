@@ -118,7 +118,7 @@ function Project(props) {
               <p
                 style={{
                   fontSize: "1rem",
-                  color: "#ef1515",
+                  color: "#e0284f",
                   letterSpacing: "2px",
                   textTransform: "capitalize",
                 }}
@@ -130,7 +130,11 @@ function Project(props) {
           <div className="inputfild">
             <Row>
               <Col md={4} sm={12} className=" formCol">
-                {<label>{formErrors.firstName}</label>}
+                {
+                  <label style={{ color: "#e0284f" }}>
+                    {formErrors.firstName}
+                  </label>
+                }
                 <input
                   type="text"
                   placeholder="First name*"
@@ -140,7 +144,9 @@ function Project(props) {
                 />
               </Col>
               <Col md={4} sm={12} className="formCol">
-                <label>{formErrors.lastName}</label>
+                <label style={{ color: "#e0284f" }}>
+                  {formErrors.lastName}
+                </label>
                 <input
                   type="text"
                   placeholder="Last name*"
@@ -150,7 +156,9 @@ function Project(props) {
                 />
               </Col>
               <Col md={4} sm={12} className="phone formCol">
-                <label>{formErrors.homePhone}</label>
+                <label style={{ color: "#e0284f" }}>
+                  {formErrors.homePhone}
+                </label>
                 <input
                   type="text"
                   placeholder="Home phone*"
@@ -163,7 +171,7 @@ function Project(props) {
             </Row>
             <Row>
               <Col md={4} sm={12} className="email formCol">
-                <label>{formErrors.email}</label>
+                <label style={{ color: "#e0284f" }}>{formErrors.email}</label>
                 <input
                   type="email"
                   placeholder="Email"
@@ -173,7 +181,9 @@ function Project(props) {
                 />
               </Col>
               <Col md={4} sm={12} className="formCol">
-                <label>{formErrors.companyName}</label>
+                <label style={{ color: "#e0284f" }}>
+                  {formErrors.companyName}
+                </label>
                 <input
                   type="text"
                   placeholder="Company name"
@@ -192,7 +202,7 @@ function Project(props) {
                     {errMsg ? (
                       <p
                         style={{
-                          color: "#ef1515",
+                          color: "#e0284f",
                           fontSize: ".9rem",
                           textTransform: "capitalize",
                         }}
@@ -223,7 +233,7 @@ function Project(props) {
                 Estimated Budget *
                 <p
                   style={{
-                    color: "#ef1515",
+                    color: "#e0284f",
                     fontSize: ".9rem",
                     textTransform: "capitalize",
                   }}
