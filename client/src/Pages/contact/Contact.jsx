@@ -29,12 +29,13 @@ const initialValues = {
 
 const Contact = () => {
   const [varified, setVarified] = useState(false);
-  function onChange(value) {
+  function onchange(value) {
     console.log("Captcha value:", value);
     setVarified(true);
   }
 
   const [msg, setMsg] = useState("");
+  const [errMsg, setErrMsg] = useState("");
 
   const { values, errors, touched, handleSubmit, handleChange } = useFormik({
     initialValues: initialValues,
@@ -54,7 +55,9 @@ const Contact = () => {
 
         setMsg(response.data.message);
       } catch (error) {
-        setMsg(error.response.data.message);
+        if (error.response.status === 500) {
+          setErrMsg(error.response.data.message);
+        }
       }
     },
   });
@@ -258,29 +261,30 @@ const Contact = () => {
 
                   <ReCAPTCHA
                     sitekey="6LczRmYgAAAAAFc5pZRi9-opvqmOw9H1BEjp7nM6"
-                    onChange={onChange}
+                    onChange={onchange}
                   />
 
                   <div>
                     {msg ? (
                       <p
-                        className="mb-3 mt-2"
-                        style={{ color: "green", backgroundColor: "#f4f4fb" }}
+                        style={{
+                          color: "#fff",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          padding: "8px 0",
+                          textTransform: "capitalize",
+                          fontSize: ".9rem",
+                          backgroundColor: "#2eb82e",
+                          width: "50%",
+                          textAlign: "center",
+                          marginTop: "10px",
+                          borderRadius: "5px",
+                        }}
                       >
-                        <p
-                          style={{
-                            color: "green",
-                            alignItems: "center",
-                            justifyContent: "center",
-                            padding: "8px 0",
-                            textTransform: "capitalize",
-                            fontSize: ".9rem",
-                          }}
-                        >
-                          {msg}
-                        </p>
+                        {msg}
                       </p>
                     ) : null}
+                    <div>{errMsg ? <p>{errMsg}</p> : null}</div>
                     <button type="submit">
                       <FaComment /> Submit
                     </button>

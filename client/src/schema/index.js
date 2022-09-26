@@ -1,8 +1,12 @@
 import * as YUP from "yup";
-const phoneRegExp =
-  /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
+const validateEmail =
+  /^[A-Za-z]{1,}[A_Za-z_.0-9]{3,}@[A-Za-z]{3,}[.]{1}[A-Za-z.]{2,6}$/;
+const phoneRegExp = /^\+?[(]?[0-9]{3}[)]?[- .]?[0-9]{3}[- .]?[0-9]{4,6}$/im;
 export const contactSchema = YUP.object({
-  email: YUP.string().email().required(),
+  email: YUP.string()
+    .email()
+    .matches(validateEmail, "please enter a valid email")
+    .required(),
   text: YUP.string().min(8),
   name: YUP.string().min(2).max(25).required(),
   address: YUP.string().min(10).max(50).required(),
@@ -18,4 +22,11 @@ export const projectSchema = YUP.object({
   email: YUP.string().email().required(),
   companyName: YUP.string().required(),
   estimatedBudget: YUP.number().required(),
+});
+
+export const subscribeSchema = YUP.object({
+  email: YUP.string()
+    .email()
+    .matches(validateEmail, "please enter a valid email")
+    .required(),
 });
