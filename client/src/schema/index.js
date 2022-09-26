@@ -17,6 +17,5 @@ export const projectSchema = YUP.object({
   homePhone: YUP.string().matches(phoneRegExp, "Phone number is not valid"),
   email: YUP.string().email().required(),
   companyName: YUP.string().required(),
-  // list: YUP.string().required(),
   estimatedBudget: YUP.number().required(),
 });

@@ -5,7 +5,6 @@ import { Col, Container, Row } from "react-bootstrap-v5";
 import ReCAPTCHA from "react-google-recaptcha";
 import axios from "axios";
 import "./project.css";
-// import { useEffect } from "react";
 function Project(props) {
   const [varified, setVarified] = useState(false);
   function onChange(value) {
@@ -14,7 +13,6 @@ function Project(props) {
   }
 
   const [projectType, setProjectType] = useState("");
-  // const [isSubmit, setisSubmit] = useState(false);
   const [formErrors, setFormErrrors] = useState({});
   const [errMsg, setErrMsg] = useState(false);
   const [errorMsg, setErrorMsg] = useState(false);
@@ -26,12 +24,6 @@ function Project(props) {
     companyName: "",
     estimatedBudget: "",
   });
-  // useEffect(() => {
-  //   console.log(formErrors);
-  //   if (Object.keys(formErrors).length === 0 && isSubmit) {
-  //     console.log(project + projectType);
-  //   }
-  // }, [formErrors]);
   const handleChange = (e) => {
     const { name, value } = e.target;
     setProject((project) => {
@@ -43,7 +35,6 @@ function Project(props) {
     e.preventDefault();
     setFormErrrors(validate(project));
     validateProjectType();
-    // setisSubmit(true);
     const {
       firstName,
       lastName,
@@ -77,6 +68,8 @@ function Project(props) {
   const validate = (values) => {
     const regex =
       /^[A-Za-z]{1,}[A_Za-z_.0-9]{3,}@[A-Za-z]{3,}[.]{1}[A-Za-z.]{2,6}$/;
+    const phone_regex =
+      /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
     const errors = {};
 
     if (!values.firstName) {
@@ -87,6 +80,8 @@ function Project(props) {
     }
     if (!values.homePhone) {
       errors.homePhone = "homePhone is required";
+    } else if (!phone_regex.test(values.homePhone)) {
+      errors.homePhone = "please enter a valid mobile number";
     }
     if (!values.email) {
       errors.email = "email is required";
@@ -95,6 +90,8 @@ function Project(props) {
     }
     if (!values.estimatedBudget) {
       errors.estimatedBudget = "estimatedBudget is required";
+    } else if (values.estimatedBudget === "0") {
+      errors.estimatedBudget = "EstimatedBudget should be  greater than 0";
     }
     if (!values.companyName) {
       errors.companyName = "companyName is required";
@@ -243,7 +240,7 @@ function Project(props) {
                 type="range"
                 min={0}
                 max={100}
-                value={project.estimatedBudget}
+                value={project.estimatedBudget ? project.estimatedBudget : 0}
                 name="estimatedBudget"
                 className="slider"
                 onChange={handleChange}

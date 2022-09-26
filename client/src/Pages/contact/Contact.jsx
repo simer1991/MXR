@@ -262,23 +262,25 @@ const Contact = () => {
                   />
 
                   <div>
-                    <p
-                      className="mb-3 mt-2"
-                      style={{ color: "green", marginLeft: "57px" }}
-                    >
+                    {msg ? (
                       <p
-                        style={{
-                          color: "green",
-                          alignItems: "center",
-                          justifyContent: "center",
-                          padding: "4px",
-                          textTransform: "capitalize",
-                          fontSize: ".8rem",
-                        }}
+                        className="mb-3 mt-2"
+                        style={{ color: "green", backgroundColor: "#f4f4fb" }}
                       >
-                        {msg}
+                        <p
+                          style={{
+                            color: "green",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            padding: "8px 0",
+                            textTransform: "capitalize",
+                            fontSize: ".9rem",
+                          }}
+                        >
+                          {msg}
+                        </p>
                       </p>
-                    </p>
+                    ) : null}
                     <button type="submit">
                       <FaComment /> Submit
                     </button>
