@@ -12,11 +12,13 @@ export const subscribe = async (req, res) => {
         .status(400)
         .json({ status: "failed", message: "email is a required field" });
     if (!validateEmail.test(email))
-      return res
-        .status(400)
-        .json({ status: "failed", message: "please Enter a valid email" });
+      return res.status(400).json({
+        status: "failed",
+        message: "Please specify a valid email address.",
+      });
     const findSubscriber = await Subscribe.findOne({ email: email });
-    if (findSubscriber) return res.status(400).json({ message: "user exist" });
+    if (findSubscriber)
+      return res.status(400).json({ status: "failed", message: "user exist" });
     await Subscribe.create({
       email,
     });
