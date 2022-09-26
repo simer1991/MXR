@@ -1,4 +1,5 @@
 import Subscribe from "../../models/subscribeModel/subscribeModel.js";
+import SendEmail from "../../utilits/email.js";
 
 export const subscribe = async (req, res) => {
   const { email } = req.body;
@@ -9,17 +10,39 @@ export const subscribe = async (req, res) => {
     if (!email)
       return res
         .status(400)
-        .json({ status: "failed", message: "please enter your Email" });
+        .json({ status: "failed", message: "email is a required field" });
     if (!validateEmail.test(email))
       return res
         .status(400)
         .json({ status: "failed", message: "please Enter a valid email" });
-    const subscribeUser = await Subscribe.create({
+    const findSubscriber = await Subscribe.findOne({ email: email });
+    if (findSubscriber) return res.status(400).json({ message: "user exist" });
+    await Subscribe.create({
       email,
     });
 
-    res
-      .status(201)
-      .json({ status: "sucess", message: "you have successfully subscribed " });
-  } catch (error) {}
+    await SendEmail({
+      email: email,
+      subject: "thank you for contacting us we will get back to you soon",
+      message: "thank you for contacting",
+      html: `
+    <div style="padding:10px;border-style: ridge">
+    <p>Hello</p>
+    <p>Welcome to our newsletter!</>
+    <p>Please confirm your subscription to our list by clicking the link below:</p>
+    <p>Click <a href="https://www.mxr.ai/?mailpoet_page=subscriptions&mailpoet_router&endpoint=subscription&action=confirm&data=eyJ0b2tlbiI6IjQwMThlYWU2NTkzZGZjYmM3NGQ0Yjc5ODc4MDFmNzI4IiwiZW1haWwiOiJkYW1sYXNoaXZhbmk4MkBnbWFpbC5jb20ifQ' + recovery_token + '">I confirm my subscription!</a></p>
+    <p>Thank you,</p>
+    <p>The Team</p>
+    `,
+    });
+    res.status(201).json({
+      status: "sucess",
+      message: "you have successfully subscribed ",
+    });
+  } catch (error) {
+    res.status(500).json({
+      status: "failed",
+      message: "something went wrong",
+    });
+  }
 };
