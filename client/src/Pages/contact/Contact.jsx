@@ -34,8 +34,8 @@ const Contact = () => {
     setVarified(true);
   }
 
-  const [msg, setMsg] = useState("");
-  const [errMsg, setErrMsg] = useState("");
+  const [msg, setMsg] = useState(null);
+  const [errMsg, setErrMsg] = useState(null);
 
   const { values, errors, touched, handleSubmit, handleChange } = useFormik({
     initialValues: initialValues,
@@ -54,10 +54,10 @@ const Contact = () => {
         );
 
         setMsg(response.data.message);
+        setErrMsg(null);
       } catch (error) {
-        if (error.response.status === 500) {
-          setErrMsg(error.response.data.message);
-        }
+        setMsg(null);
+        setErrMsg(error.response.data.message);
       }
     },
   });
@@ -224,7 +224,28 @@ const Contact = () => {
                         {msg}
                       </p>
                     ) : null}
-                    <div>{errMsg ? <p>{errMsg}</p> : null}</div>
+                    <div>
+                      {errMsg ? (
+                        <p
+                          style={{
+                            color: "#e60000",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            padding: "8px 0",
+                            textTransform: "capitalize",
+                            fontSize: ".9rem",
+                            backgroundColor: "rgb(255 251 251)",
+                            width: "100%",
+                            textAlign: "center",
+                            marginTop: "10px",
+                            borderRadius: "5px",
+                            marginBottom: "5px",
+                          }}
+                        >
+                          {errMsg}
+                        </p>
+                      ) : null}
+                    </div>
                     <button type="submit">
                       <FaComment /> Submit
                     </button>

@@ -22,7 +22,7 @@
 .mxr__advance2 .vertical-timeline-element-content-arrow {
   border-color: #619e85;
   left: 20px;
-  -webkit-transition-duration: 350ms;
+  --webkit-transition-duration: 350ms;
   animation-duration: 350ms;
   display: block;
   border-left-style: solid;

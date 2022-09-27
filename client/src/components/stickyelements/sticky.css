@@ -1,0 +1,103 @@
+.box {
+  width: 55px;
+  height: 58px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 5px;
+  cursor: pointer;
+
+  transition: all 0.2s;
+}
+
+.box1 {
+  width: 55px;
+  height: 200px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 5px;
+  cursor: pointer;
+
+  transition: all 0.2s;
+}
+
+.box0 {
+  width: 55px;
+  height: 32px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 5px;
+  cursor: pointer;
+
+  transition: all 0.2s;
+}
+
+.box:hover {
+  right: 180px;
+  background: #1877f2;
+}
+
+.boxfacebook:hover {
+  background: #1877f2;
+}
+
+.boxWhatsApp:hover {
+  background-color: #25d366;
+  display: flex;
+  align-items: center;
+}
+
+.box .icon {
+  width: 60px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 10px;
+
+  transition: all 0.4s;
+}
+
+.box1 .icon {
+  position: absolute;
+  width: 50px;
+  height: 292px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #3393ab;
+
+  transition: all 0.4s;
+}
+
+.box0 .icon {
+  position: absolute;
+  width: 50px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+
+  transition: all 0.4s;
+}
+
+.facebook {
+  background: #1877f2;
+}
+
+.whatsapp {
+  background: #25d366;
+}
+
+.show_msg {
+  display: flex;
+}

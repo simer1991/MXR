@@ -35,10 +35,10 @@ button {
 .mxr__section-title {
   margin: 0px;
   color: var(--color-heading);
-  font-size: 33px;
+  font-size: 15px;
   line-height: 1.5;
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
   padding-bottom: 1.5rem;
 }
 

@@ -30,3 +30,15 @@ export const subscribeSchema = YUP.object({
     .matches(validateEmail, "Please specify a valid email address.")
     .required("Please specify a valid email address."),
 });
+
+export const contactUsSchema = YUP.object({
+  email: YUP.string()
+    .email()
+    .matches(validateEmail, "please enter a valid email")
+    .required(),
+  text: YUP.string().min(8),
+  name: YUP.string().min(2).max(25).required(),
+  phoneNumber: YUP.string()
+    .matches(phoneRegExp, "Phone number is not valid")
+    .required(),
+});

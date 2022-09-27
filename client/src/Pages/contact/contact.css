@@ -40,8 +40,8 @@
 }
 .left_instruction h3.mxr__section-title {
   color: #4a4a4a;
-  font-weight: 500 !important;
-  font-size: 24px !important;
+  font-weight: 400 !important;
+  font-size: 1.2rem !important;
   margin-bottom: 0;
   text-align: left;
   padding-bottom: 2px;
@@ -49,6 +49,8 @@
 .left_instruction .list-group-item {
   display: flex;
   padding: 36px;
+  justify-content: center;
+  align-items: center;
 }
 .left_instruction .list-group-item > div {
   padding-right: 24px;
@@ -99,4 +101,7 @@
 
   text-transform: capitalize;
   font-size: 0.8rem;
+}
+.mxr__section-title {
+  font-size: 1.6rem;
 }

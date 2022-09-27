@@ -1,6 +1,6 @@
 import React from "react";
 import { Card } from "react-bootstrap-v5";
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import Bloglist from "../../blogsdata.json";
 
@@ -13,7 +13,7 @@ function Posts() {
             <div className="col-lg-4" key={list.id}>
               <Card>
                 <Link to={list.slug}>
-                  <img src={list.image} />
+                  <img src={list.image} alt="list" />
                 </Link>
                 <div className="blog_content_info">
                   <div className="heading_para">

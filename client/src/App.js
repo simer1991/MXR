@@ -1,15 +1,56 @@
-import './App.css';
+import "./App.css";
+import { Header, Footer, Blog, Posts, Post } from "./components";
 import {
-  Header, Footer, Blog, Posts, Post
-} from './components';
-import { Home, About, Contact, VR, VRL, MAD, MR, WDD, RI, Php, Laravel, CodeIngenator, Python, Node, Android, Angular, Reactjs, Vue, Mean, Mern, Magento, WooCommerce, Shopify, IOS, ReactNative, Hybrid, Flutter, Ionic, Swift, Worldpress, Drupal, CustomUnrealEngine, UnityAppDevelopment, Project1, Project2, Projects, AR, Technology, Privacy, Terms } from './Pages';
+  Home,
+  About,
+  Contact,
+  VR,
+  VRL,
+  MAD,
+  MR,
+  WDD,
+  RI,
+  Php,
+  Laravel,
+  CodeIngenator,
+  Python,
+  Node,
+  Android,
+  Angular,
+  Reactjs,
+  Vue,
+  Mean,
+  Mern,
+  Magento,
+  WooCommerce,
+  Shopify,
+  IOS,
+  ReactNative,
+  Hybrid,
+  Flutter,
+  Ionic,
+  Swift,
+  Worldpress,
+  Drupal,
+  CustomUnrealEngine,
+  UnityAppDevelopment,
+  Project1,
+  Project2,
+  Projects,
+  AR,
+  Technology,
+  Privacy,
+  Terms,
+} from "./Pages";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Sticky from "./components/stickyelements/Sticky";
 
 function App() {
   return (
     <>
-      <Router basename={'/v2'}>
+      <Router basename={"/v2"}>
         <Header />
+        <Sticky />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -58,9 +99,7 @@ function App() {
         </Routes>
         <Footer />
       </Router>
-
     </>
-
   );
 }
 
