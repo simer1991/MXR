@@ -83,7 +83,7 @@ const Footer = () => {
             </Col>
             <Col lg={3} sm={6} xs={12}>
               <h6>CONTACT US</h6>
-              <div class="mxr_footer-social-icons d-flex">
+              <div className="mxr_footer-social-icons d-flex">
                 <span>
                   <a href="https://www.facebook.com/metaextendedreality.official">
                     <FaFacebookF size={17} />
@@ -106,8 +106,8 @@ const Footer = () => {
                 </span>
               </div>
               <div className="mxr__footer-contact">
-                <p class="mxr__header-phone">Phone: (+44) 20 7193 5407</p>
-                <p class="mxr__header-email">Email: team@mxr.ai</p>
+                <p className="mxr__header-phone">Phone: (+44) 20 7193 5407</p>
+                <p className="mxr__header-email">Email: team@mxr.ai</p>
               </div>
             </Col>
             <Col lg={3} sm={6} xs={12}>

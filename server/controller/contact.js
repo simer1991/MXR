@@ -6,7 +6,7 @@ export const contactsDetails = async (req, res) => {
   const validateMobile =
     /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
   const validateEmail =
-    /^[A-Za-z]{1,}[A_Za-z_.0-9]{3,}@[A-Za-z]{3,}[.]{1}[A-Za-z.]{2,6}$/;
+    /^[A-Za-z]{1,}[A-Za-z_.0-9]{3,}@[A-Za-z]{3,}[.]{1}[A-Za-z.]{2,6}$/;
   try {
     if (!name || !email || !phoneNumber)
       return res

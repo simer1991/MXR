@@ -8,7 +8,7 @@ import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import EastIcon from "@mui/icons-material/East";
 import "./sticky.css";
 import { Box, styled } from "@mui/material";
-import { Link } from "react-router-dom";
+import { ExternalLink } from "react-external-link";
 
 const StyledDiv = styled(Box)(({ theme }) => ({
   [theme.breakpoints.down(1040)]: {
@@ -58,7 +58,7 @@ function Sticky() {
             style={{ width: "250px" }}
             onMouseEnter={() => setShow("none")}
           >
-            <a
+            <ExternalLink
               href="https://api.whatsapp.com/send?phone=447534526135"
               target="_blank"
               rel="noreferrer"
@@ -66,7 +66,7 @@ function Sticky() {
               <div className="icon whatsapp">
                 <WhatsAppIcon />
               </div>
-            </a>
+            </ExternalLink>
 
             <p
               style={{
@@ -83,7 +83,7 @@ function Sticky() {
             className="box boxfacebook"
             style={{ width: "250px", borderRadius: "0 0 0 15px" }}
           >
-            <a
+            <ExternalLink
               href="https://www.messenger.com"
               target="_blank"
               rel="noreferrer"
@@ -91,7 +91,7 @@ function Sticky() {
               <div className="icon facebook">
                 <MessageIcon />
               </div>
-            </a>
+            </ExternalLink>
             <p
               style={{
                 color: "white",

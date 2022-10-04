@@ -1,13 +1,17 @@
+
 [
+    
     {
         "title": "What is Mixed Reality?",
-        "image": "assets/images/blog/blog-2.png",
+        "image": "assets/images/blog/blog_1.png",
+
         "slug": "what-is-mixed-reality",
         "date": "February 2nd, 2022",
         "shortdesc": "Mixed Reality (MR) is a combination of multiple advanced technologies, primarily Virtual Reality and Augmented Reality.",
         "text":"Share The Virtual Reality Post!",
         "img": "<i className=\"fa fa-desktop\" aria-hidden=\"true\"></i>",
         "metatag":"What is Mixed Reality? - MXR",
+        
         "body": [
             {
                 "type": "para",
@@ -119,7 +123,7 @@
     },
     {
         "title": "Virtual Reality (VR)",
-        "image": "assets/images/blog/2.png",
+        "image": "assets/images/blog/blog_2.jpg",
         "slug": "virtual-reality",
         "date": "March 9th, 2021",
         "shortdesc": "Virtual Reality (VR) There are bunches of meanings of the term Virtual Reality, and some are very long and confounded. How about we",
@@ -226,7 +230,7 @@
     },
     {
         "title": "Augmented Reality (AR)",
-        "image": "assets/images/blog/ar-blog-1.png",
+        "image": "assets/images/blog/blog_3.png",
         "slug": "augmented-reality-ar",
         "date": "March 9th, 2021",
         "shortdesc": "Augmented Reality (AR) Expanded has just become a trendy expression, yet this innovation is as yet a secret for some individuals. So how",

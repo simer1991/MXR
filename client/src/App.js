@@ -48,7 +48,7 @@ import Sticky from "./components/stickyelements/Sticky";
 function App() {
   return (
     <>
-      <Router basename={"/v2"}>
+      <Router>
         <Header />
         <Sticky />
         <Routes>

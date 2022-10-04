@@ -1,21 +1,21 @@
-import { Container, Row, Col, Carousel } from 'react-bootstrap-v5'
-import './clients.css'
+import { Container, Row, Col, Carousel } from "react-bootstrap-v5";
+import "./clients.css";
 import { testmonials } from "../../testmonials";
-import clutch from '../../assets/icons/clients/clutch.jpg';
-import google from '../../assets/icons/clients/google.jpg';
-import good from '../../assets/icons/clients/good.jpg';
-import top from '../../assets/icons/clients/top.jpg';
-import reviewpphn from '../../assets/icons/clients/review-pphn.jpg';
-import  {AiOutlineStar,AiFillStar} from 'react-icons/ai'
+import clutch from "../../assets/icons/clients/clutch.jpg";
+import google from "../../assets/icons/clients/google.jpg";
+import good from "../../assets/icons/clients/good.jpg";
+import top from "../../assets/icons/clients/top.jpg";
+import reviewpphn from "../../assets/icons/clients/review-pphn.jpg";
+import { AiOutlineStar, AiFillStar } from "react-icons/ai";
 
 const Clients = () => {
   return (
-    <div className='mxr__clients mxr__section'>
+    <div className="mxr__clients mxr__section">
       <Container>
         <Row>
           <Col sm={12} lg={4} md={4}>
-            <h3 className='mxr__section-title'>OVER 900+ SATISFIED CLIENTS</h3>
-            <div className='mxr__clients-desktop d-none d-sm-block w-100'>
+            <h3 className="mxr__section-title">OVER 900+ SATISFIED CLIENTS</h3>
+            <div className="mxr__clients-desktop d-none d-sm-block w-100">
               <Row>
                 <Col sm={6} lg={6} md={6}>
                   <img src={clutch} alt="clutch" />
@@ -33,15 +33,14 @@ const Clients = () => {
                 </Col>
               </Row>
             </div>
-            <div className='mxr__clients-mobile d-block d-sm-none w-100'>
+            <div className="mxr__clients-mobile d-block d-sm-none w-100">
               <img src={reviewpphn} alt="review" />
             </div>
           </Col>
           <Col sm={12} lg={8} md={8}>
-            <Carousel variant='dark'>
+            <Carousel variant="dark">
               {testmonials.map((testi, index) => (
-
-                <Carousel.Item>
+                <Carousel.Item key={index}>
                   <img
                     className="d-block user_image"
                     src={require(`../../assets/icons/clients/${testi.image}`)}
@@ -52,23 +51,21 @@ const Clients = () => {
                     <p>{testi.text}</p>
                     <h5>{testi.company}</h5>
                     <div>
-                    <AiFillStar />
-                    <AiFillStar />
-                    <AiFillStar />
-                    <AiFillStar />
-                    <AiOutlineStar />
+                      <AiFillStar />
+                      <AiFillStar />
+                      <AiFillStar />
+                      <AiFillStar />
+                      <AiOutlineStar />
                     </div>
                   </Carousel.Caption>
                 </Carousel.Item>
-
               ))}
-
             </Carousel>
           </Col>
         </Row>
       </Container>
     </div>
-  )
-}
+  );
+};
 
-export default Clients
+export default Clients;
