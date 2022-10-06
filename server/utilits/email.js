@@ -1,18 +1,18 @@
-import nodemailer from "nodemailer";
+const nodemailer = require("nodemailer");
 
 const sendEmail = async (options) => {
   const transporter = nodemailer.createTransport({
-    // host: process.env.HOST_NAME,
-    // port: process.env.PORT_NAME,
+    secure: true,
     service: "gmail",
+    port: "587",
     auth: {
-      user: "damlashivani82@gmail.com",
-      pass: "ifipzqzeyvucvjwn",
+      user: "mxrsolution@gmail.com",
+      pass: "kaskeuypjixjqdfv",
     },
   });
 
   const mailOptions = {
-    from: "damlashivani82@gmail.com",
+    from: "mxrsolution@gmail.com",
     to: options.email,
     subject: options.subject,
     text: "",
@@ -20,16 +20,17 @@ const sendEmail = async (options) => {
   };
   transporter.verify(function (error, success) {
     if (error) {
-      return error;
+      console.log(error);
     } else {
-      return success;
+      console.log("Server is ready to take our messages");
     }
   });
 
   await transporter.sendMail(mailOptions, (err, info) => {
     if (err) {
-      return err.message;
+      return console.log("Unable to send the mail :", err.message);
     }
+    console.log("message sent", info.response);
   });
 };
-export default sendEmail;
+module.exports = sendEmail;

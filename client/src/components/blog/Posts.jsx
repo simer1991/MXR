@@ -3,7 +3,6 @@ import { Card } from "react-bootstrap-v5";
 // import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import Bloglist from "../../blogsdata.json";
-
 function Posts() {
   return (
     <div className="mxr__blog-post-list">
@@ -28,7 +27,7 @@ function Posts() {
                       className="mxr__section-btn"
                       style={{ width: "100%", padding: "10px" }}
                     >
-                      {" "}
+            
                       Read More
                     </button>
                   </Link>

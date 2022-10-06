@@ -1,17 +1,17 @@
-import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap-v5';
-import './innerbanner.css';
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap-v5";
+import "./innerbanner.css";
 import styled from "styled-components";
 
-
 const Outerdiv = styled.div`
-  background-image: url('assets/images/Innerbanner/${props => props.$banner}');  
-  `;
+  background-image: url("assets/images/Innerbanner/${(props) =>
+    props.$banner}");
+`;
 
 const Innerbanner = (props) => {
   return (
-    <div className='internal_page_banner' >
-      <Outerdiv $banner={props.banner.img} >
+    <div className="internal_page_banner">
+      <Outerdiv $banner={props.banner.img}>
         <Container>
           <Row>
             <Col lg={5} md={5} className="left_internal_page">
@@ -20,9 +20,9 @@ const Innerbanner = (props) => {
             </Col>
           </Row>
         </Container>
-      </Outerdiv >
-    </div >
-  )
-}
+      </Outerdiv>
+    </div>
+  );
+};
 
-export default Innerbanner
+export default Innerbanner;

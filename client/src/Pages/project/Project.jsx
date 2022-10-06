@@ -243,7 +243,7 @@ function Project(props) {
               <div className="value" style={{ color: "#fff" }}>
                 {project.estimatedBudget === ""
                   ? 0
-                  : `${project.estimatedBudget} k`}
+                  : `${project.estimatedBudget} `}
               </div>
               <input
                 type="range"
@@ -256,7 +256,7 @@ function Project(props) {
                 style={{ width: "50%" }}
               />
               <ReCAPTCHA
-                sitekey="6Lc4hYwhAAAAADxuPBNLjyH5aILUENJodF2aOpHN"
+                sitekey="6LebgowhAAAAAK6TU17d-_upiomgLDG4fEbGNwDe"
                 onChange={onChange}
               />
               <button onChange={varified} type="submit">

@@ -1,5 +1,5 @@
-import mongoose from "mongoose";
-import validator from "validator";
+const mongoose = require("mongoose");
+const validator = require("validator");
 const subscribeSchema = new mongoose.Schema({
   email: {
     type: String,
@@ -17,4 +17,4 @@ const subscribeSchema = new mongoose.Schema({
 
 const Subscribe = new mongoose.model("Subscribe", subscribeSchema);
 
-export default Subscribe;
+module.exports = Subscribe;

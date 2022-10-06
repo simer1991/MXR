@@ -200,7 +200,7 @@ const Contact = () => {
                   </Col>
 
                   <ReCAPTCHA
-                    sitekey="6LczRmYgAAAAAFc5pZRi9-opvqmOw9H1BEjp7nM6"
+                    sitekey="6LebgowhAAAAAK6TU17d-_upiomgLDG4fEbGNwDe"
                     onChange={onchange}
                   />
 

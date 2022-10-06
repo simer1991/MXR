@@ -1,7 +1,7 @@
-import User from "../models/contactUs.js";
-import SendEmail from "../utilits/email.js";
+const ContactUs = require("../models/contactUs.js");
+const sendEmail = require("../utilits/email");
 
-export const userDetails = async (req, res) => {
+const userDetails = async (req, res) => {
   let { name, phoneNumber, email, address, text } = req.body;
   const validateMobile =
     /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
@@ -22,7 +22,7 @@ export const userDetails = async (req, res) => {
         .status(400)
         .json({ status: "failed", message: "Email is not valid" });
     }
-    const user = await User.create({
+    const user = await ContactUs.create({
       name: name,
       email: email,
       phoneNumber: phoneNumber,
@@ -30,43 +30,39 @@ export const userDetails = async (req, res) => {
       text: text,
     });
 
-    await SendEmail({
+    await sendEmail({
       email: email,
-      subject: "thank you for contacting us we will get back to you soon",
-      message: "thank you for contacting",
+      subject: "thank you for contacting us",
       html: `
     <div style="padding:10px;border-style: ridge">
-    <p>Hello</p>
-    <p>Welcome to our newsletter!</>
-    <p>Please confirm your subscription to our list by clicking the link below:</p>
-    <p>Click <a href="https://www.mxr.ai/?mailpoet_page=subscriptions&mailpoet_router&endpoint=subscription&action=confirm&data=eyJ0b2tlbiI6IjQwMThlYWU2NTkzZGZjYmM3NGQ0Yjc5ODc4MDFmNzI4IiwiZW1haWwiOiJkYW1sYXNoaXZhbmk4MkBnbWFpbC5jb20ifQ' + recovery_token + '">I confirm my subscription!</a></p>
+    <p style="text-transform:capitalize">Hi &nbsp;${name}</p>
+    <p>Welcome to  MXR!</p>
+    <p>Hope you are doing well. Thank you for contacting us , we will respond to your query within 24 hours.</p>
     <p>Thank you,</p>
-    <p>The Team</p>
+    <p>Team MXR</p>
     `,
     });
-    await SendEmail({
-      email: "ehmmadaejazz33@gmail.com",
-      subject: "user contact details",
+    await sendEmail({
+      email: "mxrsolution@gmail.com",
+      subject: " MXR-New User Contacted",
       html: `
     <div style="padding:10px;border-style: ridge">
-    <p>Hello</p>
-    <p>user Details!</>
-    <p>userName:${name}</p>
-    <p>Email:${email}</p>
-    <p>Mobile Number:${phoneNumber}</p>
-    <p>address:${address}</p>
-    <p>Click <a href="https://www.mxr.ai/?mailpoet_page=subscriptions&mailpoet_router&endpoint=subscription&action=confirm&data=eyJ0b2tlbiI6IjQwMThlYWU2NTkzZGZjYmM3NGQ0Yjc5ODc4MDFmNzI4IiwiZW1haWwiOiJkYW1sYXNoaXZhbmk4MkBnbWFpbC5jb20ifQ' + recovery_token + '">I confirm my subscription!</a></p>
+    
+    <h4 style="text-transform:capitalize">New Contact Details</h4>
+   
+    <p style="text-transform:capitalize">Name:&nbsp;${name}</p>
+    <p>Email:&nbsp;${email}</p>
+    <p>Mobile Number:&nbsp;${phoneNumber}</p>
+    <p>Address:&nbsp;${address}</p>
+    <p>Message:&nbsp;${text}</p>
     <p>Thank you,</p>
-    <p>The MXR</p>
+    <p >Team MXR</p>
     `,
     });
 
     res.status(201).json({
       sucess: true,
       message: "thank you for contacting us we get back to you soon",
-      data: {
-        user,
-      },
     });
   } catch (error) {
     res.status(500).json({
@@ -75,3 +71,4 @@ export const userDetails = async (req, res) => {
     });
   }
 };
+module.exports = { userDetails };

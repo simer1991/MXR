@@ -1,5 +1,5 @@
-import mongoose from "mongoose";
-import validator from "validator";
+const mongoose = require("mongoose");
+const validator = require("validator");
 const userSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -33,5 +33,5 @@ const userSchema = new mongoose.Schema({
   },
 });
 
-const User = new mongoose.model("User", userSchema);
-export default User;
+const ContactUs = new mongoose.model("ContactUs", userSchema);
+module.exports = ContactUs;

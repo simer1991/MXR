@@ -1,5 +1,5 @@
-import mongoose from "mongoose";
-import validator from "validator";
+const mongoose = require("mongoose");
+const validator = require("validator");
 
 const virtualRealitySchema = new mongoose.Schema({
   firstName: {
@@ -51,4 +51,4 @@ const VirtualReality = new mongoose.model(
   virtualRealitySchema
 );
 
-export default VirtualReality;
+module.exports = VirtualReality;
